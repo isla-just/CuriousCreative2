@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="TheCuriousCreative.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:TheCuriousCreative"
+    Shell.FlyoutBehavior="Disabled">
+
+  <Shell.FlyoutHeader>
+        <local:FlyoutHeader/>
+    </Shell.FlyoutHeader>
+
+    <FlyoutItem Title="Home">
+        <Tab>
+
+        <ShellContent
+            Title="Home"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage" />
+
+        </Tab>
+
+    </FlyoutItem>
+
+    <FlyoutItem Title="Login">
+        <Tab>
+
+        <ShellContent
+            Title="Login"
+            ContentTemplate="{DataTemplate local:Login}"
+            Route="Login" />
+
+        </Tab>
+
+    </FlyoutItem>
+
+
+       <FlyoutItem Title="Clients">
+        <Tab>
+
+        <ShellContent
+            Title="Clients"
+            ContentTemplate="{DataTemplate local:ClientManagement}"
+            Route="ClientManagement" />
+
+        </Tab>
+
+    </FlyoutItem>
+
+     <FlyoutItem Title="Projects">
+        <Tab>
+
+        <ShellContent
+            Title="Projects"
+            ContentTemplate="{DataTemplate local:ProjectManagement}"
+            Route="ProjectManagement" />
+
+        </Tab>
+
+    </FlyoutItem>
+
+         <FlyoutItem Title="Creatives">
+        <Tab>
+
+        <ShellContent
+            Title="Creatives"
+            ContentTemplate="{DataTemplate local:StaffManagement}"
+            Route="StaffManagement" />
+
+        </Tab>
+
+    </FlyoutItem>
+
+             <FlyoutItem Title="Funds">
+        <Tab>
+
+        <ShellContent
+            Title="Funds"
+            ContentTemplate="{DataTemplate local:Funds}"
+            Route="Funds" />
+
+        </Tab>
+
+    </FlyoutItem>
+
+</Shell>

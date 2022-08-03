@@ -1,0 +1,43 @@
+﻿<Properties StartupConfiguration="{338973E6-0316-4363-B7AF-4E22DC60B94D}|Default">
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="AppShell.xaml.cs">
+    <Files>
+      <File FileName="Login.xaml" Line="21" Column="1" />
+      <File FileName="MainPage.xaml" Line="12" Column="73" />
+      <File FileName="MainPage.xaml.cs" Line="32" Column="45" />
+      <File FileName="Login.xaml.cs" Line="15" Column="6" />
+      <File FileName="FlyoutHeader.xaml" Line="12" Column="1" />
+      <File FileName="AppShell.xaml" Line="22" Column="1" />
+      <File FileName="AppShell.xaml.cs" Line="13" Column="2" />
+      <File FileName="App.xaml" Line="1" Column="1" />
+      <File FileName="App.xaml.cs" Line="11" Column="52" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="TheCuriousCreative" expanded="True">
+            <Node name="TheCuriousCreative" expanded="True">
+              <Node name="Resources" expanded="True" />
+              <Node name="App.xaml" expanded="True" />
+              <Node name="AppShell.xaml" expanded="True">
+                <Node name="AppShell.xaml.cs" selected="True" />
+              </Node>
+              <Node name="Login.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.TheCuriousCreative PreferredExecutionTarget="MyAppleMacCatalystID" />
+</Properties>
