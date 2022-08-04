@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<Shell 
+    x:Class="TheCuriousCreative2.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:TheCuriousCreative2"
+    Shell.FlyoutBehavior="Locked"
+      FlyoutBackground="#FF4C54"
+    >
+
+<Shell.FlyoutHeader BackgroundColor="#FF4C54" Padding="50">
+    <local:FlyoutHeader/>
+</Shell.FlyoutHeader>
+
+    <Shell.FlyoutFooter>
+        <local:FlyoutFooter />
+    </Shell.FlyoutFooter>
+
+    <Shell.ItemTemplate >
+        <DataTemplate >
+            <Grid ColumnDefinitions="0.2*,0.8*" BackgroundColor="#FF4C54">
+                <Image Source="{Binding FlyoutIcon}"
+                       Margin="20"
+                       HeightRequest="45" />
+                <Label Grid.Column="1"
+                        Margin="10"
+                       CharacterSpacing="5"
+                       Text="{Binding Title}"
+                       FontFamily="SatoshiRegular"
+                       FontSize="20"
+                       VerticalTextAlignment="Center" />
+            </Grid>
+        </DataTemplate>
+    </Shell.ItemTemplate>
+
+
+
+        <!--<FlyoutItem Title="HOME">
+        <Tab>
+             <ShellContent
+                Title="Home"
+                ContentTemplate="{DataTemplate local:MainPage}"
+                Route="MainPage"
+              />
+
+        </Tab>
+
+    </FlyoutItem>-->
+
+    <FlyoutItem   Title="DASHBOARD">
+        <Tab>
+             <ShellContent
+                Title="Dashboard"
+                ContentTemplate="{DataTemplate local:Dashboard}"
+                Route="Dashboard"
+              />
+
+        </Tab>
+
+    </FlyoutItem>
+
+        <!--<FlyoutItem   Title="LOGIN">
+        <Tab>
+             <ShellContent
+                Title="Login"
+                ContentTemplate="{DataTemplate local:Login}"
+                Route="Login"
+              />
+
+        </Tab>
+
+    </FlyoutItem>-->
+
+    <FlyoutItem   Title="CLIENTS">
+        <Tab>
+             <ShellContent
+                Title="Clients"
+                ContentTemplate="{DataTemplate local:ClientManagement}"
+                Route="ClientManagement"
+              />
+
+        </Tab>
+
+    </FlyoutItem>
+
+        <FlyoutItem   Title="CREATIVES">
+        <Tab>
+             <ShellContent
+                Title="Creatives"
+                ContentTemplate="{DataTemplate local:StaffManagement}"
+                Route="StaffManagement"
+              />
+
+        </Tab>
+
+    </FlyoutItem>
+
+            <FlyoutItem   Title="FUNDS">
+        <Tab>
+             <ShellContent
+                Title="Funds"
+                ContentTemplate="{DataTemplate local:Funds}"
+                Route="Funds"
+              />
+
+        </Tab>
+
+    </FlyoutItem>
+
+
+            <FlyoutItem   Title="PROJECTS">
+        <Tab>
+             <ShellContent
+                Title="Projects"
+                ContentTemplate="{DataTemplate local:ProjectManagement}"
+                Route="ProjectManagement"
+              />
+
+        </Tab>
+
+    </FlyoutItem>
+
+</Shell>
+
