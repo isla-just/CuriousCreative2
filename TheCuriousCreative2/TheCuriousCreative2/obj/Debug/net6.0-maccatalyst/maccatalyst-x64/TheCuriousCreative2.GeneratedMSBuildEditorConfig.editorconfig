@@ -33,6 +33,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = TheCuriousCreative2.Dashbo
 build_metadata.AdditionalFiles.TargetPath = Dashboard.xaml
 build_metadata.AdditionalFiles.RelativePath = Dashboard.xaml
 
+[/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/FlyoutFooter.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TheCuriousCreative2.FlyoutFooter.xaml
+build_metadata.AdditionalFiles.TargetPath = FlyoutFooter.xaml
+build_metadata.AdditionalFiles.RelativePath = FlyoutFooter.xaml
+
 [/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/FlyoutHeader.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = TheCuriousCreative2.FlyoutHeader.xaml

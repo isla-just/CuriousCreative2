@@ -4090,7 +4090,7 @@ application_config:
 
 	.type	.L.autostr.8, @object
 .L.autostr.8:
-	.asciz	"1962ce2d-eedc-4129-a5fa-177fd9043797"
+	.asciz	"421227c7-ea48-49c5-86b2-c77960957d3d"
 	.size	.L.autostr.8, 37
 
 	.type	.L.autostr.9, @object

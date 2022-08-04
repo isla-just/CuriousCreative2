@@ -292,3 +292,4 @@
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/f/Satoshi-Medium.otf
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/f/Satoshi-MediumItalic.otf
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/f/Satoshi-Regular.otf
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/logo.png
