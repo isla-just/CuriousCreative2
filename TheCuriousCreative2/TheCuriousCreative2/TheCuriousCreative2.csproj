@@ -45,4 +45,27 @@
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <MauiXaml Update="Login.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Dashboard.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="ClientManagement.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Funds.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="ProjectManagement.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="StaffManagement.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="FlyoutHeader.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	</ItemGroup>
 </Project>
