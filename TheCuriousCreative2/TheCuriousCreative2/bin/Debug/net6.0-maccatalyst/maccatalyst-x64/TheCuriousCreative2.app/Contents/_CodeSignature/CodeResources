@@ -184,6 +184,10 @@
 		<data>
 		QvvmI94w8uDf6xzeDgx1E7Oiie8=
 		</data>
+		<key>Resources/logo.png</key>
+		<data>
+		67NbbTrAqse5p1SFm2yBc99gtK4=
+		</data>
 		<key>Resources/master_card.jpg</key>
 		<data>
 		pMn/PiFVS4miF0oTac0v1sABOrc=
@@ -1453,14 +1457,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			R9aWJ5fs0eE7InkrJ9hxc2bDMHs+Z/M5uZAf4Nh+jNM=
+			kVV2RJqBINpwfigP47Qr6XiDsfAgjhsCZwkU1IyAoO4=
 			</data>
 		</dict>
 		<key>MonoBundle/TheCuriousCreative2.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OHUYKWa7ptSZNnJIK/HGpYqURY8xFwVsKPAYu1uDlhQ=
+			ZkDudig+1iAiW9QlFdZjTkfBcdh2Y/mPfeNYSvfHWgw=
 			</data>
 		</dict>
 		<key>MonoBundle/WindowsBase.dll</key>
@@ -1853,6 +1857,13 @@
 			<key>hash2</key>
 			<data>
 			3KP8/4lYSwLI0Vf5MnMhn5KHzkPk5Jx9JaN8owiITxo=
+			</data>
+		</dict>
+		<key>Resources/logo.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/tyQ+oAxsXWQ2r/LCOVQ5Q+VReiZQaFHPiyEw85jGuc=
 			</data>
 		</dict>
 		<key>Resources/master_card.jpg</key>
