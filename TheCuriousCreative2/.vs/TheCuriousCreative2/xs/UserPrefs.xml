@@ -1,8 +1,7 @@
 ﻿<Properties StartupConfiguration="{ABEDEA07-5F9B-4E41-B4CB-F4C80867AC6C}|Default">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
   <MonoDevelop.Ide.Workbench ActiveDocument="TheCuriousCreative2/AppShell.xaml">
     <Files>
       <File FileName="TheCuriousCreative2/MainPage.xaml.cs" Line="1" Column="1" />
@@ -13,7 +12,7 @@
       <File FileName="TheCuriousCreative2/ProjectManagement.xaml" Line="8" Column="45" />
       <File FileName="TheCuriousCreative2/StaffManagement.xaml" Line="8" Column="43" />
       <File FileName="TheCuriousCreative2/AppShell.xaml" Line="21" Column="15" />
-      <File FileName="TheCuriousCreative2/FlyoutHeader.xaml" Line="12" Column="29" />
+      <File FileName="TheCuriousCreative2/FlyoutHeader.xaml" Line="1" Column="1" />
       <File FileName="TheCuriousCreative2/AppShell.xaml.cs" Line="1" Column="1" />
       <File FileName="TheCuriousCreative2/FlyoutHeader.xaml.cs" Line="1" Column="1" />
     </Files>
@@ -34,8 +33,9 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.TheCuriousCreative2 PreferredExecutionTarget="MyAppleMacCatalystID" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
-  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.TheCuriousCreative2 PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>
