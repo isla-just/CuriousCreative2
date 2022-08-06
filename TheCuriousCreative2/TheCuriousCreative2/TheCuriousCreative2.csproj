@@ -67,5 +67,8 @@
 	  <MauiXaml Update="FlyoutHeader.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
+	  <MauiXaml Condition=" '$(EnableDefaultXamlItems)' == 'true' " Update="FlyoutHeader %28copy%29.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
 	</ItemGroup>
 </Project>
