@@ -16,6 +16,7 @@ public static class MauiProgram
                 fonts.AddFont("Poppins-Medium.otf", "PoppinsMedium");
                 fonts.AddFont("Poppins-Regular.otf", "PoppinsRegular");
                 fonts.AddFont("Poppins-SemiBold.otf", "PoppinsSemiBold");
+                fonts.AddFont("Poppins-Light.otf", "PoppinsLight");
 
                 fonts.AddFont("Satoshi-Bold.otf", "SatoshiBold");
                 fonts.AddFont("Satoshi-Light.otf", "SatoshiLight");
