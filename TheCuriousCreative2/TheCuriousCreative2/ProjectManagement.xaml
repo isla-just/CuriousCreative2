@@ -32,19 +32,19 @@
                                <Frame Grid.Column="0" BackgroundColor="#FEEED8" Margin="0, 15, 0, 0" BorderColor="Transparent" CornerRadius="32" HorizontalOptions="Start" WidthRequest="260" HeightRequest="80" Padding="20">
                                    <HorizontalStackLayout>
                                           <Button Text="client" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" BackgroundColor="Transparent"></Button>
-                                     <Image Source="dropdown.png" Aspect="AspectFit" Margin="0, 0, 0, 0"></Image>
+                                     <Image Source="arrow_down.png" Aspect="AspectFit" Margin="0, 0, 0, 0"></Image>
                                    </HorizontalStackLayout>
                                 </Frame>
                                <Frame Grid.Column="1" BackgroundColor="#FEEED8" Margin="0, 15, 0, 0" BorderColor="Transparent" CornerRadius="32" HorizontalOptions="Start" WidthRequest="260" HeightRequest="80" Padding="20">
                                    <HorizontalStackLayout>
                                           <Button Text="status" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" BackgroundColor="Transparent"></Button>
-                                            <Image Source="dropdown.png" Aspect="AspectFit" Margin="0, 0, 0, 0"></Image>
+                                            <Image Source="arrow_down.png" Aspect="AspectFit" Margin="0, 0, 0, 0"></Image>
                                    </HorizontalStackLayout>
                                </Frame>
                               <Frame Grid.Column="2" BackgroundColor="#FEEED8" Margin="0, 15, 0, 0" BorderColor="Transparent" CornerRadius="32" HorizontalOptions="Start" WidthRequest="260" HeightRequest="80" Padding="20">
                                   <HorizontalStackLayout>
                                           <Button Text="design team" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" BackgroundColor="Transparent"></Button>
-                                     <Image Source="dropdown.png" Aspect="AspectFit" Margin="0, 0, 0, 0"></Image>
+                                     <Image Source="arrow_down.png" Aspect="AspectFit" Margin="0, 0, 0, 0"></Image>
                                    </HorizontalStackLayout>
                                 </Frame>
                              </Grid>
@@ -238,10 +238,6 @@
                         </VerticalStackLayout>
 
                         </HorizontalStackLayout>
-                        <VerticalStackLayout>
-
-
-                    </VerticalStackLayout>
 
                     </VerticalStackLayout>
 
@@ -291,7 +287,7 @@
                                                     <Entry Placeholder="Penny's Creations" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                                                 </Border>
 
-                                   <Label Text="Client" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+                                   <Label Text="Deposit" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
 
                              <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="-260, 10, 0, 10" Padding="10" WidthRequest="220">
 

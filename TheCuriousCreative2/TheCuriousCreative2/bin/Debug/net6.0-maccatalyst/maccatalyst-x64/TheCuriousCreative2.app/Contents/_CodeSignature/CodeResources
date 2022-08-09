@@ -148,6 +148,10 @@
 		<data>
 		B0nUlBVkboGZ8FcwikSsyhugFO0=
 		</data>
+		<key>Resources/arrow_down.png</key>
+		<data>
+		Oncd6+ZJgU3iO9cwmLGDXslHcCI=
+		</data>
 		<key>Resources/company_card.png</key>
 		<data>
 		hLNajnvH2zeizo+ojMi9XwkKJ7o=
@@ -1525,14 +1529,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			TBCivRUC6iYRz3jtPsaW00asLyQzURBmQHku/rzmE4s=
+			I5sIX2pWOwO1jaSEM10vVTbaGTbnJG/FHj0xuzQMx/c=
 			</data>
 		</dict>
 		<key>MonoBundle/TheCuriousCreative2.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fry7vhe1KlE6xm6r546hG9gQZUjC0tj0Tdyiu/Ib/ao=
+			EkHeYxrH5LH+Um227hRWJ5FmxOlHO2foaI2oyeW74fM=
 			</data>
 		</dict>
 		<key>MonoBundle/WindowsBase.dll</key>
@@ -1862,6 +1866,13 @@
 			<key>hash2</key>
 			<data>
 			cEwNXIL769KJpaHVuJiXICeGu3HWO8NLTa494hioWnE=
+			</data>
+		</dict>
+		<key>Resources/arrow_down.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OwCRa5nPnSSW796TS12IGfo4VJFAQRwiz9Vx9nCEWyQ=
 			</data>
 		</dict>
 		<key>Resources/company_card.png</key>
