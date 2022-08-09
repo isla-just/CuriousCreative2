@@ -22,7 +22,7 @@
                 BackgroundColor="Transparent"
                 Margin="0, 60, 0, 0">
 
-               <!--Entry not showing with frame fix-->
+
             <Entry Placeholder="Username" PlaceholderColor="#06378D" TextColor="#06378D" BackgroundColor="#FAF9F0"/>
             </Frame>
               <Frame
@@ -33,6 +33,7 @@
             </Frame>
             <Button Text="forgot password" TextColor="#06378D" BackgroundColor="#FAF9F0" FontAttributes="None" HorizontalOptions="End" FontSize="15"  Margin="0, 40, 0, 0" Padding="20"/>
            <Button BackgroundColor="#FF6C6E" TextColor="White" CornerRadius="20" Padding="20" Text="log me in" FontFamily="PoppinsLight" FontSize="15"  Margin="0, 20, 0, 0"/>
+
         </VerticalStackLayout>
            <VerticalStackLayout  Grid.Column="1" BackgroundColor="#FAF9F0">
                 <Image Source="illustration_login.jpg" WidthRequest="800" HeightRequest="800" Margin="0, 200 , 0, 50"/>

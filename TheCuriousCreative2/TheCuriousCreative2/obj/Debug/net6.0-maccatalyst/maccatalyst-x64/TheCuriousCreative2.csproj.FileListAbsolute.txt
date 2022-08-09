@@ -617,3 +617,5 @@
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/TheCuriousCreative2.genruntimeconfig.cache
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/ref/TheCuriousCreative2.dll
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/illustration_login.jpg
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/add.png
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/dropdown.png

@@ -140,6 +140,10 @@
 		<data>
 		fctZmU8r7hpO8fbAeboOmbQJh4s=
 		</data>
+		<key>Resources/add.png</key>
+		<data>
+		+ld6Tfbfer7fIKVSL94C/kw9qvs=
+		</data>
 		<key>Resources/appicon.icns</key>
 		<data>
 		B0nUlBVkboGZ8FcwikSsyhugFO0=
@@ -175,6 +179,10 @@
 		<key>Resources/down.png</key>
 		<data>
 		HuDEEnx0L6Nme/r7UtYIxflbhI0=
+		</data>
+		<key>Resources/dropdown.png</key>
+		<data>
+		vO3EsrfVFJm4hb48vUos/eO2StE=
 		</data>
 		<key>Resources/edit.png</key>
 		<data>
@@ -1517,7 +1525,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wqfmA2y9Q6YIrSZgxv7lslQ5VOAh3OuOEHLf5z1UtxY=
+			TBCivRUC6iYRz3jtPsaW00asLyQzURBmQHku/rzmE4s=
 			</data>
 		</dict>
 		<key>MonoBundle/TheCuriousCreative2.pdb</key>
@@ -1842,6 +1850,13 @@
 			cRxiQ83FQx+cyWbk3hi/uUA2W62BrP/R55SNvj8lQ4Y=
 			</data>
 		</dict>
+		<key>Resources/add.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lkz4vnbjXOwc0XBSIos+Zgp/vJfTeXCpKX4iXYYRKvY=
+			</data>
+		</dict>
 		<key>Resources/appicon.icns</key>
 		<dict>
 			<key>hash2</key>
@@ -1903,6 +1918,13 @@
 			<key>hash2</key>
 			<data>
 			l/RTxJp/dvK5WlPfLq1tmdG1axyMxeuEYJOAALwZ3i8=
+			</data>
+		</dict>
+		<key>Resources/dropdown.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OQU6AfU5rFYxitF/4iDYCZWChCFytv79SzqKJAF3G1w=
 			</data>
 		</dict>
 		<key>Resources/edit.png</key>

@@ -1,30 +1,30 @@
 ﻿<Properties StartupConfiguration="{ABEDEA07-5F9B-4E41-B4CB-F4C80867AC6C}|Default">
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.TheCuriousCreative2 PreferredExecutionTarget="MyAppleMacCatalystID" />
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
-  <MonoDevelop.Ide.ItemProperties.TheCuriousCreative2 PreferredExecutionTarget="MyAppleMacCatalystID" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TheCuriousCreative2/ClientManagement.xaml">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TheCuriousCreative2/ProjectManagement.xaml">
     <Files>
-      <File FileName="TheCuriousCreative2/MainPage.xaml.cs" Line="1" Column="1" />
-      <File FileName="TheCuriousCreative2/MauiProgram.cs" Line="3" Column="32" />
-      <File FileName="TheCuriousCreative2/ClientManagement.xaml" Line="259" Column="92" />
+      <File FileName="TheCuriousCreative2/Login.xaml" Line="34" Column="13" />
+      <File FileName="TheCuriousCreative2/AppShell.xaml" Line="62" Column="1" />
+      <File FileName="TheCuriousCreative2/ProjectManagement.xaml" Line="290" Column="1" />
+      <File FileName="TheCuriousCreative2/Dashboard.xaml" Line="15" Column="34" />
+      <File FileName="TheCuriousCreative2/Funds.xaml" Line="9" Column="1" />
+      <File FileName="TheCuriousCreative2/ClientManagement.xaml" Line="231" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TheCuriousCreative2" expanded="True">
             <Node name="TheCuriousCreative2" expanded="True">
-              <Node name="Resources" expanded="True">
-                <Node name="Images" expanded="True" />
-                <Node name="Styles" expanded="True" />
-              </Node>
+              <Node name="Resources" expanded="True" />
               <Node name="App.xaml" expanded="True" />
               <Node name="AppShell.xaml" expanded="True" />
-              <Node name="FlyoutHeader.xaml" expanded="True" />
+              <Node name="Funds.xaml" expanded="True" />
               <Node name="MainPage.xaml" expanded="True" />
             </Node>
           </Node>
