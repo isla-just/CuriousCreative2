@@ -1,12 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TheCuriousCreative2.Login"
-             Title="Login">
-    <VerticalStackLayout>
-        <Label 
-            Text="This is login"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+              Shell.NavBarIsVisible="False"
+                Shell.FlyoutBehavior="Flyout"
+             x:Class="TheCuriousCreative2.Login">
+<Grid ColumnSpacing="30"
+   
+      BackgroundColor="#FAF9F0">
+           <Grid.ColumnDefinitions>
+            <ColumnDefinition Width= "*"/>
+            <ColumnDefinition Width= "*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <VerticalStackLayout Grid.Column="0" BackgroundColor="#FAF9F0" Margin="100, 350, 0, 0">
+            <Label Text="WELCOME BACK" TextColor="#06378D" FontAttributes="Bold" HorizontalOptions="Start" FontSize="55" HorizontalTextAlignment="Start" FontFamily="SatoshiBold" Margin="0, 30, 0, 0"/>
+            <Label Text="let's get you logged in" TextColor="#06378D" FontAttributes="None" HorizontalOptions="Start" FontSize="25" HorizontalTextAlignment="Start" Margin="0, 20, 0, 0"/>
+            <Frame
+                BorderColor="#06378D"
+                BackgroundColor="Transparent"
+                Margin="0, 60, 0, 0">
+
+
+            <Entry Placeholder="Username" PlaceholderColor="#06378D" TextColor="#06378D" BackgroundColor="#FAF9F0"/>
+            </Frame>
+              <Frame
+                BorderColor="#06378D"
+                BackgroundColor="Transparent"
+                Margin="0, 30, 0, 0">
+            <Entry Placeholder="Password" PlaceholderColor="#06378D" TextColor="#06378D" BackgroundColor="#FAF9F0"/>
+            </Frame>
+            <Button Text="forgot password" TextColor="#06378D" BackgroundColor="#FAF9F0" FontAttributes="None" HorizontalOptions="End" FontSize="15"  Margin="0, 40, 0, 0" Padding="20"/>
+           <Button Clicked="Navigation_Clicked" BackgroundColor="#FF6C6E" TextColor="White" CornerRadius="20" Padding="20" Text="log me in" FontFamily="PoppinsLight" FontSize="15"  Margin="0, 20, 0, 0"/>
+
+        </VerticalStackLayout>
+           <VerticalStackLayout  Grid.Column="1" BackgroundColor="#FAF9F0">
+                <Image Source="illustration_login.jpg" WidthRequest="800" HeightRequest="800" Margin="0, 200 , 0, 50"/>
+         </VerticalStackLayout>
+               
+           
+         
+
+    </Grid>
 </ContentPage>

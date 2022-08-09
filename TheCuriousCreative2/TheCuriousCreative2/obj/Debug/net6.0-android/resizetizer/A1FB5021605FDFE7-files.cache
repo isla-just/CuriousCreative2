@@ -4,6 +4,7 @@ obj/Debug/net6.0-android/resizetizer/r/mipmap-mdpi/appicon_background.png
 obj/Debug/net6.0-android/resizetizer/r/mipmap-hdpi/appicon_foreground.png
 obj/Debug/net6.0-android/resizetizer/r/mipmap-hdpi/appicon.png
 obj/Debug/net6.0-android/resizetizer/r/mipmap-hdpi/appicon_background.png
+obj/Debug/net6.0-android/resizetizer/r/drawable/add.png
 obj/Debug/net6.0-android/resizetizer/r/drawable/teal.png
 obj/Debug/net6.0-android/resizetizer/r/drawable/graph_balance.png
 obj/Debug/net6.0-android/resizetizer/r/drawable/mouse_house.jpg
@@ -21,12 +22,15 @@ obj/Debug/net6.0-android/resizetizer/r/drawable/illustration_bunny_friend.jpg
 obj/Debug/net6.0-android/resizetizer/r/drawable/kitty_kitty.jpg
 obj/Debug/net6.0-android/resizetizer/r/drawable/search.png
 obj/Debug/net6.0-android/resizetizer/r/drawable/orange.png
+obj/Debug/net6.0-android/resizetizer/r/drawable/illustration_login.jpg
 obj/Debug/net6.0-android/resizetizer/r/drawable/logo.png
 obj/Debug/net6.0-android/resizetizer/r/drawable/splash_screen.jpg
+obj/Debug/net6.0-android/resizetizer/r/drawable/dropdown.png
 obj/Debug/net6.0-android/resizetizer/r/drawable/company_card.png
 obj/Debug/net6.0-android/resizetizer/r/drawable/master_card.jpg
 obj/Debug/net6.0-android/resizetizer/r/drawable/edit.png
 obj/Debug/net6.0-android/resizetizer/r/drawable/illustration_bunny.jpg
+obj/Debug/net6.0-android/resizetizer/r/drawable/arrow_down.png
 obj/Debug/net6.0-android/resizetizer/r/drawable/mirandas_house.jpg
 obj/Debug/net6.0-android/resizetizer/r/drawable/illustration_house.jpg
 obj/Debug/net6.0-android/resizetizer/r/drawable/flower_town.jpg
