@@ -144,6 +144,22 @@
 		<data>
 		B0nUlBVkboGZ8FcwikSsyhugFO0=
 		</data>
+		<key>Resources/company_card.png</key>
+		<data>
+		hLNajnvH2zeizo+ojMi9XwkKJ7o=
+		</data>
+		<key>Resources/curve1.png</key>
+		<data>
+		EpZk3QT2iqmIVo73uRUG3vaQ/Lw=
+		</data>
+		<key>Resources/curve2.png</key>
+		<data>
+		/W0CEjEqUHQFi2bUuEuAhMNqN5k=
+		</data>
+		<key>Resources/curve3.png</key>
+		<data>
+		aG51+2pEJl6Iwfmv/3kvRGDGHgE=
+		</data>
 		<key>Resources/dotnet_bot.png</key>
 		<data>
 		hT68p03GDyQE7K2cUbiSf32gHFY=
@@ -156,9 +172,29 @@
 		<data>
 		hBT8Pm526xxzLtDpjk4f/WNZxKA=
 		</data>
+		<key>Resources/down.png</key>
+		<data>
+		HuDEEnx0L6Nme/r7UtYIxflbhI0=
+		</data>
+		<key>Resources/edit.png</key>
+		<data>
+		mqZdjr81nW9b4IQXha6ZoESbsPI=
+		</data>
+		<key>Resources/featured.png</key>
+		<data>
+		u69VCtWEWpe5egMaSBJncPaL/WM=
+		</data>
 		<key>Resources/flower_town.jpg</key>
 		<data>
 		/Oj7xknRy4IqdL5PDGy92+M1EMU=
+		</data>
+		<key>Resources/graph_balance.png</key>
+		<data>
+		KcDZ1QYW0mXTlvaeVKJt3FtoFOY=
+		</data>
+		<key>Resources/graph_placeholder.png</key>
+		<data>
+		JaMZ30tYPrmkFN/32toD9IRieg0=
 		</data>
 		<key>Resources/illustration_bunny.jpg</key>
 		<data>
@@ -196,13 +232,33 @@
 		<data>
 		237Wy452zXrhEmoHVqVMfjNF7MM=
 		</data>
+		<key>Resources/monthly.png</key>
+		<data>
+		PVQMCVICYTCqPBnMSWCNg/bvj8M=
+		</data>
 		<key>Resources/mouse_house.jpg</key>
 		<data>
 		tE48pVyKObV2qfswApNZ1SF+QCo=
 		</data>
+		<key>Resources/orange.png</key>
+		<data>
+		m3gkKeObrMIl5ZoUomeitz9vSmA=
+		</data>
+		<key>Resources/search.png</key>
+		<data>
+		YZpcpp798LGjugT6jUvcBl6/6eE=
+		</data>
 		<key>Resources/splash_screen.jpg</key>
 		<data>
 		4HLlm2YN3ftTzApI56MblN23+60=
+		</data>
+		<key>Resources/teal.png</key>
+		<data>
+		6SHPzWKz0FVMpnZYktlVOBBLDhE=
+		</data>
+		<key>Resources/up.png</key>
+		<data>
+		VWfkovPZJceREmvX3WgIUcHzdME=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1457,14 +1513,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kVV2RJqBINpwfigP47Qr6XiDsfAgjhsCZwkU1IyAoO4=
+			rU6A37QhMEpWiQ17r3oqTc6ZeCK3c7KUMEredGi1e9o=
 			</data>
 		</dict>
 		<key>MonoBundle/TheCuriousCreative2.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZkDudig+1iAiW9QlFdZjTkfBcdh2Y/mPfeNYSvfHWgw=
+			7eG14iwYi/ag009ERDXEDkXGh+XZ0YpS9koxKPsJ3eg=
 			</data>
 		</dict>
 		<key>MonoBundle/WindowsBase.dll</key>
@@ -1789,6 +1845,34 @@
 			cEwNXIL769KJpaHVuJiXICeGu3HWO8NLTa494hioWnE=
 			</data>
 		</dict>
+		<key>Resources/company_card.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7mpfsbpW3XdQhBP15ifbfc+PR8HmIcyMA6nJu9U5/qs=
+			</data>
+		</dict>
+		<key>Resources/curve1.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HCIiJTWdSCUwEp6KxTuHlI6E1UJB0wkwPz/rbg9buhE=
+			</data>
+		</dict>
+		<key>Resources/curve2.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CGL0wRwpu5yA6jr3+VQaiU4/imZf6061K+22afNLFm8=
+			</data>
+		</dict>
+		<key>Resources/curve3.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0dKjSuW5goIM7t1/GlK1JGstuQz6Fk8JkP400rHsSFw=
+			</data>
+		</dict>
 		<key>Resources/dotnet_bot.png</key>
 		<dict>
 			<key>hash2</key>
@@ -1810,11 +1894,46 @@
 			4WOv67zjLV01qoTabAjKPANzApzvLyEhnLTF3xlhluk=
 			</data>
 		</dict>
+		<key>Resources/down.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			l/RTxJp/dvK5WlPfLq1tmdG1axyMxeuEYJOAALwZ3i8=
+			</data>
+		</dict>
+		<key>Resources/edit.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uuxCFZq2hllrjhHxx1y+kHqJvJpW6wTuN7R56eByh4I=
+			</data>
+		</dict>
+		<key>Resources/featured.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			py+7gqB/trNo2+TZh03/PaVe51YwXOtPEdB2g5Az4sM=
+			</data>
+		</dict>
 		<key>Resources/flower_town.jpg</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			m1nyrhJq3zWrrpXGVqIoTQkN0mRxNsgbtF4EGE6ZnMk=
+			</data>
+		</dict>
+		<key>Resources/graph_balance.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YrHxhDWRq6fJDrYYVjtuv98uI06W5z8PHb7UHMScUeY=
+			</data>
+		</dict>
+		<key>Resources/graph_placeholder.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EbPm8P03f1/w2izumIVlgS1RwLJVUq214I528IMtB+M=
 			</data>
 		</dict>
 		<key>Resources/illustration_bunny.jpg</key>
@@ -1880,6 +1999,13 @@
 			iVmmJahGd19ZI/9BcEARUzvrs9u1p1xeU2x2PhZL9lo=
 			</data>
 		</dict>
+		<key>Resources/monthly.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kHG4PKy4mnD35YcUmMet7I36FjRWElbajB9SJn3m7aQ=
+			</data>
+		</dict>
 		<key>Resources/mouse_house.jpg</key>
 		<dict>
 			<key>hash2</key>
@@ -1887,11 +2013,39 @@
 			MIlUrv39rSV7p5GPwebjdd1UGuNnegx7ruUOvZwpZtk=
 			</data>
 		</dict>
+		<key>Resources/orange.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2a8FmrvKCTEUu7UaIWfTN96BGn3tjeIX4bt/XcCrz+A=
+			</data>
+		</dict>
+		<key>Resources/search.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			m3gLipnZKNiLkznTHzqL8P4mL684IxkGziSki+2cyVI=
+			</data>
+		</dict>
 		<key>Resources/splash_screen.jpg</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			SNDMw7BXs5sbOLLGUZdlaSfgAiMttG57++PSP6L0pJM=
+			</data>
+		</dict>
+		<key>Resources/teal.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yXDmjS2APrIVhXk/X0aQ7OKsKZc2K+E/NTIg7ETEqI4=
+			</data>
+		</dict>
+		<key>Resources/up.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/OdXq74Ir5eguhb0DHb/tJz1jnCdt+EfvguhQbiLYv0=
 			</data>
 		</dict>
 	</dict>
