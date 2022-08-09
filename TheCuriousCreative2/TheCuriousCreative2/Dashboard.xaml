@@ -30,7 +30,7 @@
 
                                   <Label Text="Welcome Annie!" FontFamily="PoppinsMedium" FontSize="30" TextColor="White"></Label>
                                   <Label Text="Let's organise this space" FontFamily="PoppinsRegular" FontSize="20" TextColor="White" Margin="0, 5, 0, 0"></Label>
-                                  <Button BackgroundColor="#FF4C54" TextColor="White" CornerRadius="30" Padding="20" Text="see our projects"  Margin="0, 40, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                                  <Button BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="20" Text="see our projects"  Margin="0, 40, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
 
                                 </VerticalStackLayout>
 

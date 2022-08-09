@@ -298,3 +298,8 @@
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/featured.png
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/orange.png
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/teal.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/curve1.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/curve2.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/curve3.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/down.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/up.png

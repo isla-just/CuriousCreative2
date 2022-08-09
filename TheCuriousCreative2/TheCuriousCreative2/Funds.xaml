@@ -1,12 +1,135 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             Shell.NavBarIsVisible="False"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TheCuriousCreative2.Funds"
              Title="Funds">
-    <VerticalStackLayout>
-        <Label 
-            Text="This is funds"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+    <FlexLayout>
+         <Border BackgroundColor="#FFFEF2" Stroke="#FF4C54" StrokeThickness="40" Margin="0, 0, -20, 0" Padding="50, 30, 70, 30">
+
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="78, 0, 78, 0"/>
+            </Border.StrokeShape>
+
+                <Grid ColumnDefinitions="9*,4*" ColumnSpacing="50" Padding="0">
+                    <VerticalStackLayout Grid.Column="0" BackgroundColor="Transparent" Padding="0">
+                          <Label Text="Funds" Grid.Column="0" FontFamily="PoppinsMedium" Padding="0" FontSize="25" TextColor="#102D4C" Margin="20, 30, 0, 0"/>
+
+                         <Frame BackgroundColor="Transparent"  Grid.Column="0" BorderColor="Transparent" Margin="20, 0, 0, 0" Padding="0">
+                             <Grid ColumnDefinitions="4*, 4*, 4*" ColumnSpacing="70">
+                                  <Frame Grid.Column="0" BackgroundColor="#FEEED8" BorderColor="Transparent" CornerRadius="32" HeightRequest="200" Padding="40">
+
+                                   <VerticalStackLayout>
+                                          <Label Text="Income" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C"></Label>
+                                            <Label Text="R200 000" FontFamily="PoppinsMedium" FontSize="30" TextColor="#102D4C" Margin="0, 5, 0, 0"></Label>
+                                            <Image Source="curve3.png" Aspect="AspectFit" Margin="0, 20, 0, 0"></Image>
+
+                                   </VerticalStackLayout>
+
+                               </Frame>
+
+                               <Frame Grid.Column="1" BackgroundColor="#FEEED8" Margin="0, 10, 0, 0" BorderColor="Transparent" CornerRadius="32" HeightRequest="200" Padding="40">
+
+                                   <VerticalStackLayout>
+                                          <Label Text="Salaries" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C"></Label>
+                                            <Label Text="R200 000" FontFamily="PoppinsMedium" FontSize="30" TextColor="#102D4C" Margin="0, 5, 0, 0"></Label>
+                                       <Image Source="curve1.png" Aspect="AspectFit" Margin="0, 20, 0, 0"></Image>
+
+                                   </VerticalStackLayout>
+
+                               </Frame>
+
+                               <Frame Grid.Column="2" BackgroundColor="#FEEED8" BorderColor="Transparent" CornerRadius="32" HeightRequest="200" Padding="40">
+
+                                   <VerticalStackLayout>
+                                          <Label Text="Additional" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C"></Label>
+                                            <Label Text="R200 000" FontFamily="PoppinsMedium" FontSize="30" TextColor="#102D4C" Margin="0, 5, 0, 0"></Label>
+                                            <Image Source="curve2.png" Aspect="AspectFit" Margin="0, 20, 0, 0"></Image>
+
+                                   </VerticalStackLayout>
+
+                               </Frame>
+
+                             </Grid>
+
+
+
+                         </Frame>
+
+                        
+                         <Frame Grid.Row="0" BackgroundColor="#FEEED8" BorderColor="Transparent" CornerRadius="32" Margin="20, 70, 0, 0" Padding="40">
+
+                                   <VerticalStackLayout>
+
+                                      <Button BackgroundColor="#1EBBBA" TextColor="White" CornerRadius="30" Padding="25" Text="10 days left to close"  Margin="450, -70, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15" BorderColor="#FEEED8" BorderWidth="8" WidthRequest="260"></Button>
+                                          <Label Text="This month's account" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C"></Label>
+                                            <Label Text="25 July to 25 August" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Margin="0, 5, 0, 0"></Label>
+
+                                       <HorizontalStackLayout Margin="0, 20, 0, 0" Spacing="20">
+                                           <Image Source="up.png" Aspect="AspectFit"></Image>
+                                            <Label Text="Client Income" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="15, 20, 0, 0" WidthRequest="350"></Label>
+                                            <Label HorizontalOptions="End" Text="R50 000" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" WidthRequest="300" Margin="0, 20, 0, 0" HorizontalTextAlignment="End" ></Label>
+
+                                       </HorizontalStackLayout>
+
+                                       <HorizontalStackLayout Margin="0, 20, 0, 0" Spacing="20">
+                                           <Image Source="down.png" Aspect="AspectFit"></Image>
+                                            <Label Text="Employee Salaries Income" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="15, 20, 0, 0" WidthRequest="350"></Label>
+                                            <Label HorizontalOptions="End" Text="R30 000" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Margin="0, 20, 0, 0" WidthRequest="300" HorizontalTextAlignment="End" ></Label>
+
+                                       </HorizontalStackLayout>
+
+                                       <HorizontalStackLayout Margin="0, 20, 0, 0" Spacing="20">
+                                           <Image Source="down.png" Aspect="AspectFit"></Image>
+                                            <Label Text="Additional Printing costs" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="15, 20, 0, 0" WidthRequest="350"></Label>
+                                            <Label HorizontalOptions="End" Text="R500" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" WidthRequest="300" Margin="0, 20, 0, 0" HorizontalTextAlignment="End" ></Label>
+
+                                       </HorizontalStackLayout>
+
+                                        <Border Stroke="#102D4C" StrokeThickness="1" Margin="0, 40, 0, 0"></Border>
+
+                                      <HorizontalStackLayout Margin="0, 20, 0, 0" Spacing="20">
+                                            <Label Text="Expenses" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="15, 10, 0, 0" WidthRequest="370"></Label>
+                                            <Label HorizontalOptions="End" Text="R50 000" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" WidthRequest="370" Margin="0, 20, 0, 0" HorizontalTextAlignment="End" ></Label>
+
+                                       </HorizontalStackLayout>
+
+                                       <HorizontalStackLayout Margin="0, 20, 0, 0" Spacing="20">
+                                            <Label Text="Income" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="15, 10, 0, 0" WidthRequest="370"></Label>
+                                            <Label HorizontalOptions="End" Text="R50 000" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" WidthRequest="370" Margin="0, 20, 0, 0" HorizontalTextAlignment="End" ></Label>
+
+                                       </HorizontalStackLayout>
+
+                                       <HorizontalStackLayout Margin="0, 20, 0, 0" Spacing="20">
+                                            <Label Text="Balance" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="15, 10, 0, 0" WidthRequest="370"></Label>
+                                            <Label HorizontalOptions="End" Text="R50 000" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" WidthRequest="370" Margin="0, 20, 0, 0" HorizontalTextAlignment="End" ></Label>
+
+                                       </HorizontalStackLayout>
+
+                                       <HorizontalStackLayout>
+
+                                             <Button BackgroundColor="#FEEED8" TextColor="#FF4C54" CornerRadius="25" Padding="20" Text="Print statement"  Margin="0, 40, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                                           <Button BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="20" Text="Close off month"  Margin="0, 40, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+
+                                       </HorizontalStackLayout>
+
+                                   </VerticalStackLayout>
+
+
+                               </Frame>
+
+                        
+
+                    </VerticalStackLayout>
+
+                     <VerticalStackLayout Grid.Column="1" BackgroundColor="Transparent">
+
+
+                    </VerticalStackLayout>
+
+                </Grid>
+
+
+        </Border>
+    </FlexLayout>
 </ContentPage>
