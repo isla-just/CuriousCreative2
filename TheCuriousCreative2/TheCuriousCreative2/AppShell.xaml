@@ -59,7 +59,7 @@
 
     </FlyoutItem>
 
-        <!--<FlyoutItem   Title="LOGIN">
+        <FlyoutItem   Title="LOGIN">
         <Tab>
              <ShellContent
                 Title="Login"
@@ -69,7 +69,7 @@
 
         </Tab>
 
-    </FlyoutItem>-->
+    </FlyoutItem>
 
     <FlyoutItem   Title="CLIENTS">
         <Tab>

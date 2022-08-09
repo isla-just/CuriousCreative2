@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/TheCuriousCreative2.csproj": {}
+    "/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/TheCuriousCreative2.csproj": {}
   },
   "projects": {
-    "/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/TheCuriousCreative2.csproj": {
+    "/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/TheCuriousCreative2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/TheCuriousCreative2.csproj",
+        "projectUniqueName": "/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/TheCuriousCreative2.csproj",
         "projectName": "TheCuriousCreative2",
-        "projectPath": "/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/TheCuriousCreative2.csproj",
-        "packagesPath": "/Users/mac/.nuget/packages/",
-        "outputPath": "/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/",
+        "projectPath": "/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/TheCuriousCreative2.csproj",
+        "packagesPath": "/Users/jeandredevilliers/.nuget/packages/",
+        "outputPath": "/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
-          "/Users/mac/.nuget/NuGet/NuGet.Config"
+          "/Users/jeandredevilliers/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0-android",
@@ -52,12 +52,12 @@
           "dependencies": {
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
-              "version": "[6.0.486, )",
+              "version": "[6.0.312, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Extensions": {
               "target": "Package",
-              "version": "[6.0.486, )",
+              "version": "[6.0.312, )",
               "autoReferenced": true
             }
           },
@@ -110,12 +110,12 @@
           "dependencies": {
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
-              "version": "[6.0.486, )",
+              "version": "[6.0.312, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Extensions": {
               "target": "Package",
-              "version": "[6.0.486, )",
+              "version": "[6.0.312, )",
               "autoReferenced": true
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
@@ -159,12 +159,12 @@
           "dependencies": {
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
-              "version": "[6.0.486, )",
+              "version": "[6.0.312, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Extensions": {
               "target": "Package",
-              "version": "[6.0.486, )",
+              "version": "[6.0.312, )",
               "autoReferenced": true
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
