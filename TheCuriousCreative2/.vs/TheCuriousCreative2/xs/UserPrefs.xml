@@ -1,13 +1,17 @@
 ﻿<Properties StartupConfiguration="{ABEDEA07-5F9B-4E41-B4CB-F4C80867AC6C}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="TheCuriousCreative2/Dashboard.xaml">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.ItemProperties.TheCuriousCreative2 PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TheCuriousCreative2/ClientManagement.xaml">
     <Files>
       <File FileName="TheCuriousCreative2/MainPage.xaml.cs" Line="1" Column="1" />
       <File FileName="TheCuriousCreative2/MauiProgram.cs" Line="3" Column="32" />
-      <File FileName="TheCuriousCreative2/Dashboard.xaml" Line="1" Column="1" />
-      <File FileName="TheCuriousCreative2/Funds.xaml" Line="7" Column="16" />
+      <File FileName="TheCuriousCreative2/ClientManagement.xaml" Line="259" Column="92" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,7 +19,6 @@
           <Node name="TheCuriousCreative2" expanded="True">
             <Node name="TheCuriousCreative2" expanded="True">
               <Node name="Resources" expanded="True">
-                <Node name="Fonts" expanded="True" />
                 <Node name="Images" expanded="True" />
                 <Node name="Styles" expanded="True" />
               </Node>
@@ -32,9 +35,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.TheCuriousCreative2 PreferredExecutionTarget="MyAppleMacCatalystID" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

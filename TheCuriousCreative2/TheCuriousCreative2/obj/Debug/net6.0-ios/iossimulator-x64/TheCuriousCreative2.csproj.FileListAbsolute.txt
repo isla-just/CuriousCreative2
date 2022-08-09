@@ -303,3 +303,17 @@
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/f/Satoshi-MediumItalic.otf
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/f/Satoshi-Regular.otf
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/logo.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/graph_placeholder.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/monthly.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/featured.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/orange.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/teal.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/curve1.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/curve2.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/curve3.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/down.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/up.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/company_card.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/graph_balance.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/edit.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/search.png
