@@ -144,6 +144,10 @@
 		<data>
 		B0nUlBVkboGZ8FcwikSsyhugFO0=
 		</data>
+		<key>Resources/company_card.png</key>
+		<data>
+		hLNajnvH2zeizo+ojMi9XwkKJ7o=
+		</data>
 		<key>Resources/curve1.png</key>
 		<data>
 		EpZk3QT2iqmIVo73uRUG3vaQ/Lw=
@@ -179,6 +183,10 @@
 		<key>Resources/flower_town.jpg</key>
 		<data>
 		/Oj7xknRy4IqdL5PDGy92+M1EMU=
+		</data>
+		<key>Resources/graph_balance.png</key>
+		<data>
+		KcDZ1QYW0mXTlvaeVKJt3FtoFOY=
 		</data>
 		<key>Resources/graph_placeholder.png</key>
 		<data>
@@ -1497,7 +1505,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			MwqTnVV5AXWv7wXRqN/UN76+iGq6ZAqNuGg8PS7GtLs=
+			abqW/1ZaZTy652UUbmjPw2h6t/Hu+JbzC+bIAkflc08=
 			</data>
 		</dict>
 		<key>MonoBundle/TheCuriousCreative2.pdb</key>
@@ -1829,6 +1837,13 @@
 			cEwNXIL769KJpaHVuJiXICeGu3HWO8NLTa494hioWnE=
 			</data>
 		</dict>
+		<key>Resources/company_card.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7mpfsbpW3XdQhBP15ifbfc+PR8HmIcyMA6nJu9U5/qs=
+			</data>
+		</dict>
 		<key>Resources/curve1.png</key>
 		<dict>
 			<key>hash2</key>
@@ -1890,6 +1905,13 @@
 			<key>hash2</key>
 			<data>
 			m1nyrhJq3zWrrpXGVqIoTQkN0mRxNsgbtF4EGE6ZnMk=
+			</data>
+		</dict>
+		<key>Resources/graph_balance.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YrHxhDWRq6fJDrYYVjtuv98uI06W5z8PHb7UHMScUeY=
 			</data>
 		</dict>
 		<key>Resources/graph_placeholder.png</key>

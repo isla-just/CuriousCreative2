@@ -18,7 +18,7 @@
 
                     <VerticalStackLayout Grid.Row="0">
 
-                         <Label Text="Dashboard" Grid.Row="0" FontFamily="PoppinsMedium" FontSize="25" TextColor="#102D4C" Margin="70, 60, 0, -20"/>
+                         <Label Text="Dashboard" Grid.Row="0" FontFamily="PoppinsMedium" FontSize="25" TextColor="#102D4C" Margin="70, 60, 0, -10"/>
 
                     <Frame BackgroundColor="Transparent" Grid.Row="0" Padding="50" Margin="0" BorderColor="Transparent">
                              <Grid ColumnDefinitions="6*, 6*" ColumnSpacing="50" Padding="20">
@@ -152,7 +152,7 @@
                                            </HorizontalStackLayout>
 
 
-                                             <Frame BackgroundColor="#FEE7CD" BorderColor="Transparent" HeightRequest="360" WidthRequest="460" CornerRadius="52" Margin="0, 100, 0, 0" Padding="30">
+                                             <Frame BackgroundColor="#FEE7CD" BorderColor="Transparent" HeightRequest="360" WidthRequest="460" CornerRadius="52" Margin="0, 90, 0, 0" Padding="30">
                                                  <ScrollView HeightRequest="360" WidthRequest="460" Padding="30">
                                                      <VerticalStackLayout>
                                                        
