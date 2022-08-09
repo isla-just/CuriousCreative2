@@ -94,13 +94,13 @@
 
                                        </HorizontalStackLayout>
 
-                                       <HorizontalStackLayout Margin="0, 10, 0, 0" Spacing="20">
+                                       <HorizontalStackLayout Margin="0, 5, 0, 0" Spacing="20">
                                             <Label Text="Income" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="15, 10, 0, 0" WidthRequest="370"></Label>
                                             <Label HorizontalOptions="End" Text="R50 000" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" WidthRequest="370" Margin="0, 20, 0, 0" HorizontalTextAlignment="End" ></Label>
 
                                        </HorizontalStackLayout>
 
-                                       <HorizontalStackLayout Margin="0, 10, 0, 0" Spacing="20">
+                                       <HorizontalStackLayout Margin="0, 5, 0, 0" Spacing="20">
                                             <Label Text="Balance" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="15, 10, 0, 0" WidthRequest="370"></Label>
                                             <Label HorizontalOptions="End" Text="R50 000" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" WidthRequest="370" Margin="0, 20, 0, 0" HorizontalTextAlignment="End" ></Label>
 
@@ -108,8 +108,8 @@
 
                                        <HorizontalStackLayout>
 
-                                             <Button BorderColor="#FF4C54" BorderWidth="2" BackgroundColor="Transparent" WidthRequest="190" TextColor="#FF4C54" CornerRadius="25" Padding="20" Text="Print statement"  Margin="400, 30, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
-                                           <Button BackgroundColor="#FF4C54" WidthRequest="190" TextColor="White" CornerRadius="23" Padding="20" Text="Close off month"  Margin="20, 30, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                                             <Button BorderColor="#FF4C54" BorderWidth="2" BackgroundColor="Transparent" WidthRequest="190" TextColor="#FF4C54" CornerRadius="25" Padding="20" Text="Print statement"  Margin="400, 40, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                                           <Button BackgroundColor="#FF4C54" WidthRequest="190" TextColor="White" CornerRadius="23" Padding="20" Text="Close off month"  Margin="30, 40, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
 
                                        </HorizontalStackLayout>
 
@@ -126,7 +126,7 @@
 
                          <Image Source="company_card.png" WidthRequest="420" Aspect="AspectFit" Margin="20, 10, 0, 0"></Image>
 
-                         <Frame  BackgroundColor="#FEE7CD" HeightRequest="215" BorderColor="Transparent" CornerRadius="32" Margin="20, 20, 0, 0" Padding="40">
+                         <Frame  BackgroundColor="#FEE7CD" HeightRequest="215" BorderColor="Transparent" CornerRadius="32" Margin="20, 0, 0, 0" Padding="40">
 
                              <AbsoluteLayout>
 
@@ -148,7 +148,7 @@
        
                          </Frame>
 
-                         <Frame BackgroundColor="#FEEED8" BorderColor="Transparent" CornerRadius="32" WidthRequest="420" Margin="50, 90, 0, 0" Padding="40">
+                         <Frame BackgroundColor="#FEEED8" BorderColor="Transparent" CornerRadius="32" WidthRequest="420" Margin="50, 70, 0, 0" Padding="40">
 
                              <VerticalStackLayout>
                                    <Label Text="Printing costs" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start"></Label>

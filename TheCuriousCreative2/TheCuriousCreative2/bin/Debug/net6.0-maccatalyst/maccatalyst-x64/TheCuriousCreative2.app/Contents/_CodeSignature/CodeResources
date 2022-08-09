@@ -176,6 +176,10 @@
 		<data>
 		HuDEEnx0L6Nme/r7UtYIxflbhI0=
 		</data>
+		<key>Resources/edit.png</key>
+		<data>
+		mqZdjr81nW9b4IQXha6ZoESbsPI=
+		</data>
 		<key>Resources/featured.png</key>
 		<data>
 		u69VCtWEWpe5egMaSBJncPaL/WM=
@@ -239,6 +243,10 @@
 		<key>Resources/orange.png</key>
 		<data>
 		m3gkKeObrMIl5ZoUomeitz9vSmA=
+		</data>
+		<key>Resources/search.png</key>
+		<data>
+		YZpcpp798LGjugT6jUvcBl6/6eE=
 		</data>
 		<key>Resources/splash_screen.jpg</key>
 		<data>
@@ -1505,7 +1513,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			abqW/1ZaZTy652UUbmjPw2h6t/Hu+JbzC+bIAkflc08=
+			rU6A37QhMEpWiQ17r3oqTc6ZeCK3c7KUMEredGi1e9o=
 			</data>
 		</dict>
 		<key>MonoBundle/TheCuriousCreative2.pdb</key>
@@ -1893,6 +1901,13 @@
 			l/RTxJp/dvK5WlPfLq1tmdG1axyMxeuEYJOAALwZ3i8=
 			</data>
 		</dict>
+		<key>Resources/edit.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uuxCFZq2hllrjhHxx1y+kHqJvJpW6wTuN7R56eByh4I=
+			</data>
+		</dict>
 		<key>Resources/featured.png</key>
 		<dict>
 			<key>hash2</key>
@@ -2003,6 +2018,13 @@
 			<key>hash2</key>
 			<data>
 			2a8FmrvKCTEUu7UaIWfTN96BGn3tjeIX4bt/XcCrz+A=
+			</data>
+		</dict>
+		<key>Resources/search.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			m3gLipnZKNiLkznTHzqL8P4mL684IxkGziSki+2cyVI=
 			</data>
 		</dict>
 		<key>Resources/splash_screen.jpg</key>
