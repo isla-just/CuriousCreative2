@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "z3TgczSj0F085z3z4XG1RJHh6C7WOSWxm9cEMQgQCZC2vtXnFtyiYITDNKXhEoE39g0qFUwQj5uWj4aFpUDMdg==",
+  "dgSpecHash": "RS61h+XJEXMW/yDxwZ9iBOqOrznhj0xE+fF/51r1KpO/5+2nPkY1zid0DYsR6NkyMyIqSR2GJgS3mkgeyBAQsg==",
   "success": true,
   "projectFilePath": "/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/TheCuriousCreative2.csproj",
   "expectedPackageFiles": [
@@ -100,9 +100,9 @@
     "/Users/mac/.nuget/packages/xamarin.kotlin.stdlib.jdk8/1.6.20.1/xamarin.kotlin.stdlib.jdk8.1.6.20.1.nupkg.sha512",
     "/Users/mac/.nuget/packages/xamarin.kotlinx.coroutines.android/1.6.0.1/xamarin.kotlinx.coroutines.android.1.6.0.1.nupkg.sha512",
     "/Users/mac/.nuget/packages/xamarin.kotlinx.coroutines.core.jvm/1.6.0.1/xamarin.kotlinx.coroutines.core.jvm.1.6.0.1.nupkg.sha512",
-    "/Users/mac/.nuget/packages/microsoft.netcore.app.host.linux-arm/6.0.6/microsoft.netcore.app.host.linux-arm.6.0.6.nupkg.sha512",
-    "/Users/mac/.nuget/packages/microsoft.netcore.app.host.linux-arm64/6.0.6/microsoft.netcore.app.host.linux-arm64.6.0.6.nupkg.sha512",
-    "/Users/mac/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.6/microsoft.netcore.app.host.linux-x64.6.0.6.nupkg.sha512"
+    "/Users/mac/.nuget/packages/microsoft.netcore.app.host.linux-arm/6.0.8/microsoft.netcore.app.host.linux-arm.6.0.8.nupkg.sha512",
+    "/Users/mac/.nuget/packages/microsoft.netcore.app.host.linux-arm64/6.0.8/microsoft.netcore.app.host.linux-arm64.6.0.8.nupkg.sha512",
+    "/Users/mac/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.8/microsoft.netcore.app.host.linux-x64.6.0.8.nupkg.sha512"
   ],
   "logs": []
 }

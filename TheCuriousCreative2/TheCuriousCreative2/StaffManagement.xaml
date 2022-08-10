@@ -1,12 +1,466 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             Shell.NavBarIsVisible="False"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TheCuriousCreative2.StaffManagement"
              Title="StaffManagement">
-    <VerticalStackLayout>
-        <Label 
-            Text="This is staff management"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-    </VerticalStackLayout>
+
+
+    <FlexLayout>
+         <Border BackgroundColor="#FFFEF2"
+                 Stroke="#FF4C54"
+                 StrokeThickness="40"
+                 Margin="0, 0, -20, 0"
+                 Padding="50, 20, 70, 30">
+
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="78, 0, 78, 0"/>
+            </Border.StrokeShape>
+
+                  <Grid ColumnDefinitions="8*,4*" ColumnSpacing="120" Padding="0">
+                    <VerticalStackLayout Grid.Column="0" BackgroundColor="Transparent" Padding="0">
+                          <Label Text="Employee Management" Grid.Column="0" FontFamily="PoppinsMedium" Padding="0" FontSize="25" TextColor="#102D4C" Margin="20, 30, 0, 15"/>
+                         <Frame BackgroundColor="#FEEED8" Margin="0, 40, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="8">
+                             <HorizontalStackLayout>
+                                         <Image Source="search.png" Aspect="AspectFit" Margin="20, 0, 0, 0"></Image>
+                                        <Entry BackgroundColor="#FEEED8" FontFamily="PoppinsRegular" FontSize="18" Placeholder="Looking for an employee?" WidthRequest="545" PlaceholderColor="#102D4C" TextColor="#102D4C" Margin="20, 0, 0, 0"></Entry>
+                                      <Button BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="20" Text="search"  Margin="-20, 0, 0, 0" WidthRequest="210"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                             </HorizontalStackLayout>
+                         </Frame>
+                         <Frame BackgroundColor="Transparent"  Grid.Column="0" BorderColor="Transparent" Margin="0, 0, 0, 0" Padding="0">
+                             <Grid ColumnDefinitions="4*, 4*, 4*" ColumnSpacing="20">
+                               <Frame Grid.Column="0" BackgroundColor="#FEEED8" Margin="0, 15, 0, 0" BorderColor="Transparent" CornerRadius="32" HorizontalOptions="Start" WidthRequest="260" HeightRequest="80" Padding="20">
+                                   <HorizontalStackLayout>
+                                          <Button Text="role" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" BackgroundColor="Transparent"></Button>
+                                     <Image Source="arrow_down.png" Aspect="AspectFit" Margin="0, 0, 0, 0"></Image>
+                                   </HorizontalStackLayout>
+                                </Frame>
+                               <Frame Grid.Column="1" BackgroundColor="#FEEED8" Margin="0, 15, 0, 0" BorderColor="Transparent" CornerRadius="32" HorizontalOptions="Start" WidthRequest="260" HeightRequest="80" Padding="20">
+                                   <HorizontalStackLayout>
+                                          <Button Text="design team" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" BackgroundColor="Transparent"></Button>
+                                            <Image Source="arrow_down.png" Aspect="AspectFit" Margin="0, 0, 0, 0"></Image>
+                                   </HorizontalStackLayout>
+                               </Frame>
+                              <Frame Grid.Column="2" BackgroundColor="#FEEED8" Margin="0, 15, 0, 0" BorderColor="Transparent" CornerRadius="32" HorizontalOptions="Start" WidthRequest="260" HeightRequest="80" Padding="20">
+                                  <HorizontalStackLayout>
+                                          <Button Text="project" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" BackgroundColor="Transparent"></Button>
+                                     <Image Source="arrow_down.png" Aspect="AspectFit" Margin="0, 0, 0, 0"></Image>
+                                   </HorizontalStackLayout>
+                                </Frame>
+                             </Grid>
+                         </Frame>
+
+                        
+                         <Frame Grid.Row="0" BackgroundColor="#FFFEF2" BorderColor="Transparent" Margin="0, 0, 0, 0">
+
+                          <ScrollView HeightRequest="700" Margin="0, 10, 0, 0">
+
+                             <VerticalStackLayout>
+
+                                   <Frame BackgroundColor="#FFF6E5" Margin="0, 10, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="5">
+                                     <Grid ColumnDefinitions="10*, 2*">
+                                         <HorizontalStackLayout HeightRequest="170">
+                                                  <Frame HeightRequest="100" WidthRequest="100" BackgroundColor="#FF4C54" BorderColor="Transparent" CornerRadius="20" Margin="10, -40, 0, 0"></Frame>
+                                             <VerticalStackLayout WidthRequest="650">
+                                                 <Label Text="Jessica Montgomery" FontFamily="PoppinsSemiBold" FontSize="20" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20, 30, 0, 0"></Label>
+                                                  <Label Text="Administrator" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="20, 10, 20, 20"></Label>
+                                             </VerticalStackLayout>
+                                            <HorizontalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Label Text="Max hours" FontFamily="PoppinsRegular" FontSize="12" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-400, 40, 20, 20"></Label>
+                                                  <Label Text="20 hours" FontFamily="PoppinsRegular" FontSize="15" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-400, -10, 20, 20"></Label>
+                                            </VerticalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Label Text="Hours worked" FontFamily="PoppinsRegular" FontSize="12" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-100, 40, 20, 20"></Label>
+                                                  <Label Text="13 hours" FontFamily="PoppinsRegular" FontSize="15" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-100, -10, 20, 20"></Label>
+                                            </VerticalStackLayout>
+                                                </HorizontalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="12" Margin="-350, 120, 10, 20"></Frame>
+                                                  <Label Text="The dream team" FontFamily="PoppinsMedium" FontSize="15" TextColor="#102D4C" Opacity="0.7" Margin="-130, -42, 20, 20"></Label>
+                                                </VerticalStackLayout>
+                                         </HorizontalStackLayout>
+
+                                     </Grid>
+                                 </Frame>
+
+                                 <Frame BackgroundColor="#FFF6E5" Margin="0, 10, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="5">
+                                     <Grid ColumnDefinitions="10*, 2*">
+                                         <HorizontalStackLayout HeightRequest="170">
+                                                  <Frame HeightRequest="100" WidthRequest="100" BackgroundColor="#014DA3" BorderColor="Transparent" CornerRadius="20" Margin="10, -40, 0, 0"></Frame>
+                                             <VerticalStackLayout WidthRequest="650">
+                                                 <Label Text="Sally Williams" FontFamily="PoppinsSemiBold" FontSize="20" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20, 30, 0, 0"></Label>
+                                                  <Label Text="Receptionist" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="20, 10, 20, 20"></Label>
+                                             </VerticalStackLayout>
+                                            <HorizontalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Label Text="Max hours" FontFamily="PoppinsRegular" FontSize="12" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-400, 40, 20, 20"></Label>
+                                                  <Label Text="25 hours" FontFamily="PoppinsRegular" FontSize="15" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-400, -10, 20, 20"></Label>
+                                            </VerticalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Label Text="Hours worked" FontFamily="PoppinsRegular" FontSize="12" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-100, 40, 20, 20"></Label>
+                                                  <Label Text="24 hours" FontFamily="PoppinsRegular" FontSize="15" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-100, -10, 20, 20"></Label>
+                                            </VerticalStackLayout>
+                                                </HorizontalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="12" Margin="-350, 120, 10, 20"></Frame>
+                                                  <Label Text="The dream team" FontFamily="PoppinsMedium" FontSize="15" TextColor="#102D4C" Opacity="0.7" Margin="-130, -42, 20, 20"></Label>
+                                                </VerticalStackLayout>
+                                         </HorizontalStackLayout>
+
+                                     </Grid>
+                                 </Frame>
+
+                                    <Frame BackgroundColor="#FFF6E5" Margin="0, 10, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="5">
+                                     <Grid ColumnDefinitions="10*, 2*">
+                                         <HorizontalStackLayout HeightRequest="170">
+                                                  <Frame HeightRequest="100" WidthRequest="100" BackgroundColor="#FAC306" BorderColor="Transparent" CornerRadius="20" Margin="10, -40, 0, 0"></Frame>
+                                             <VerticalStackLayout WidthRequest="650">
+                                                 <Label Text="Benjamin Richards" FontFamily="PoppinsSemiBold" FontSize="20" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20, 30, 0, 0"></Label>
+                                                  <Label Text="Editor" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="20, 10, 20, 20"></Label>
+                                             </VerticalStackLayout>
+                                            <HorizontalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Label Text="Max hours" FontFamily="PoppinsRegular" FontSize="12" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-400, 40, 20, 20"></Label>
+                                                  <Label Text="30 hours" FontFamily="PoppinsRegular" FontSize="15" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-400, -10, 20, 20"></Label>
+                                            </VerticalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Label Text="Hours worked" FontFamily="PoppinsRegular" FontSize="12" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-100, 40, 20, 20"></Label>
+                                                  <Label Text="29 hours" FontFamily="PoppinsRegular" FontSize="15" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-100, -10, 20, 20"></Label>
+                                            </VerticalStackLayout>
+                                                </HorizontalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="12" Margin="-350, 120, 10, 20"></Frame>
+                                                  <Label Text="The dream team" FontFamily="PoppinsMedium" FontSize="15" TextColor="#102D4C" Opacity="0.7" Margin="-130, -42, 20, 20"></Label>
+                                                </VerticalStackLayout>
+                                         </HorizontalStackLayout>
+
+                                     </Grid>
+                                 </Frame>
+
+                                <Frame BackgroundColor="#FFF6E5" Margin="0, 10, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="5">
+                                     <Grid ColumnDefinitions="10*, 2*">
+                                         <HorizontalStackLayout HeightRequest="170">
+                                                  <Frame HeightRequest="100" WidthRequest="100" BackgroundColor="#FFA191" BorderColor="Transparent" CornerRadius="20" Margin="10, -40, 0, 0"></Frame>
+                                             <VerticalStackLayout WidthRequest="650">
+                                                 <Label Text="Phillip Willson" FontFamily="PoppinsSemiBold" FontSize="20" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20, 30, 0, 0"></Label>
+                                                  <Label Text="Literary Agent" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="20, 10, 20, 20"></Label>
+                                             </VerticalStackLayout>
+                                            <HorizontalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Label Text="Max hours" FontFamily="PoppinsRegular" FontSize="12" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-400, 40, 20, 20"></Label>
+                                                  <Label Text="15 hours" FontFamily="PoppinsRegular" FontSize="15" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-400, -10, 20, 20"></Label>
+                                            </VerticalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Label Text="Hours worked" FontFamily="PoppinsRegular" FontSize="12" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-100, 40, 20, 20"></Label>
+                                                  <Label Text="3 hours" FontFamily="PoppinsRegular" FontSize="15" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-100, -10, 20, 20"></Label>
+                                            </VerticalStackLayout>
+                                                </HorizontalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="12" Margin="-350, 120, 10, 20"></Frame>
+                                                  <Label Text="The dream team" FontFamily="PoppinsMedium" FontSize="15" TextColor="#102D4C" Opacity="0.7" Margin="-130, -42, 20, 20"></Label>
+                                                </VerticalStackLayout>
+                                         </HorizontalStackLayout>
+
+                                     </Grid>
+                                 </Frame>
+
+                      
+                                   <Frame BackgroundColor="#FFF6E5" Margin="0, 10, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="5">
+                                     <Grid ColumnDefinitions="10*, 2*">
+                                         <HorizontalStackLayout HeightRequest="170">
+                                                  <Frame HeightRequest="100" WidthRequest="100" BackgroundColor="#FF4C54" BorderColor="Transparent" CornerRadius="20" Margin="10, -40, 0, 0"></Frame>
+                                             <VerticalStackLayout WidthRequest="650">
+                                                 <Label Text="Allison Belcher" FontFamily="PoppinsSemiBold" FontSize="20" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20, 30, 0, 0"></Label>
+                                                  <Label Text="Administrator" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="20, 10, 20, 20"></Label>
+                                             </VerticalStackLayout>
+                                            <HorizontalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Label Text="Max hours" FontFamily="PoppinsRegular" FontSize="12" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-400, 40, 20, 20"></Label>
+                                                  <Label Text="20 hours" FontFamily="PoppinsRegular" FontSize="15" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-400, -10, 20, 20"></Label>
+                                            </VerticalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Label Text="Hours worked" FontFamily="PoppinsRegular" FontSize="12" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-100, 40, 20, 20"></Label>
+                                                  <Label Text="6 hours" FontFamily="PoppinsRegular" FontSize="15" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-100, -10, 20, 20"></Label>
+                                            </VerticalStackLayout>
+                                                </HorizontalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="12" Margin="-350, 120, 10, 20"></Frame>
+                                                  <Label Text="The dream team" FontFamily="PoppinsMedium" FontSize="15" TextColor="#102D4C" Opacity="0.7" Margin="-130, -42, 20, 20"></Label>
+                                                </VerticalStackLayout>
+                                         </HorizontalStackLayout>
+
+                                     </Grid>
+                                 </Frame>
+
+                                 <Frame BackgroundColor="#FFF6E5" Margin="0, 10, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="5">
+                                     <Grid ColumnDefinitions="10*, 2*">
+                                         <HorizontalStackLayout HeightRequest="170">
+                                                  <Frame HeightRequest="100" WidthRequest="100" BackgroundColor="#FFC5BB" BorderColor="Transparent" CornerRadius="20" Margin="10, -40, 0, 0"></Frame>
+                                             <VerticalStackLayout WidthRequest="650">
+                                                 <Label Text="Elizabeth Smith" FontFamily="PoppinsSemiBold" FontSize="20" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20, 30, 0, 0"></Label>
+                                                  <Label Text="Intern" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="20, 10, 20, 20"></Label>
+                                             </VerticalStackLayout>
+                                            <HorizontalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Label Text="Max hours" FontFamily="PoppinsRegular" FontSize="12" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-400, 40, 20, 20"></Label>
+                                                  <Label Text="10 hours" FontFamily="PoppinsRegular" FontSize="15" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-400, -10, 20, 20"></Label>
+                                            </VerticalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Label Text="Hours worked" FontFamily="PoppinsRegular" FontSize="12" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-100, 40, 20, 20"></Label>
+                                                  <Label Text="2 hours" FontFamily="PoppinsRegular" FontSize="15" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-100, -10, 20, 20"></Label>
+                                            </VerticalStackLayout>
+                                                </HorizontalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="12" Margin="-350, 120, 10, 20"></Frame>
+                                                  <Label Text="The dream team" FontFamily="PoppinsMedium" FontSize="15" TextColor="#102D4C" Opacity="0.7" Margin="-130, -42, 20, 20"></Label>
+                                                </VerticalStackLayout>
+                                         </HorizontalStackLayout>
+
+                                     </Grid>
+                                 </Frame>
+
+                             
+
+                                 <Frame BackgroundColor="#FFF6E5" Margin="0, 10, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="5">
+                                     <Grid ColumnDefinitions="10*, 2*">
+                                         <HorizontalStackLayout HeightRequest="170">
+                                                  <Frame HeightRequest="100" WidthRequest="100" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="20" Margin="10, -40, 0, 0"></Frame>
+                                             <VerticalStackLayout WidthRequest="650">
+                                                 <Label Text="Maxine Stevens" FontFamily="PoppinsSemiBold" FontSize="20" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20, 30, 0, 0"></Label>
+                                                  <Label Text="Editorial Director" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="20, 10, 20, 20"></Label>
+                                             </VerticalStackLayout>
+                                            <HorizontalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Label Text="Max hours" FontFamily="PoppinsRegular" FontSize="12" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-400, 40, 20, 20"></Label>
+                                                  <Label Text="25 hours" FontFamily="PoppinsRegular" FontSize="15" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-400, -10, 20, 20"></Label>
+                                            </VerticalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Label Text="Hours worked" FontFamily="PoppinsRegular" FontSize="12" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-100, 40, 20, 20"></Label>
+                                                  <Label Text="24 hours" FontFamily="PoppinsRegular" FontSize="15" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-100, -10, 20, 20"></Label>
+                                            </VerticalStackLayout>
+                                                </HorizontalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="12" Margin="-350, 120, 10, 20"></Frame>
+                                                  <Label Text="The dream team" FontFamily="PoppinsMedium" FontSize="15" TextColor="#102D4C" Opacity="0.7" Margin="-130, -42, 20, 20"></Label>
+                                                </VerticalStackLayout>
+                                         </HorizontalStackLayout>
+
+                                     </Grid>
+                                 </Frame>
+
+                                 <Frame BackgroundColor="#FFF6E5" Margin="0, 10, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="5">
+                                     <Grid ColumnDefinitions="10*, 2*">
+                                         <HorizontalStackLayout HeightRequest="170">
+                                                  <Frame HeightRequest="100" WidthRequest="100" BackgroundColor="#FFA191" BorderColor="Transparent" CornerRadius="20" Margin="10, -40, 0, 0"></Frame>
+                                             <VerticalStackLayout WidthRequest="650">
+                                                 <Label Text="Phillip Willson" FontFamily="PoppinsSemiBold" FontSize="20" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20, 30, 0, 0"></Label>
+                                                  <Label Text="Literary Agent" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="20, 10, 20, 20"></Label>
+                                             </VerticalStackLayout>
+                                            <HorizontalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Label Text="Max hours" FontFamily="PoppinsRegular" FontSize="12" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-400, 40, 20, 20"></Label>
+                                                  <Label Text="15 hours" FontFamily="PoppinsRegular" FontSize="15" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-400, -10, 20, 20"></Label>
+                                            </VerticalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Label Text="Hours worked" FontFamily="PoppinsRegular" FontSize="12" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-100, 40, 20, 20"></Label>
+                                                  <Label Text="6 hours" FontFamily="PoppinsRegular" FontSize="15" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-100, -10, 20, 20"></Label>
+                                            </VerticalStackLayout>
+                                                </HorizontalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="12" Margin="-350, 120, 10, 20"></Frame>
+                                                  <Label Text="The dream team" FontFamily="PoppinsMedium" FontSize="15" TextColor="#102D4C" Opacity="0.7" Margin="-130, -42, 20, 20"></Label>
+                                                </VerticalStackLayout>
+                                         </HorizontalStackLayout>
+
+                                     </Grid>
+                                 </Frame>
+
+                                 <Frame BackgroundColor="#FFF6E5" Margin="0, 10, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="5">
+                                     <Grid ColumnDefinitions="10*, 2*">
+                                         <HorizontalStackLayout HeightRequest="170">
+                                                  <Frame HeightRequest="100" WidthRequest="100" BackgroundColor="#FFC5BB" BorderColor="Transparent" CornerRadius="20" Margin="10, -40, 0, 0"></Frame>
+                                             <VerticalStackLayout WidthRequest="650">
+                                                 <Label Text="Susan Bones" FontFamily="PoppinsSemiBold" FontSize="20" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20, 30, 0, 0"></Label>
+                                                  <Label Text="Intern" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="20, 10, 20, 20"></Label>
+                                             </VerticalStackLayout>
+                                            <HorizontalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Label Text="Max hours" FontFamily="PoppinsRegular" FontSize="12" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-400, 40, 20, 20"></Label>
+                                                  <Label Text="10 hours" FontFamily="PoppinsRegular" FontSize="15" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-400, -10, 20, 20"></Label>
+                                            </VerticalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Label Text="Hours worked" FontFamily="PoppinsRegular" FontSize="12" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-100, 40, 20, 20"></Label>
+                                                  <Label Text="1 hours" FontFamily="PoppinsRegular" FontSize="15" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-100, -10, 20, 20"></Label>
+                                            </VerticalStackLayout>
+                                                </HorizontalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="12" Margin="-350, 120, 10, 20"></Frame>
+                                                  <Label Text="The dream team" FontFamily="PoppinsMedium" FontSize="15" TextColor="#102D4C" Opacity="0.7" Margin="-130, -42, 20, 20"></Label>
+                                                </VerticalStackLayout>
+                                         </HorizontalStackLayout>
+
+                                     </Grid>
+                                 </Frame>
+
+                                
+                                 <Frame BackgroundColor="#FFF6E5" Margin="0, 10, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="5">
+                                     <Grid ColumnDefinitions="10*, 2*">
+                                         <HorizontalStackLayout HeightRequest="170">
+                                                  <Frame HeightRequest="100" WidthRequest="100" BackgroundColor="#FE5A22" BorderColor="Transparent" CornerRadius="20" Margin="10, -40, 0, 0"></Frame>
+                                             <VerticalStackLayout WidthRequest="650">
+                                                 <Label Text="Jackson Benson" FontFamily="PoppinsSemiBold" FontSize="20" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20, 30, 0, 0"></Label>
+                                                  <Label Text="Lead Illustrator" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="20, 10, 20, 20"></Label>
+                                             </VerticalStackLayout>
+                                            <HorizontalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Label Text="Max hours" FontFamily="PoppinsRegular" FontSize="12" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-400, 40, 20, 20"></Label>
+                                                  <Label Text="20 hours" FontFamily="PoppinsRegular" FontSize="15" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-400, -10, 20, 20"></Label>
+                                            </VerticalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Label Text="Hours worked" FontFamily="PoppinsRegular" FontSize="12" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-100, 40, 20, 20"></Label>
+                                                  <Label Text="6 hours" FontFamily="PoppinsRegular" FontSize="15" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-100, -10, 20, 20"></Label>
+                                            </VerticalStackLayout>
+                                                </HorizontalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="12" Margin="-350, 120, 10, 20"></Frame>
+                                                  <Label Text="The dream team" FontFamily="PoppinsMedium" FontSize="15" TextColor="#102D4C" Opacity="0.7" Margin="-130, -42, 20, 20"></Label>
+                                                </VerticalStackLayout>
+                                         </HorizontalStackLayout>
+
+                                     </Grid>
+                                 </Frame>
+
+                                  <Frame BackgroundColor="#FFF6E5" Margin="0, 10, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="5">
+                                     <Grid ColumnDefinitions="10*, 2*">
+                                         <HorizontalStackLayout HeightRequest="170">
+                                                  <Frame HeightRequest="100" WidthRequest="100" BackgroundColor="#4E54AD" BorderColor="Transparent" CornerRadius="20" Margin="10, -40, 0, 0"></Frame>
+                                             <VerticalStackLayout WidthRequest="650">
+                                                 <Label Text="Mary Owen" FontFamily="PoppinsSemiBold" FontSize="20" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20, 30, 0, 0"></Label>
+                                                  <Label Text="Junior Illustrator" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="20, 10, 20, 20"></Label>
+                                             </VerticalStackLayout>
+                                            <HorizontalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Label Text="Max hours" FontFamily="PoppinsRegular" FontSize="12" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-400, 40, 20, 20"></Label>
+                                                  <Label Text="20 hours" FontFamily="PoppinsRegular" FontSize="15" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-400, -10, 20, 20"></Label>
+                                            </VerticalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Label Text="Hours worked" FontFamily="PoppinsRegular" FontSize="12" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-100, 40, 20, 20"></Label>
+                                                  <Label Text="6 hours" FontFamily="PoppinsRegular" FontSize="15" TextColor="#102D4C" HorizontalOptions="Center" Opacity="0.7" Margin="-100, -10, 20, 20"></Label>
+                                            </VerticalStackLayout>
+                                                </HorizontalStackLayout>
+                                            <VerticalStackLayout>
+                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="12" Margin="-350, 120, 10, 20"></Frame>
+                                                  <Label Text="The dream team" FontFamily="PoppinsMedium" FontSize="15" TextColor="#102D4C" Opacity="0.7" Margin="-130, -42, 20, 20"></Label>
+                                                </VerticalStackLayout>
+                                         </HorizontalStackLayout>
+
+                                     </Grid>
+                                 </Frame>
+
+                             </VerticalStackLayout>
+                            </ScrollView>
+
+                   
+                               </Frame>
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Grid.Column="1"  Padding="0">
+                    <HorizontalStackLayout>
+                             <Button BackgroundColor="#FAF9F0" TextColor="#FF4C54" CornerRadius="25" Padding="23" Text="see design teams"  BorderColor="#FF4C54" BorderWidth="2" FontFamily="PoppinsSemiBold" FontSize="15" Margin="0, 0, 0, 0" WidthRequest="200"/>
+                          <Button BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="new employee"  Margin="30, 0, 0, 0" WidthRequest="200"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+               </HorizontalStackLayout>  
+          <AbsoluteLayout ZIndex="1">
+
+                <Border BackgroundColor="#FEEED8" Stroke="#FEEED8" WidthRequest="552" HeightRequest="987" Margin="-50, 35, 0, 0">
+
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="78, 0, 0, 0"/>
+                    </Border.StrokeShape>
+
+                    <VerticalStackLayout Padding="40">
+                       
+                        <Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40">
+                                <Image Source="mouse_house.jpg" Aspect="AspectFill"></Image>
+                                </Frame>
+                        <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="140, -40, 0, 0" CornerRadius="25" Padding="23">
+                                <Image Source="edit.png" Aspect="AspectFit"></Image>
+                                </Frame>
+                                  <Label Text="Sally Williams" FontFamily="PoppinsSemiBold" FontSize="20" TextColor="#102D4C" HorizontalTextAlignment="Center" Margin="20"></Label>
+                                  <Label Text="20 September 2000" FontFamily="PoppinsRegular" FontSize="15" TextColor="#102D4C" HorizontalTextAlignment="Center" Margin="10, 0, 0 , 0"></Label>
+                                  <Label Text="SallyCreates" FontFamily="PoppinsMedium" FontSize="15" TextColor="#102D4C" HorizontalTextAlignment="Center" Margin="5, 5, 0, 0"></Label>
+
+                  <Label Text="Salary" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 40, 0, 0"></Label>
+
+                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="-260, 10, 0, 10" Padding="10" WidthRequest="220">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Entry Placeholder="R 30 000.00" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+
+                        
+
+                             <Label Text="Staff type" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="260, -100, 0, 0"></Label>
+                                    <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="260, 10, 0, 10" Padding="10" WidthRequest="220">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Entry Placeholder="Receptionist" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+
+                                   <Label Text="Hours worked" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+
+                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="-260, 10, 0, 10" Padding="10" WidthRequest="220">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Entry Placeholder="6 hours" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+
+                        
+
+                             <Label Text="Max hours" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="260, -100, 0, 0"></Label>
+                                    <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="260, 10, 0, 10" Padding="10" WidthRequest="220">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Entry Placeholder="20 hours" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+
+                                <Label Text="Design team" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+
+                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Entry Placeholder="The dream team" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+
+                          <Button BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="save details"  Margin="0, 20, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                            <HorizontalStackLayout>
+
+                              <Frame BackgroundColor="White" BorderColor="Transparent" Padding="8" CornerRadius="20" Margin="250,100,0,5" HeightRequest="55" WidthRequest="300">
+                                                             <HorizontalStackLayout>
+                                                                        <Frame  WidthRequest="45" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="15"></Frame>
+                                                                      <Label Text="The Dream Team" FontFamily="PoppinsMedium" FontSize="15" TextColor="#102D4C" Margin="15, 10, 0, 0"></Label>
+                                                             </HorizontalStackLayout>
+                                                         </Frame>
+                                    </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </Border>
+
+          </AbsoluteLayout>
+                    </VerticalStackLayout>
+
+                </Grid>
+
+
+        </Border>
+    </FlexLayout>
 </ContentPage>

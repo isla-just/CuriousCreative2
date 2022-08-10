@@ -10,7 +10,7 @@
 		</data>
 		<key>Resources/Assets.car</key>
 		<data>
-		WESQV4pqBfuYj66YC5PV6Pv6IP8=
+		dM7qYwpKUqghVR4p2gM7AfkeB/o=
 		</data>
 		<key>Resources/MauiInfo.plist</key>
 		<data>
@@ -140,9 +140,17 @@
 		<data>
 		fctZmU8r7hpO8fbAeboOmbQJh4s=
 		</data>
+		<key>Resources/add.png</key>
+		<data>
+		+ld6Tfbfer7fIKVSL94C/kw9qvs=
+		</data>
 		<key>Resources/appicon.icns</key>
 		<data>
 		B0nUlBVkboGZ8FcwikSsyhugFO0=
+		</data>
+		<key>Resources/arrow_down.png</key>
+		<data>
+		Oncd6+ZJgU3iO9cwmLGDXslHcCI=
 		</data>
 		<key>Resources/company_card.png</key>
 		<data>
@@ -175,6 +183,10 @@
 		<key>Resources/down.png</key>
 		<data>
 		HuDEEnx0L6Nme/r7UtYIxflbhI0=
+		</data>
+		<key>Resources/dropdown.png</key>
+		<data>
+		vO3EsrfVFJm4hb48vUos/eO2StE=
 		</data>
 		<key>Resources/edit.png</key>
 		<data>
@@ -211,6 +223,10 @@
 		<key>Resources/illustration_house_white.jpg</key>
 		<data>
 		t9EzLJoHqEMCpm/1YrEjF4a/J9I=
+		</data>
+		<key>Resources/illustration_login.jpg</key>
+		<data>
+		Y6qA0dPhfNP4j3da6KzYbJ8O4NM=
 		</data>
 		<key>Resources/illustration_yeti.jpg</key>
 		<data>
@@ -1513,14 +1529,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rU6A37QhMEpWiQ17r3oqTc6ZeCK3c7KUMEredGi1e9o=
+			I5sIX2pWOwO1jaSEM10vVTbaGTbnJG/FHj0xuzQMx/c=
 			</data>
 		</dict>
 		<key>MonoBundle/TheCuriousCreative2.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7eG14iwYi/ag009ERDXEDkXGh+XZ0YpS9koxKPsJ3eg=
+			EkHeYxrH5LH+Um227hRWJ5FmxOlHO2foaI2oyeW74fM=
 			</data>
 		</dict>
 		<key>MonoBundle/WindowsBase.dll</key>
@@ -1611,7 +1627,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			IEdYBcqCHUdnl2Wj6r1cLKYWafOgY4HuVKrEEwcv8gI=
+			HTEFBYoxifg/tYbcpz4ZvFxSy8vwuT+DD9pjCRzaG3Y=
 			</data>
 		</dict>
 		<key>Resources/MauiInfo.plist</key>
@@ -1838,11 +1854,25 @@
 			cRxiQ83FQx+cyWbk3hi/uUA2W62BrP/R55SNvj8lQ4Y=
 			</data>
 		</dict>
+		<key>Resources/add.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lkz4vnbjXOwc0XBSIos+Zgp/vJfTeXCpKX4iXYYRKvY=
+			</data>
+		</dict>
 		<key>Resources/appicon.icns</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			cEwNXIL769KJpaHVuJiXICeGu3HWO8NLTa494hioWnE=
+			</data>
+		</dict>
+		<key>Resources/arrow_down.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OwCRa5nPnSSW796TS12IGfo4VJFAQRwiz9Vx9nCEWyQ=
 			</data>
 		</dict>
 		<key>Resources/company_card.png</key>
@@ -1899,6 +1929,13 @@
 			<key>hash2</key>
 			<data>
 			l/RTxJp/dvK5WlPfLq1tmdG1axyMxeuEYJOAALwZ3i8=
+			</data>
+		</dict>
+		<key>Resources/dropdown.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OQU6AfU5rFYxitF/4iDYCZWChCFytv79SzqKJAF3G1w=
 			</data>
 		</dict>
 		<key>Resources/edit.png</key>
@@ -1962,6 +1999,13 @@
 			<key>hash2</key>
 			<data>
 			sTJnal+ur1f98pff6qcACnjHiSOzSrS7K7ZvAcEtlOM=
+			</data>
+		</dict>
+		<key>Resources/illustration_login.jpg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UeofDsupqI9dnecr7zFVY5+MMkE77e+T7KlWyj4bXpg=
 			</data>
 		</dict>
 		<key>Resources/illustration_yeti.jpg</key>

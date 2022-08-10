@@ -34,6 +34,18 @@
     </Shell.ItemTemplate>
 
 
+            <!--<FlyoutItem   Title="LOGIN">
+        <Tab>
+             <ShellContent
+                Title="Login"
+                ContentTemplate="{DataTemplate local:Login}"
+                Route="Login"
+              />
+
+        </Tab>
+
+    </FlyoutItem>-->
+
 
         <!--<FlyoutItem Title="HOME">
         <Tab>
@@ -59,17 +71,7 @@
 
     </FlyoutItem>
 
-        <!--<FlyoutItem   Title="LOGIN">
-        <Tab>
-             <ShellContent
-                Title="Login"
-                ContentTemplate="{DataTemplate local:Login}"
-                Route="Login"
-              />
 
-        </Tab>
-
-    </FlyoutItem>-->
 
     <FlyoutItem   Title="CLIENTS">
         <Tab>
