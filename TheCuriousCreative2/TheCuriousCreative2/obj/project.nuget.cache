@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "PyjQ3TyZt0ugz3NLNHSgDTe4tSIKZLOMWVyOcaUozSUGSxfsCOz/VJwtZ3WkklLDl4Te6JNYKm5VWIGwANuywg==",
+  "dgSpecHash": "jKynhzA5fF0kuxklsNGcjusSqUlzE+3AEfYm40rEK/QZbGUXQ07rMDqhiMOtwIy50aukkWv9jtQdI0FOeHgS+w==",
   "success": true,
   "projectFilePath": "/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/TheCuriousCreative2.csproj",
   "expectedPackageFiles": [
@@ -16,7 +16,16 @@
     "/Users/jeandredevilliers/.nuget/packages/microsoft.maui.dependencies/6.0.312/microsoft.maui.dependencies.6.0.312.nupkg.sha512",
     "/Users/jeandredevilliers/.nuget/packages/microsoft.maui.extensions/6.0.312/microsoft.maui.extensions.6.0.312.nupkg.sha512",
     "/Users/jeandredevilliers/.nuget/packages/microsoft.maui.graphics/6.0.300/microsoft.maui.graphics.6.0.300.nupkg.sha512",
+    "/Users/jeandredevilliers/.nuget/packages/sqlite-net-pcl/1.8.116/sqlite-net-pcl.1.8.116.nupkg.sha512",
+    "/Users/jeandredevilliers/.nuget/packages/sqlitepclraw.bundle_green/2.0.4/sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
+    "/Users/jeandredevilliers/.nuget/packages/sqlitepclraw.core/2.0.4/sqlitepclraw.core.2.0.4.nupkg.sha512",
+    "/Users/jeandredevilliers/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.0.4/sqlitepclraw.lib.e_sqlite3.2.0.4.nupkg.sha512",
+    "/Users/jeandredevilliers/.nuget/packages/sqlitepclraw.lib.e_sqlite3.android/2.0.4/sqlitepclraw.lib.e_sqlite3.android.2.0.4.nupkg.sha512",
+    "/Users/jeandredevilliers/.nuget/packages/sqlitepclraw.provider.dynamic_cdecl/2.0.4/sqlitepclraw.provider.dynamic_cdecl.2.0.4.nupkg.sha512",
+    "/Users/jeandredevilliers/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.0.4/sqlitepclraw.provider.e_sqlite3.2.0.4.nupkg.sha512",
+    "/Users/jeandredevilliers/.nuget/packages/system.buffers/4.4.0/system.buffers.4.4.0.nupkg.sha512",
     "/Users/jeandredevilliers/.nuget/packages/system.diagnostics.diagnosticsource/6.0.0/system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
+    "/Users/jeandredevilliers/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",
     "/Users/jeandredevilliers/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
     "/Users/jeandredevilliers/.nuget/packages/system.runtime.interopservices.nfloat.internal/6.0.1/system.runtime.interopservices.nfloat.internal.6.0.1.nupkg.sha512",
     "/Users/jeandredevilliers/.nuget/packages/xamarin.android.glide/4.12.0.8/xamarin.android.glide.4.12.0.8.nupkg.sha512",
@@ -100,9 +109,9 @@
     "/Users/jeandredevilliers/.nuget/packages/xamarin.kotlin.stdlib.jdk8/1.6.20.1/xamarin.kotlin.stdlib.jdk8.1.6.20.1.nupkg.sha512",
     "/Users/jeandredevilliers/.nuget/packages/xamarin.kotlinx.coroutines.android/1.6.0.1/xamarin.kotlinx.coroutines.android.1.6.0.1.nupkg.sha512",
     "/Users/jeandredevilliers/.nuget/packages/xamarin.kotlinx.coroutines.core.jvm/1.6.0.1/xamarin.kotlinx.coroutines.core.jvm.1.6.0.1.nupkg.sha512",
-    "/Users/jeandredevilliers/.nuget/packages/microsoft.netcore.app.host.linux-arm/6.0.6/microsoft.netcore.app.host.linux-arm.6.0.6.nupkg.sha512",
-    "/Users/jeandredevilliers/.nuget/packages/microsoft.netcore.app.host.linux-arm64/6.0.6/microsoft.netcore.app.host.linux-arm64.6.0.6.nupkg.sha512",
-    "/Users/jeandredevilliers/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.6/microsoft.netcore.app.host.linux-x64.6.0.6.nupkg.sha512"
+    "/Users/jeandredevilliers/.nuget/packages/microsoft.netcore.app.host.linux-arm/6.0.8/microsoft.netcore.app.host.linux-arm.6.0.8.nupkg.sha512",
+    "/Users/jeandredevilliers/.nuget/packages/microsoft.netcore.app.host.linux-arm64/6.0.8/microsoft.netcore.app.host.linux-arm64.6.0.8.nupkg.sha512",
+    "/Users/jeandredevilliers/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.8/microsoft.netcore.app.host.linux-x64.6.0.8.nupkg.sha512"
   ],
   "logs": []
 }
