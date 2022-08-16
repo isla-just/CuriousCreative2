@@ -1,5 +1,9 @@
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/icudt.dat
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/CommunityToolkit.Mvvm.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/HarfBuzzSharp.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/LiveChartsCore.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/LiveChartsCore.SkiaSharpView.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/LiveChartsCore.SkiaSharpView.Maui.dll
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/Microsoft.Extensions.Configuration.dll
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/Microsoft.Extensions.DependencyInjection.dll
@@ -10,6 +14,12 @@
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/Microsoft.Extensions.Primitives.dll
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/Microsoft.Maui.Graphics.dll
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/Microsoft.Toolkit.Mvvm.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/SkiaSharp.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/SkiaSharp.HarfBuzz.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/SkiaSharp.Views.iOS.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/SkiaSharp.Views.Maui.Controls.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/SkiaSharp.Views.Maui.Controls.Compatibility.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/SkiaSharp.Views.Maui.Core.dll
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/SQLite-net.dll
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/SQLitePCLRaw.batteries_v2.dll
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/SQLitePCLRaw.core.dll

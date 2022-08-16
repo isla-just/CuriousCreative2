@@ -633,3 +633,15 @@
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/SQLitePCLRaw.provider.e_sqlite3.dll
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/SQLitePCLRaw.provider.sqlite3.dll
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/libe_sqlite3.dylib
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/HarfBuzzSharp.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/LiveChartsCore.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/LiveChartsCore.SkiaSharpView.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/LiveChartsCore.SkiaSharpView.Maui.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/SkiaSharp.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/SkiaSharp.HarfBuzz.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/SkiaSharp.Views.iOS.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/SkiaSharp.Views.Maui.Controls.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/SkiaSharp.Views.Maui.Controls.Compatibility.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/SkiaSharp.Views.Maui.Core.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/libHarfBuzzSharp.framework.zip
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/libSkiaSharp.framework.zip

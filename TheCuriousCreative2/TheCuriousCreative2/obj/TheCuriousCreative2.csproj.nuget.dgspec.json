@@ -54,6 +54,10 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "LiveChartsCore.SkiaSharpView.Maui": {
+              "target": "Package",
+              "version": "[2.0.0-beta.300, )"
+            },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
               "version": "[6.0.486, )",
@@ -83,6 +87,10 @@
             "SQLitePCLRaw.provider.sqlite3": {
               "target": "Package",
               "version": "[2.1.0, )"
+            },
+            "SkiaSharp.Views.Maui.Controls.Compatibility": {
+              "target": "Package",
+              "version": "[2.88.1-preview.1, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -140,6 +148,10 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "LiveChartsCore.SkiaSharpView.Maui": {
+              "target": "Package",
+              "version": "[2.0.0-beta.300, )"
+            },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
               "version": "[6.0.486, )",
@@ -169,6 +181,10 @@
             "SQLitePCLRaw.provider.sqlite3": {
               "target": "Package",
               "version": "[2.1.0, )"
+            },
+            "SkiaSharp.Views.Maui.Controls.Compatibility": {
+              "target": "Package",
+              "version": "[2.88.1-preview.1, )"
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",
@@ -217,6 +233,10 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "LiveChartsCore.SkiaSharpView.Maui": {
+              "target": "Package",
+              "version": "[2.0.0-beta.300, )"
+            },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
               "version": "[6.0.486, )",
@@ -246,6 +266,10 @@
             "SQLitePCLRaw.provider.sqlite3": {
               "target": "Package",
               "version": "[2.1.0, )"
+            },
+            "SkiaSharp.Views.Maui.Controls.Compatibility": {
+              "target": "Package",
+              "version": "[2.88.1-preview.1, )"
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",

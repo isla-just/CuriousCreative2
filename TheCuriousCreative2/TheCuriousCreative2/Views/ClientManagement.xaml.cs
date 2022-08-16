@@ -5,20 +5,24 @@ namespace TheCuriousCreative2;
 
 public partial class ClientManagement : ContentPage
 {
-	public ClientManagement(AddUpdateClientViewModel viewModel)
+    private AddUpdateClientViewModel _viewMode;
+    public ClientManagement(AddUpdateClientViewModel viewModel)
 	{
 		InitializeComponent();
+        _viewMode = viewModel;
         this.BindingContext = viewModel;
     }
 
-    private async void TapGestureRecognizer_Tapped_NavigateToPoupPage1(object sender, EventArgs e)
+    //private async void TapGestureRecognizer_Tapped_NavigateToPoupPage1(object sender, EventArgs e)
+    //{
+    //    await App.Current.MainPage.Navigation.PushModalAsync(new BasePopupPage());
+    //}
+
+    //onchange when student table is changed
+    protected override void OnAppearing()
     {
-        await App.Current.MainPage.Navigation.PushModalAsync(new BasePopupPage());
+        base.OnAppearing();
+        _viewMode.GetClientListCommand.Execute(null);
     }
 
-    //private async void TapGestureRecognizer_Tapped_NavigateToNormalPage(object sender, EventArgs e)
-    //{
-    //    await App.Current.MainPage.Navigation.PopModalAsync();
-    //    await App.Current.MainPage.Navigation.PushAsync(new NewPage1());
-    //}
 }
