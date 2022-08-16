@@ -255,7 +255,8 @@
 
                     <VerticalStackLayout Grid.Column="1"  Padding="0">
 
-                          <Button BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="register new client"  Margin="230, 0, 0, 0" WidthRequest="250"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                    <!--removed for now because side form handles add and edit-->
+                          <Button Opacity="0" Clicked="TapGestureRecognizer_Tapped_NavigateToPoupPage1" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="register new client"  Margin="230, 0, 0, 0" WidthRequest="250"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
 
           <AbsoluteLayout ZIndex="1">
 

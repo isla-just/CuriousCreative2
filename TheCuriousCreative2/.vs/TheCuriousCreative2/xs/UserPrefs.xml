@@ -1,19 +1,13 @@
 ﻿<Properties StartupConfiguration="{ABEDEA07-5F9B-4E41-B4CB-F4C80867AC6C}|Default">
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.TheCuriousCreative2 PreferredExecutionTarget="MyAppleMacCatalystID" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TheCuriousCreative2/Views/Dashboard.xaml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TheCuriousCreative2/Views/ClientManagement.xaml">
     <Files>
-      <File FileName="TheCuriousCreative2/Models/ClientModel.cs" Line="17" Column="34" />
-      <File FileName="TheCuriousCreative2/Services/IClientService.cs" Line="14" Column="49" />
-      <File FileName="TheCuriousCreative2/Services/ClientService.cs" Line="18" Column="37" />
-      <File FileName="TheCuriousCreative2/Views/ClientManagement.xaml" Line="64" Column="1" />
+      <File FileName="TheCuriousCreative2/Models/ClientModel.cs" />
+      <File FileName="TheCuriousCreative2/Services/IClientService.cs" />
+      <File FileName="TheCuriousCreative2/Services/ClientService.cs" />
+      <File FileName="TheCuriousCreative2/Views/ClientManagement.xaml" Line="312" Column="1" />
       <File FileName="TheCuriousCreative2/Views/ClientManagement.xaml.cs" Line="1" Column="7" />
-      <File FileName="TheCuriousCreative2/ViewModels/AddUpdateClientViewModel.cs" Line="57" Column="55" />
-      <File FileName="TheCuriousCreative2/MauiProgram.cs" Line="38" Column="68" />
+      <File FileName="TheCuriousCreative2/ViewModels/AddUpdateClientViewModel.cs" />
+      <File FileName="TheCuriousCreative2/MauiProgram.cs" />
       <File FileName="TheCuriousCreative2/MainPage.xaml.cs" Line="1" Column="1" />
       <File FileName="TheCuriousCreative2/Views/Dashboard.xaml" Line="1" Column="1" />
     </Files>
@@ -25,16 +19,20 @@
               <Node name="Models" expanded="True" />
               <Node name="Services" expanded="True" />
               <Node name="ViewModels" expanded="True" />
-              <Node name="Views" expanded="True">
-                <Node name="Dashboard.xaml" selected="True" />
-                <Node name="StaffManagement.xaml" expanded="True" />
-              </Node>
+              <Node name="Views" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.TheCuriousCreative2 PreferredExecutionTarget="MyAppleMacCatalystID" />
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

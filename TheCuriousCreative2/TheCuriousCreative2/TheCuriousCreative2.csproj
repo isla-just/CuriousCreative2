@@ -73,6 +73,9 @@
 	  <MauiXaml Condition=" '$(EnableDefaultXamlItems)' == 'true' " Update="Views\StaffManagement.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
+	  <MauiXaml Update="Controls\BasePopupPage.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
 	</ItemGroup>
 	<ItemGroup>
 	  <None Remove="Platforms\View\" />
@@ -87,6 +90,7 @@
 	  <None Remove="SQLitePCLRaw.provider.sqlite3" />
 	  <None Remove="CommunityToolkit.Mvvm" />
 	  <None Remove="Microsoft.Toolkit.Mvvm" />
+	  <None Remove="Controls\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Platforms\View\" />
@@ -94,6 +98,7 @@
 	  <Folder Include="ViewModels\" />
 	  <Folder Include="Models\" />
 	  <Folder Include="Services\" />
+	  <Folder Include="Controls\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
