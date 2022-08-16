@@ -4,5 +4,32 @@
         <name>TheCuriousCreative2</name>
     </assembly>
     <members>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.ProjectDetail">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel._projectDetail"/>
+        </member>
+        <member name="F:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.addUpdateProjectCommand">
+            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.AddUpdateProjectCommand"/>.</summary>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.AddUpdateProjectCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.AddUpdateProject"/>.</summary>
+        </member>
+        <member name="F:TheCuriousCreative2.ViewModels.ProjectViewModel.getProjectListCommand">
+            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.ProjectViewModel.GetProjectListCommand"/>.</summary>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.ProjectViewModel.GetProjectListCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.ProjectViewModel.GetProjectList"/>.</summary>
+        </member>
+        <member name="F:TheCuriousCreative2.ViewModels.ProjectViewModel.addUpdateProjectCommand">
+            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.ProjectViewModel.AddUpdateProjectCommand"/>.</summary>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.ProjectViewModel.AddUpdateProjectCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.ProjectViewModel.AddUpdateProject"/>.</summary>
+        </member>
+        <member name="F:TheCuriousCreative2.ViewModels.ProjectViewModel.displayActionCommand">
+            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.ProjectViewModel.DisplayActionCommand"/>.</summary>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.ProjectViewModel.DisplayActionCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.ProjectViewModel.DisplayAction(TheCuriousCreative2.Models.ProjectModel)"/>.</summary>
+        </member>
     </members>
 </doc>

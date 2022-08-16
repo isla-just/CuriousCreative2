@@ -1,23 +1,26 @@
 ﻿<Properties StartupConfiguration="{ABEDEA07-5F9B-4E41-B4CB-F4C80867AC6C}|Default">
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.ItemProperties.TheCuriousCreative2 PreferredExecutionTarget="MyAppleMacCatalystID" />
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TheCuriousCreative2/Login.xaml">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TheCuriousCreative2/MainPage.xaml.cs">
     <Files>
-      <File FileName="TheCuriousCreative2/Login.xaml" Line="5" Column="45" />
       <File FileName="TheCuriousCreative2/App.xaml" Line="1" Column="1" />
       <File FileName="TheCuriousCreative2/App.xaml.cs" Line="1" Column="1" />
       <File FileName="TheCuriousCreative2/AppShell.xaml" Line="1" Column="1" />
+      <File FileName="TheCuriousCreative2/ViewModels/AddUpdateProjectViewModel.cs" Line="2" Column="18" />
+      <File FileName="TheCuriousCreative2/AppShell.xaml.cs" Line="3" Column="1" />
+      <File FileName="TheCuriousCreative2/Views/ProjectManagement.xaml" Line="92" Column="32" />
+      <File FileName="TheCuriousCreative2/MainPage.xaml" Line="1" Column="1" />
+      <File FileName="TheCuriousCreative2/MainPage.xaml.cs" Line="15" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TheCuriousCreative2" expanded="True">
             <Node name="TheCuriousCreative2" expanded="True">
-              <Node name="App.xaml" expanded="True" />
-              <Node name="AppShell.xaml" expanded="True" />
-              <Node name="FlyoutFooter.xaml" expanded="True" />
-              <Node name="Funds.xaml" expanded="True" />
-              <Node name="Login.xaml" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
+              <Node name="Views" expanded="True" />
               <Node name="MainPage.xaml" expanded="True" />
             </Node>
           </Node>
@@ -28,10 +31,8 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.TheCuriousCreative2 PreferredExecutionTarget="MyAppleMacCatalystID" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

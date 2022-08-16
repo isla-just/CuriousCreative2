@@ -620,3 +620,12 @@
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/add.png
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/dropdown.png
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/arrow_down.png
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/CommunityToolkit.Mvvm.dll
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/Microsoft.Toolkit.Mvvm.dll
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/SQLite-net.dll
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/SQLitePCLRaw.batteries_v2.dll
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/SQLitePCLRaw.core.dll
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/SQLitePCLRaw.provider.dynamic_cdecl.dll
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/SQLitePCLRaw.provider.e_sqlite3.dll
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/SQLitePCLRaw.provider.sqlite3.dll
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/libe_sqlite3.dylib

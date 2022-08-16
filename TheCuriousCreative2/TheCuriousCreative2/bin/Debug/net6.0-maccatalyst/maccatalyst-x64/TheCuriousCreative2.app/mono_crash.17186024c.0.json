@@ -1,0 +1,2171 @@
+{
+  "protocol_version" : "0.0.6",
+  "configuration" : {
+    "version" : "(6.0.5.0) (6.0.522.21309 @Commit: 70ae3df4a6f3c92fb6b315afc405edd10ff38579)",
+    "tlc" : "normal",
+    "sigsgev" : "normal",
+    "notifications" : "kqueue",
+    "architecture" : "amd64",
+    "disabled_features" : "",
+    "smallconfig" : "disabled",
+    "bigarrays" : "disabled",
+    "softdebug" : "enabled",
+    "interpreter" : "enabled",
+    "llvm_support" : "disabled",
+    "suspend" : "hybrid"
+  },
+  "execution_context" : {
+    "coop-enabled" : "false"
+ },
+  "memory" : {
+    "Resident Size" : "192086016",
+    "Virtual Size" : "36341919744",
+    "minor_gc_time" : "119748",
+    "major_gc_time" : "0",
+    "minor_gc_count" : "8",
+    "major_gc_count" : "0",
+    "major_gc_time_concurrent" : "0"
+ },
+  "threads" : [
+ {
+    "is_managed" : true,
+    "offset_free_hash" : "0x31138034e",
+    "offset_rich_hash" : "0x1a54459780",
+    "crashed" : false,
+    "native_thread_id" : "0x30f26b000",
+    "thread_info_addr" : "0x7fbb9820f600",
+    "thread_name" : "ProtocolHandler.SendThread",
+    "ctx" : {
+      "IP" : "0x7ff8189eb3ea",
+      "SP" : "0x30f26a398",
+      "BP" : "0x30f26a440"
+  },
+    "managed_frames" : [
+  {
+      "is_managed" : "false",
+      "native_address" : "0x1000043e0",
+      "native_offset" : "0x00000"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+      "token" : "0x00000",
+      "native_offset" : "0x108",
+      "method_name" : "Monitor_wait",
+      "filename" : "System.Private.CoreLib.dll",
+      "sizeofimage" : "0x372000",
+      "timestamp" : "0x9631635c",
+      "il_offset" : "0x00000"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+      "token" : "0x6002e23",
+      "native_offset" : "0x108",
+      "method_name" : "ObjWait",
+      "filename" : "System.Private.CoreLib.dll",
+      "sizeofimage" : "0x372000",
+      "timestamp" : "0x9631635c",
+      "il_offset" : "0x00026"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+      "token" : "0x6002e1a",
+      "native_offset" : "0x108",
+      "method_name" : "Wait",
+      "filename" : "System.Private.CoreLib.dll",
+      "sizeofimage" : "0x372000",
+      "timestamp" : "0x9631635c",
+      "il_offset" : "0x0000e"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+      "token" : "0x6002e2c",
+      "native_offset" : "0x108",
+      "method_name" : "Wait",
+      "filename" : "System.Private.CoreLib.dll",
+      "sizeofimage" : "0x372000",
+      "timestamp" : "0x9631635c",
+      "il_offset" : "0x00000"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "E33C1F7A-A0F6-47BA-8058-5FD00ECEF3D7",
+      "token" : "0x60001d1",
+      "native_offset" : "0x108",
+      "method_name" : "WaitForData",
+      "filename" : "Microsoft.VisualStudio.DesignTools.TapContract.dll",
+      "sizeofimage" : "0x18000",
+      "timestamp" : "0x0",
+      "il_offset" : "0x00013"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "E33C1F7A-A0F6-47BA-8058-5FD00ECEF3D7",
+      "token" : "0x600013c",
+      "native_offset" : "0x108",
+      "method_name" : "ActionThread",
+      "filename" : "Microsoft.VisualStudio.DesignTools.TapContract.dll",
+      "sizeofimage" : "0x18000",
+      "timestamp" : "0x0",
+      "il_offset" : "0x0004f"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+      "token" : "0x6002edc",
+      "native_offset" : "0x108",
+      "method_name" : "RunWorker",
+      "filename" : "System.Private.CoreLib.dll",
+      "sizeofimage" : "0x372000",
+      "timestamp" : "0x9631635c",
+      "il_offset" : "0x00047"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+      "token" : "0x6002edb",
+      "native_offset" : "0x108",
+      "method_name" : "Run",
+      "filename" : "System.Private.CoreLib.dll",
+      "sizeofimage" : "0x372000",
+      "timestamp" : "0x9631635c",
+      "il_offset" : "0x00027"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+      "token" : "0x6002e69",
+      "native_offset" : "0x108",
+      "method_name" : "StartCallback",
+      "filename" : "System.Private.CoreLib.dll",
+      "sizeofimage" : "0x372000",
+      "timestamp" : "0x9631635c",
+      "il_offset" : "0x0000e"
+   }
+,
+  {
+      "is_managed" : "true",
+      "guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+      "token" : "0x00000",
+      "native_offset" : "0x108",
+      "method_name" : "runtime_invoke_direct_void__this__",
+      "filename" : "System.Private.CoreLib.dll",
+      "sizeofimage" : "0x372000",
+      "timestamp" : "0x9631635c",
+      "il_offset" : "0x00030"
+   }
+,
+  {
+      "is_managed" : "false",
+      "native_address" : "0x1002740a0",
+      "native_offset" : "0x00000"
+   }
+
+  ],
+  "unmanaged_frames" : [
+ {
+    "is_managed" : "false",
+    "native_address" : "0x1001fd9c0",
+    "native_offset" : "0x00036",
+    "unmanaged_name" : "mono_summarize_unmanaged_stack"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10008eeb0",
+    "native_offset" : "0x00293",
+    "unmanaged_name" : "mono_threads_summarize_execute_internal"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10008ee10",
+    "native_offset" : "0x00077",
+    "unmanaged_name" : "mono_threads_summarize_execute"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x100262350",
+    "native_offset" : "0x00070",
+    "unmanaged_name" : "sigterm_signal_handler"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x100003de0",
+    "native_offset" : "0x0001d",
+    "unmanaged_name" : "_sigtramp"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x141919000",
+    "native_offset" : "0x00000",
+    "unmanaged_name" : "virtual_default_zone"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x1000eb750",
+    "native_offset" : "0x0006d",
+    "unmanaged_name" : "mono_os_cond_timedwait"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x100096250",
+    "native_offset" : "0x00106",
+    "unmanaged_name" : "mono_w32handle_timedwait_signal_handle"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x100095e70",
+    "native_offset" : "0x00367",
+    "unmanaged_name" : "mono_w32handle_wait_one"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x1000bb1e0",
+    "native_offset" : "0x00119",
+    "unmanaged_name" : "ves_icall_System_Threading_Monitor_Monitor_wait"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x100046e70",
+    "native_offset" : "0x00057",
+    "unmanaged_name" : "ves_icall_System_Threading_Monitor_Monitor_wait_raw"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x1002750f0",
+    "native_offset" : "0x00114",
+    "unmanaged_name" : "do_icall"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x1002740a0",
+    "native_offset" : "0x000fd",
+    "unmanaged_name" : "do_icall_wrapper"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x1002657e0",
+    "native_offset" : "0x00b9a",
+    "unmanaged_name" : "interp_exec_method"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x100264510",
+    "native_offset" : "0x000ef",
+    "unmanaged_name" : "interp_runtime_invoke"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10015b380",
+    "native_offset" : "0x004d6",
+    "unmanaged_name" : "mono_jit_runtime_invoke"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x100076c80",
+    "native_offset" : "0x00088",
+    "unmanaged_name" : "mono_runtime_invoke_checked"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10008fe40",
+    "native_offset" : "0x00265",
+    "unmanaged_name" : "start_wrapper_internal"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x10008fde0",
+    "native_offset" : "0x0003e",
+    "unmanaged_name" : "start_wrapper"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x100006464",
+    "native_offset" : "0x0007d",
+    "unmanaged_name" : "_pthread_start"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x100001f5c",
+    "native_offset" : "0x0000f",
+    "unmanaged_name" : "thread_start"
+  }
+
+ ]
+},
+{
+  "is_managed" : true,
+  "offset_free_hash" : "0x17186024c",
+  "offset_rich_hash" : "0x5177f5f83b",
+  "crashed" : true,
+  "native_thread_id" : "0x2056af600",
+  "thread_info_addr" : "0x7fbb8e828400",
+  "thread_name" : "tid_103",
+  "ctx" : {
+    "IP" : "0x7ff8189ef00e",
+    "SP" : "0x30e62abe8",
+    "BP" : "0x30e62ac10"
+ },
+  "managed_frames" : [
+ {
+    "is_managed" : "false",
+    "native_address" : "0x100008004",
+    "native_offset" : "0x00000"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "BBD3D52B-70B1-4238-9A75-CA050A660540",
+    "token" : "0x00000",
+    "native_offset" : "0x108",
+    "method_name" : "UIApplicationMain",
+    "filename" : "Microsoft.MacCatalyst.dll",
+    "sizeofimage" : "0x1604000",
+    "timestamp" : "0xeaedd889",
+    "il_offset" : "0x0007f"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "BBD3D52B-70B1-4238-9A75-CA050A660540",
+    "token" : "0x6011187",
+    "native_offset" : "0x108",
+    "method_name" : "Main",
+    "filename" : "Microsoft.MacCatalyst.dll",
+    "sizeofimage" : "0x1604000",
+    "timestamp" : "0xeaedd889",
+    "il_offset" : "0x00041"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "1C50B4CF-CAC0-48EA-8A0F-1B29232AEF73",
+    "token" : "0x6000015",
+    "native_offset" : "0x108",
+    "method_name" : "Main",
+    "filename" : "TheCuriousCreative2.dll",
+    "sizeofimage" : "0x30000",
+    "timestamp" : "0xccc8374d",
+    "il_offset" : "0x00001"
+  }
+,
+ {
+    "is_managed" : "true",
+    "guid" : "1C50B4CF-CAC0-48EA-8A0F-1B29232AEF73",
+    "token" : "0x00000",
+    "native_offset" : "0x108",
+    "method_name" : "runtime_invoke_direct_void_string[]",
+    "filename" : "TheCuriousCreative2.dll",
+    "sizeofimage" : "0x30000",
+    "timestamp" : "0xccc8374d",
+    "il_offset" : "0xffffffff"
+  }
+,
+ {
+    "is_managed" : "false",
+    "native_address" : "0x1002740a0",
+    "native_offset" : "0x00000"
+  }
+
+ ],
+"unmanaged_frames" : [
+{
+  "is_managed" : "false",
+  "native_address" : "0x1001fd9c0",
+  "native_offset" : "0x00036",
+  "unmanaged_name" : "mono_summarize_unmanaged_stack"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10008eeb0",
+  "native_offset" : "0x00293",
+  "unmanaged_name" : "mono_threads_summarize_execute_internal"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10008f690",
+  "native_offset" : "0x000fb",
+  "unmanaged_name" : "mono_threads_summarize"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100262de0",
+  "native_offset" : "0x00373",
+  "unmanaged_name" : "mono_dump_native_crash_info"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100202240",
+  "native_offset" : "0x0013e",
+  "unmanaged_name" : "mono_handle_native_crash"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x1002626c0",
+  "native_offset" : "0x000a2",
+  "unmanaged_name" : "sigabrt_signal_handler"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100003de0",
+  "native_offset" : "0x0001d",
+  "unmanaged_name" : "_sigtramp"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0xff000000000000",
+  "native_offset" : "0x00000"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100081ca9",
+  "native_offset" : "0x0007b",
+  "unmanaged_name" : "abort"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100034320",
+  "native_offset" : "0x00040",
+  "unmanaged_name" : "_ZL12log_callbackPKcS0_S0_iPv"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x1002b0cf0",
+  "native_offset" : "0x000c2",
+  "unmanaged_name" : "monoeg_g_logv_nofree"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x1002b0ea0",
+  "native_offset" : "0x0008f",
+  "unmanaged_name" : "monoeg_assertion_message"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x1002b0f50",
+  "native_offset" : "0x0001a",
+  "unmanaged_name" : "mono_assertion_message"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100097270",
+  "native_offset" : "0x002ca",
+  "unmanaged_name" : "mono_type_get_object_checked"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100097200",
+  "native_offset" : "0x00046",
+  "unmanaged_name" : "mono_type_get_object"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100032680",
+  "native_offset" : "0x000e4",
+  "unmanaged_name" : "xamarin_get_nsobject_with_type_for_ptr_created"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x1000984d0",
+  "native_offset" : "0x002bc",
+  "unmanaged_name" : "_ZL31native_to_managed_trampoline_82P11objc_objectP13objc_selectorPP11_MonoMethodS0_S0_S0_Pvj"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100098470",
+  "native_offset" : "0x00050",
+  "unmanaged_name" : "-[__XamarinObjectObserver observeValueForKeyPath:ofObject:change:context:]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100034018",
+  "native_offset" : "0x00132",
+  "unmanaged_name" : "NSKeyValueNotifyObserver"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x1000f7eda",
+  "native_offset" : "0x001af",
+  "unmanaged_name" : "NSKeyValueDidChange"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100026988",
+  "native_offset" : "0x002f6",
+  "unmanaged_name" : "-[NSObject(NSKeyValueObservingPrivate) _changeValueForKeys:count:maybeOldValuesDict:maybeNewValuesDict:usingBlock:]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x1000520ce",
+  "native_offset" : "0x00044",
+  "unmanaged_name" : "-[NSObject(NSKeyValueObservingPrivate) _changeValueForKey:key:key:usingBlock:]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100076e63",
+  "native_offset" : "0x0012c",
+  "unmanaged_name" : "_NSSetRectValueAndNotify"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100106a10",
+  "native_offset" : "0x0013c",
+  "unmanaged_name" : "-[_UIWindowAnimationController animateTransition:]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10003d4ce",
+  "native_offset" : "0x00369",
+  "unmanaged_name" : "-[UIWindow _adjustSizeClassesAndResizeWindowToFrame:]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10003d3d9",
+  "native_offset" : "0x000e4",
+  "unmanaged_name" : "-[UIWindow _resizeWindowFrameToSceneBoundsIfNecessary]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10003c271",
+  "native_offset" : "0x0005b",
+  "unmanaged_name" : "-[UIWindow _sceneBoundsDidChange]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x1000268c2",
+  "native_offset" : "0x005ac",
+  "unmanaged_name" : "-[_UIScenefbsSceneBasedMetricsCalculator _updateMetricsOnWindows:animated:]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100026855",
+  "native_offset" : "0x0005c",
+  "unmanaged_name" : "-[UIWindowScene _computeMetricsForWindows:animated:]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100024c2b",
+  "native_offset" : "0x00191",
+  "unmanaged_name" : "-[UIWindowScene _computeMetrics:]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100188630",
+  "native_offset" : "0x000eb",
+  "unmanaged_name" : "-[UIWindowScene _setExplicitSize:contentInsets:]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10123ca5d",
+  "native_offset" : "0x000e7",
+  "unmanaged_name" : "__58-[UIApplication(iOSMacSupport) _initiateIOSMacConnections]_block_invoke.97"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10008c6ed",
+  "native_offset" : "0x00658",
+  "unmanaged_name" : "-[UINSSceneView _updateUIKitSceneProperties]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x1000092ac",
+  "native_offset" : "0x0005d",
+  "unmanaged_name" : "-[UINSSceneView layout]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100095860",
+  "native_offset" : "0x00234",
+  "unmanaged_name" : "_NSViewLayout"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10009540a",
+  "native_offset" : "0x00169",
+  "unmanaged_name" : "-[NSView _layoutSubtreeWithOldSize:]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10009540a",
+  "native_offset" : "0x002b7",
+  "unmanaged_name" : "-[NSView _layoutSubtreeWithOldSize:]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10009540a",
+  "native_offset" : "0x002b7",
+  "unmanaged_name" : "-[NSView _layoutSubtreeWithOldSize:]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100094674",
+  "native_offset" : "0x00411",
+  "unmanaged_name" : "-[NSView _layoutSubtreeIfNeededAndAllowTemporaryEngine:]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x1000944e9",
+  "native_offset" : "0x00094",
+  "unmanaged_name" : "-[NSWindow(NSConstraintBasedLayout) _layoutViewTree]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10010ad92",
+  "native_offset" : "0x000fb",
+  "unmanaged_name" : "-[NSWindow(NSConstraintBasedLayout) layoutIfNeeded]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100179953",
+  "native_offset" : "0x0003f",
+  "unmanaged_name" : "-[NSWindow _setUpFirstResponderBeforeBecomingVisible]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100178dd6",
+  "native_offset" : "0x00099",
+  "unmanaged_name" : "-[NSWindow _doWindowWillBeVisibleAsSheet:]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100176fbd",
+  "native_offset" : "0x004d8",
+  "unmanaged_name" : "-[NSWindow _reallyDoOrderWindowAboveOrBelow:relativeTo:findKey:forCounter:force:isModal:]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100176bdd",
+  "native_offset" : "0x00087",
+  "unmanaged_name" : "-[NSWindow _reallyDoOrderWindow:relativeTo:findKey:forCounter:force:isModal:]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100175b5b",
+  "native_offset" : "0x00121",
+  "unmanaged_name" : "-[NSWindow _doOrderWindow:relativeTo:findKey:forCounter:force:isModal:]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100175a61",
+  "native_offset" : "0x00098",
+  "unmanaged_name" : "-[NSWindow orderWindow:relativeTo:]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10016a5d8",
+  "native_offset" : "0x0003c",
+  "unmanaged_name" : "-[NSWindow makeKeyAndOrderFront:]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10009f97c",
+  "native_offset" : "0x0031b",
+  "unmanaged_name" : "-[UINSSceneWindowController _showWindowPostLoadIsFirstWindow:transitionContextDictionary:]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10001db2c",
+  "native_offset" : "0x009a4",
+  "unmanaged_name" : "-[UINSApplicationDelegate _configureWindowControllerCreatingIfNeededForScene:transitionContextDictionary:]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10001cbf7",
+  "native_offset" : "0x0019c",
+  "unmanaged_name" : "-[UINSApplicationDelegate didCreateUIScene:transitionContextDictionary:]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x101243193",
+  "native_offset" : "0x0008d",
+  "unmanaged_name" : "-[UIApplication(iOSMacSupport) _didCreateUIScene:transitionContext:]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x1000020c0",
+  "native_offset" : "0x0000c",
+  "unmanaged_name" : "_dispatch_call_block_and_release"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10000330f",
+  "native_offset" : "0x00008",
+  "unmanaged_name" : "_dispatch_client_callout"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10000f8c9",
+  "native_offset" : "0x003af",
+  "unmanaged_name" : "_dispatch_main_queue_drain"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10000f89c",
+  "native_offset" : "0x0001f",
+  "unmanaged_name" : "_dispatch_main_queue_callback_4CF"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x1000bccd1",
+  "native_offset" : "0x00009",
+  "unmanaged_name" : "__CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10007d6f4",
+  "native_offset" : "0x00ad7",
+  "unmanaged_name" : "__CFRunLoopRun"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10007ce02",
+  "native_offset" : "0x00232",
+  "unmanaged_name" : "CFRunLoopRunSpecific"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10002e4c2",
+  "native_offset" : "0x00124",
+  "unmanaged_name" : "RunCurrentEventLoopInMode"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10002e0f8",
+  "native_offset" : "0x00252",
+  "unmanaged_name" : "ReceiveNextEventCommon"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10002e09f",
+  "native_offset" : "0x00046",
+  "unmanaged_name" : "_BlockUntilNextEventMatchingListInModeWithFilter"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10003ec0e",
+  "native_offset" : "0x0039f",
+  "unmanaged_name" : "_DPSNextEvent"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10003d0f8",
+  "native_offset" : "0x00572",
+  "unmanaged_name" : "-[NSApplication(NSEvent) _nextEventMatchingEventMask:untilDate:inMode:dequeue:]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10002facf",
+  "native_offset" : "0x0024a",
+  "unmanaged_name" : "-[NSApplication run]"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100003966",
+  "native_offset" : "0x00331",
+  "unmanaged_name" : "NSApplicationMain"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x1002d611e",
+  "native_offset" : "0x00010",
+  "unmanaged_name" : "_NSApplicationMainWithInfoDictionary"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100003c79",
+  "native_offset" : "0x00586",
+  "unmanaged_name" : "UINSApplicationMain"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100002c7b",
+  "native_offset" : "0x00090",
+  "unmanaged_name" : "UIApplicationMain"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x1002750f0",
+  "native_offset" : "0x000c2",
+  "unmanaged_name" : "do_icall"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x1002740a0",
+  "native_offset" : "0x000fd",
+  "unmanaged_name" : "do_icall_wrapper"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x1002657e0",
+  "native_offset" : "0x00b9a",
+  "unmanaged_name" : "interp_exec_method"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100264510",
+  "native_offset" : "0x000ef",
+  "unmanaged_name" : "interp_runtime_invoke"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10015b380",
+  "native_offset" : "0x004d6",
+  "unmanaged_name" : "mono_jit_runtime_invoke"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100076c80",
+  "native_offset" : "0x00088",
+  "unmanaged_name" : "mono_runtime_invoke_checked"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x10007da40",
+  "native_offset" : "0x0006b",
+  "unmanaged_name" : "mono_runtime_exec_main_checked"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x1001bda80",
+  "native_offset" : "0x00162",
+  "unmanaged_name" : "mono_jit_exec"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x100047870",
+  "native_offset" : "0x00329",
+  "unmanaged_name" : "xamarin_main"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x1000c7b70",
+  "native_offset" : "0x00034",
+  "unmanaged_name" : "main"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x20563452e",
+  "native_offset" : "0x00000"
+ }
+
+]
+},
+{
+"is_managed" : true,
+"offset_free_hash" : "0x275c3081f",
+"offset_rich_hash" : "0x19773f2238",
+"crashed" : false,
+"native_thread_id" : "0x30f46e000",
+"thread_info_addr" : "0x7fbb8f10a600",
+"thread_name" : "ProtocolHandler.ReadThread",
+"ctx" : {
+  "IP" : "0x7ff8189eb3ea",
+  "SP" : "0x30f46d3f8",
+  "BP" : "0x30f46d4a0"
+},
+"managed_frames" : [
+{
+  "is_managed" : "false",
+  "native_address" : "0x1000043e0",
+  "native_offset" : "0x00000"
+ }
+,
+{
+  "is_managed" : "true",
+  "guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+  "token" : "0x00000",
+  "native_offset" : "0x108",
+  "method_name" : "Monitor_wait",
+  "filename" : "System.Private.CoreLib.dll",
+  "sizeofimage" : "0x372000",
+  "timestamp" : "0x9631635c",
+  "il_offset" : "0x00000"
+ }
+,
+{
+  "is_managed" : "true",
+  "guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+  "token" : "0x6002e23",
+  "native_offset" : "0x108",
+  "method_name" : "ObjWait",
+  "filename" : "System.Private.CoreLib.dll",
+  "sizeofimage" : "0x372000",
+  "timestamp" : "0x9631635c",
+  "il_offset" : "0x00026"
+ }
+,
+{
+  "is_managed" : "true",
+  "guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+  "token" : "0x6002e1a",
+  "native_offset" : "0x108",
+  "method_name" : "Wait",
+  "filename" : "System.Private.CoreLib.dll",
+  "sizeofimage" : "0x372000",
+  "timestamp" : "0x9631635c",
+  "il_offset" : "0x0000e"
+ }
+,
+{
+  "is_managed" : "true",
+  "guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+  "token" : "0x6002e2c",
+  "native_offset" : "0x108",
+  "method_name" : "Wait",
+  "filename" : "System.Private.CoreLib.dll",
+  "sizeofimage" : "0x372000",
+  "timestamp" : "0x9631635c",
+  "il_offset" : "0x00000"
+ }
+,
+{
+  "is_managed" : "true",
+  "guid" : "25ACD19E-6AE1-4318-BBC3-5D6E9832D5AC",
+  "token" : "0x6000046",
+  "native_offset" : "0x108",
+  "method_name" : "Microsoft.VisualStudio.DesignTools.TapContract.Networking.IDataBridge.ReadMessage",
+  "filename" : "Xamarin.HotReload.Agent.dll",
+  "sizeofimage" : "0x12000",
+  "timestamp" : "0x0",
+  "il_offset" : "0x0002f"
+ }
+,
+{
+  "is_managed" : "true",
+  "guid" : "E33C1F7A-A0F6-47BA-8058-5FD00ECEF3D7",
+  "token" : "0x600013b",
+  "native_offset" : "0x108",
+  "method_name" : "ReadThread",
+  "filename" : "Microsoft.VisualStudio.DesignTools.TapContract.dll",
+  "sizeofimage" : "0x18000",
+  "timestamp" : "0x0",
+  "il_offset" : "0x00042"
+ }
+,
+{
+  "is_managed" : "true",
+  "guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+  "token" : "0x6002edc",
+  "native_offset" : "0x108",
+  "method_name" : "RunWorker",
+  "filename" : "System.Private.CoreLib.dll",
+  "sizeofimage" : "0x372000",
+  "timestamp" : "0x9631635c",
+  "il_offset" : "0x0002a"
+ }
+,
+{
+  "is_managed" : "true",
+  "guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+  "token" : "0x6002edb",
+  "native_offset" : "0x108",
+  "method_name" : "Run",
+  "filename" : "System.Private.CoreLib.dll",
+  "sizeofimage" : "0x372000",
+  "timestamp" : "0x9631635c",
+  "il_offset" : "0x00027"
+ }
+,
+{
+  "is_managed" : "true",
+  "guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+  "token" : "0x6002e69",
+  "native_offset" : "0x108",
+  "method_name" : "StartCallback",
+  "filename" : "System.Private.CoreLib.dll",
+  "sizeofimage" : "0x372000",
+  "timestamp" : "0x9631635c",
+  "il_offset" : "0x0000e"
+ }
+,
+{
+  "is_managed" : "true",
+  "guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+  "token" : "0x00000",
+  "native_offset" : "0x108",
+  "method_name" : "runtime_invoke_direct_void__this__",
+  "filename" : "System.Private.CoreLib.dll",
+  "sizeofimage" : "0x372000",
+  "timestamp" : "0x9631635c",
+  "il_offset" : "0x00030"
+ }
+,
+{
+  "is_managed" : "false",
+  "native_address" : "0x1002740a0",
+  "native_offset" : "0x00000"
+ }
+
+],
+"unmanaged_frames" : [
+{
+"is_managed" : "false",
+"native_address" : "0x1001fd9c0",
+"native_offset" : "0x00036",
+"unmanaged_name" : "mono_summarize_unmanaged_stack"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10008eeb0",
+"native_offset" : "0x00293",
+"unmanaged_name" : "mono_threads_summarize_execute_internal"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10008ee10",
+"native_offset" : "0x00077",
+"unmanaged_name" : "mono_threads_summarize_execute"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100262350",
+"native_offset" : "0x00070",
+"unmanaged_name" : "sigterm_signal_handler"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100003de0",
+"native_offset" : "0x0001d",
+"unmanaged_name" : "_sigtramp"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x1000015f5",
+"native_offset" : "0x00082",
+"unmanaged_name" : "nanov2_allocate"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x1000eb750",
+"native_offset" : "0x0006d",
+"unmanaged_name" : "mono_os_cond_timedwait"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100096250",
+"native_offset" : "0x00106",
+"unmanaged_name" : "mono_w32handle_timedwait_signal_handle"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100095e70",
+"native_offset" : "0x00367",
+"unmanaged_name" : "mono_w32handle_wait_one"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x1000bb1e0",
+"native_offset" : "0x00119",
+"unmanaged_name" : "ves_icall_System_Threading_Monitor_Monitor_wait"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100046e70",
+"native_offset" : "0x00057",
+"unmanaged_name" : "ves_icall_System_Threading_Monitor_Monitor_wait_raw"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x1002750f0",
+"native_offset" : "0x00114",
+"unmanaged_name" : "do_icall"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x1002740a0",
+"native_offset" : "0x000fd",
+"unmanaged_name" : "do_icall_wrapper"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x1002657e0",
+"native_offset" : "0x00b9a",
+"unmanaged_name" : "interp_exec_method"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100264510",
+"native_offset" : "0x000ef",
+"unmanaged_name" : "interp_runtime_invoke"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10015b380",
+"native_offset" : "0x004d6",
+"unmanaged_name" : "mono_jit_runtime_invoke"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100076c80",
+"native_offset" : "0x00088",
+"unmanaged_name" : "mono_runtime_invoke_checked"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10008fe40",
+"native_offset" : "0x00265",
+"unmanaged_name" : "start_wrapper_internal"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10008fde0",
+"native_offset" : "0x0003e",
+"unmanaged_name" : "start_wrapper"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100006464",
+"native_offset" : "0x0007d",
+"unmanaged_name" : "_pthread_start"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100001f5c",
+"native_offset" : "0x0000f",
+"unmanaged_name" : "thread_start"
+}
+
+]
+},
+{
+"is_managed" : false,
+"offset_free_hash" : "0x0",
+"offset_rich_hash" : "0xa00e882b0",
+"crashed" : false,
+"native_thread_id" : "0x30ea45000",
+"thread_info_addr" : "0x7fbb8e81b800",
+"thread_name" : "tid_3303",
+"ctx" : {
+"IP" : "0x7ff8189ef0aa",
+"SP" : "0x30ea44db8",
+"BP" : "0x30ea44e20"
+},
+"unmanaged_frames" : [
+{
+"is_managed" : "false",
+"native_address" : "0x1001fd9c0",
+"native_offset" : "0x00036",
+"unmanaged_name" : "mono_summarize_unmanaged_stack"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10008eeb0",
+"native_offset" : "0x00293",
+"unmanaged_name" : "mono_threads_summarize_execute_internal"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10008ee10",
+"native_offset" : "0x00077",
+"unmanaged_name" : "mono_threads_summarize_execute"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100262350",
+"native_offset" : "0x00070",
+"unmanaged_name" : "sigterm_signal_handler"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100003de0",
+"native_offset" : "0x0001d",
+"unmanaged_name" : "_sigtramp"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "unregistered"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x1002ff2a0",
+"native_offset" : "0x00308",
+"unmanaged_name" : "ds_ipc_stream_factory_get_next_available_stream"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x1002fe000",
+"native_offset" : "0x000e7",
+"unmanaged_name" : "server_thread"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x1003014a0",
+"native_offset" : "0x00024",
+"unmanaged_name" : "ep_rt_thread_mono_start_func"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100006464",
+"native_offset" : "0x0007d",
+"unmanaged_name" : "_pthread_start"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100001f5c",
+"native_offset" : "0x0000f",
+"unmanaged_name" : "thread_start"
+}
+
+]
+},
+{
+"is_managed" : true,
+"offset_free_hash" : "0x31138034e",
+"offset_rich_hash" : "0x1912b40780",
+"crashed" : false,
+"native_thread_id" : "0x30f671000",
+"thread_info_addr" : "0x7fbb8f6d6000",
+"thread_name" : "ProtocolHandler.ProcessThread",
+"ctx" : {
+"IP" : "0x7ff8189eb3ea",
+"SP" : "0x30f670398",
+"BP" : "0x30f670440"
+},
+"managed_frames" : [
+{
+"is_managed" : "false",
+"native_address" : "0x1000043e0",
+"native_offset" : "0x00000"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+"token" : "0x00000",
+"native_offset" : "0x108",
+"method_name" : "Monitor_wait",
+"filename" : "System.Private.CoreLib.dll",
+"sizeofimage" : "0x372000",
+"timestamp" : "0x9631635c",
+"il_offset" : "0x00000"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+"token" : "0x6002e23",
+"native_offset" : "0x108",
+"method_name" : "ObjWait",
+"filename" : "System.Private.CoreLib.dll",
+"sizeofimage" : "0x372000",
+"timestamp" : "0x9631635c",
+"il_offset" : "0x00026"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+"token" : "0x6002e1a",
+"native_offset" : "0x108",
+"method_name" : "Wait",
+"filename" : "System.Private.CoreLib.dll",
+"sizeofimage" : "0x372000",
+"timestamp" : "0x9631635c",
+"il_offset" : "0x0000e"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+"token" : "0x6002e2c",
+"native_offset" : "0x108",
+"method_name" : "Wait",
+"filename" : "System.Private.CoreLib.dll",
+"sizeofimage" : "0x372000",
+"timestamp" : "0x9631635c",
+"il_offset" : "0x00000"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "E33C1F7A-A0F6-47BA-8058-5FD00ECEF3D7",
+"token" : "0x60001d1",
+"native_offset" : "0x108",
+"method_name" : "WaitForData",
+"filename" : "Microsoft.VisualStudio.DesignTools.TapContract.dll",
+"sizeofimage" : "0x18000",
+"timestamp" : "0x0",
+"il_offset" : "0x00013"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "E33C1F7A-A0F6-47BA-8058-5FD00ECEF3D7",
+"token" : "0x600013c",
+"native_offset" : "0x108",
+"method_name" : "ActionThread",
+"filename" : "Microsoft.VisualStudio.DesignTools.TapContract.dll",
+"sizeofimage" : "0x18000",
+"timestamp" : "0x0",
+"il_offset" : "0x0004f"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+"token" : "0x6002edc",
+"native_offset" : "0x108",
+"method_name" : "RunWorker",
+"filename" : "System.Private.CoreLib.dll",
+"sizeofimage" : "0x372000",
+"timestamp" : "0x9631635c",
+"il_offset" : "0x00047"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+"token" : "0x6002edb",
+"native_offset" : "0x108",
+"method_name" : "Run",
+"filename" : "System.Private.CoreLib.dll",
+"sizeofimage" : "0x372000",
+"timestamp" : "0x9631635c",
+"il_offset" : "0x00027"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+"token" : "0x6002e69",
+"native_offset" : "0x108",
+"method_name" : "StartCallback",
+"filename" : "System.Private.CoreLib.dll",
+"sizeofimage" : "0x372000",
+"timestamp" : "0x9631635c",
+"il_offset" : "0x0000e"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+"token" : "0x00000",
+"native_offset" : "0x108",
+"method_name" : "runtime_invoke_direct_void__this__",
+"filename" : "System.Private.CoreLib.dll",
+"sizeofimage" : "0x372000",
+"timestamp" : "0x9631635c",
+"il_offset" : "0x00030"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x1002740a0",
+"native_offset" : "0x00000"
+}
+
+],
+"unmanaged_frames" : [
+{
+"is_managed" : "false",
+"native_address" : "0x1001fd9c0",
+"native_offset" : "0x00036",
+"unmanaged_name" : "mono_summarize_unmanaged_stack"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10008eeb0",
+"native_offset" : "0x00293",
+"unmanaged_name" : "mono_threads_summarize_execute_internal"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10008ee10",
+"native_offset" : "0x00077",
+"unmanaged_name" : "mono_threads_summarize_execute"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100262350",
+"native_offset" : "0x00070",
+"unmanaged_name" : "sigterm_signal_handler"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100003de0",
+"native_offset" : "0x0001d",
+"unmanaged_name" : "_sigtramp"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x5a158000",
+"native_offset" : "0x00000"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x1000eb750",
+"native_offset" : "0x0006d",
+"unmanaged_name" : "mono_os_cond_timedwait"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100096250",
+"native_offset" : "0x00106",
+"unmanaged_name" : "mono_w32handle_timedwait_signal_handle"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100095e70",
+"native_offset" : "0x00367",
+"unmanaged_name" : "mono_w32handle_wait_one"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x1000bb1e0",
+"native_offset" : "0x00119",
+"unmanaged_name" : "ves_icall_System_Threading_Monitor_Monitor_wait"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100046e70",
+"native_offset" : "0x00057",
+"unmanaged_name" : "ves_icall_System_Threading_Monitor_Monitor_wait_raw"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x1002750f0",
+"native_offset" : "0x00114",
+"unmanaged_name" : "do_icall"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x1002740a0",
+"native_offset" : "0x000fd",
+"unmanaged_name" : "do_icall_wrapper"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x1002657e0",
+"native_offset" : "0x00b9a",
+"unmanaged_name" : "interp_exec_method"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100264510",
+"native_offset" : "0x000ef",
+"unmanaged_name" : "interp_runtime_invoke"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10015b380",
+"native_offset" : "0x004d6",
+"unmanaged_name" : "mono_jit_runtime_invoke"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100076c80",
+"native_offset" : "0x00088",
+"unmanaged_name" : "mono_runtime_invoke_checked"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10008fe40",
+"native_offset" : "0x00265",
+"unmanaged_name" : "start_wrapper_internal"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10008fde0",
+"native_offset" : "0x0003e",
+"unmanaged_name" : "start_wrapper"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100006464",
+"native_offset" : "0x0007d",
+"unmanaged_name" : "_pthread_start"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100001f5c",
+"native_offset" : "0x0000f",
+"unmanaged_name" : "thread_start"
+}
+
+]
+},
+{
+"is_managed" : false,
+"offset_free_hash" : "0x0",
+"offset_rich_hash" : "0x9006a9790",
+"crashed" : false,
+"native_thread_id" : "0x30ec48000",
+"thread_info_addr" : "0x7fbb8f012000",
+"thread_name" : "Finalizer",
+"ctx" : {
+"IP" : "0x7ff8189e89b6",
+"SP" : "0x30ec47eb8",
+"BP" : "0x30ec47f00"
+},
+"unmanaged_frames" : [
+{
+"is_managed" : "false",
+"native_address" : "0x1001fd9c0",
+"native_offset" : "0x00036",
+"unmanaged_name" : "mono_summarize_unmanaged_stack"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10008eeb0",
+"native_offset" : "0x00293",
+"unmanaged_name" : "mono_threads_summarize_execute_internal"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10008ee10",
+"native_offset" : "0x00077",
+"unmanaged_name" : "mono_threads_summarize_execute"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100262350",
+"native_offset" : "0x00070",
+"unmanaged_name" : "sigterm_signal_handler"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100003de0",
+"native_offset" : "0x0001d",
+"unmanaged_name" : "_sigtramp"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x8d6",
+"native_offset" : "0x00000"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10008fe40",
+"native_offset" : "0x00173",
+"unmanaged_name" : "start_wrapper_internal"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10008fde0",
+"native_offset" : "0x0003e",
+"unmanaged_name" : "start_wrapper"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100006464",
+"native_offset" : "0x0007d",
+"unmanaged_name" : "_pthread_start"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100001f5c",
+"native_offset" : "0x0000f",
+"unmanaged_name" : "thread_start"
+}
+
+]
+},
+{
+"is_managed" : true,
+"offset_free_hash" : "0x2e619e68f",
+"offset_rich_hash" : "0x14e76532e4",
+"crashed" : false,
+"native_thread_id" : "0x30f874000",
+"thread_info_addr" : "0x7fbb8f5bc200",
+"thread_name" : ".NET Timers",
+"ctx" : {
+"IP" : "0x7ff8189eb3ea",
+"SP" : "0x30f873648",
+"BP" : "0x30f8736f0"
+},
+"managed_frames" : [
+{
+"is_managed" : "false",
+"native_address" : "0x1000043e0",
+"native_offset" : "0x00000"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+"token" : "0x00000",
+"native_offset" : "0x108",
+"method_name" : "LowLevelMonitor_TimedWait",
+"filename" : "System.Private.CoreLib.dll",
+"sizeofimage" : "0x372000",
+"timestamp" : "0x9631635c",
+"il_offset" : "0x0000c"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+"token" : "0x600304c",
+"native_offset" : "0x108",
+"method_name" : "WaitCore",
+"filename" : "System.Private.CoreLib.dll",
+"sizeofimage" : "0x372000",
+"timestamp" : "0x9631635c",
+"il_offset" : "0x0000c"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+"token" : "0x6003045",
+"native_offset" : "0x108",
+"method_name" : "Wait",
+"filename" : "System.Private.CoreLib.dll",
+"sizeofimage" : "0x372000",
+"timestamp" : "0x9631635c",
+"il_offset" : "0x00000"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+"token" : "0x6003318",
+"native_offset" : "0x108",
+"method_name" : "Wait",
+"filename" : "System.Private.CoreLib.dll",
+"sizeofimage" : "0x372000",
+"timestamp" : "0x9631635c",
+"il_offset" : "0x00072"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+"token" : "0x600333c",
+"native_offset" : "0x108",
+"method_name" : "Wait_Locked",
+"filename" : "System.Private.CoreLib.dll",
+"sizeofimage" : "0x372000",
+"timestamp" : "0x9631635c",
+"il_offset" : "0x000a6"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+"token" : "0x600333b",
+"native_offset" : "0x108",
+"method_name" : "Wait",
+"filename" : "System.Private.CoreLib.dll",
+"sizeofimage" : "0x372000",
+"timestamp" : "0x9631635c",
+"il_offset" : "0x00025"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+"token" : "0x6003304",
+"native_offset" : "0x108",
+"method_name" : "Wait",
+"filename" : "System.Private.CoreLib.dll",
+"sizeofimage" : "0x372000",
+"timestamp" : "0x9631635c",
+"il_offset" : "0x00000"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+"token" : "0x6003303",
+"native_offset" : "0x108",
+"method_name" : "Wait",
+"filename" : "System.Private.CoreLib.dll",
+"sizeofimage" : "0x372000",
+"timestamp" : "0x9631635c",
+"il_offset" : "0x00000"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+"token" : "0x600324f",
+"native_offset" : "0x108",
+"method_name" : "WaitOneCore",
+"filename" : "System.Private.CoreLib.dll",
+"sizeofimage" : "0x372000",
+"timestamp" : "0x9631635c",
+"il_offset" : "0x00000"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+"token" : "0x6003234",
+"native_offset" : "0x108",
+"method_name" : "WaitOneNoCheck",
+"filename" : "System.Private.CoreLib.dll",
+"sizeofimage" : "0x372000",
+"timestamp" : "0x9631635c",
+"il_offset" : "0x0004c"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+"token" : "0x6003233",
+"native_offset" : "0x108",
+"method_name" : "WaitOne",
+"filename" : "System.Private.CoreLib.dll",
+"sizeofimage" : "0x372000",
+"timestamp" : "0x9631635c",
+"il_offset" : "0x00014"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+"token" : "0x60031d2",
+"native_offset" : "0x108",
+"method_name" : "TimerThread",
+"filename" : "System.Private.CoreLib.dll",
+"sizeofimage" : "0x372000",
+"timestamp" : "0x9631635c",
+"il_offset" : "0x00031"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+"token" : "0x6002edc",
+"native_offset" : "0x108",
+"method_name" : "RunWorker",
+"filename" : "System.Private.CoreLib.dll",
+"sizeofimage" : "0x372000",
+"timestamp" : "0x9631635c",
+"il_offset" : "0x0002a"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+"token" : "0x6002edb",
+"native_offset" : "0x108",
+"method_name" : "Run",
+"filename" : "System.Private.CoreLib.dll",
+"sizeofimage" : "0x372000",
+"timestamp" : "0x9631635c",
+"il_offset" : "0x00027"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+"token" : "0x6002e69",
+"native_offset" : "0x108",
+"method_name" : "StartCallback",
+"filename" : "System.Private.CoreLib.dll",
+"sizeofimage" : "0x372000",
+"timestamp" : "0x9631635c",
+"il_offset" : "0x0000e"
+}
+,
+{
+"is_managed" : "true",
+"guid" : "0E88C329-E4FD-466B-97A2-452667C8F179",
+"token" : "0x00000",
+"native_offset" : "0x108",
+"method_name" : "runtime_invoke_direct_void__this__",
+"filename" : "System.Private.CoreLib.dll",
+"sizeofimage" : "0x372000",
+"timestamp" : "0x9631635c",
+"il_offset" : "0x00030"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x1002740a0",
+"native_offset" : "0x00000"
+}
+
+],
+"unmanaged_frames" : [
+{
+"is_managed" : "false",
+"native_address" : "0x1001fd9c0",
+"native_offset" : "0x00036",
+"unmanaged_name" : "mono_summarize_unmanaged_stack"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10008eeb0",
+"native_offset" : "0x00293",
+"unmanaged_name" : "mono_threads_summarize_execute_internal"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10008ee10",
+"native_offset" : "0x00077",
+"unmanaged_name" : "mono_threads_summarize_execute"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100262350",
+"native_offset" : "0x00070",
+"unmanaged_name" : "sigterm_signal_handler"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100003de0",
+"native_offset" : "0x0001d",
+"unmanaged_name" : "_sigtramp"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "unregistered"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10000df50",
+"native_offset" : "0x0004e",
+"unmanaged_name" : "SystemNative_LowLevelMonitor_TimedWait"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x1002750f0",
+"native_offset" : "0x00120",
+"unmanaged_name" : "do_icall"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x1002740a0",
+"native_offset" : "0x000fd",
+"unmanaged_name" : "do_icall_wrapper"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x1002657e0",
+"native_offset" : "0x00b9a",
+"unmanaged_name" : "interp_exec_method"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100264510",
+"native_offset" : "0x000ef",
+"unmanaged_name" : "interp_runtime_invoke"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10015b380",
+"native_offset" : "0x004d6",
+"unmanaged_name" : "mono_jit_runtime_invoke"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100076c80",
+"native_offset" : "0x00088",
+"unmanaged_name" : "mono_runtime_invoke_checked"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10008fe40",
+"native_offset" : "0x00265",
+"unmanaged_name" : "start_wrapper_internal"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10008fde0",
+"native_offset" : "0x0003e",
+"unmanaged_name" : "start_wrapper"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100006464",
+"native_offset" : "0x0007d",
+"unmanaged_name" : "_pthread_start"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100001f5c",
+"native_offset" : "0x0000f",
+"unmanaged_name" : "thread_start"
+}
+
+]
+},
+{
+"is_managed" : false,
+"offset_free_hash" : "0x0",
+"offset_rich_hash" : "0xb009b9bd0",
+"crashed" : false,
+"native_thread_id" : "0x30ee4b000",
+"thread_info_addr" : "0x7fbb8f037400",
+"thread_name" : "Debugger agent",
+"ctx" : {
+"IP" : "0x7ff8189ebf0e",
+"SP" : "0x30ee4acd8",
+"BP" : "0x30ee4ad10"
+},
+"unmanaged_frames" : [
+{
+"is_managed" : "false",
+"native_address" : "0x1001fd9c0",
+"native_offset" : "0x00036",
+"unmanaged_name" : "mono_summarize_unmanaged_stack"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10008eeb0",
+"native_offset" : "0x00293",
+"unmanaged_name" : "mono_threads_summarize_execute_internal"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10008ee10",
+"native_offset" : "0x00077",
+"unmanaged_name" : "mono_threads_summarize_execute"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100262350",
+"native_offset" : "0x00070",
+"unmanaged_name" : "sigterm_signal_handler"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100003de0",
+"native_offset" : "0x0001d",
+"unmanaged_name" : "_sigtramp"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x3df00000004",
+"native_offset" : "0x00000"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100045920",
+"native_offset" : "0x00030",
+"unmanaged_name" : "_ZL8sdb_recvPvm"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x1002cab20",
+"native_offset" : "0x009cd",
+"unmanaged_name" : "debugger_thread"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10008fe40",
+"native_offset" : "0x00173",
+"unmanaged_name" : "start_wrapper_internal"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x10008fde0",
+"native_offset" : "0x0003e",
+"unmanaged_name" : "start_wrapper"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100006464",
+"native_offset" : "0x0007d",
+"unmanaged_name" : "_pthread_start"
+}
+,
+{
+"is_managed" : "false",
+"native_address" : "0x100001f5c",
+"native_offset" : "0x0000f",
+"unmanaged_name" : "thread_start"
+}
+
+]
+}
+]
+}

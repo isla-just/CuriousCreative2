@@ -1,4 +1,5 @@
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/icudt.dat
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/CommunityToolkit.Mvvm.dll
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/Microsoft.Extensions.Configuration.dll
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/Microsoft.Extensions.DependencyInjection.dll
@@ -8,6 +9,13 @@
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/Microsoft.Extensions.Options.dll
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/Microsoft.Extensions.Primitives.dll
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/Microsoft.Maui.Graphics.dll
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/Microsoft.Toolkit.Mvvm.dll
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/SQLite-net.dll
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/SQLitePCLRaw.batteries_v2.dll
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/SQLitePCLRaw.core.dll
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/SQLitePCLRaw.provider.dynamic_cdecl.dll
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/SQLitePCLRaw.provider.e_sqlite3.dll
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/SQLitePCLRaw.provider.sqlite3.dll
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/TheCuriousCreative2.dll
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/Microsoft.CSharp.dll
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/Microsoft.VisualBasic.Core.dll
@@ -187,5 +195,6 @@
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/libSystem.Security.Cryptography.Native.Apple.dylib
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/libmonosgen-2.0.dylib
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/libxamarin-dotnet-debug.dylib
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/libe_sqlite3.dylib
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MonoBundle/System.Private.CoreLib.aotdata.x86_64
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/publish/../TheCuriousCreative2.app/Contents/MacOS//TheCuriousCreative2

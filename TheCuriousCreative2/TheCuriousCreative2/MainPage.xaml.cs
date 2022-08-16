@@ -1,4 +1,6 @@
-﻿namespace TheCuriousCreative2;
+﻿using System.Runtime.InteropServices;
+
+namespace TheCuriousCreative2;
 
 public partial class MainPage : ContentPage
 {
@@ -8,18 +10,18 @@ public partial class MainPage : ContentPage
 	{
 		InitializeComponent();
 	}
+    //potential crash fix
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
+    //static void Main(string[] args)
+    //{
+    //    abort();
+    //    NSApplication.Init();
+    //    NSApplication.Main(args);
+    //}
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+    //[DllImport("libc")]
+    //static extern void abort();
 }
 
 
