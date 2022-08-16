@@ -640,3 +640,14 @@
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/add.png
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/dropdown.png
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/arrow_down.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/add.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/arrow_down.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/dropdown.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/illustration_login.jpg
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/CommunityToolkit.Mvvm.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/Microsoft.Toolkit.Mvvm.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/SQLite-net.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/SQLitePCLRaw.batteries_v2.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/SQLitePCLRaw.core.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/SQLitePCLRaw.provider.dynamic_cdecl.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/SQLitePCLRaw.provider.sqlite3.dll

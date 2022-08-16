@@ -1,4 +1,8 @@
-﻿namespace TheCuriousCreative2;
+﻿using TheCuriousCreative2.Services;
+using TheCuriousCreative2.ViewModels;
+
+
+namespace TheCuriousCreative2;
 
 public static class MauiProgram
 {
@@ -24,8 +28,17 @@ public static class MauiProgram
                 fonts.AddFont("Satoshi-Medium.otf", "SatoshiMedium");
            
             });
+        //services
+        builder.Services.AddSingleton<IClientService, ClientService>();
 
-		return builder.Build();
+        //views
+        builder.Services.AddSingleton<ClientManagement>();
+
+        //view models
+        //builder.Services.AddSingleton<ClientListPageViewModel>();
+        builder.Services.AddSingleton<AddUpdateClientViewModel>();
+
+        return builder.Build();
 	}
 }
 

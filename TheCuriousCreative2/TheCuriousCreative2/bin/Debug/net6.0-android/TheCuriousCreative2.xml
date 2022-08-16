@@ -4,5 +4,23 @@
         <name>TheCuriousCreative2</name>
     </assembly>
     <members>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.ClientDetail">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel._clientDetail"/>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.ClientName">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel._clientName"/>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.ClientNotes">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel._clientNotes"/>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.Priority">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel._priority"/>
+        </member>
+        <member name="F:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.addUpdateClientCommand">
+            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.AddUpdateClientCommand"/>.</summary>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.AddUpdateClientCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.AddUpdateClient"/>.</summary>
+        </member>
     </members>
 </doc>

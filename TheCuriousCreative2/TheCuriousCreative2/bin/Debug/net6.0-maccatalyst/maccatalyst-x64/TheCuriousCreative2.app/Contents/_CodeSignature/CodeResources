@@ -279,6 +279,13 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>MonoBundle/CommunityToolkit.Mvvm.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ekk1Ai4t2xZ1GMf9KJS/uHKy/lXbCXhl6mzgbZT0juc=
+			</data>
+		</dict>
 		<key>MonoBundle/Microsoft.CSharp.dll</key>
 		<dict>
 			<key>hash2</key>
@@ -391,6 +398,13 @@
 			BiYr44eJ+uJzBK68W+Z6ARga1R7vewlYe6TwzoyGzvc=
 			</data>
 		</dict>
+		<key>MonoBundle/Microsoft.Toolkit.Mvvm.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OS8hY9BSbYZuo+qm3qisxQ9M1vEmVcyL+lFBocfMKu8=
+			</data>
+		</dict>
 		<key>MonoBundle/Microsoft.VisualBasic.Core.dll</key>
 		<dict>
 			<key>hash2</key>
@@ -417,6 +431,48 @@
 			<key>hash2</key>
 			<data>
 			MPisM9eRBxwqtgO33KGLwPeCSEKDpp51Md6KSz0yi84=
+			</data>
+		</dict>
+		<key>MonoBundle/SQLite-net.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			G0Du6FIHrGQku+Pmrey48gKNhArHSSzdTDxdZdMFkb4=
+			</data>
+		</dict>
+		<key>MonoBundle/SQLitePCLRaw.batteries_v2.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iQ1yD5Yb9fdqGIH40MgKfJXXUJOfM8V9vi6bpErjCuc=
+			</data>
+		</dict>
+		<key>MonoBundle/SQLitePCLRaw.core.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CkGOMyOjp2Z4yRLDmy+6x61Pxxvz64cPwDNzM8pk58U=
+			</data>
+		</dict>
+		<key>MonoBundle/SQLitePCLRaw.provider.dynamic_cdecl.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ennuI93o9tOUDTR6aR+xxo4ZAbz7GM7EiBUPrQXjBPM=
+			</data>
+		</dict>
+		<key>MonoBundle/SQLitePCLRaw.provider.e_sqlite3.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RZ2Su7mjDaa/a9/+2PYM/InnUSxnZXMI7R1kOQM+p/Y=
+			</data>
+		</dict>
+		<key>MonoBundle/SQLitePCLRaw.provider.sqlite3.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RlqVI3T9FjqZf8p6y3HE2d/10di0uVgMO1UascVFouk=
 			</data>
 		</dict>
 		<key>MonoBundle/System.AppContext.dll</key>
@@ -1529,14 +1585,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			I5sIX2pWOwO1jaSEM10vVTbaGTbnJG/FHj0xuzQMx/c=
+			Bib5H0RPXwH9pF4Ya7kHB3i8G9jJiJkHU6G+QRzbizc=
 			</data>
 		</dict>
 		<key>MonoBundle/TheCuriousCreative2.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			EkHeYxrH5LH+Um227hRWJ5FmxOlHO2foaI2oyeW74fM=
+			rKemcsPvhXrZUkgAWNiOcQFDeBeR83d8FRlBxjQKyAk=
 			</data>
 		</dict>
 		<key>MonoBundle/WindowsBase.dll</key>
@@ -1579,6 +1635,13 @@
 			<key>hash2</key>
 			<data>
 			p0WhR9YUC1LYnvts4408QZGDSWHsHyRul6IOIUyxVWs=
+			</data>
+		</dict>
+		<key>MonoBundle/libe_sqlite3.dylib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k/GVywj/CvqJUHFaY8TUrRaiouN0PPDMrDXTtWh42XM=
 			</data>
 		</dict>
 		<key>MonoBundle/libmonosgen-2.0.dylib</key>
