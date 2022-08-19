@@ -3,9 +3,20 @@
       Shell.NavBarIsVisible="False"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TheCuriousCreative2.Dashboard"
-             
+             xmlns:local="clr-namespace:TheCuriousCreative2.ViewModels;assembly=TheCuriousCreative2"
+             xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.Maui;assembly=LiveChartsCore.SkiaSharpView.Maui"
+             xmlns:lvcore="clr-namespace:LiveChartsCore;assembly=LiveChartsCore"
+              x:Class="TheCuriousCreative2.Dashboard"
              >
+
+
+
+       <ContentPage.BindingContext>
+        <local:ViewModel/>
+    </ContentPage.BindingContext>
+
+    <ContentPage.Content>
+
     <VerticalStackLayout>
         <Border BackgroundColor="#FFFEF2" Stroke="#FF4C54" StrokeThickness="40" Margin="0, 0, -20, 0" >
 
@@ -101,7 +112,9 @@
 
                                             </HorizontalStackLayout>
 
-                                               <Image Source="graph_placeholder.png" Aspect="AspectFit" HeightRequest="170"></Image>
+                                       <!--<lvc:CartesianChart
+                                            Series="{Binding Series}">
+                                        </lvc:CartesianChart>-->
 
                                         </VerticalStackLayout>
 
@@ -227,4 +240,6 @@
 
         </Border>
     </VerticalStackLayout>
+
+        </ContentPage.Content> 
 </ContentPage>

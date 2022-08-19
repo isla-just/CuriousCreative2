@@ -2,17 +2,17 @@
 
 namespace TheCuriousCreative2;
 
-
 public partial class ProjectManagement : ContentPage
 {
-    private ProjectViewModel _viewMode;
-    public ProjectManagement(ProjectViewModel viewModel)
+    private AddUpdateProjectViewModel _viewMode;
+    public ProjectManagement(AddUpdateProjectViewModel viewModel)
     {
         InitializeComponent();
         _viewMode = viewModel;
         this.BindingContext = viewModel;
     }
 
+    //onchange when project table is changed
     protected override void OnAppearing()
     {
         base.OnAppearing();

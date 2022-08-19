@@ -1,20 +1,21 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
-//using Microsoft.Toolkit.Mvvm.ComponentModel;
-//using Microsoft.Toolkit.Mvvm.Input;
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 using TheCuriousCreative2.Models;
 using TheCuriousCreative2.Services;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CommunityToolkit.Mvvm.Input;
 
 namespace TheCuriousCreative2.ViewModels
 {
+    //using our model and services together to perform the action of adding or updating
     [QueryProperty(nameof(ProjectDetail), "ProjectDetail")]
+
     public partial class AddUpdateProjectViewModel : ObservableObject
     {
+        //test
+        public ObservableCollection<ProjectModel> Projects { get; set; } = new ObservableCollection<ProjectModel>();
+
         [ObservableProperty]
         private ProjectModel _projectDetail = new ProjectModel();
 
@@ -24,42 +25,104 @@ namespace TheCuriousCreative2.ViewModels
             _projectService = projectService;
         }
 
+        [ObservableProperty]
+        private string _projectName;
+
+        //[ObservableProperty]
+        //private string _image;
+
+        [ObservableProperty]
+        private string _client;
+
+        [ObservableProperty]
+        private string _status;
+
+        [ObservableProperty]
+        private string _designTeam;
+
+        [ObservableProperty]
+        private int _deposit;
+
+        [ObservableProperty]
+        private string _depositPaid;
+
+        [ObservableProperty]
+        private int _pricePerMonth;
+
+        [ObservableProperty]
+        private bool _priority;
+
+        //adding projects to the list
+        [RelayCommand]
+        public async void GetProjectList()
+        {
+            Projects.Clear();
+            var projectList = await _projectService.GetProjectList();
+            if (projectList?.Count > 0)
+            {
+                foreach (var project in projectList)
+                {
+                    Projects.Add(project);
+                }
+            }
+        }
+
+        //add display action to assign active state
+
+
         [RelayCommand]
         public async void AddUpdateProject()
         {
             int response = -1;
             if (ProjectDetail.ProjectID > 0)
             {
-                response = await _projectService.EditProject(ProjectDetail);
+                response = await _projectService.UpdateProject(ProjectDetail);
             }
             else
             {
                 response = await _projectService.AddProject(new Models.ProjectModel
                 {
                     ProjectName = ProjectDetail.ProjectName,
-                    Image = ProjectDetail.Image,
-                    Status = ProjectDetail.Status,
                     Client = ProjectDetail.Client,
+                    Status = ProjectDetail.Status,
+                    DesignTeam = ProjectDetail.DesignTeam,
                     Deposit = ProjectDetail.Deposit,
                     DepositPaid = ProjectDetail.DepositPaid,
                     PricePerMonth = ProjectDetail.PricePerMonth,
-                    TeamID = ProjectDetail.TeamID,
-                    Priority = ProjectDetail.Priority,
+                    Priority = ProjectDetail.Priority
                 });
             }
-
-
 
             if (response > 0)
             {
                 await Shell.Current.DisplayAlert("Project Info Saved", "Record Saved", "OK");
+                GetProjectList();
             }
             else
             {
                 await Shell.Current.DisplayAlert("Heads Up!", "Something went wrong while adding record", "OK");
             }
+
         }
 
+        [RelayCommand]
+        public async void DisplayAction(ProjectModel projectModel)
+        {
+            var response = await AppShell.Current.DisplayActionSheet("Select Option", "OK", null, "Edit", "Delete");
+            if (response == "Edit")
+            {
+                var navParam = new Dictionary<string, object>();
+                navParam.Add("ProjectDetail", projectModel);
+                await AppShell.Current.GoToAsync(nameof(AddUpdateProject), navParam);
+            }
+            else if (response == "Delete")
+            {
+                var delResponse = await _projectService.DeleteProject(projectModel);
+                if (delResponse > 0)
+                {
+                    GetProjectList();
+                }
+            }
+        }
     }
 }
-
