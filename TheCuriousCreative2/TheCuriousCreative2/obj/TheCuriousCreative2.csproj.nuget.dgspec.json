@@ -54,9 +54,13 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
-            "LiveChartsCore.SkiaSharpView.Maui": {
+            "LiveChartsCore": {
               "target": "Package",
-              "version": "[2.0.0-beta.300, )"
+              "version": "[2.0.0-beta.350, )"
+            },
+            "LiveChartsCore.SkiaSharpView": {
+              "target": "Package",
+              "version": "[2.0.0-beta.350, )"
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
@@ -88,9 +92,9 @@
               "target": "Package",
               "version": "[2.1.0, )"
             },
-            "SkiaSharp.Views.Maui.Controls.Compatibility": {
+            "SkiaSharp": {
               "target": "Package",
-              "version": "[2.88.1-preview.1, )"
+              "version": "[2.88.1, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -148,9 +152,13 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
-            "LiveChartsCore.SkiaSharpView.Maui": {
+            "LiveChartsCore": {
               "target": "Package",
-              "version": "[2.0.0-beta.300, )"
+              "version": "[2.0.0-beta.350, )"
+            },
+            "LiveChartsCore.SkiaSharpView": {
+              "target": "Package",
+              "version": "[2.0.0-beta.350, )"
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
@@ -182,9 +190,9 @@
               "target": "Package",
               "version": "[2.1.0, )"
             },
-            "SkiaSharp.Views.Maui.Controls.Compatibility": {
+            "SkiaSharp": {
               "target": "Package",
-              "version": "[2.88.1-preview.1, )"
+              "version": "[2.88.1, )"
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",
@@ -233,9 +241,13 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
-            "LiveChartsCore.SkiaSharpView.Maui": {
+            "LiveChartsCore": {
               "target": "Package",
-              "version": "[2.0.0-beta.300, )"
+              "version": "[2.0.0-beta.350, )"
+            },
+            "LiveChartsCore.SkiaSharpView": {
+              "target": "Package",
+              "version": "[2.0.0-beta.350, )"
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
@@ -267,9 +279,9 @@
               "target": "Package",
               "version": "[2.1.0, )"
             },
-            "SkiaSharp.Views.Maui.Controls.Compatibility": {
+            "SkiaSharp": {
               "target": "Package",
-              "version": "[2.88.1-preview.1, )"
+              "version": "[2.88.1, )"
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",
