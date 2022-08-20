@@ -94,6 +94,8 @@
 	  <None Remove="SkiaSharp" />
 	  <None Remove="SkiaSharp.Views.Maui.Controls.Compatibility" />
 	  <None Remove="LiveChartsCore.SkiaSharpView.Maui" />
+	  <None Remove="LiveChartsCore" />
+	  <None Remove="LiveChartsCore.SkiaSharpView" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Platforms\View\" />
@@ -110,7 +112,8 @@
 	  <PackageReference Include="SQLitePCLRaw.provider.sqlite3" Version="2.1.0" />
 	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
 	  <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.1.2" />
-	  <PackageReference Include="SkiaSharp.Views.Maui.Controls.Compatibility" Version="2.88.1-preview.1" />
-	  <PackageReference Include="LiveChartsCore.SkiaSharpView.Maui" Version="2.0.0-beta.300" />
+	  <PackageReference Include="LiveChartsCore" Version="2.0.0-beta.350" />
+	  <PackageReference Include="LiveChartsCore.SkiaSharpView" Version="2.0.0-beta.350" />
+	  <PackageReference Include="SkiaSharp" Version="2.88.1" />
 	</ItemGroup>
 </Project>

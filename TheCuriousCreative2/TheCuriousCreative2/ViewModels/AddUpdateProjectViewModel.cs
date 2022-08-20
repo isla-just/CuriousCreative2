@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using TheCuriousCreative2.Models;
@@ -76,6 +77,7 @@ namespace TheCuriousCreative2.ViewModels
             int response = -1;
             if (ProjectDetail.ProjectID > 0)
             {
+                Debug.WriteLine(ProjectDetail.ProjectID);
                 response = await _projectService.UpdateProject(ProjectDetail);
             }
             else

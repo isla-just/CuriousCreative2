@@ -1,25 +1,33 @@
-﻿using System;
-using LiveChartsCore;
-using LiveChartsCore.SkiaSharpView;
-using System.Collections.ObjectModel;
-using LiveChartsCore.Defaults;
-using LiveChartsCore.SkiaSharpView.Drawing.Geometries;
-using CommunityToolkit.Mvvm.ComponentModel;
+﻿//using LiveChartsCore.SkiaSharpView.Painting;
+//using LiveChartsCore.SkiaSharpView;
+//using LiveChartsCore;
+//using SkiaSharp;
+//using System;
+//using System.Collections.Generic;
+//using System.Linq;
+//using System.Text;
+//using System.Threading.Tasks;
 
-namespace TheCuriousCreative2.ViewModels
-{
+//namespace TheCuriousCreative2.ViewModels
+//{
 
-    public class ViewModel
-    {
-        public ISeries[] Series { get; set; }
-            = new ISeries[]
-            {
-            new LineSeries<double>
-            {
-                Values = new double[] { 2, 1, 3, 5, 3, 4, 6 },
-                Fill = null
-            }
-            };
-    }
+//    public class Charts
+//    {
+//        public ISeries[] LineOne { get; set; }
+//      = new ISeries[]
+//      {
+//                new LineSeries<double>
+//                {
+//                    Name = "Staff",
+//                    Values = new double[] {2,1,3,5,3,4,6},
+//                    Stroke = new SolidColorPaint(new SKColor(252, 105, 35)) { StrokeThickness = 3 },
+//                    Fill = null,
+//                    GeometryFill = null,
 
-}
+//                }
+
+
+//      };
+//    }
+
+//}

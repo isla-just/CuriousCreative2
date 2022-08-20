@@ -2,7 +2,8 @@
 using TheCuriousCreative2.ViewModels;
 using Microsoft.Maui.Controls.Hosting;
 using Microsoft.Maui.Hosting;
-using SkiaSharp.Views.Maui.Controls.Hosting;
+//using SkiaSharp.Views.Maui.Controls.Hosting;
+
 
 namespace TheCuriousCreative2;
 
@@ -12,7 +13,7 @@ public static class MauiProgram
 	{
 		var builder = MauiApp.CreateBuilder();
 		builder
-            .UseSkiaSharp(true)
+            //.UseSkiaSharp(true)
             .UseMauiApp<App>()
 			.ConfigureFonts(fonts =>
 			{
@@ -36,17 +37,16 @@ public static class MauiProgram
         builder.Services.AddSingleton<IFundsService, FundsService>();
         builder.Services.AddSingleton<IProjectService, ProjectService>();
 
-
         //views
         builder.Services.AddSingleton<ClientManagement>();
         builder.Services.AddSingleton<Funds>();
         builder.Services.AddSingleton<ProjectManagement>();
 
         //view models
+        //builder.Services.AddSingleton<ClientListPageViewModel>();
         builder.Services.AddSingleton<AddUpdateClientViewModel>();
         builder.Services.AddSingleton<FundsListViewModel>();
         builder.Services.AddSingleton<AddUpdateProjectViewModel>();
-      
 
         return builder.Build();
 	}

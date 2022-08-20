@@ -1,14 +1,23 @@
-﻿<Properties StartupConfiguration="{ABEDEA07-5F9B-4E41-B4CB-F4C80867AC6C}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+﻿<Properties NuGet.AddPackagesDialog.IncludePrerelease="True" StartupConfiguration="{ABEDEA07-5F9B-4E41-B4CB-F4C80867AC6C}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.TheCuriousCreative2 PreferredExecutionTarget="MyAppleMacCatalystID" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.TheCuriousCreative2 PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
   <MonoDevelop.Ide.Workbench ActiveDocument="TheCuriousCreative2/Views/ClientManagement.xaml">
     <Files>
-      <File FileName="TheCuriousCreative2/ViewModels/AddUpdateProjectViewModel.cs" Line="86" Column="21" />
-      <File FileName="TheCuriousCreative2/Views/ProjectManagement.xaml" Line="75" Column="60" />
-      <File FileName="TheCuriousCreative2/Views/ClientManagement.xaml" Line="354" Column="18" />
+      <File FileName="TheCuriousCreative2/Views/ClientManagement.xaml" Line="123" Column="236" />
+      <File FileName="TheCuriousCreative2/Services/FundsService.cs" Line="1" Column="1" />
+      <File FileName="TheCuriousCreative2/MauiProgram.cs" Line="5" Column="47" />
+      <File FileName="TheCuriousCreative2/Views/Dashboard.xaml" Line="14" Column="1" />
+      <File FileName="TheCuriousCreative2/ViewModels/Charts.cs" Line="34" Column="1" />
+      <File FileName="TheCuriousCreative2/Models/ClientModel.cs" Line="1" Column="1" />
+      <File FileName="TheCuriousCreative2/Views/Dashboard.xaml.cs" Line="6" Column="20" />
+      <File FileName="TheCuriousCreative2/Views/ClientManagement.xaml.cs" Line="1" Column="1" />
+      <File FileName="TheCuriousCreative2/ViewModels/AddUpdateClientViewModel.cs" Line="82" Column="14" />
+      <File FileName="TheCuriousCreative2/Platforms/MacCatalyst/Program.cs" Line="17" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,16 +26,17 @@
             <Node name="TheCuriousCreative2" expanded="True">
               <Node name="Controls" expanded="True" />
               <Node name="Models" expanded="True" />
+              <Node name="Platforms" expanded="True">
+                <Node name="MacCatalyst" expanded="True" />
+              </Node>
               <Node name="Services" expanded="True" />
               <Node name="ViewModels" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="ClientManagement.xaml" expanded="True" selected="True" />
+                <Node name="ClientManagement.xaml" expanded="True" />
                 <Node name="Dashboard.xaml" expanded="True" />
                 <Node name="Funds.xaml" expanded="True" />
-                <Node name="ProjectManagement.xaml" expanded="True" />
               </Node>
               <Node name="App.xaml" expanded="True" />
-              <Node name="AppShell.xaml" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -37,6 +47,4 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
 </Properties>

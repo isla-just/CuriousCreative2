@@ -3,7 +3,6 @@
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/publish/../TheCuriousCreative2.app/HarfBuzzSharp.dll
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/publish/../TheCuriousCreative2.app/LiveChartsCore.dll
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/publish/../TheCuriousCreative2.app/LiveChartsCore.SkiaSharpView.dll
-/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/publish/../TheCuriousCreative2.app/LiveChartsCore.SkiaSharpView.Maui.dll
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/publish/../TheCuriousCreative2.app/Microsoft.Extensions.Configuration.dll
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/publish/../TheCuriousCreative2.app/Microsoft.Extensions.Configuration.Abstractions.dll
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/publish/../TheCuriousCreative2.app/Microsoft.Extensions.DependencyInjection.dll
@@ -16,10 +15,6 @@
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/publish/../TheCuriousCreative2.app/Microsoft.Toolkit.Mvvm.dll
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/publish/../TheCuriousCreative2.app/SkiaSharp.dll
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/publish/../TheCuriousCreative2.app/SkiaSharp.HarfBuzz.dll
-/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/publish/../TheCuriousCreative2.app/SkiaSharp.Views.iOS.dll
-/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/publish/../TheCuriousCreative2.app/SkiaSharp.Views.Maui.Controls.dll
-/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/publish/../TheCuriousCreative2.app/SkiaSharp.Views.Maui.Controls.Compatibility.dll
-/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/publish/../TheCuriousCreative2.app/SkiaSharp.Views.Maui.Core.dll
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/publish/../TheCuriousCreative2.app/SQLite-net.dll
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/publish/../TheCuriousCreative2.app/SQLitePCLRaw.batteries_v2.dll
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/publish/../TheCuriousCreative2.app/SQLitePCLRaw.core.dll

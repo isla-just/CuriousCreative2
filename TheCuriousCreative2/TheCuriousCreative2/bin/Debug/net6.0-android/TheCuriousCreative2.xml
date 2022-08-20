@@ -16,17 +16,29 @@
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.Priority">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel._priority"/>
         </member>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.ActiveClient">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.activeClient"/>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.IsEditing">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.isEditing"/>
+        </member>
         <member name="F:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.getClientListCommand">
             <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.GetClientListCommand"/>.</summary>
         </member>
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.GetClientListCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.GetClientList"/>.</summary>
         </member>
-        <member name="F:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.addUpdateClientCommand">
-            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.AddUpdateClientCommand"/>.</summary>
+        <member name="F:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.updateClientCommand">
+            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.UpdateClientCommand"/>.</summary>
         </member>
-        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.AddUpdateClientCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.AddUpdateClient"/>.</summary>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.UpdateClientCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.UpdateClient"/>.</summary>
+        </member>
+        <member name="F:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.addClientCommand">
+            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.AddClientCommand"/>.</summary>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.AddClientCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.AddClient"/>.</summary>
         </member>
         <member name="F:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.displayActionCommand">
             <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.DisplayActionCommand"/>.</summary>

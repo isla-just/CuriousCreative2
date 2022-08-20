@@ -4,6 +4,7 @@ using CommunityToolkit.Mvvm.Input;
 using TheCuriousCreative2.Services;
 using TheCuriousCreative2.Models;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 
 namespace TheCuriousCreative2.ViewModels
 {
@@ -49,15 +50,46 @@ namespace TheCuriousCreative2.ViewModels
         }
 
         //add display action to assign active state
+        [ObservableProperty]
+        ClientModel activeClient = new ClientModel();
+
+        //use this to set visibility - this is a toggle
+        [ObservableProperty]
+        bool isEditing = false;
 
 
         [RelayCommand]
-        public async void AddUpdateClient()
+        public async void UpdateClient()
+        {
+            int response = -1;
+            if (ActiveClient.ClientID > 0)
+            {
+                response = await _clientService.UpdateClient(ActiveClient);
+            }
+            else
+            {
+                Debug.WriteLine("Id not found");
+            }
+
+            if (response > 0)
+            {
+                await Shell.Current.DisplayAlert("Client Info Saved", "Record Saved", "OK");
+                GetClientList();
+            }
+            else
+            {
+                await Shell.Current.DisplayAlert("Heads Up!!!!", "Something went wrong while editing record", "OK");
+            }
+
+        }
+
+        [RelayCommand]
+        public async void AddClient()
         {
             int response = -1;
             if (ClientDetail.ClientID > 0)
             {
-                response = await _clientService.UpdateClient(ClientDetail);
+                Debug.WriteLine("this client already exists");
             }
             else
             {
@@ -87,9 +119,11 @@ namespace TheCuriousCreative2.ViewModels
             var response = await AppShell.Current.DisplayActionSheet("Select Option", "OK", null, "Edit", "Delete");
             if (response == "Edit")
             {
-                var navParam = new Dictionary<string, object>();
-                navParam.Add("ClientDetail", clientModel);
-                await AppShell.Current.GoToAsync(nameof(AddUpdateClient), navParam);
+
+                ActiveClient = clientModel;
+                Debug.WriteLine(ActiveClient);
+                IsEditing = true;
+
             }
             else if (response == "Delete")
             {

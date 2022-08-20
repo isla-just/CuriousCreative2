@@ -1248,26 +1248,6 @@ app_system_properties:
 .L.env.buf.302:
 	.zero	70
 	.size	.L.env.buf.302, 70
-	.type	.L.env.buf.303, @object
-.L.env.buf.303:
-	.zero	70
-	.size	.L.env.buf.303, 70
-	.type	.L.env.buf.304, @object
-.L.env.buf.304:
-	.zero	70
-	.size	.L.env.buf.304, 70
-	.type	.L.env.buf.305, @object
-.L.env.buf.305:
-	.zero	70
-	.size	.L.env.buf.305, 70
-	.type	.L.env.buf.306, @object
-.L.env.buf.306:
-	.zero	70
-	.size	.L.env.buf.306, 70
-	.type	.L.env.buf.307, @object
-.L.env.buf.307:
-	.zero	70
-	.size	.L.env.buf.307, 70
 	# Bundled assemblies data
 
 	.type	bundled_assemblies, @object
@@ -3397,42 +3377,7 @@ bundled_assemblies:
 	.long	0x0	# name_length
 	.long	.L.env.buf.302	# name
 
-	.long	0xffffffff	# apk_fd
-	.long	0x0	# data_offset
-	.long	0x0	# data_size
-	.long	0x0	# data
-	.long	0x0	# name_length
-	.long	.L.env.buf.303	# name
-
-	.long	0xffffffff	# apk_fd
-	.long	0x0	# data_offset
-	.long	0x0	# data_size
-	.long	0x0	# data
-	.long	0x0	# name_length
-	.long	.L.env.buf.304	# name
-
-	.long	0xffffffff	# apk_fd
-	.long	0x0	# data_offset
-	.long	0x0	# data_size
-	.long	0x0	# data
-	.long	0x0	# name_length
-	.long	.L.env.buf.305	# name
-
-	.long	0xffffffff	# apk_fd
-	.long	0x0	# data_offset
-	.long	0x0	# data_size
-	.long	0x0	# data
-	.long	0x0	# name_length
-	.long	.L.env.buf.306	# name
-
-	.long	0xffffffff	# apk_fd
-	.long	0x0	# data_offset
-	.long	0x0	# data_size
-	.long	0x0	# data
-	.long	0x0	# name_length
-	.long	.L.env.buf.307	# name
-
-	.size	bundled_assemblies, 7392
+	.size	bundled_assemblies, 7272
 	# Assembly store individual assembly data
 	.type	assembly_store_bundled_assemblies, @object
 	.global	assembly_store_bundled_assemblies
@@ -3740,7 +3685,7 @@ application_config:
 	.long	0x3	# package_naming_policy
 	.long	0xc	# environment_variable_count
 	.long	0x0	# system_property_count
-	.long	0x134	# number_of_assemblies_in_apk
+	.long	0x12f	# number_of_assemblies_in_apk
 	.long	0x46	# bundled_assembly_name_width
 	.long	0x2	# number_of_assembly_store_files
 	.long	0x2c	# number_of_dso_cache_entries
@@ -3792,7 +3737,7 @@ application_config:
 
 	.type	.L.autostr.8, @object
 .L.autostr.8:
-	.asciz	"c8d3ad6d-049a-449c-96a8-90b29a7c3980"
+	.asciz	"fed9163f-b571-4680-840f-2994cb900f47"
 	.size	.L.autostr.8, 37
 
 	.type	.L.autostr.9, @object
