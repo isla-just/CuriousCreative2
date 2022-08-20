@@ -279,6 +279,59 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/libHarfBuzzSharp.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			nrK2muzqfqUSjjxzzIPKIOX0TxM=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"9eb2b69aecea7ea5128e3c73cc83ca20e5f44f13"</string>
+		</dict>
+		<key>Frameworks/libSkiaSharp.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			8YtFtZqyJw+21taAuRA4vagKMMg=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"f18b45b59ab2270fb6d6d680b91038bda80a30c8"</string>
+		</dict>
+		<key>MonoBundle/CommunityToolkit.Mvvm.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ekk1Ai4t2xZ1GMf9KJS/uHKy/lXbCXhl6mzgbZT0juc=
+			</data>
+		</dict>
+		<key>MonoBundle/HarfBuzzSharp.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nToRzrtlogMuXOuf1R+lZjR7SgkUXsO4b5FGEXsE2jQ=
+			</data>
+		</dict>
+		<key>MonoBundle/LiveChartsCore.SkiaSharpView.Maui.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BB15sodEPqRYaYirHIrROqfoo6U2VlbQNlRLEAhzV3c=
+			</data>
+		</dict>
+		<key>MonoBundle/LiveChartsCore.SkiaSharpView.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xyndf9AaZdz8SD8IWYFBz21D+P1fxg2fybUvQrX8aSM=
+			</data>
+		</dict>
+		<key>MonoBundle/LiveChartsCore.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/czjAI5uS34/op3XdI+dGmrqRGKBZFjY7SFZ4xMxXYQ=
+			</data>
+		</dict>
 		<key>MonoBundle/Microsoft.CSharp.dll</key>
 		<dict>
 			<key>hash2</key>
@@ -391,6 +444,13 @@
 			BiYr44eJ+uJzBK68W+Z6ARga1R7vewlYe6TwzoyGzvc=
 			</data>
 		</dict>
+		<key>MonoBundle/Microsoft.Toolkit.Mvvm.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OS8hY9BSbYZuo+qm3qisxQ9M1vEmVcyL+lFBocfMKu8=
+			</data>
+		</dict>
 		<key>MonoBundle/Microsoft.VisualBasic.Core.dll</key>
 		<dict>
 			<key>hash2</key>
@@ -417,6 +477,90 @@
 			<key>hash2</key>
 			<data>
 			MPisM9eRBxwqtgO33KGLwPeCSEKDpp51Md6KSz0yi84=
+			</data>
+		</dict>
+		<key>MonoBundle/SQLite-net.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			G0Du6FIHrGQku+Pmrey48gKNhArHSSzdTDxdZdMFkb4=
+			</data>
+		</dict>
+		<key>MonoBundle/SQLitePCLRaw.batteries_v2.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iQ1yD5Yb9fdqGIH40MgKfJXXUJOfM8V9vi6bpErjCuc=
+			</data>
+		</dict>
+		<key>MonoBundle/SQLitePCLRaw.core.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CkGOMyOjp2Z4yRLDmy+6x61Pxxvz64cPwDNzM8pk58U=
+			</data>
+		</dict>
+		<key>MonoBundle/SQLitePCLRaw.provider.dynamic_cdecl.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ennuI93o9tOUDTR6aR+xxo4ZAbz7GM7EiBUPrQXjBPM=
+			</data>
+		</dict>
+		<key>MonoBundle/SQLitePCLRaw.provider.e_sqlite3.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RZ2Su7mjDaa/a9/+2PYM/InnUSxnZXMI7R1kOQM+p/Y=
+			</data>
+		</dict>
+		<key>MonoBundle/SQLitePCLRaw.provider.sqlite3.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RlqVI3T9FjqZf8p6y3HE2d/10di0uVgMO1UascVFouk=
+			</data>
+		</dict>
+		<key>MonoBundle/SkiaSharp.HarfBuzz.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KFB0ZMvs0i+3yvSDcl/Xjiin1AxlGlYren11Z+jQrOA=
+			</data>
+		</dict>
+		<key>MonoBundle/SkiaSharp.Views.Maui.Controls.Compatibility.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4T9qV06XHZkw4NPPIQM0LReQ1uUE0nvRg/ponJvKrM8=
+			</data>
+		</dict>
+		<key>MonoBundle/SkiaSharp.Views.Maui.Controls.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uSyelDobKKvQUDdU0nUjP6sqQccshRJUpaWwYlNSOdw=
+			</data>
+		</dict>
+		<key>MonoBundle/SkiaSharp.Views.Maui.Core.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QyhPYTSAmx6jJVnXqaUyk6dmG8ArXkY2Wgd+Cf6/JkE=
+			</data>
+		</dict>
+		<key>MonoBundle/SkiaSharp.Views.iOS.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dCU/677agEm91/ydUgKU02dNDzYMYnvkjJmJHC/JI9s=
+			</data>
+		</dict>
+		<key>MonoBundle/SkiaSharp.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			p1S9z0r5Nv6KN4ZZinZcHo9gsFMlBRoJx6c3I8UrHiA=
 			</data>
 		</dict>
 		<key>MonoBundle/System.AppContext.dll</key>
@@ -1529,14 +1673,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			w+Qjvrr2oDNHu/gVImC8arp9Ukvh6q1qeOIUHgnScyo=
+			PUz+ZAFDqaB5wua/wQiRhpxDPWYghN5HDxCozzb9XGY=
 			</data>
 		</dict>
 		<key>MonoBundle/TheCuriousCreative2.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			0PbXwuq7C799N7oNHebnZ76OU0efi3Kq7VpP6Ip3L50=
+			t5ACqHPSd7NlSo9VGPnJjK36DlbARkZ5dCrJpr01IvQ=
 			</data>
 		</dict>
 		<key>MonoBundle/WindowsBase.dll</key>
@@ -1579,6 +1723,13 @@
 			<key>hash2</key>
 			<data>
 			p0WhR9YUC1LYnvts4408QZGDSWHsHyRul6IOIUyxVWs=
+			</data>
+		</dict>
+		<key>MonoBundle/libe_sqlite3.dylib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k/GVywj/CvqJUHFaY8TUrRaiouN0PPDMrDXTtWh42XM=
 			</data>
 		</dict>
 		<key>MonoBundle/libmonosgen-2.0.dylib</key>

@@ -1,0 +1,241 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             Shell.NavBarIsVisible="False"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModel="clr-namespace:TheCuriousCreative2.ViewModels"
+             xmlns:models="clr-namespace:TheCuriousCreative2.Models"
+             x:DataType="viewModel:AddUpdateClientViewModel"
+             x:Class="TheCuriousCreative2.ClientManagement"
+             Title="ClientManagement">
+
+      <FlexLayout>
+
+         <Border BackgroundColor="#FFFEF2" Stroke="#FF4C54" StrokeThickness="40" Margin="0, 0, -20, 0" Padding="50, 20, 70, 30">
+
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="78, 0, 78, 0"/>
+            </Border.StrokeShape>
+
+                <Grid ColumnDefinitions="8*,4*" ColumnSpacing="120" Padding="0">
+                    <VerticalStackLayout Grid.Column="0" Padding="20, 0, 0, 0">
+                          <Label Text="Client management" Grid.Column="0" FontFamily="PoppinsMedium" Padding="0" FontSize="25" TextColor="#102D4C" Margin="0, 30, 0, 15"/>
+
+                        <Frame BackgroundColor="#FFA291" Margin="0, 20, 0, 0" BorderColor="Transparent" CornerRadius="32" HeightRequest="147" Padding="40">
+
+                              <HorizontalStackLayout>
+                                <VerticalStackLayout>
+
+                                  <Label Text="Let’s take a look at our clients" FontFamily="PoppinsMedium" FontSize="25" TextColor="White"></Label>
+                                  <Label Text="We create magical illustrations for each of them " FontFamily="PoppinsRegular" FontSize="18" TextColor="White" Margin="0, 5, 0, 0"></Label>
+
+                                </VerticalStackLayout>
+
+                                <Image Source="illustration_house_white.jpg" Aspect="AspectFit" HeightRequest="240" Margin="-280, -70, 0, 0"></Image>
+
+                            </HorizontalStackLayout>
+
+                        </Frame>
+
+                         <Frame BackgroundColor="#FEEED8" Margin="0, 40, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="8">
+
+                             <HorizontalStackLayout>
+                                         <Image Source="search.png" Aspect="AspectFit" Margin="20, 0, 0, 0"></Image>
+                                        <Entry BackgroundColor="#FEEED8" FontFamily="PoppinsRegular" FontSize="18" Placeholder="Looking for someone?" WidthRequest="545" PlaceholderColor="#102D4C" TextColor="#102D4C" Margin="20, 0, 0, 0"></Entry>
+                                      <Button BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="20" Text="search"  Margin="-20, 0, 0, 0" WidthRequest="210"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+
+                             </HorizontalStackLayout>
+      
+                         </Frame>
+
+                        <HorizontalStackLayout Spacing="10" Margin="0, 30, 0, 0">
+
+                             <Label Text="Priority client" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="0, 10, 0, 0"/>
+                            <Switch IsToggled="true" Margin="10, 7, 0, 0" OnColor="#FEEED8" ThumbColor="#FE5A22"/>
+
+                            
+                             <Label Text="Active projects" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="0, 10, 0, 0"/>
+                            <Switch IsToggled="true" Margin="10, 7, 0, 0" OnColor="#FEEED8" ThumbColor="#1EBBBA"/>
+
+                                <Label Text="clear filters" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" TextDecorations="Underline" Margin="290, 10, 0, 0"></Label>
+
+               
+                        </HorizontalStackLayout>
+
+                        <!--//client list-->
+
+
+                    <ScrollView>
+
+                        <VerticalStackLayout>
+
+  
+                          <CollectionView ItemsSource="{Binding Clients}" BackgroundColor="Transparent" Margin="0, 40, 0, 0">
+                                    <CollectionView.ItemTemplate >
+
+                                        <DataTemplate x:DataType="models:ClientModel">
+
+
+                                    <VerticalStackLayout Margin="10">
+
+                                          <Frame Margin="0, 0, 0, 0" BackgroundColor="#FFF6E5"  BorderColor="Transparent" CornerRadius="25"  Padding="5">
+
+                                           <Grid ColumnDefinitions="10*, 2*">
+                                                <HorizontalStackLayout>
+
+                                                  <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="20" Margin="4"></Frame>
+
+                                                  <HorizontalStackLayout WidthRequest="650">
+                                                     <Label Text="{Binding ClientName}" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
+                                                      <Label Text="{Binding ClientNotes}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="10, 20, 20, 20" HorizontalTextAlignment="End"></Label>
+
+                                                 </HorizontalStackLayout>
+                                                    
+                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#FE5A22" BorderColor="Transparent" CornerRadius="12" Margin="10, 20, 10, 20"></Frame>
+                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="12" Margin="5, 20, 10, 20"></Frame>
+
+                                                    </HorizontalStackLayout>
+                                             
+                                            </Grid>
+
+                                                <Frame.GestureRecognizers>
+                                                    <TapGestureRecognizer Command="{Binding Source={x:RelativeSource AncestorType={x:Type viewModel:AddUpdateClientViewModel}},Path=DisplayActionCommand}"
+                                                                          CommandParameter="{Binding .}" />
+                                                </Frame.GestureRecognizers>
+                                            </Frame>
+
+
+                                    </VerticalStackLayout>
+                                          
+
+                                        </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+
+                                </CollectionView>
+
+                    </VerticalStackLayout>
+                   </ScrollView>
+                    
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Grid.Column="1"  Padding="0">
+
+                    <!--removed for now because side form handles add and edit-->
+                          <Button IsEnabled="{Binding IsEditing}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="register new client"  Margin="230, 0, 0, 0" WidthRequest="250"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                   
+                       <!--edit client-->
+                     <AbsoluteLayout ZIndex="10" IsVisible="{Binding IsEditing}">
+                       
+                <Border BackgroundColor="#FEEED8" Stroke="#FEEED8" WidthRequest="552" HeightRequest="987" Margin="-50, 35, 0, 0">
+
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="78, 0, 0, 0"/>
+                    </Border.StrokeShape>
+
+                    <VerticalStackLayout Padding="40">
+                         <Label Text="Edit client details" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
+
+                        <Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40"> <Image Source="illustration_yeti.jpg" Aspect="AspectFill"></Image></Frame>
+                        <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="140, -40, 0, 0" CornerRadius="25" Padding="23"><Image Source="edit.png" Aspect="AspectFit"></Image></Frame>
+
+                                  <Entry Text="{Binding ActiveClient.ClientID}" IsVisible="false" Placeholder="20 May 2022" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                            <Label Text="Client name" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 30, 0, 0"></Label>
+
+                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Entry Text="{Binding ActiveClient.ClientName}" Placeholder="Client name" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+
+                              <Label Text="Priority" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+
+                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Entry Text="{Binding ActiveClient.Priority}" Placeholder="Is this client a priority?" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+
+                                   <Label Text="Client notes" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+
+                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Editor Text="{Binding ActiveClient.ClientNotes}" Placeholder="Any notes on this client?" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Editor>
+                                                </Border>
+
+                          <Button Command="{Binding UpdateClientCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="save client details"  Margin="0, 20, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                                      
+
+                    </VerticalStackLayout>
+                </Border>
+
+          </AbsoluteLayout>
+
+                    <!--for the add form-->
+          <AbsoluteLayout ZIndex="1" IsVisible="true">
+
+                <Border BackgroundColor="#FEEED8" Stroke="#FEEED8" WidthRequest="552" HeightRequest="987" Margin="-50, 35, 0, 0">
+
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="78, 0, 0, 0"/>
+                    </Border.StrokeShape>
+
+                    <VerticalStackLayout Padding="40">
+                         <Label Text="Add new client" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
+
+                        <Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40"> <Image Source="illustration_yeti.jpg" Aspect="AspectFill"></Image></Frame>
+                        <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="140, -40, 0, 0" CornerRadius="25" Padding="23"><Image Source="add.png" Aspect="AspectFit"></Image></Frame>
+
+                            <Label Text="Client name" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 30, 0, 0"></Label>
+
+                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Entry Text="{Binding ClientDetail.ClientName}" Placeholder="Client name" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+
+                                
+                              <Label Text="Priority" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+
+                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Entry Text="{Binding ClientDetail.Priority}" Placeholder="Is this client a priority?" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+
+                                   <Label Text="Client notes" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+
+                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Editor Text="{Binding ClientDetail.ClientNotes}" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Editor>
+                                                </Border>
+
+                          <Button Command="{Binding AddClientCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="add new client"  Margin="0, 20, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                                      
+
+                    </VerticalStackLayout>
+                </Border>
+
+          </AbsoluteLayout>
+
+                   
+                    </VerticalStackLayout>
+
+                </Grid>
+
+
+        </Border>
+    </FlexLayout>
+</ContentPage>
