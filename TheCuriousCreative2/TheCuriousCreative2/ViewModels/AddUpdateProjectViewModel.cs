@@ -9,6 +9,7 @@ using TheCuriousCreative2.Services;
 
 namespace TheCuriousCreative2.ViewModels
 {
+
     //using our model and services together to perform the action of adding or updating
     [QueryProperty(nameof(ProjectDetail), "ProjectDetail")]
 
@@ -25,6 +26,7 @@ namespace TheCuriousCreative2.ViewModels
         {
             _projectService = projectService;
         }
+
 
         [ObservableProperty]
         private string _projectName;
@@ -69,16 +71,46 @@ namespace TheCuriousCreative2.ViewModels
         }
 
         //add display action to assign active state
+        [ObservableProperty]
+        ProjectModel activeProject = new ProjectModel();
+
+        //use this to set visibility - this is a toggle
+        [ObservableProperty]
+        bool isEditing = false;
 
 
         [RelayCommand]
-        public async void AddUpdateProject()
+        public async void UpdateProject()
+        {
+            int response = -1;
+            if (ActiveProject.ProjectID > 0)
+            {
+                response = await _projectService.UpdateProject(ActiveProject);
+            }
+            else
+            {
+                Debug.WriteLine("Id not found");
+            }
+
+            if (response > 0)
+            {
+                await Shell.Current.DisplayAlert("Project Info Saved", "Record Saved", "OK");
+                GetProjectList();
+            }
+            else
+            {
+                await Shell.Current.DisplayAlert("Heads Up!!!!", "Something went wrong while editing record", "OK");
+            }
+
+        }
+
+        [RelayCommand]
+        public async void AddProject()
         {
             int response = -1;
             if (ProjectDetail.ProjectID > 0)
             {
-                Debug.WriteLine(ProjectDetail.ProjectID);
-                response = await _projectService.UpdateProject(ProjectDetail);
+                Debug.WriteLine("this Project already exists");
             }
             else
             {
@@ -113,9 +145,11 @@ namespace TheCuriousCreative2.ViewModels
             var response = await AppShell.Current.DisplayActionSheet("Select Option", "OK", null, "Edit", "Delete");
             if (response == "Edit")
             {
-                var navParam = new Dictionary<string, object>();
-                navParam.Add("ProjectDetail", projectModel);
-                await AppShell.Current.GoToAsync(nameof(AddUpdateProject), navParam);
+
+                ActiveProject = projectModel;
+                Debug.WriteLine(ActiveProject);
+                IsEditing = true;
+
             }
             else if (response == "Delete")
             {
@@ -128,3 +162,4 @@ namespace TheCuriousCreative2.ViewModels
         }
     }
 }
+

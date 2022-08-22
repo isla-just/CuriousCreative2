@@ -34,7 +34,7 @@
     </Shell.ItemTemplate>
 
 
-            <!--<FlyoutItem   Title="LOGIN">
+            <FlyoutItem   Title="">
         <Tab>
              <ShellContent
                 Title="Login"
@@ -44,7 +44,7 @@
 
         </Tab>
 
-    </FlyoutItem>-->
+    </FlyoutItem>
 
 
         <!--<FlyoutItem Title="HOME">
