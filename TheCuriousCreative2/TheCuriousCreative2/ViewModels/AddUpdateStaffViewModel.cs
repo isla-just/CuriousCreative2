@@ -33,6 +33,10 @@ namespace TheCuriousCreative2.ViewModels
         //[ObservableProperty]
         //private string _image;
 
+    
+        [ObservableProperty]
+        private string _staffPassword;
+
         [ObservableProperty]
         private string _role;
 
@@ -57,6 +61,8 @@ namespace TheCuriousCreative2.ViewModels
         [ObservableProperty]
         private string _currentProject;
 
+        
+
         //adding Staff to the list
         [RelayCommand]
         public async void GetStaffList()
@@ -69,6 +75,27 @@ namespace TheCuriousCreative2.ViewModels
                 {
                     Staffs.Add(staff);
                 }
+            }
+        }
+
+
+        //search functionlity to search for staff member name and ID
+        [RelayCommand]
+        public async void StaffSearchItems()
+        {
+            var projectList = await _staffService.GetStaffList();
+            var searchedName = projectList.Where(value => value.StaffName.ToLowerInvariant().Contains('s')).ToList();
+            var searchedID = projectList.Where(value => value.StaffID.ToString().Contains('0')).ToList();
+
+
+            Staffs.Clear();
+            foreach (var staff in searchedName)
+            {
+                Staffs.Add(staff);
+            }
+            foreach (var staff in searchedID)
+            {
+                Staffs.Add(staff);
             }
         }
 
@@ -119,6 +146,7 @@ namespace TheCuriousCreative2.ViewModels
                 response = await _staffService.AddStaff(new Models.StaffModel
                 {
                     StaffName = StaffDetail.StaffName,
+                    StaffPassword = StaffDetail.StaffPassword,
                     Role = StaffDetail.Role,
                     Nickname = StaffDetail.Nickname,
                     DesignTeam = StaffDetail.DesignTeam,
@@ -127,6 +155,7 @@ namespace TheCuriousCreative2.ViewModels
                     MaxHours = StaffDetail.MaxHours,
                     Birthday = StaffDetail.Birthday,
                     CurrentProject = StaffDetail.CurrentProject
+                  
                 });
             }
 

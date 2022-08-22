@@ -1,18 +1,26 @@
-﻿namespace TheCuriousCreative2;
+﻿using TheCuriousCreative2.Services;
+
+namespace TheCuriousCreative2;
 
 public partial class App : Application
 {
-	public App()
+
+	public static IStaffService StaffService { get; private set; }
+    public static IProjectService ProjectService { get; private set; }
+    public static IClientService ClientService { get; private set; }
+
+
+
+    public App(IStaffService staffService, IProjectService projectService, IClientService clientService)
 	{
 		InitializeComponent();
 
 		MainPage = new AppShell();
-        Routing.RegisterRoute("Login", typeof(Login));
-        Routing.RegisterRoute("Dashboard", typeof(Dashboard));
-        Routing.RegisterRoute("ClientManagement", typeof(ClientManagement));
-        Routing.RegisterRoute("Funds", typeof(Funds));
-        Routing.RegisterRoute("ProjectManagement", typeof(ProjectManagement));
-        Routing.RegisterRoute("StaffManagement", typeof(StaffManagement));
+
+        StaffService = staffService;
+        ProjectService = projectService;
+        ClientService = clientService;
+        
     }
 }
 

@@ -43,13 +43,14 @@ public static class MauiProgram
         builder.Services.AddSingleton<Funds>();
         builder.Services.AddSingleton<ProjectManagement>();
         builder.Services.AddSingleton<StaffManagement>();
+        builder.Services.AddSingleton<Login>();
 
         //view models
-        //builder.Services.AddSingleton<ClientListPageViewModel>();
         builder.Services.AddSingleton<AddUpdateClientViewModel>();
         builder.Services.AddSingleton<FundsListViewModel>();
         builder.Services.AddSingleton<AddUpdateProjectViewModel>();
         builder.Services.AddSingleton<AddUpdateStaffViewModel>();
+        builder.Services.AddSingleton<LoginViewModel>();
 
         return builder.Build();
 	}

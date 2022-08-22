@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-              Shell.NavBarIsVisible="False"
-                Shell.FlyoutBehavior="Flyout"
+             Shell.NavBarIsVisible="False"
+             Shell.FlyoutBehavior="Flyout"
+             xmlns:viewModel="clr-namespace:TheCuriousCreative2.ViewModels"
+             x:DataType="viewModel:LoginViewModel"
              x:Class="TheCuriousCreative2.Login">
 <Grid ColumnSpacing="30"
    
@@ -24,16 +26,18 @@
                 Margin="0, 60, 0, 0">
 
 
-            <Entry Placeholder="Username" PlaceholderColor="#06378D" TextColor="#06378D" BackgroundColor="#FAF9F0"/>
+            <Entry Text="{Binding UserName}" Placeholder="Username" PlaceholderColor="Gray" TextColor="#06378D" BackgroundColor="#FAF9F0"/>
             </Frame>
               <Frame
                 BorderColor="#06378D"
                 BackgroundColor="Transparent"
                 Margin="0, 30, 0, 0">
-            <Entry Placeholder="Password" PlaceholderColor="#06378D" TextColor="#06378D" BackgroundColor="#FAF9F0"/>
+            <Entry Text="{Binding Password}" Placeholder="Password" PlaceholderColor="Gray" TextColor="#06378D" BackgroundColor="#FAF9F0"/>
             </Frame>
+           
             <Button Text="forgot password" TextColor="#06378D" BackgroundColor="#FAF9F0" FontAttributes="None" HorizontalOptions="End" FontSize="15"  Margin="0, 40, 0, 0" Padding="20"/>
-           <Button Clicked="Navigation_Clicked" BackgroundColor="#FF6C6E" TextColor="White" CornerRadius="20" Padding="20" Text="log me in" FontFamily="PoppinsLight" FontSize="15"  Margin="0, 20, 0, 0"/>
+             <Label Text="{Binding ErrorDisplay}" TextColor="#FF6C6E"/>
+            <Button Command="{Binding LoginVerificationCommand}" BackgroundColor="#FF6C6E" TextColor="White" CornerRadius="20" Padding="20" Text="log me in" FontFamily="PoppinsLight" FontSize="15"  Margin="0, 20, 0, 0"/>
 
         </VerticalStackLayout>
            <VerticalStackLayout  Grid.Column="1" BackgroundColor="#FAF9F0">
@@ -45,3 +49,5 @@
 
     </Grid>
 </ContentPage>
+<!--  <Button Clicked="Navigation_Clicked" BackgroundColor="#FF6C6E" TextColor="White" CornerRadius="20" Padding="20" Text="log me in" FontFamily="PoppinsLight" FontSize="15"  Margin="0, 20, 0, 0"/>
+-->

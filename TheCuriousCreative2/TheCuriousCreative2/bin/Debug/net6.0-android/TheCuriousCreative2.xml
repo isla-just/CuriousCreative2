@@ -85,6 +85,12 @@
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.GetProjectListCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.GetProjectList"/>.</summary>
         </member>
+        <member name="F:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.projectSearchItemsCommand">
+            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.ProjectSearchItemsCommand"/>.</summary>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.ProjectSearchItemsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.ProjectSearchItems"/>.</summary>
+        </member>
         <member name="F:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.updateProjectCommand">
             <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.UpdateProjectCommand"/>.</summary>
         </member>
@@ -108,6 +114,9 @@
         </member>
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel.StaffName">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel._staffName"/>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel.StaffPassword">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel._staffPassword"/>
         </member>
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel.Role">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel._role"/>
@@ -145,6 +154,12 @@
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel.GetStaffListCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel.GetStaffList"/>.</summary>
         </member>
+        <member name="F:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel.staffSearchItemsCommand">
+            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel.StaffSearchItemsCommand"/>.</summary>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel.StaffSearchItemsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel.StaffSearchItems"/>.</summary>
+        </member>
         <member name="F:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel.updateStaffCommand">
             <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel.UpdateStaffCommand"/>.</summary>
         </member>
@@ -180,6 +195,21 @@
         </member>
         <member name="P:TheCuriousCreative2.ViewModels.FundsListViewModel.DisplayActionCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.FundsListViewModel.DisplayAction(TheCuriousCreative2.Models.FundsModel)"/>.</summary>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.LoginViewModel.UserName">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.LoginViewModel.userName"/>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.LoginViewModel.Password">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.LoginViewModel.password"/>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.LoginViewModel.ErrorDisplay">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.LoginViewModel.errorDisplay"/>
+        </member>
+        <member name="F:TheCuriousCreative2.ViewModels.LoginViewModel.loginVerificationCommand">
+            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.LoginViewModel.LoginVerificationCommand"/>.</summary>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.LoginViewModel.LoginVerificationCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.LoginViewModel.LoginVerification"/>.</summary>
         </member>
     </members>
 </doc>

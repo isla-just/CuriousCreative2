@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Microsoft.Toolkit.Mvvm.Input;
 using TheCuriousCreative2.Models;
 using TheCuriousCreative2.Services;
 
@@ -67,6 +68,26 @@ namespace TheCuriousCreative2.ViewModels
                 {
                     Projects.Add(project);
                 }
+            }
+        }
+
+        //search functionlity to search for project name and ID
+        [RelayCommand]
+        public async void ProjectSearchItems()
+        {
+            var projectList = await _projectService.GetProjectList();
+            var searchedName = projectList.Where(value => value.ProjectName.ToLowerInvariant().Contains('b')).ToList();
+            var searchedID = projectList.Where(value => value.ProjectID.ToString().Contains('0')).ToList();
+
+
+            Projects.Clear();
+            foreach (var project in searchedName)
+            {
+                Projects.Add(project);
+            }
+            foreach (var project in searchedID)
+            {
+                Projects.Add(project);
             }
         }
 
