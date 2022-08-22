@@ -20,7 +20,6 @@ public class MauiAppCompatActivity
 			"n_onRestart:()V:GetOnRestartHandler\n" +
 			"n_onRequestPermissionsResult:(I[Ljava/lang/String;[I)V:GetOnRequestPermissionsResult_IarrayLjava_lang_String_arrayIHandler\n" +
 			"n_onRestoreInstanceState:(Landroid/os/Bundle;)V:GetOnRestoreInstanceState_Landroid_os_Bundle_Handler\n" +
-			"n_onDestroy:()V:GetOnDestroyHandler\n" +
 			"";
 		mono.android.Runtime.register ("Microsoft.Maui.MauiAppCompatActivity, Microsoft.Maui", MauiAppCompatActivity.class, __md_methods);
 	}
@@ -120,14 +119,6 @@ public class MauiAppCompatActivity
 	}
 
 	private native void n_onRestoreInstanceState (android.os.Bundle p0);
-
-
-	public void onDestroy ()
-	{
-		n_onDestroy ();
-	}
-
-	private native void n_onDestroy ();
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

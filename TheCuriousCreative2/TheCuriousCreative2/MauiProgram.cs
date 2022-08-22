@@ -35,15 +35,21 @@ public static class MauiProgram
         //services
         builder.Services.AddSingleton<IClientService, ClientService>();
         builder.Services.AddSingleton<IFundsService, FundsService>();
+        builder.Services.AddSingleton<IProjectService, ProjectService>();
+        builder.Services.AddSingleton<IStaffService, StaffService>();
 
         //views
         builder.Services.AddSingleton<ClientManagement>();
         builder.Services.AddSingleton<Funds>();
+        builder.Services.AddSingleton<ProjectManagement>();
+        builder.Services.AddSingleton<StaffManagement>();
 
         //view models
         //builder.Services.AddSingleton<ClientListPageViewModel>();
         builder.Services.AddSingleton<AddUpdateClientViewModel>();
         builder.Services.AddSingleton<FundsListViewModel>();
+        builder.Services.AddSingleton<AddUpdateProjectViewModel>();
+        builder.Services.AddSingleton<AddUpdateStaffViewModel>();
 
         return builder.Build();
 	}
