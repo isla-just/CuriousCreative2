@@ -1,7 +1,7 @@
 package crc64338477404e88479c;
 
 
-public class FormattedStringExtensions_TextDecorationSpan
+public class FormattedStringExtensions_LetterSpacingSpan
 	extends android.text.style.MetricAffectingSpan
 	implements
 		mono.android.IGCUserPeer
@@ -13,15 +13,22 @@ public class FormattedStringExtensions_TextDecorationSpan
 			"n_updateDrawState:(Landroid/text/TextPaint;)V:GetUpdateDrawState_Landroid_text_TextPaint_Handler\n" +
 			"n_updateMeasureState:(Landroid/text/TextPaint;)V:GetUpdateMeasureState_Landroid_text_TextPaint_Handler\n" +
 			"";
-		mono.android.Runtime.register ("Microsoft.Maui.Controls.Platform.FormattedStringExtensions+TextDecorationSpan, Microsoft.Maui.Controls", FormattedStringExtensions_TextDecorationSpan.class, __md_methods);
+		mono.android.Runtime.register ("Microsoft.Maui.Controls.Platform.FormattedStringExtensions+LetterSpacingSpan, Microsoft.Maui.Controls", FormattedStringExtensions_LetterSpacingSpan.class, __md_methods);
 	}
 
 
-	public FormattedStringExtensions_TextDecorationSpan ()
+	public FormattedStringExtensions_LetterSpacingSpan ()
 	{
 		super ();
-		if (getClass () == FormattedStringExtensions_TextDecorationSpan.class)
-			mono.android.TypeManager.Activate ("Microsoft.Maui.Controls.Platform.FormattedStringExtensions+TextDecorationSpan, Microsoft.Maui.Controls", "", this, new java.lang.Object[] {  });
+		if (getClass () == FormattedStringExtensions_LetterSpacingSpan.class)
+			mono.android.TypeManager.Activate ("Microsoft.Maui.Controls.Platform.FormattedStringExtensions+LetterSpacingSpan, Microsoft.Maui.Controls", "", this, new java.lang.Object[] {  });
+	}
+
+	public FormattedStringExtensions_LetterSpacingSpan (double p0)
+	{
+		super ();
+		if (getClass () == FormattedStringExtensions_LetterSpacingSpan.class)
+			mono.android.TypeManager.Activate ("Microsoft.Maui.Controls.Platform.FormattedStringExtensions+LetterSpacingSpan, Microsoft.Maui.Controls", "System.Double, System.Private.CoreLib", this, new java.lang.Object[] { p0 });
 	}
 
 

@@ -1,17 +1,24 @@
 ﻿using System;
-using System.Collections.ObjectModel;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
-using Microsoft.Toolkit.Mvvm.Input;
-using TheCuriousCreative2.Models;
 using TheCuriousCreative2.Services;
+using TheCuriousCreative2.Models;
+using System.Collections.ObjectModel;
+using System.Diagnostics;
 
 namespace TheCuriousCreative2.ViewModels
 {
-	public partial class FundsListViewModel : ObservableObject
+    //using our model and services together to perform the action of adding or updating
+    [QueryProperty(nameof(FundsDetail), "FundsDetail")]
+
+    public partial class FundsListViewModel : ObservableObject
     {
         //using our model and services together to perform the action of deleting, showing and editing
+
         public ObservableCollection<FundsModel> Funds { get; set; } = new ObservableCollection<FundsModel>();
+
+        [ObservableProperty]
+        private FundsModel _fundsDetail = new FundsModel();
 
         private readonly IFundsService _fundsService;
         public FundsListViewModel(IFundsService fundsService)
@@ -19,46 +26,68 @@ namespace TheCuriousCreative2.ViewModels
             _fundsService = fundsService;
         }
 
-        //adding students to the list
+        [ObservableProperty]
+        private string _fundsTotal;
+
+        [ObservableProperty]
+        private string _salaries;
+
+        [ObservableProperty]
+        private string _clientIncome;
+
+        [ObservableProperty]
+        private string _expenses;
+
+        //adding clients to the list
         [RelayCommand]
         public async void GetFundsList()
         {
             Funds.Clear();
-            var fundsList = await _fundsService.GetFundsList();
-            if (fundsList?.Count > 0)
+            var fundList = await _fundsService.GetFundsList();
+            if (fundList?.Count > 0)
             {
-                foreach (var fund in fundsList)
+                foreach (var fund in fundList)
                 {
                     Funds.Add(fund);
                 }
             }
         }
 
-        [RelayCommand]
-        public async void AddUpdateFunds()
-        {
-            await AppShell.Current.GoToAsync(nameof(AddUpdateFunds));
-        }
 
         [RelayCommand]
-        public async void DisplayAction(FundsModel fundsModel)
+        public async void AddFunds()
         {
-            var response = await AppShell.Current.DisplayActionSheet("Select Option", "OK", null, "Edit", "Delete");
-            if (response == "Edit")
+            int response = -1;
+
+            if (FundsDetail.FundsId > 0)
             {
-                var navParam = new Dictionary<string, object>();
-                navParam.Add("Funds", fundsModel);
-                await AppShell.Current.GoToAsync(nameof(AddUpdateFunds), navParam);
+                Debug.WriteLine("double entry");
             }
-            else if (response == "Delete")
+            else
             {
-                var delResponse = await _fundsService.DeleteFunds(fundsModel);
-                if (delResponse > 0)
+                response =  await _fundsService.AddFunds(new Models.FundsModel
                 {
-                    GetFundsList();
-                }
+                    FundsTotal = FundsDetail.FundsTotal,
+                    Salaries = FundsDetail.Salaries,
+                    ClientIncome = FundsDetail.ClientIncome,
+                    Expenses = FundsDetail.Expenses,
+                });
             }
+
+            if (response > 0)
+            {
+                await Shell.Current.DisplayAlert("Client Info Saved", "Record Saved", "OK");
+                GetFundsList();
+            }
+            else
+            {
+                await Shell.Current.DisplayAlert("Heads Up!", "Something went wrong while adding record", "OK");
+            }
+
+
         }
+
+
 
     }
 }

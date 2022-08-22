@@ -163,23 +163,32 @@
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel.DisplayActionCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel.DisplayAction(TheCuriousCreative2.Models.StaffModel)"/>.</summary>
         </member>
+        <member name="P:TheCuriousCreative2.ViewModels.FundsListViewModel.FundsDetail">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.FundsListViewModel._fundsDetail"/>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.FundsListViewModel.FundsTotal">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.FundsListViewModel._fundsTotal"/>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.FundsListViewModel.Salaries">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.FundsListViewModel._salaries"/>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.FundsListViewModel.ClientIncome">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.FundsListViewModel._clientIncome"/>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.FundsListViewModel.Expenses">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.FundsListViewModel._expenses"/>
+        </member>
         <member name="F:TheCuriousCreative2.ViewModels.FundsListViewModel.getFundsListCommand">
             <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.FundsListViewModel.GetFundsListCommand"/>.</summary>
         </member>
         <member name="P:TheCuriousCreative2.ViewModels.FundsListViewModel.GetFundsListCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.FundsListViewModel.GetFundsList"/>.</summary>
         </member>
-        <member name="F:TheCuriousCreative2.ViewModels.FundsListViewModel.addUpdateFundsCommand">
-            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.FundsListViewModel.AddUpdateFundsCommand"/>.</summary>
+        <member name="F:TheCuriousCreative2.ViewModels.FundsListViewModel.addFundsCommand">
+            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.FundsListViewModel.AddFundsCommand"/>.</summary>
         </member>
-        <member name="P:TheCuriousCreative2.ViewModels.FundsListViewModel.AddUpdateFundsCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.FundsListViewModel.AddUpdateFunds"/>.</summary>
-        </member>
-        <member name="F:TheCuriousCreative2.ViewModels.FundsListViewModel.displayActionCommand">
-            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.FundsListViewModel.DisplayActionCommand"/>.</summary>
-        </member>
-        <member name="P:TheCuriousCreative2.ViewModels.FundsListViewModel.DisplayActionCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.FundsListViewModel.DisplayAction(TheCuriousCreative2.Models.FundsModel)"/>.</summary>
+        <member name="P:TheCuriousCreative2.ViewModels.FundsListViewModel.AddFundsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.FundsListViewModel.AddFunds"/>.</summary>
         </member>
     </members>
 </doc>
