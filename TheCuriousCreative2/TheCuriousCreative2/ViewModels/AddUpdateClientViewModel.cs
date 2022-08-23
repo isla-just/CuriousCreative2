@@ -112,6 +112,32 @@ namespace TheCuriousCreative2.ViewModels
 
         }
 
+        [ObservableProperty]
+        string search;
+
+
+        [RelayCommand]
+        public async void GetClientListSearch()
+        {
+            var clientList = await _clientService.GetClientList();
+            var filteredItems = clientList.Where(value => value.ClientName.ToLowerInvariant().Contains(Search)).ToList();
+            var filteredID = clientList.Where(value => value.ClientID.ToString().Contains(Search)).ToList();
+
+            Clients.Clear();
+            foreach (var clientName in filteredItems)
+            {
+                Clients.Add(clientName);
+            }
+
+
+            Clients.Clear();
+            foreach (var clientId in filteredItems)
+            {
+                Clients.Add(clientId);
+            }
+        }
+
+
         [RelayCommand]
         public async void DisplayAction(ClientModel clientModel)
         {

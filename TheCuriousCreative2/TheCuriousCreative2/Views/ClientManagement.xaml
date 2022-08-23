@@ -40,8 +40,8 @@
 
                              <HorizontalStackLayout>
                                          <Image Source="search.png" Aspect="AspectFit" Margin="20, 0, 0, 0"></Image>
-                                        <Entry BackgroundColor="#FEEED8" FontFamily="PoppinsRegular" FontSize="18" Placeholder="Looking for someone?" WidthRequest="545" PlaceholderColor="#102D4C" TextColor="#102D4C" Margin="20, 0, 0, 0"></Entry>
-                                      <Button BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="20" Text="search"  Margin="-20, 0, 0, 0" WidthRequest="210"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                                        <Entry Text="{Binding Search}" BackgroundColor="#FEEED8" FontFamily="PoppinsRegular" FontSize="18" Placeholder="Looking for someone?" WidthRequest="545" PlaceholderColor="#102D4C" TextColor="#102D4C" Margin="20, 0, 0, 0"></Entry>
+                                      <Button Command="{Binding GetClientListSearchCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="20" Text="search"  Margin="-20, 0, 0, 0" WidthRequest="210"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
 
                              </HorizontalStackLayout>
       
