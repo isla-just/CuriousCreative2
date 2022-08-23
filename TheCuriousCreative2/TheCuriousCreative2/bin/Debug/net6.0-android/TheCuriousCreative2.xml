@@ -181,15 +181,6 @@
         <member name="P:TheCuriousCreative2.ViewModels.FundsListViewModel.TotalExpenses">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.FundsListViewModel.totalExpenses"/>
         </member>
-        <member name="P:TheCuriousCreative2.ViewModels.FundsListViewModel.PrintingCosts">
-            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.FundsListViewModel.printingCosts"/>
-        </member>
-        <member name="F:TheCuriousCreative2.ViewModels.FundsListViewModel.addPrintingCommand">
-            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.FundsListViewModel.AddPrintingCommand"/>.</summary>
-        </member>
-        <member name="P:TheCuriousCreative2.ViewModels.FundsListViewModel.AddPrintingCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.FundsListViewModel.AddPrinting"/>.</summary>
-        </member>
         <member name="F:TheCuriousCreative2.ViewModels.FundsListViewModel.getFundsListCommand">
             <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.FundsListViewModel.GetFundsListCommand"/>.</summary>
         </member>

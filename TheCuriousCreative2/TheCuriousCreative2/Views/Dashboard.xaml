@@ -14,29 +14,14 @@
 
 
     <ContentPage.Content>
-
-         <Grid>
+        
+         <!--<Grid>
             <lvc:CartesianChart
                 Series="{Binding Series}">
             </lvc:CartesianChart>
-        </Grid>
-
-        </ContentPage.Content> 
-</ContentPage>
-
-
-
-
-<!--<Frame  Grid.Row="1" BackgroundColor="Transparent" BorderColor="Transparent"  CornerRadius="0" Margin="-20,0,-20,-20"  >
-                                <lvc:CartesianChart
-                                    Series="{Binding LineOne}"
-                                    XAxes="{Binding XAxes}"
-                                    YAxes="{Binding YAxes}"
-                                </lvc:CartesianChart>
-                            </Frame>
+        </Grid>-->
 
     <VerticalStackLayout>
-
 
         <Border BackgroundColor="#FFFEF2" Stroke="#FF4C54" StrokeThickness="40" Margin="0, 0, -20, 0" >
 
@@ -138,7 +123,6 @@
 
                                     </Frame>
 
-                                       smalled blocks bellow
                                     <Frame BackgroundColor="Transparent" BorderColor="Transparent" Grid.Row="1" CornerRadius="32" Margin="0, -20, 0, 0">
 
                                         <HorizontalStackLayout Padding="-20,-190, 0, 0">
@@ -257,4 +241,9 @@
                 </Grid>
 
         </Border>
-    </VerticalStackLayout>-->
+    </VerticalStackLayout>
+
+        </ContentPage.Content> 
+</ContentPage>
+
+

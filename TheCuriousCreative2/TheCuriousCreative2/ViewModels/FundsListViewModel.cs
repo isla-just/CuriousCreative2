@@ -9,10 +9,32 @@ using System.Diagnostics;
 namespace TheCuriousCreative2.ViewModels
 {
     //using our model and services together to perform the action of adding or updating
-    [QueryProperty(nameof(FundsDetail), "FundsDetail")]
+    //[QueryProperty(nameof(FundsDetail), "FundsDetail")]
 
     public partial class FundsListViewModel : ObservableObject
     {
+
+        private readonly IProjectService _projectService;
+        private readonly IStaffService _staffService;
+        private readonly IFundsService _fundsService;
+
+        public FundsListViewModel(IFundsService fundsService, IProjectService projectService, IStaffService staffService)
+        {
+            _fundsService = fundsService;
+            _projectService = projectService;
+            _staffService = staffService;
+
+            GetFundsList();
+
+
+            //int expense1 = Int32.Parse(Expenses);
+            //int expense2 = Int32.Parse(Salaries);
+
+            ////totalExpenses = expense1 + expense2;
+
+            totalExpenses = 0;
+        }
+
         //using our model and services together to perform the action of deleting, showing and editing
 
         public ObservableCollection<FundsModel> Funds { get; set; } = new ObservableCollection<FundsModel>();
@@ -20,36 +42,20 @@ namespace TheCuriousCreative2.ViewModels
         [ObservableProperty]
         private FundsModel _fundsDetail = new FundsModel();
 
-        private readonly IFundsService _fundsService;
-        public FundsListViewModel(IFundsService fundsService)
-        {
-            _fundsService = fundsService;
-            GetFundsList();
-
-
-            //int expense1 = Int32.Parse(Expenses);
-            //int expense2 = Int32.Parse(Salaries);
-
-            //totalExpenses = expense1 + expense2;
-
-            totalExpenses = 20;
-        }
-
         //[ObservableProperty]
         //List<Funds> listOfFunds;
 
         [ObservableProperty]
-        private string _fundsTotal;
+        private int _fundsTotal;
 
         [ObservableProperty]
-        private string _salaries;
+        private int _salaries;
 
         [ObservableProperty]
-        private string _clientIncome;
+        private int _clientIncome;
 
         [ObservableProperty]
-        private string _expenses;
-
+        private int _expenses;
 
         //calculate
 
@@ -64,39 +70,39 @@ namespace TheCuriousCreative2.ViewModels
         //[ObservableProperty]
         //ProjectModel selectedProject;
 
-        [ObservableProperty]
-        ProjectModel printingCosts;
+        //[ObservableProperty]
+        //ProjectModel printingCosts;
 
-        [RelayCommand]
-        public async void AddPrinting()
-        {
-            int response = -1;
+        //[RelayCommand]
+        //public async void AddPrinting()
+        //{
+        //    int response = -1;
 
-            if (FundsDetail.FundsId > 0)
-            {
-                Debug.WriteLine("double entry");
-            }
-            else
-            {
-                response = await _fundsService.UpdateFunds(new Models.FundsModel
-                {
-                    FundsTotal = FundsDetail.FundsTotal,
-                    Salaries = FundsDetail.Salaries,
-                    ClientIncome = FundsDetail.ClientIncome,
-                    Expenses = FundsDetail.Expenses,
-                });
-            }
+        //    if (FundsDetail.FundsId > 0)
+        //    {
+        //        Debug.WriteLine("double entry");
+        //    }
+        //    else
+        //    {
+        //        response = await _fundsService.UpdateFunds(new Models.FundsModel
+        //        {
+        //            FundsTotal = FundsDetail.FundsTotal,
+        //            Salaries = FundsDetail.Salaries,
+        //            ClientIncome = FundsDetail.ClientIncome,
+        //            Expenses = FundsDetail.Expenses,
+        //        });
+        //    }
 
-            if (response > 0)
-            {
-                await Shell.Current.DisplayAlert("Client Info Saved", "Record Saved", "OK");
-                GetFundsList();
-            }
-            else
-            {
-                await Shell.Current.DisplayAlert("Heads Up!", "Something went wrong while adding record", "OK");
-            }
-        }
+        //    if (response > 0)
+        //    {
+        //        await Shell.Current.DisplayAlert("Client Info Saved", "Record Saved", "OK");
+        //        GetFundsList();
+        //    }
+        //    else
+        //    {
+        //        await Shell.Current.DisplayAlert("Heads Up!", "Something went wrong while adding record", "OK");
+        //    }
+        //}
 
 
 
@@ -119,22 +125,49 @@ namespace TheCuriousCreative2.ViewModels
         [RelayCommand]
         public async void AddFunds()
         {
+
+            var projectList = await _projectService.GetProjectList();
+
+
+            //to do: if deposit is paid add set amount to total
+            foreach(var project in projectList)
+            {
+                Debug.WriteLine(ClientIncome + project.PricePerMonth);
+                ClientIncome = ClientIncome + project.PricePerMonth;
+            }
+
+            var salaryList = await _staffService.GetStaffList();
+
+            foreach (var staff in salaryList)
+            {
+
+                //multiphy your hourly rate by the amount of hours worked:
+                //to do - if user is admin then add fixed salary not hourly rate
+
+
+                Debug.WriteLine(Salaries + staff.Salary*staff.HoursWorked);
+                Salaries = Salaries + staff.Salary * staff.HoursWorked;
+            }
+
+            //to do add printing expenses to this calculation
+            FundsTotal = FundsTotal + ClientIncome - Salaries;
+
+            Preferences.Set("MonthlyFunds", FundsTotal);
+            Preferences.Set("FundsSalary", Salaries);
+            Preferences.Set("FundsClients", ClientIncome);
+
+
+
+
             int response = -1;
 
-            if (FundsDetail.FundsId > 0)
-            {
-                Debug.WriteLine("double entry");
-            }
-            else
-            {
                 response = await _fundsService.AddFunds(new Models.FundsModel
                 {
-                    FundsTotal = FundsDetail.FundsTotal,
-                    Salaries = FundsDetail.Salaries,
-                    ClientIncome = FundsDetail.ClientIncome,
-                    Expenses = FundsDetail.Expenses,
+                    FundsTotal = FundsTotal,
+                    Salaries = Salaries,
+                    ClientIncome = ClientIncome,
+                    Expenses = 0
                 });
-            }
 
             if (response > 0)
             {
@@ -148,8 +181,6 @@ namespace TheCuriousCreative2.ViewModels
 
 
         }
-
-
 
     }
 }

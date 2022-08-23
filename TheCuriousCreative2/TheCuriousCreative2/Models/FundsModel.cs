@@ -13,13 +13,13 @@ namespace TheCuriousCreative2.Models
         [PrimaryKey, AutoIncrement]
         public int FundsId { get; set; }
         [MaxLength(50)]
-        public string FundsTotal { get; set; }
+        public int FundsTotal { get; set; }
         [MaxLength(50)]
-        public string Salaries { get; set; }
+        public int Salaries { get; set; }
         [MaxLength(50)]
-        public string ClientIncome { get; set; }
+        public int ClientIncome { get; set; }
         [MaxLength(50)]
-        public string Expenses { get; set; }
+        public int Expenses { get; set; }
 
     }
 }
