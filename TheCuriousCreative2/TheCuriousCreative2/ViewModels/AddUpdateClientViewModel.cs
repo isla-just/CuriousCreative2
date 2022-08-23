@@ -57,7 +57,6 @@ namespace TheCuriousCreative2.ViewModels
         [ObservableProperty]
         bool isEditing = false;
 
-
         [RelayCommand]
         public async void UpdateClient()
         {

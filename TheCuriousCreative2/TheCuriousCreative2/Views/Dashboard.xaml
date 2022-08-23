@@ -1,31 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
       Shell.NavBarIsVisible="False"
+     x:Class = "TheCuriousCreative2.Dashboard"
              xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:mynamespace="clr-namespace:TheCuriousCreative2"
              xmlns:local="clr-namespace:TheCuriousCreative2.ViewModels;assembly=TheCuriousCreative2"
-             xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.Maui;assembly=LiveChartsCore.SkiaSharpView.Maui"
-             xmlns:lvcore="clr-namespace:LiveChartsCore;assembly=LiveChartsCore"
-             x:Class="TheCuriousCreative2.Dashboard"
-             >
+             xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.Maui;assembly=LiveChartsCore.SkiaSharpView.Maui">
 
 
-    <!--<ContentPage.BindingContext>
+   <ContentPage.BindingContext>
         <local:Charts/>
-    </ContentPage.BindingContext>-->
+    </ContentPage.BindingContext>
+
 
     <ContentPage.Content>
 
-              <!--<Frame  Grid.Row="1" BackgroundColor="Transparent" BorderColor="Transparent"  CornerRadius="0" Margin="-20,0,-20,-20"  >
+         <Grid>
+            <lvc:CartesianChart
+                Series="{Binding Series}">
+            </lvc:CartesianChart>
+        </Grid>
+
+        </ContentPage.Content> 
+</ContentPage>
+
+
+
+
+<!--<Frame  Grid.Row="1" BackgroundColor="Transparent" BorderColor="Transparent"  CornerRadius="0" Margin="-20,0,-20,-20"  >
                                 <lvc:CartesianChart
                                     Series="{Binding LineOne}"
                                     XAxes="{Binding XAxes}"
                                     YAxes="{Binding YAxes}"
-                                    AnimationsSpeed="00:00:00.600"
-                                    EasingFunction="{Binding Source={x:Static lvcore:EasingFunctions.EaseInOut}}">
                                 </lvc:CartesianChart>
-                            </Frame>-->
+                            </Frame>
 
     <VerticalStackLayout>
 
@@ -130,7 +138,7 @@
 
                                     </Frame>
 
-                                       <!--smalled blocks bellow-->
+                                       smalled blocks bellow
                                     <Frame BackgroundColor="Transparent" BorderColor="Transparent" Grid.Row="1" CornerRadius="32" Margin="0, -20, 0, 0">
 
                                         <HorizontalStackLayout Padding="-20,-190, 0, 0">
@@ -249,7 +257,4 @@
                 </Grid>
 
         </Border>
-    </VerticalStackLayout>
-
-        </ContentPage.Content> 
-</ContentPage>
+    </VerticalStackLayout>-->

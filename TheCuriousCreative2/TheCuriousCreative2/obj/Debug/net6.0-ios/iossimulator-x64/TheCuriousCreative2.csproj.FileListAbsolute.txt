@@ -680,3 +680,8 @@
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/CodeResources
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/libHarfBuzzSharp
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/libSkiaSharp
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/LiveChartsCore.SkiaSharpView.Maui.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/SkiaSharp.Views.iOS.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/SkiaSharp.Views.Maui.Controls.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/SkiaSharp.Views.Maui.Controls.Compatibility.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/SkiaSharp.Views.Maui.Core.dll

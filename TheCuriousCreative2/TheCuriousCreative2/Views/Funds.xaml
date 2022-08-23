@@ -7,30 +7,40 @@
              xmlns:models="clr-namespace:TheCuriousCreative2.Models"
              x:DataType="viewModel:FundsListViewModel"
              Title="Funds">
+
+
+
+
     <FlexLayout>
-         <Border BackgroundColor="#FFFEF2" Stroke="#FF4C54" StrokeThickness="40" Margin="0, 0, -20, 0" Padding="50, 20, 70, 30">
+
+
+         <Border BackgroundColor="#FFFEF2" Stroke="#FF4C54" StrokeThickness="40"  Padding="50, 20, 70, 30" Margin="0, 0, -20, 0">
 
             <Border.StrokeShape>
                 <RoundRectangle CornerRadius="78, 0, 78, 0"/>
             </Border.StrokeShape>
 
-               <!--<CollectionView ItemsSource="{Binding Funds}" BackgroundColor="Transparent" Margin="0, 40, 0, 0">
+  
+          
+            
+
+                <Grid ColumnDefinitions="9*,4*" ColumnSpacing="50" Padding="0, 0, -20, 0">
+
+                        <CollectionView ItemsSource="{Binding Funds}" BackgroundColor="Transparent" Margin="500, 0, -20, 0" WidthRequest="1500">
                                     <CollectionView.ItemTemplate >
 
                                         <DataTemplate x:DataType="models:FundsModel">
-             </DataTemplate>
-                            </CollectionView.ItemTemplate>
-                        </CollectionView>-->
-                           
 
+                            <HorizontalStackLayout >
 
-                <Grid ColumnDefinitions="9*,4*" ColumnSpacing="50" Padding="0">
-                 
-                    <VerticalStackLayout Grid.Column="0" BackgroundColor="Transparent" Padding="0">
+                                 <VerticalStackLayout Grid.Column="0" BackgroundColor="Transparent" Padding="0">
                           <Label Text="Funds" Grid.Column="0" FontFamily="PoppinsMedium" Padding="0" FontSize="25" TextColor="#102D4C" Margin="20, 30, 0, 15"/>
 
+
+                           
+
                          <Frame BackgroundColor="Transparent"  Grid.Column="0" BorderColor="Transparent" Margin="20, 0, 0, 0" Padding="0">
-                        
+
                              <Grid ColumnDefinitions="4*, 4*, 4*" ColumnSpacing="70">
                                   <Frame Grid.Column="0" BackgroundColor="#FEEED8" BorderColor="Transparent" CornerRadius="32" HeightRequest="200" Padding="40">
 
@@ -67,9 +77,10 @@
 
                              </Grid>
 
-
+                           
 
                          </Frame>
+                                 
                                   
                      
 
@@ -119,7 +130,7 @@
 
                                       <HorizontalStackLayout Margin="0, 15, 0, 0" Spacing="20">
                                             <Label Text="Expenses" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="15, 10, 0, 0" WidthRequest="370"></Label>
-                                            <Label HorizontalOptions="End" Text="Do the math" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" WidthRequest="370" Margin="0, 20, 0, 0" HorizontalTextAlignment="End" ></Label>
+                                            <Label HorizontalOptions="End" Text="{Binding Source={x:RelativeSource AncestorType={x:Type viewModel:FundsListViewModel}},Path=TotalExpenses}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" WidthRequest="370" Margin="0, 20, 0, 0" HorizontalTextAlignment="End" ></Label>
 
                                        </HorizontalStackLayout>
 
@@ -150,8 +161,9 @@
                         
 
                     </VerticalStackLayout>
+                  
 
-                     <VerticalStackLayout Grid.Column="1" BackgroundColor="Transparent">
+                     <VerticalStackLayout Grid.Column="1" BackgroundColor="Transparent" Padding="30, 0, 0, 0">
 
                          <Image Source="company_card.png" WidthRequest="420" Aspect="AspectFit" Margin="20, 10, 0, 0"></Image>
 
@@ -168,7 +180,7 @@
 
                                  <VerticalStackLayout>
                                     <Label Text="Balance" FontFamily="PoppinsItalic" FontSize="18" TextColor="White" HorizontalTextAlignment="Center"></Label>
-                                    <Label Text="R12.2k" Margin="0, 20, 0, 0" FontFamily="PoppinsRegular" FontSize="35" HorizontalTextAlignment="Center" TextColor="White"></Label>
+                                    <Label Text="{Binding FundsTotal}" Margin="0, 20, 0, 0" FontFamily="PoppinsRegular" FontSize="35" HorizontalTextAlignment="Center" TextColor="White"></Label>
                                        <Image Source="graph_balance.png" Aspect="AspectFit" Margin="0, 20, 0, 0"></Image>
                                  </VerticalStackLayout>
                              </Frame>
@@ -226,14 +238,24 @@
 
 
                     </VerticalStackLayout>
+                            </HorizontalStackLayout>
 
-                         
+                                                                   </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+
+                                </CollectionView>
+
                 </Grid>
-                               
-                   
 
+                          
 
 
         </Border>
+
+            
+
     </FlexLayout>
+
+                    
+
 </ContentPage>

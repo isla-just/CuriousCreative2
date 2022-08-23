@@ -24,7 +24,19 @@ namespace TheCuriousCreative2.ViewModels
         public FundsListViewModel(IFundsService fundsService)
         {
             _fundsService = fundsService;
+            GetFundsList();
+
+
+            //int expense1 = Int32.Parse(Expenses);
+            //int expense2 = Int32.Parse(Salaries);
+
+            //totalExpenses = expense1 + expense2;
+
+            totalExpenses = 20;
         }
+
+        //[ObservableProperty]
+        //List<Funds> listOfFunds;
 
         [ObservableProperty]
         private string _fundsTotal;
@@ -37,6 +49,56 @@ namespace TheCuriousCreative2.ViewModels
 
         [ObservableProperty]
         private string _expenses;
+
+
+        //calculate
+
+        [ObservableProperty]
+        int totalExpenses = 10;
+
+        //for printing list dropdown
+
+        //[ObservableProperty]
+        //List<ProjectModel> listOfProjects;
+
+        //[ObservableProperty]
+        //ProjectModel selectedProject;
+
+        [ObservableProperty]
+        ProjectModel printingCosts;
+
+        [RelayCommand]
+        public async void AddPrinting()
+        {
+            int response = -1;
+
+            if (FundsDetail.FundsId > 0)
+            {
+                Debug.WriteLine("double entry");
+            }
+            else
+            {
+                response = await _fundsService.UpdateFunds(new Models.FundsModel
+                {
+                    FundsTotal = FundsDetail.FundsTotal,
+                    Salaries = FundsDetail.Salaries,
+                    ClientIncome = FundsDetail.ClientIncome,
+                    Expenses = FundsDetail.Expenses,
+                });
+            }
+
+            if (response > 0)
+            {
+                await Shell.Current.DisplayAlert("Client Info Saved", "Record Saved", "OK");
+                GetFundsList();
+            }
+            else
+            {
+                await Shell.Current.DisplayAlert("Heads Up!", "Something went wrong while adding record", "OK");
+            }
+        }
+
+
 
         //adding clients to the list
         [RelayCommand]
@@ -65,7 +127,7 @@ namespace TheCuriousCreative2.ViewModels
             }
             else
             {
-                response =  await _fundsService.AddFunds(new Models.FundsModel
+                response = await _fundsService.AddFunds(new Models.FundsModel
                 {
                     FundsTotal = FundsDetail.FundsTotal,
                     Salaries = FundsDetail.Salaries,

@@ -2,8 +2,7 @@
 using TheCuriousCreative2.ViewModels;
 using Microsoft.Maui.Controls.Hosting;
 using Microsoft.Maui.Hosting;
-//using SkiaSharp.Views.Maui.Controls.Hosting;
-
+using SkiaSharp.Views.Maui.Controls.Hosting;
 
 namespace TheCuriousCreative2;
 
@@ -13,7 +12,7 @@ public static class MauiProgram
 	{
 		var builder = MauiApp.CreateBuilder();
 		builder
-            //.UseSkiaSharp(true)
+            .UseSkiaSharp(true)
             .UseMauiApp<App>()
 			.ConfigureFonts(fonts =>
 			{

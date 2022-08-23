@@ -54,11 +54,7 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
-            "LiveChartsCore": {
-              "target": "Package",
-              "version": "[2.0.0-beta.350, )"
-            },
-            "LiveChartsCore.SkiaSharpView": {
+            "LiveChartsCore.SkiaSharpView.Maui": {
               "target": "Package",
               "version": "[2.0.0-beta.350, )"
             },
@@ -91,10 +87,6 @@
             "SQLitePCLRaw.provider.sqlite3": {
               "target": "Package",
               "version": "[2.1.0, )"
-            },
-            "SkiaSharp": {
-              "target": "Package",
-              "version": "[2.88.1, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -152,11 +144,7 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
-            "LiveChartsCore": {
-              "target": "Package",
-              "version": "[2.0.0-beta.350, )"
-            },
-            "LiveChartsCore.SkiaSharpView": {
+            "LiveChartsCore.SkiaSharpView.Maui": {
               "target": "Package",
               "version": "[2.0.0-beta.350, )"
             },
@@ -189,10 +177,6 @@
             "SQLitePCLRaw.provider.sqlite3": {
               "target": "Package",
               "version": "[2.1.0, )"
-            },
-            "SkiaSharp": {
-              "target": "Package",
-              "version": "[2.88.1, )"
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",
@@ -241,11 +225,7 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
-            "LiveChartsCore": {
-              "target": "Package",
-              "version": "[2.0.0-beta.350, )"
-            },
-            "LiveChartsCore.SkiaSharpView": {
+            "LiveChartsCore.SkiaSharpView.Maui": {
               "target": "Package",
               "version": "[2.0.0-beta.350, )"
             },
@@ -278,10 +258,6 @@
             "SQLitePCLRaw.provider.sqlite3": {
               "target": "Package",
               "version": "[2.1.0, )"
-            },
-            "SkiaSharp": {
-              "target": "Package",
-              "version": "[2.88.1, )"
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",
