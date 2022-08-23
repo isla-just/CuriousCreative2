@@ -24,14 +24,16 @@
           
             
 
-                <Grid ColumnDefinitions="9*,4*" ColumnSpacing="50" Padding="0, 0, -20, 0">
+                <Grid ColumnDefinitions="9*,4*" ColumnSpacing="50" Padding="-30, 0, -20, 0">
 
-                        <CollectionView ItemsSource="{Binding Funds}" BackgroundColor="Transparent" Margin="500, 0, -20, 0" WidthRequest="1500">
+                        <CollectionView ItemsSource="{Binding Funds}" BackgroundColor="Transparent" Margin="540, 0, -20, 0" WidthRequest="1500">
                                     <CollectionView.ItemTemplate >
 
                                         <DataTemplate x:DataType="models:FundsModel">
 
                             <HorizontalStackLayout >
+
+
 
                                  <VerticalStackLayout Grid.Column="0" BackgroundColor="Transparent" Padding="0">
                           <Label Text="Funds" Grid.Column="0" FontFamily="PoppinsMedium" Padding="0" FontSize="25" TextColor="#102D4C" Margin="20, 30, 0, 15"/>
@@ -46,7 +48,7 @@
 
                                    <VerticalStackLayout>
                                           <Label Text="Income" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C"></Label>
-                                            <Label Text="{Binding ClientIncome}" FontFamily="PoppinsMedium" FontSize="30" TextColor="#102D4C" Margin="0, 5, 0, 0"></Label>
+                                            <Label Text="{Binding ClientIncome, StringFormat=R{0}}" FontFamily="PoppinsMedium" FontSize="30" TextColor="#102D4C" Margin="0, 5, 0, 0"></Label>
                                             <Image Source="curve3.png" Aspect="AspectFit" Margin="0, 20, 0, 0"></Image>
 
                                    </VerticalStackLayout>
@@ -57,7 +59,7 @@
 
                                    <VerticalStackLayout>
                                           <Label Text="Salaries" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C"></Label>
-                                            <Label Text="{Binding Salaries}" FontFamily="PoppinsMedium" FontSize="30" TextColor="#102D4C" Margin="0, 5, 0, 0"></Label>
+                                            <Label Text="{Binding Salaries, StringFormat=R{0}}" FontFamily="PoppinsMedium" FontSize="30" TextColor="#102D4C" Margin="0, 5, 0, 0"></Label>
                                        <Image Source="curve1.png" Aspect="AspectFit" Margin="0, 20, 0, 0"></Image>
 
                                    </VerticalStackLayout>
@@ -68,7 +70,7 @@
 
                                    <VerticalStackLayout>
                                           <Label Text="Additional" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C"></Label>
-                                            <Label Text="{Binding Expenses}" FontFamily="PoppinsMedium" FontSize="30" TextColor="#102D4C" Margin="0, 5, 0, 0"></Label>
+                                            <Label Text="{Binding Expenses, StringFormat=R{0}}" FontFamily="PoppinsMedium" FontSize="30" TextColor="#102D4C" Margin="0, 5, 0, 0"></Label>
                                             <Image Source="curve2.png" Aspect="AspectFit" Margin="0, 20, 0, 0"></Image>
 
                                    </VerticalStackLayout>
@@ -96,21 +98,21 @@
                                        <HorizontalStackLayout Margin="0, 15, 0, 0" Spacing="20">
                                            <Image Source="up.png" Aspect="AspectFit"></Image>
                                             <Label Text="Client Income" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="15, 20, 0, 0" WidthRequest="350"></Label>
-                                            <Label HorizontalOptions="End" Text="{Binding ClientIncome}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" WidthRequest="300" Margin="0, 20, 0, 0" HorizontalTextAlignment="End" ></Label>
+                                            <Label HorizontalOptions="End" Text="{Binding ClientIncome, StringFormat=R{0}}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" WidthRequest="300" Margin="0, 20, 0, 0" HorizontalTextAlignment="End" ></Label>
 
                                        </HorizontalStackLayout>
 
                                        <HorizontalStackLayout Margin="0, 15, 0, 0" Spacing="20">
                                            <Image Source="down.png" Aspect="AspectFit"></Image>
                                             <Label Text="Employee Salaries" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="15, 20, 0, 0" WidthRequest="350"></Label>
-                                            <Label HorizontalOptions="End" Text="{Binding Salaries}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Margin="0, 20, 0, 0" WidthRequest="300" HorizontalTextAlignment="End" ></Label>
+                                            <Label HorizontalOptions="End" Text="{Binding Salaries, StringFormat=R{0}}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Margin="0, 20, 0, 0" WidthRequest="300" HorizontalTextAlignment="End" ></Label>
 
                                        </HorizontalStackLayout>
 
                                        <HorizontalStackLayout Margin="0, 15, 0, 0" Spacing="20">
                                            <Image Source="down.png" Aspect="AspectFit"></Image>
                                             <Label Text="Additional Printing costs" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="15, 20, 0, 0" WidthRequest="350"></Label>
-                                            <Label HorizontalOptions="End" Text="{Binding Expenses}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" WidthRequest="300" Margin="0, 20, 0, 0" HorizontalTextAlignment="End" ></Label>
+                                            <Label HorizontalOptions="End" Text="{Binding Expenses, StringFormat=R{0}}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" WidthRequest="300" Margin="0, 20, 0, 0" HorizontalTextAlignment="End" ></Label>
 
                                        </HorizontalStackLayout>
 
@@ -130,19 +132,19 @@
 
                                       <HorizontalStackLayout Margin="0, 15, 0, 0" Spacing="20">
                                             <Label Text="Expenses" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="15, 10, 0, 0" WidthRequest="370"></Label>
-                                            <Label HorizontalOptions="End" Text="{Binding Source={x:RelativeSource AncestorType={x:Type viewModel:FundsListViewModel}},Path=TotalExpenses}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" WidthRequest="370" Margin="0, 20, 0, 0" HorizontalTextAlignment="End" ></Label>
+                                            <Label HorizontalOptions="End" Text="{Binding Source={x:RelativeSource AncestorType={x:Type viewModel:FundsListViewModel}},Path=TotalExpenses, StringFormat=R{0}}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" WidthRequest="370" Margin="0, 20, 0, 0" HorizontalTextAlignment="End" ></Label>
 
                                        </HorizontalStackLayout>
 
                                        <HorizontalStackLayout Margin="0, 5, 0, 0" Spacing="20">
                                             <Label Text="Income" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="15, 10, 0, 0" WidthRequest="370"></Label>
-                                            <Label HorizontalOptions="End" Text="{Binding ClientIncome}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" WidthRequest="370" Margin="0, 20, 0, 0" HorizontalTextAlignment="End" ></Label>
+                                            <Label HorizontalOptions="End" Text="{Binding ClientIncome, StringFormat=R{0}}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" WidthRequest="370" Margin="0, 20, 0, 0" HorizontalTextAlignment="End" ></Label>
 
                                        </HorizontalStackLayout>
 
                                        <HorizontalStackLayout Margin="0, 5, 0, 0" Spacing="20">
                                             <Label Text="Balance" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="15, 10, 0, 0" WidthRequest="370"></Label>
-                                            <Label HorizontalOptions="End" Text="{Binding FundsTotal}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" WidthRequest="370" Margin="0, 20, 0, 0" HorizontalTextAlignment="End" ></Label>
+                                            <Label HorizontalOptions="End" Text="{Binding FundsTotal, StringFormat=R{0}}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" WidthRequest="370" Margin="0, 20, 0, 0" HorizontalTextAlignment="End" ></Label>
 
                                        </HorizontalStackLayout>
 
@@ -180,7 +182,7 @@
 
                                  <VerticalStackLayout>
                                     <Label Text="Balance" FontFamily="PoppinsItalic" FontSize="18" TextColor="White" HorizontalTextAlignment="Center"></Label>
-                                    <Label Text="{Binding FundsTotal}" Margin="0, 20, 0, 0" FontFamily="PoppinsRegular" FontSize="35" HorizontalTextAlignment="Center" TextColor="White"></Label>
+                                    <Label Text="{Binding FundsTotal, StringFormat=R{0}}" Margin="0, 20, 0, 0" FontFamily="PoppinsRegular" FontSize="35" HorizontalTextAlignment="Center" TextColor="White"></Label>
                                        <Image Source="graph_balance.png" Aspect="AspectFit" Margin="0, 20, 0, 0"></Image>
                                  </VerticalStackLayout>
                              </Frame>
@@ -199,13 +201,16 @@
                                                <Label Text="Cost" FontFamily="PoppinsRegular" FontSize="14" TextColor="#102D4C" ></Label>
 
                                                  
-                                               
+                                                <Entry Text="{Binding FundsTotal}" IsVisible="false" Placeholder="Total" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                     <Entry Text="{Binding FundsId}" IsVisible="false" Placeholder="Total" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                  
+
                                                     <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
 
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                                    <Entry Placeholder="Cost" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                    <Entry Text="{Binding Expenses}" Placeholder="Cost" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                                                 </Border>
                                              
                                             </VerticalStackLayout>
@@ -216,7 +221,8 @@
                                               <VerticalStackLayout WidthRequest="190" Margin="0, 15, 0, 0">
                                                <Label Text="Project" FontFamily="PoppinsRegular" FontSize="14" TextColor="#102D4C" ></Label>
 
-                                                 
+                                                    <Entry Text="{Binding ClientIncome}" IsVisible="false" Placeholder="Total" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                     <Entry Text="{Binding Salaries}" IsVisible="false" Placeholder="Total" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                                                
                                                     <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
 
@@ -230,7 +236,7 @@
      
                                     </HorizontalStackLayout>
 
-                                  <Button BackgroundColor="#FF4C54" TextColor="White" CornerRadius="23" Padding="23" Text="Send for printing"  Margin="0, 30, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                                  <Button Command="{Binding Source={x:RelativeSource AncestorType={x:Type viewModel:FundsListViewModel}},Path=AddPrintingCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="23" Padding="23" Text="Send for printing"  Margin="0, 30, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
 
                              </VerticalStackLayout>
 

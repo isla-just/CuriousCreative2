@@ -42,6 +42,7 @@ public static class MauiProgram
         builder.Services.AddSingleton<Funds>();
         builder.Services.AddSingleton<ProjectManagement>();
         builder.Services.AddSingleton<StaffManagement>();
+        builder.Services.AddSingleton<Dashboard>();
 
         //view models
         //builder.Services.AddSingleton<ClientListPageViewModel>();
@@ -49,6 +50,7 @@ public static class MauiProgram
         builder.Services.AddSingleton<FundsListViewModel>();
         builder.Services.AddSingleton<AddUpdateProjectViewModel>();
         builder.Services.AddSingleton<AddUpdateStaffViewModel>();
+        builder.Services.AddSingleton<DashboardViewModel>();
 
         return builder.Build();
 	}

@@ -4,23 +4,12 @@
      x:Class = "TheCuriousCreative2.Dashboard"
              xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:TheCuriousCreative2.ViewModels;assembly=TheCuriousCreative2"
-             xmlns:lvc="clr-namespace:LiveChartsCore.SkiaSharpView.Maui;assembly=LiveChartsCore.SkiaSharpView.Maui">
+             xmlns:viewModel="clr-namespace:TheCuriousCreative2.ViewModels"
+             xmlns:models="clr-namespace:TheCuriousCreative2.Models"
+             x:DataType="viewModel:DashboardViewModel"
+             Title="Dashboard">
 
-
-   <ContentPage.BindingContext>
-        <local:Charts/>
-    </ContentPage.BindingContext>
-
-
-    <ContentPage.Content>
         
-         <!--<Grid>
-            <lvc:CartesianChart
-                Series="{Binding Series}">
-            </lvc:CartesianChart>
-        </Grid>-->
-
     <VerticalStackLayout>
 
         <Border BackgroundColor="#FFFEF2" Stroke="#FF4C54" StrokeThickness="40" Margin="0, 0, -20, 0" >
@@ -145,8 +134,8 @@
 
                                                    <VerticalStackLayout Margin="0, -160, 0, 0">
                                                        
-                                        <Label Text="Total staff" FontFamily="PoppinsRegular" FontSize="15" TextColor="White" HorizontalTextAlignment="Center"></Label>
-                                     <Label Text="20" FontFamily="PoppinsBold" FontSize="60" TextColor="White" HorizontalTextAlignment="Center"></Label>
+                                        <Label Text="Total clients" FontFamily="PoppinsRegular" FontSize="15" TextColor="White" HorizontalTextAlignment="Center"></Label>
+                                     <Label Text="{Binding ClientCounter}" FontFamily="PoppinsBold" FontSize="60" TextColor="White" HorizontalTextAlignment="Center"></Label>
 
                                                    </VerticalStackLayout>
 
@@ -157,8 +146,8 @@
 
                                                    <VerticalStackLayout Margin="0, -160, 0, 0">
                                                        
-                                        <Label Text="Total clients" FontFamily="PoppinsRegular" FontSize="15" TextColor="White" HorizontalTextAlignment="Center"></Label>
-                                     <Label Text="50" FontFamily="PoppinsBold" FontSize="60" TextColor="White" HorizontalTextAlignment="Center"></Label>
+                                        <Label Text="Total projects" FontFamily="PoppinsRegular" FontSize="15" TextColor="White" HorizontalTextAlignment="Center"></Label>
+                                     <Label Text="{Binding ProjectCounter}" FontFamily="PoppinsBold" FontSize="60" TextColor="White" HorizontalTextAlignment="Center"></Label>
 
                                                    </VerticalStackLayout>
 
@@ -243,7 +232,6 @@
         </Border>
     </VerticalStackLayout>
 
-        </ContentPage.Content> 
 </ContentPage>
 
 
