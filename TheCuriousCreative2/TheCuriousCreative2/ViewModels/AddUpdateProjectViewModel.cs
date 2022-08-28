@@ -4,6 +4,7 @@ using System.Collections.ObjectModel;
 using System.Diagnostics;
 using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
+using Microsoft.Toolkit.Mvvm.Input;
 using TheCuriousCreative2.Models;
 using TheCuriousCreative2.Services;
 
@@ -55,6 +56,9 @@ namespace TheCuriousCreative2.ViewModels
         [ObservableProperty]
         private bool _priority;
 
+        [ObservableProperty]
+        string search;
+
         //adding projects to the list
         [RelayCommand]
         public async void GetProjectList()
@@ -68,6 +72,76 @@ namespace TheCuriousCreative2.ViewModels
                     Projects.Add(project);
                 }
             }
+        }
+
+        //search functionlity to search for project name and ID
+        [ICommand]
+        public async void GetProjectListSearch()
+        {
+            var projectList = await _projectService.GetProjectList();
+            var filteredItems = projectList.Where(value => value.ProjectName.ToLowerInvariant().Contains(Search)).ToList();
+            var filteredID = projectList.Where(value => value.ProjectID.ToString().Contains(Search)).ToList();
+
+            Projects.Clear();
+            foreach (var projectName in filteredItems)
+            {
+                Projects.Add(projectName);
+            }
+
+
+            Projects.Clear();
+            foreach (var projectID in filteredItems)
+            {
+                Projects.Add(projectID);
+            }
+        }
+
+        //search functionlity to search and filter according to project's client
+        [ICommand]
+        public async void GetProjectClientFilter()
+        {
+            var projectList = await _projectService.GetProjectList();
+            var projectClient = projectList.Where(value => value.Client.ToLowerInvariant().Contains(Search)).ToList();
+
+
+            Projects.Clear();
+            foreach (var Client in projectClient)
+            {
+                Projects.Add(Client);
+            }
+
+        }
+
+        //search functionlity to search and filter according to project's name
+        [ICommand]
+        public async void GetProjectNameFilter()
+        {
+            var projectList = await _projectService.GetProjectList();
+            var projectName = projectList.Where(value => value.ProjectName.ToLowerInvariant().Contains(Search)).ToList();
+
+
+            Projects.Clear();
+            foreach (var ProjectName in projectName)
+            {
+                Projects.Add(ProjectName);
+            }
+
+        }
+
+        //search functionlity to search and filter according to project's design team
+        [ICommand]
+        public async void GetProjectTeamFilter()
+        {
+            var projectList = await _projectService.GetProjectList();
+            var designTeam = projectList.Where(value => value.DesignTeam.ToLowerInvariant().Contains(Search)).ToList();
+
+
+            Projects.Clear();
+            foreach (var DesignTeam in designTeam)
+            {
+                Projects.Add(DesignTeam);
+            }
+
         }
 
         //add display action to assign active state
@@ -162,4 +236,6 @@ namespace TheCuriousCreative2.ViewModels
         }
     }
 }
+
+
 

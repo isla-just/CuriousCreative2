@@ -82,6 +82,9 @@
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.Priority">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel._priority"/>
         </member>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.Search">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.search"/>
+        </member>
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.ActiveProject">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.activeProject"/>
         </member>
@@ -118,6 +121,9 @@
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel.StaffName">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel._staffName"/>
         </member>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel.StaffPassword">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel._staffPassword"/>
+        </member>
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel.Role">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel._role"/>
         </member>
@@ -141,6 +147,9 @@
         </member>
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel.CurrentProject">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel._currentProject"/>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel.Search">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel.search"/>
         </member>
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel.ActiveStaff">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateStaffViewModel.activeStaff"/>
@@ -225,6 +234,21 @@
         </member>
         <member name="P:TheCuriousCreative2.ViewModels.FundsListViewModel.AddFundsCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.FundsListViewModel.AddFunds"/>.</summary>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.LoginViewModel.UserName">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.LoginViewModel.userName"/>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.LoginViewModel.Password">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.LoginViewModel.password"/>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.LoginViewModel.ErrorDisplay">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.LoginViewModel.errorDisplay"/>
+        </member>
+        <member name="F:TheCuriousCreative2.ViewModels.LoginViewModel.loginVerificationCommand">
+            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.LoginViewModel.LoginVerificationCommand"/>.</summary>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.LoginViewModel.LoginVerificationCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IAsyncRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.LoginViewModel.LoginVerification"/>.</summary>
         </member>
     </members>
 </doc>

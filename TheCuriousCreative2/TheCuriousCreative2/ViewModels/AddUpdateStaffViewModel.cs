@@ -5,6 +5,7 @@ using TheCuriousCreative2.Models;
 using TheCuriousCreative2.Services;
 using CommunityToolkit.Mvvm.ComponentModel;
 using System.Diagnostics;
+using Microsoft.Toolkit.Mvvm.Input;
 
 namespace TheCuriousCreative2.ViewModels
 {
@@ -33,6 +34,10 @@ namespace TheCuriousCreative2.ViewModels
         //[ObservableProperty]
         //private string _image;
 
+
+        [ObservableProperty]
+        private string _staffPassword;
+
         [ObservableProperty]
         private string _role;
 
@@ -57,6 +62,9 @@ namespace TheCuriousCreative2.ViewModels
         [ObservableProperty]
         private string _currentProject;
 
+        [ObservableProperty]
+        string search;
+
         //adding Staff to the list
         [RelayCommand]
         public async void GetStaffList()
@@ -71,6 +79,81 @@ namespace TheCuriousCreative2.ViewModels
                 }
             }
         }
+
+
+        //search functionlity to search for staff member name and ID
+        [ICommand]
+        public async void GetStaffListSearch()
+        {
+            var subjectList = await _staffService.GetStaffList();
+            var filteredItems = subjectList.Where(value => value.StaffName.ToLowerInvariant().Contains(Search)).ToList();
+            var filteredID = subjectList.Where(value => value.StaffID.ToString().Contains(Search)).ToList();
+
+            Staffs.Clear();
+            foreach (var staffName in filteredItems)
+            {
+                Staffs.Add(staffName);
+            }
+
+
+            Staffs.Clear();
+            foreach (var staffID in filteredItems)
+            {
+                Staffs.Add(staffID);
+            }
+        }
+
+
+        //search functionlity to search and filter according to staff member's role
+        [ICommand]
+        public async void GetStaffRoleFilter()
+        {
+            var staffList = await _staffService.GetStaffList();
+            var staffRole = staffList.Where(value => value.Role.ToLowerInvariant().Contains(Search)).ToList();
+
+
+            Staffs.Clear();
+            foreach (var Role in staffRole)
+            {
+                Staffs.Add(Role);
+            }
+
+        }
+
+        //search functionlity to search and filter according to staff member's design team
+        [ICommand]
+        public async void GetStaffTeamFilter()
+        {
+            var staffList = await _staffService.GetStaffList();
+            var staffTeam = staffList.Where(value => value.DesignTeam.ToLowerInvariant().Contains(Search)).ToList();
+
+
+            Staffs.Clear();
+            foreach (var DesignTeam in staffTeam)
+            {
+                Staffs.Add(DesignTeam);
+            }
+
+        }
+
+
+        //search functionlity to search and filter according to staff member's project
+        [ICommand]
+        public async void GetStaffProjectFilter()
+        {
+            var staffList = await _staffService.GetStaffList();
+            var staffProject = staffList.Where(value => value.CurrentProject.ToLowerInvariant().Contains(Search)).ToList();
+
+
+            Staffs.Clear();
+            foreach (var CurrentProject in staffProject)
+            {
+                Staffs.Add(CurrentProject);
+            }
+
+        }
+
+
 
         //add display action to assign active state
         [ObservableProperty]
@@ -119,14 +202,16 @@ namespace TheCuriousCreative2.ViewModels
                 response = await _staffService.AddStaff(new Models.StaffModel
                 {
                     StaffName = StaffDetail.StaffName,
+                    StaffPassword = StaffDetail.StaffPassword,
                     Role = StaffDetail.Role,
                     Nickname = StaffDetail.Nickname,
                     DesignTeam = StaffDetail.DesignTeam,
-                    Salary = StaffDetail.Salary,
+                    Salary = StaffDetail.Role == "Admin" ? (15000) : StaffDetail.Role == "Lead Designer" ? (StaffDetail.MaxHours * 600) : (StaffDetail.MaxHours * 400),
                     HoursWorked = StaffDetail.HoursWorked,
                     MaxHours = StaffDetail.MaxHours,
                     Birthday = StaffDetail.Birthday,
                     CurrentProject = StaffDetail.CurrentProject
+
                 });
             }
 

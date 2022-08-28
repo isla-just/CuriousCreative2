@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using SQLite;
 using TheCuriousCreative2.Models;
 
@@ -49,6 +50,33 @@ namespace TheCuriousCreative2.Services
         }
 
 
+        //Authentivation and verification for login
+        public async Task<bool> AdminStaffLoginAuth(string userName, string password)
+        {
+            try
+            {
+                await SetUpDb();
+                var staffList = await _dbConnection.Table<StaffModel>().ToListAsync();
+                var successFind = staffList.Where(y => y.StaffName == userName && y.StaffPassword == password && y.Role == "Admin").FirstOrDefault();
+
+                if (successFind != null)
+                {
+                    Debug.WriteLine("Staff member Found");
+                    return true;
+                }
+                else
+                {
+                    Debug.WriteLine("Staff member not found");
+                    return false;
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                return false;
+            }
+        }
+
+
     }
 }
-

@@ -1,16 +1,22 @@
-﻿namespace TheCuriousCreative2;
+﻿using TheCuriousCreative2.ViewModels;
+
+namespace TheCuriousCreative2;
 
 public partial class Login : ContentPage
 {
-	public Login()
-	{
-		InitializeComponent();
-	}
-
-    private async void Navigation_Clicked(object sender, EventArgs e)
+    public Login(LoginViewModel viewModel)
     {
-
-        await Shell.Current.GoToAsync("Dashboard");
-
+        InitializeComponent();
+        this.BindingContext = viewModel;
     }
+
+
+
+
+    ////Navigate to Dashboard
+    //private async void Navigation_Clicked(object sender, EventArgs e)
+    //{
+    //    await Shell.Current.GoToAsync("Dashboard");
+
+    //}
 }

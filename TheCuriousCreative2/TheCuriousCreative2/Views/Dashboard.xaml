@@ -8,7 +8,6 @@
              xmlns:models="clr-namespace:TheCuriousCreative2.Models"
              x:DataType="viewModel:DashboardViewModel"
              Title="Dashboard">
-
         
     <VerticalStackLayout>
 

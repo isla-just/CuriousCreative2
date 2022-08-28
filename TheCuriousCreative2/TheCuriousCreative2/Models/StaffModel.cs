@@ -10,6 +10,8 @@ namespace TheCuriousCreative2.Models
         //[MaxLength(250)]
         //public string StaffImage { get; set; }
         [MaxLength(250)]
+        public string StaffPassword { get; set; }
+        [MaxLength(250)]
         public string StaffName { get; set; }
         [MaxLength(250)]
         public string Role { get; set; }
