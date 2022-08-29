@@ -6,10 +6,20 @@
   <MonoDevelop.Ide.ItemProperties.TheCuriousCreative2 PreferredExecutionTarget="MyAppleMacCatalystID" />
   <MonoDevelop.Ide.Workbench ActiveDocument="TheCuriousCreative2/ViewModels/FundsListViewModel.cs">
     <Files>
-      <File FileName="TheCuriousCreative2/MauiProgram.cs" Line="1" Column="1" />
-      <File FileName="TheCuriousCreative2/Views/Funds.xaml" Line="26" Column="68" />
-      <File FileName="TheCuriousCreative2/ViewModels/FundsListViewModel.cs" Line="59" Column="1" />
-      <File FileName="TheCuriousCreative2/Views/Funds.xaml.cs" Line="18" Column="28" />
+      <File FileName="TheCuriousCreative2/MauiProgram.cs" />
+      <File FileName="TheCuriousCreative2/Views/Funds.xaml" Line="96" Column="1" />
+      <File FileName="TheCuriousCreative2/ViewModels/FundsListViewModel.cs" Line="123" Column="1" />
+      <File FileName="TheCuriousCreative2/Views/Funds.xaml.cs" Line="15" Column="2" />
+      <File FileName="TheCuriousCreative2/AppShell.xaml" Line="37" Column="1" />
+      <File FileName="TheCuriousCreative2/Models/FundsModel.cs" Line="9" Column="2" />
+      <File FileName="TheCuriousCreative2/Services/IFundsService.cs" Line="15" Column="54" />
+      <File FileName="TheCuriousCreative2/Services/FundsService.cs" Line="42" Column="83" />
+      <File FileName="TheCuriousCreative2/Services/ClientService.cs" Line="1" Column="1" />
+      <File FileName="TheCuriousCreative2/Services/StaffService.cs" Line="54" Column="31" />
+      <File FileName="TheCuriousCreative2/Services/ProjectService.cs" Line="40" Column="66" />
+      <File FileName="TheCuriousCreative2/ViewModels/DashboardViewModel.cs" Line="53" Column="10" />
+      <File FileName="TheCuriousCreative2/ViewModels/Charts.cs" Line="6" Column="1" />
+      <File FileName="TheCuriousCreative2/Models/ProjectModel.cs" Line="19" Column="29" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -37,6 +47,9 @@
             </Node>
           </Node>
         </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
