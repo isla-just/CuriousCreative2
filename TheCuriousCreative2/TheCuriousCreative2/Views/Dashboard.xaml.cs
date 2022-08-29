@@ -7,7 +7,6 @@ public partial class Dashboard : ContentPage
     private DashboardViewModel _viewMode;
     public Dashboard(DashboardViewModel viewModel)
 	{
-
 		InitializeComponent();
 
         _viewMode = viewModel;
@@ -19,10 +18,5 @@ public partial class Dashboard : ContentPage
     {
         base.OnAppearing();
         _viewMode.GetCountersCommand.Execute(null);
-    }
-
-    public async void ProjectsNavigation(object sender, EventArgs e)
-    {
-       await Shell.Current.GoToAsync("/Projects");
     }
 }

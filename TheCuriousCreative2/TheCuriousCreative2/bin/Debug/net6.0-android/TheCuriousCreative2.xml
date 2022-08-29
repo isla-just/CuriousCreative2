@@ -49,11 +49,23 @@
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.GetClientListSearchCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.GetClientListSearch"/>.</summary>
         </member>
+        <member name="F:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.getPriorityFilterCommand">
+            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.GetPriorityFilterCommand"/>.</summary>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.GetPriorityFilterCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.GetPriorityFilter"/>.</summary>
+        </member>
         <member name="F:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.displayActionCommand">
             <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.DisplayActionCommand"/>.</summary>
         </member>
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.DisplayActionCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.DisplayAction(TheCuriousCreative2.Models.ClientModel)"/>.</summary>
+        </member>
+        <member name="F:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.toggleAddCommand">
+            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.ToggleAddCommand"/>.</summary>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.ToggleAddCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.ToggleAdd"/>.</summary>
         </member>
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.ProjectDetail">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel._projectDetail"/>
@@ -217,6 +229,12 @@
         <member name="P:TheCuriousCreative2.ViewModels.DashboardViewModel.GetCountersCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.DashboardViewModel.GetCounters"/>.</summary>
         </member>
+        <member name="F:TheCuriousCreative2.ViewModels.DashboardViewModel.navigateNextCommand">
+            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.DashboardViewModel.NavigateNextCommand"/>.</summary>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.DashboardViewModel.NavigateNextCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.DashboardViewModel.NavigateNext"/>.</summary>
+        </member>
         <member name="P:TheCuriousCreative2.ViewModels.FundsListViewModel.FundsDetail">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.FundsListViewModel._fundsDetail"/>
         </member>
@@ -234,6 +252,15 @@
         </member>
         <member name="P:TheCuriousCreative2.ViewModels.FundsListViewModel.TotalExpenses">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.FundsListViewModel.totalExpenses"/>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.FundsListViewModel.DaysLeft">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.FundsListViewModel.daysLeft"/>
+        </member>
+        <member name="F:TheCuriousCreative2.ViewModels.FundsListViewModel.checkDaysCommand">
+            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.FundsListViewModel.CheckDaysCommand"/>.</summary>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.FundsListViewModel.CheckDaysCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.FundsListViewModel.CheckDays"/>.</summary>
         </member>
         <member name="F:TheCuriousCreative2.ViewModels.FundsListViewModel.getFundsListCommand">
             <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.FundsListViewModel.GetFundsListCommand"/>.</summary>

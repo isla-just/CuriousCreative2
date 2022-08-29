@@ -28,6 +28,7 @@ namespace TheCuriousCreative2.ViewModels
 
             //GetFundsList();
             StoreFunds();
+            CheckDays();
         }
 
         //using our model and services together to perform the action of deleting, showing and editing
@@ -56,6 +57,22 @@ namespace TheCuriousCreative2.ViewModels
 
         [ObservableProperty]
         int totalExpenses;
+
+        [ObservableProperty]
+        int daysLeft = 0;
+
+        [RelayCommand]
+        public async void CheckDays()
+        {
+            //getting the current date and the last day of month
+            DateTime now = DateTime.Now;
+            var lastDayOfMonth = DateTime.DaysInMonth(now.Year, now.Month);
+
+            int nowFormatted = (int)now.Day;
+
+            DaysLeft = lastDayOfMonth - nowFormatted;
+
+        }
 
 
 
@@ -90,8 +107,6 @@ namespace TheCuriousCreative2.ViewModels
                 {
                     Debug.WriteLine(ClientIncome + project.PricePerMonth);
                     ClientIncome = ClientIncome + project.PricePerMonth;
-
-                    //to dp - update active projects to inactive
                 }
             
             }
@@ -113,9 +128,6 @@ namespace TheCuriousCreative2.ViewModels
                     Salaries = Salaries + staff.Salary * staff.HoursWorked;
                 }
 
-                //to do - zero hours worked
-
-
             }
 
             //to do add printing expenses to this calculation
@@ -133,6 +145,8 @@ namespace TheCuriousCreative2.ViewModels
             string nowFormatted = now.ToString();
 
             int response = -1;
+            int projectResponse = -1;
+            int hoursResponse = -1;
 
             response = await _fundsService.AddFunds(new Models.FundsModel
             {
@@ -142,6 +156,9 @@ namespace TheCuriousCreative2.ViewModels
                 ClientIncome = ClientIncome,
                 Expenses = 0
             });
+
+            //to dp - update active projects to inactive
+            //to do - zero hours worked
 
             if (response > 0)
             {
