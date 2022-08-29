@@ -59,17 +59,6 @@
 
     </FlyoutItem>-->
 
-    <FlyoutItem   Title="DASHBOARD">
-        <Tab>
-             <ShellContent
-                Title="Dashboard"
-                ContentTemplate="{DataTemplate local:Dashboard}"
-                Route="Dashboard"
-              />
-
-        </Tab>
-
-    </FlyoutItem>
 
 
 
@@ -79,6 +68,18 @@
                 Title="Clients"
                 ContentTemplate="{DataTemplate local:ClientManagement}"
                 Route="ClientManagement"
+              />
+
+        </Tab>
+
+    </FlyoutItem>
+
+        <FlyoutItem   Title="DASHBOARD">
+        <Tab>
+             <ShellContent
+                Title="Dashboard"
+                ContentTemplate="{DataTemplate local:Dashboard}"
+                Route="Dashboard"
               />
 
         </Tab>

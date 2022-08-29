@@ -8,7 +8,15 @@
              x:DataType="viewModel:FundsListViewModel"
              Title="Funds">
 
+         <!--<CollectionView ItemsSource="{Binding Funds}" BackgroundColor="Transparent" Margin="540, 0, -20, 0" WidthRequest="1500">
+                                    <CollectionView.ItemTemplate >
 
+                                        <DataTemplate x:DataType="models:FundsModel">
+                
+                                                                   </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+
+                                </CollectionView>-->
 
 
     <FlexLayout>
@@ -21,19 +29,12 @@
             </Border.StrokeShape>
 
   
-          
+             
             
 
                 <Grid ColumnDefinitions="9*,4*" ColumnSpacing="50" Padding="-30, 0, -20, 0">
 
-                        <CollectionView ItemsSource="{Binding Funds}" BackgroundColor="Transparent" Margin="540, 0, -20, 0" WidthRequest="1500">
-                                    <CollectionView.ItemTemplate >
-
-                                        <DataTemplate x:DataType="models:FundsModel">
-
-                            <HorizontalStackLayout >
-
-
+                
 
                                  <VerticalStackLayout Grid.Column="0" BackgroundColor="Transparent" Padding="0">
                           <Label Text="Funds" Grid.Column="0" FontFamily="PoppinsMedium" Padding="0" FontSize="25" TextColor="#102D4C" Margin="20, 30, 0, 15"/>
@@ -91,6 +92,19 @@
 
                                    <VerticalStackLayout>
 
+                                                
+         <!--<CollectionView ItemsSource="{Binding Funds}" BackgroundColor="Transparent" Margin="640, 0, 0, 0" WidthRequest="1500">
+                                    <CollectionView.ItemTemplate >
+
+                                        <DataTemplate x:DataType="models:FundsModel">
+                                <Label Text="{Binding FundsTotal}"/>
+                
+                                                                   </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+
+                                </CollectionView>-->
+
+
                                       <Button BackgroundColor="#1EBBBA" TextColor="White" CornerRadius="30" Padding="25" Text="10 days left to close"  Margin="450, -70, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15" BorderColor="#FEEED8" BorderWidth="8" WidthRequest="260"></Button>
                                           <Label Text="This month's account" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C"></Label>
                                             <Label Text="25 July to 25 August" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 5, 0, 0"></Label>
@@ -119,16 +133,6 @@
                                         <Border Stroke="#102D4C" StrokeThickness="1" Margin="0, 20, 0, 0"></Border>
 
 
-                             <!--<Entry Text="{Binding FundsDetail.FundsTotal}" Placeholder="Total" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
-                             <Entry Text="{Binding FundsDetail.Salaries}" Placeholder="Salaries" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
-                             <Entry Text="{Binding FundsDetail.ClientIncome}" Placeholder="Income" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
-                             <Entry Text="{Binding FundsDetail.Expenses}" Placeholder="Expenses" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
-
-                              <Button Command="{Binding AddFundsCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="add new funds"  Margin="0, 20, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>-->
-
-
-
-
 
                                       <HorizontalStackLayout Margin="0, 15, 0, 0" Spacing="20">
                                             <Label Text="Expenses" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="15, 10, 0, 0" WidthRequest="370"></Label>
@@ -151,7 +155,7 @@
                                        <HorizontalStackLayout>
 
                                              <Button BorderColor="#FF4C54" BorderWidth="2" BackgroundColor="Transparent" WidthRequest="190" TextColor="#FF4C54" CornerRadius="25" Padding="20" Text="Print statement"  Margin="400, 40, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
-                                           <Button BackgroundColor="#FF4C54" WidthRequest="190" TextColor="White" CornerRadius="23" Padding="20" Text="Close off month"  Margin="30, 40, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                                           <Button Command="{Binding AddFundsCommand}" BackgroundColor="#FF4C54" WidthRequest="190" TextColor="White" CornerRadius="23" Padding="20" Text="Close off month"  Margin="30, 40, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
 
                                        </HorizontalStackLayout>
 
@@ -159,6 +163,8 @@
 
 
                                </Frame>
+
+
 
                         
 
@@ -202,7 +208,7 @@
 
                                                  
                                                 <Entry Text="{Binding FundsTotal}" IsVisible="false" Placeholder="Total" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
-                                                     <Entry Text="{Binding FundsId}" IsVisible="false" Placeholder="Total" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                     <Entry IsVisible="false" Placeholder="Total" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                                                   
 
                                                     <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
@@ -244,12 +250,8 @@
 
 
                     </VerticalStackLayout>
-                            </HorizontalStackLayout>
 
-                                                                   </DataTemplate>
-                                    </CollectionView.ItemTemplate>
 
-                                </CollectionView>
 
                 </Grid>
 

@@ -563,6 +563,27 @@
 			p1S9z0r5Nv6KN4ZZinZcHo9gsFMlBRoJx6c3I8UrHiA=
 			</data>
 		</dict>
+		<key>MonoBundle/Syncfusion.Licensing.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k8ifnmIl56eRjxbC5bPi8XLMXMfzvRC+s3hDumLv+vw=
+			</data>
+		</dict>
+		<key>MonoBundle/Syncfusion.Maui.Charts.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7QRxp5DnDG0FKEWe/JDUj0goF5m5m/eLxTR5g5TwLKo=
+			</data>
+		</dict>
+		<key>MonoBundle/Syncfusion.Maui.Core.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k3RDGFCJcnKBRIy/LqHCZkeuRlTFUcXRK6do4xwhtjI=
+			</data>
+		</dict>
 		<key>MonoBundle/System.AppContext.dll</key>
 		<dict>
 			<key>hash2</key>
@@ -1673,14 +1694,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			oj+AUcCnYgsLlR3qR5Z+G8ciRKxr92J2BLSMV7b+VLw=
+			KJYV6GEfb8LwR3EetDV9h/csHyH4DXpD+LXahjATJWo=
 			</data>
 		</dict>
 		<key>MonoBundle/TheCuriousCreative2.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a9Ic8ZXzfoM7+62E3BWir51xSOHoinygzR2vlnEWsZw=
+			OJwHZT5aGSTgSHoiqlJoQP+ODo6MEf9l12Zy96KuGpU=
 			</data>
 		</dict>
 		<key>MonoBundle/WindowsBase.dll</key>

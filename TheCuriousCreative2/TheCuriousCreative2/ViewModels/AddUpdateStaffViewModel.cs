@@ -82,7 +82,7 @@ namespace TheCuriousCreative2.ViewModels
 
 
         //search functionlity to search for staff member name and ID
-        [ICommand]
+        [RelayCommand]
         public async void GetStaffListSearch()
         {
             var subjectList = await _staffService.GetStaffList();
@@ -105,7 +105,7 @@ namespace TheCuriousCreative2.ViewModels
 
 
         //search functionlity to search and filter according to staff member's role
-        [ICommand]
+        [RelayCommand]
         public async void GetStaffRoleFilter()
         {
             var staffList = await _staffService.GetStaffList();
@@ -121,7 +121,7 @@ namespace TheCuriousCreative2.ViewModels
         }
 
         //search functionlity to search and filter according to staff member's design team
-        [ICommand]
+        [RelayCommand]
         public async void GetStaffTeamFilter()
         {
             var staffList = await _staffService.GetStaffList();
@@ -138,7 +138,7 @@ namespace TheCuriousCreative2.ViewModels
 
 
         //search functionlity to search and filter according to staff member's project
-        [ICommand]
+        [RelayCommand]
         public async void GetStaffProjectFilter()
         {
             var staffList = await _staffService.GetStaffList();

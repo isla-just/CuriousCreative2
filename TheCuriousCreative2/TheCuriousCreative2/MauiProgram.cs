@@ -2,7 +2,10 @@
 using TheCuriousCreative2.ViewModels;
 using Microsoft.Maui.Controls.Hosting;
 using Microsoft.Maui.Hosting;
-//using SkiaSharp.Views.Maui.Controls.Hosting;
+using Microsoft.Maui;
+using Microsoft.Maui.Controls.Compatibility;
+using Microsoft.Maui.Controls.Xaml;
+using Syncfusion.Maui.Core.Hosting;
 
 
 namespace TheCuriousCreative2;
@@ -13,7 +16,7 @@ public static class MauiProgram
     {
         var builder = MauiApp.CreateBuilder();
         builder
-            //.UseSkiaSharp(true)
+             .ConfigureSyncfusionCore()
             .UseMauiApp<App>()
             .ConfigureFonts(fonts =>
             {
@@ -44,6 +47,7 @@ public static class MauiProgram
         builder.Services.AddSingleton<ProjectManagement>();
         builder.Services.AddSingleton<StaffManagement>();
         builder.Services.AddSingleton<Login>();
+        builder.Services.AddSingleton<Dashboard>();
 
         //view models
         builder.Services.AddSingleton<AddUpdateClientViewModel>();
@@ -51,6 +55,9 @@ public static class MauiProgram
         builder.Services.AddSingleton<AddUpdateProjectViewModel>();
         builder.Services.AddSingleton<AddUpdateStaffViewModel>();
         builder.Services.AddSingleton<LoginViewModel>();
+        builder.Services.AddSingleton<DashboardViewModel>();
+
+        builder.Services.AddSingleton<Charts>();
 
         return builder.Build();
     }

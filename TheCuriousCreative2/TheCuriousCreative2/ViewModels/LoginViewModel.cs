@@ -19,13 +19,13 @@ namespace TheCuriousCreative2.ViewModels
         [RelayCommand]
         public async Task LoginVerification()
         {
-          
+
             bool search = await App.StaffService.AdminStaffLoginAuth(UserName, password);
-            
+
             if (search)
             {
                 Debug.WriteLine("User Was Found");
-                ErrorDisplay = "correct";
+                ErrorDisplay = "should navigate";
                 await Shell.Current.GoToAsync("/Dashboard");
             }
             else

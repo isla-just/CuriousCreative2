@@ -7,8 +7,8 @@ public partial class Funds : ContentPage
 {
     private FundsListViewModel _viewMode;
     public Funds(FundsListViewModel viewModel)
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
         _viewMode = viewModel;
         this.BindingContext = viewModel;
     }

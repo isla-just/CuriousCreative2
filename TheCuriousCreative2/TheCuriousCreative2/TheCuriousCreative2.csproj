@@ -96,6 +96,7 @@
 	  <None Remove="LiveChartsCore.SkiaSharpView.Maui" />
 	  <None Remove="LiveChartsCore" />
 	  <None Remove="LiveChartsCore.SkiaSharpView" />
+	  <None Remove="Syncfusion.Maui.Charts" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Platforms\View\" />
@@ -112,6 +113,6 @@
 	  <PackageReference Include="SQLitePCLRaw.provider.sqlite3" Version="2.1.0" />
 	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
 	  <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.1.2" />
-	  <PackageReference Include="LiveChartsCore.SkiaSharpView.Maui" Version="2.0.0-beta.350" />
+	  <PackageReference Include="Syncfusion.Maui.Charts" Version="20.2.45" />
 	</ItemGroup>
 </Project>

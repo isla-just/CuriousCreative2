@@ -2175,3 +2175,12 @@
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/lp/164/jl/files.cache
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/lp/165/jl/files.cache
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/lp/166/jl/files.cache
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/android/assets/Syncfusion.Licensing.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/android/assets/Syncfusion.Maui.Charts.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/android/assets/Syncfusion.Maui.Core.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/android/src/crc640360c8a960a6805b/StaticTextLayout.java
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/android/src/crc6479d6f9e48582dc67/GestureDetector_ScaleListener.java
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/android/src/crc6479d6f9e48582dc67/GestureDetector_ScrollListener.java
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/android/src/crc6481e5b28a6b4dd87a/NativeCustomScrolLayout.java
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/android/src/crc6481e5b28a6b4dd87a/NativeSnapLayout.java
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/android/src/crc6486af4e8104107bae/LayoutViewGroupExt.java

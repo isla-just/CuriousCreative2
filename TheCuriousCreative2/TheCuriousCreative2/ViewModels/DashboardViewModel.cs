@@ -39,7 +39,7 @@ namespace TheCuriousCreative2.ViewModels
             var projectList = await _projectService.GetProjectList();
 
 
-            projectCounter = projectList.Count;
+            projectCounter = projectList.Count();
 
             Debug.WriteLine(projectCounter);
 

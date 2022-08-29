@@ -54,10 +54,6 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
-            "LiveChartsCore.SkiaSharpView.Maui": {
-              "target": "Package",
-              "version": "[2.0.0-beta.350, )"
-            },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
               "version": "[6.0.486, )",
@@ -87,6 +83,10 @@
             "SQLitePCLRaw.provider.sqlite3": {
               "target": "Package",
               "version": "[2.1.0, )"
+            },
+            "Syncfusion.Maui.Charts": {
+              "target": "Package",
+              "version": "[20.2.45, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -144,10 +144,6 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
-            "LiveChartsCore.SkiaSharpView.Maui": {
-              "target": "Package",
-              "version": "[2.0.0-beta.350, )"
-            },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
               "version": "[6.0.486, )",
@@ -177,6 +173,10 @@
             "SQLitePCLRaw.provider.sqlite3": {
               "target": "Package",
               "version": "[2.1.0, )"
+            },
+            "Syncfusion.Maui.Charts": {
+              "target": "Package",
+              "version": "[20.2.45, )"
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",
@@ -225,10 +225,6 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
-            "LiveChartsCore.SkiaSharpView.Maui": {
-              "target": "Package",
-              "version": "[2.0.0-beta.350, )"
-            },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
               "version": "[6.0.486, )",
@@ -258,6 +254,10 @@
             "SQLitePCLRaw.provider.sqlite3": {
               "target": "Package",
               "version": "[2.1.0, )"
+            },
+            "Syncfusion.Maui.Charts": {
+              "target": "Package",
+              "version": "[20.2.45, )"
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",

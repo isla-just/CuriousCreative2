@@ -1,20 +1,23 @@
 ﻿using System;
-using LiveChartsCore;
-using LiveChartsCore.SkiaSharpView;
+using TheCuriousCreative2.Models;
 
 namespace TheCuriousCreative2.ViewModels
 {
 	public class Charts
 	{
-        public ISeries[] Series { get; set; }
-       = new ISeries[]
-       {
-            new LineSeries<double>
-            {
-                Values = new double[] { 2, 1, 3, 5, 3, 4, 6 },
-                Fill = null
-            }
-       };
+        public List<Person> Data { get; set; }
+
+        public Charts()
+        {
+            Data = new List<Person>()
+        {
+            new Person { Name = "David", Height = 170 },
+            new Person { Name = "Michael", Height = 96 },
+            new Person { Name = "Steve", Height = 65 },
+            new Person { Name = "Joel", Height = 182 },
+            new Person { Name = "Bob", Height = 134 }
+        };
+        }
     }
 }
 
