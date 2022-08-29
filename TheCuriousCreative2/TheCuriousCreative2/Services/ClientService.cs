@@ -50,6 +50,14 @@ namespace TheCuriousCreative2.Services
             await SetUpDb();
             return await _dbConnection.UpdateAsync(clientModel);
         }
+
+        //public async Task<int> GetCountClients()
+        //{
+        //    await SetUpDb();
+        //    var clientCount = await _dbConnection.ExecuteScalarAsync<int>("select count(*) from Clients");
+        //    return clientCount;
+        //}
+
     }
 }
 

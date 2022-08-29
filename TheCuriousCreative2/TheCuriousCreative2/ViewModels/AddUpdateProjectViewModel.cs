@@ -102,7 +102,7 @@ namespace TheCuriousCreative2.ViewModels
         {
             var projectList = await _projectService.GetProjectList();
             var projectClient = projectList.Where(value => value.Client.ToLowerInvariant().Contains(Search)).ToList();
-            
+
 
             Projects.Clear();
             foreach (var Client in projectClient)
@@ -236,4 +236,6 @@ namespace TheCuriousCreative2.ViewModels
         }
     }
 }
+
+
 

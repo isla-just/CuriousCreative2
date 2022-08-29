@@ -49,5 +49,3 @@
 
     </Grid>
 </ContentPage>
-<!--  <Button Clicked="Navigation_Clicked" BackgroundColor="#FF6C6E" TextColor="White" CornerRadius="20" Padding="20" Text="log me in" FontFamily="PoppinsLight" FontSize="15"  Margin="0, 20, 0, 0"/>
--->

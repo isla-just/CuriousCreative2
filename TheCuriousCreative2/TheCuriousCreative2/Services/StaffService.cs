@@ -70,7 +70,7 @@ namespace TheCuriousCreative2.Services
                     return false;
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Debug.WriteLine(ex.Message);
                 return false;
@@ -80,4 +80,3 @@ namespace TheCuriousCreative2.Services
 
     }
 }
-

@@ -1,33 +1,23 @@
-﻿//using LiveChartsCore.SkiaSharpView.Painting;
-//using LiveChartsCore.SkiaSharpView;
-//using LiveChartsCore;
-//using SkiaSharp;
-//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Text;
-//using System.Threading.Tasks;
+﻿using System;
+using TheCuriousCreative2.Models;
 
-//namespace TheCuriousCreative2.ViewModels
-//{
+namespace TheCuriousCreative2.ViewModels
+{
+	public class Charts
+	{
+        public List<Person> Data { get; set; }
 
-//    public class Charts
-//    {
-//        public ISeries[] LineOne { get; set; }
-//      = new ISeries[]
-//      {
-//                new LineSeries<double>
-//                {
-//                    Name = "Staff",
-//                    Values = new double[] {2,1,3,5,3,4,6},
-//                    Stroke = new SolidColorPaint(new SKColor(252, 105, 35)) { StrokeThickness = 3 },
-//                    Fill = null,
-//                    GeometryFill = null,
+        public Charts()
+        {
+            Data = new List<Person>()
+        {
+            new Person { Name = "David", Height = 170 },
+            new Person { Name = "Michael", Height = 96 },
+            new Person { Name = "Steve", Height = 65 },
+            new Person { Name = "Joel", Height = 182 },
+            new Person { Name = "Bob", Height = 134 }
+        };
+        }
+    }
+}
 
-//                }
-
-
-//      };
-//    }
-
-//}
