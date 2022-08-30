@@ -29,6 +29,8 @@ namespace TheCuriousCreative2.ViewModels
             //GetFundsList();
             StoreFunds();
             CheckDays();
+            GetProj();
+
         }
 
         //using our model and services together to perform the action of deleting, showing and editing
@@ -50,11 +52,12 @@ namespace TheCuriousCreative2.ViewModels
         [ObservableProperty]
         private int _clientIncome;
 
+        //this needs to be stored in preferences
+
         [ObservableProperty]
-        private int _expenses = 0;
+        private int _expenses;
 
         //calculate
-
         [ObservableProperty]
         int totalExpenses;
 
@@ -73,8 +76,6 @@ namespace TheCuriousCreative2.ViewModels
             DaysLeft = lastDayOfMonth - nowFormatted;
 
         }
-
-
 
         //adding clients to the list
         [RelayCommand]
@@ -98,13 +99,18 @@ namespace TheCuriousCreative2.ViewModels
 
             var projectList = await _projectService.GetProjectList();
 
-
-            //to do: if deposit is paid add set amount to total
             foreach (var project in projectList)
             {
+
                 //if active then add to funds
                 if (project.Status == "active")
                 {
+                    //if deposit is paid 
+                    if (project.DepositPaid == "true")
+                    {
+                        ClientIncome = ClientIncome + project.Deposit;
+                    }
+
                     Debug.WriteLine(ClientIncome + project.PricePerMonth);
                     ClientIncome = ClientIncome + project.PricePerMonth;
                 }
@@ -130,17 +136,19 @@ namespace TheCuriousCreative2.ViewModels
 
             }
 
-            //to do add printing expenses to this calculation
-            FundsTotal = FundsTotal + ClientIncome - Salaries;
+            //getting from preferences and setting the variable to stored value
+            Expenses = Preferences.Get("Expenses", Expenses);
+
+            FundsTotal = FundsTotal + ClientIncome - Salaries - Expenses;
 
         }
 
-
+        //test
+        public ObservableCollection<ProjectModel> ActiveProjects { get; set; } = new ObservableCollection<ProjectModel>();
 
         [RelayCommand]
         public async void AddFunds()
         {
-
             DateTime now = DateTime.Now;
             string nowFormatted = now.ToString();
 
@@ -154,11 +162,12 @@ namespace TheCuriousCreative2.ViewModels
                 FundsTotal = FundsTotal,
                 Salaries = Salaries,
                 ClientIncome = ClientIncome,
-                Expenses = 0
+                Expenses = Expenses
             });
 
             //to dp - update active projects to inactive
             //to do - zero hours worked
+
 
             if (response > 0)
             {
@@ -174,7 +183,78 @@ namespace TheCuriousCreative2.ViewModels
             }
 
 
+            //updating all active projects to inactive
+            //foreach(var proj in ActiveProjects)
+            //{
+            //    response = await _projectService.UpdateProject(proj);
+            //}
+
+
+
         }
+
+        [ObservableProperty]
+        public int printingExpenses = 0;
+
+
+        //test
+        public ObservableCollection<ProjectModel> Projects { get; set; } = new ObservableCollection<ProjectModel>();
+
+       
+
+
+        [RelayCommand]
+        public async void GetProj() {
+
+            var projList = await _projectService.GetProjectList();
+            if (projList?.Count > 0)
+            {
+                foreach (var proj in projList)
+                {
+                    Projects.Add(proj);
+
+                    //appending active projects to an object
+                    if (proj.Status == "active")
+                    {
+                        ActiveProjects.Add(proj);
+                    }
+                }
+            }
+        }
+
+
+        //test
+        public ObservableCollection<StaffModel> HourLog { get; set; } = new ObservableCollection<StaffModel>();
+
+
+        //[RelayCommand]
+        //public async void GetHours()
+        //{
+
+        //    var hourList = await _staffService.GetStaffList();
+        //    if (hourList?.Count > 0)
+        //    {
+        //        foreach (var hour in hourList)
+        //        {
+        //            //appending active projects to an object
+        //            if (hour.HoursWorked != 0)
+        //            {
+        //                HourLog.Add(proj);
+        //            }
+        //        }
+        //    }
+        //}
+
+
+        [RelayCommand]
+        public async void AddPrinting()
+        {
+            Expenses = Expenses + PrintingExpenses;
+            Preferences.Set("Expenses", Expenses);
+
+            await Shell.Current.DisplayAlert("This project has been added to the printing que", "Project name", "OK");
+        }
+
 
     }
 }

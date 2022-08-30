@@ -19,4 +19,14 @@ public partial class Dashboard : ContentPage
         base.OnAppearing();
         _viewMode.GetCountersCommand.Execute(null);
     }
+
+    private async void Navigation_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("ProjectManagement");
+    }
+
+    private async void FundsNav_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("Funds");
+    }
 }

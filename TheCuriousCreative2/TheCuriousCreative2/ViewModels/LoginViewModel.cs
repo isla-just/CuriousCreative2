@@ -27,6 +27,8 @@ namespace TheCuriousCreative2.ViewModels
                 Debug.WriteLine("User Was Found");
                 ErrorDisplay = "should navigate";
                 await Shell.Current.GoToAsync("/Dashboard");
+
+                Preferences.Set("StaffName", UserName);
             }
             else
             {

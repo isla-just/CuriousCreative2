@@ -39,16 +39,22 @@
                         <Frame BackgroundColor="#FFA191" BorderColor="Transparent" Grid.Column="0" CornerRadius="32" Margin="0, -20, 0, 0" HeightRequest="260">
 
                             <HorizontalStackLayout>
-                                <VerticalStackLayout Padding="30">
+                              
 
-                                  <Label Text="Welcome Annie!" FontFamily="PoppinsMedium" FontSize="30" TextColor="White"></Label>
+                                    <VerticalStackLayout Margin="0, -80, 0, 0">
+                                           <Image Source="illustration_house_white.jpg" Aspect="AspectFit" HeightRequest="340"></Image>
+
+                                    </VerticalStackLayout>
+
+                                     <VerticalStackLayout Padding="30" Margin="-940, 0, 0, 0">
+
+                                  <Label Text="{Binding CurrentAdmin.StaffName}" FontFamily="PoppinsMedium" FontSize="30" TextColor="White"></Label>
                                   <Label Text="Let's organise this space" FontFamily="PoppinsRegular" FontSize="20" TextColor="White" Margin="0, 5, 0, 0"></Label>
-                                  <Button Command="{Binding NavigateNextCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="20" Text="see our projects"  Margin="0, 40, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
-
+                                 
+                                           <Button Clicked="Navigation_Clicked" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="20" Text="see our projects"  Margin="0, 40, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15" ZIndex="100"></Button>
                                 </VerticalStackLayout>
-
-                                <Image Source="illustration_house_white.jpg" Aspect="AspectFit" HeightRequest="370" Margin="-280, -70, 0, 0"></Image>
-
+                             
+                                    
                             </HorizontalStackLayout>
 
                         </Frame>
@@ -56,18 +62,19 @@
                          <Frame BackgroundColor="#FEE7CD" BorderColor="Transparent" Grid.Column="1" CornerRadius="32" Margin="0, -20, 0, 0" Padding="30">
 
                              <VerticalStackLayout>
+                                  
 
                                     <HorizontalStackLayout>
                                 <Frame WidthRequest="100" HeightRequest="100" CornerRadius="35" BackgroundColor="#FF4C54" ></Frame>
                                 <VerticalStackLayout Margin="20">
 
                                     <HorizontalStackLayout Padding="0">
-                                          <Label Text="Annie Evans" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C"></Label>
-                                            <Label Text="aka annie loves admin" FontFamily="PoppinsRegular" FontSize="20" TextColor="#102D4C" Margin="10, 5, 0, 0"></Label>
+                                          <Label Text="{Binding CurrentAdmin.StaffName}" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C"></Label>
+                                            <Label Text="{Binding CurrentAdmin.Nickname}" FontFamily="PoppinsRegular" FontSize="20" TextColor="#102D4C" Margin="10, 5, 0, 0"></Label>
 
                                     </HorizontalStackLayout>
                                 
-                                      <Label Margin="0, 2, 0, 0" Text="Administrator" FontFamily="PoppinsLight" FontSize="18" TextColor="#102D4C"></Label>
+                                      <Label Margin="0, 2, 0, 0" Text="{Binding CurrentAdmin.Role}" FontFamily="PoppinsLight" FontSize="18" TextColor="#102D4C"></Label>
 
                                 </VerticalStackLayout>
 
@@ -79,14 +86,14 @@
                                  <HorizontalStackLayout Margin="0, 20, 0, 0">
 
                                         <Label Text="Salary" Margin="20, 0, 0, 0" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C"></Label>
-                                     <Label Text="R17 000" Margin="120, 0, 0, 0" FontFamily="PoppinsLight" FontSize="18" TextColor="#102D4C"></Label>
+                                     <Label Text="{Binding CurrentAdmin.Salary}" Margin="120, 0, 0, 0" FontFamily="PoppinsLight" FontSize="18" TextColor="#102D4C"></Label>
 
                                  </HorizontalStackLayout>
 
                                  <HorizontalStackLayout Margin="0, 15, 0, 0">
 
                                         <Label Text="Birthday" Margin="20, 0, 0, 0" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C"></Label>
-                                     <Label Text="20 September 2000" Margin="100, 0, 0, 0" FontFamily="PoppinsLight" FontSize="18" TextColor="#102D4C"></Label>
+                                     <Label Text="{Binding CurrentAdmin.Birthday}" Margin="100, 0, 0, 0" FontFamily="PoppinsLight" FontSize="18" TextColor="#102D4C"></Label>
 
                                  </HorizontalStackLayout>
 
@@ -110,8 +117,11 @@
                                         <VerticalStackLayout>
                                             <HorizontalStackLayout>
                                                     <Label Text="Funds" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
-                                                   <Label Text="See all" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" TextDecorations="Underline" Margin="550, 20, 0, 0"></Label>
+                                    <VerticalStackLayout Margin="0, -20, 0, 0">
+                                           <Button Clicked="FundsNav_Clicked" BackgroundColor="#1EBBBA" TextColor="White" CornerRadius="20" Padding="10" Text="see all"  Margin="550, 20, 0, 0" WidthRequest="110"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
 
+                                    </VerticalStackLayout>
+                                  
                                             </HorizontalStackLayout>
 
                                   <!--<Grid>
@@ -202,70 +212,94 @@
 
 
                                              <Frame BackgroundColor="#FEE7CD" BorderColor="Transparent" HeightRequest="360" WidthRequest="460" CornerRadius="52" Margin="0, 90, 0, 0" Padding="30">
-                                                 <ScrollView HeightRequest="360" WidthRequest="460" Padding="30">
-                                                     <VerticalStackLayout>
-                                                       
+
+                                            <VerticalStackLayout>
+
+                                               <Label Text="Top Teams" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
+
+
+                                        <ScrollView HeightRequest="350">
+
+                                               <StackLayout Orientation="Vertical">
+
+                                                <Frame BackgroundColor="White" BorderColor="Transparent" Padding="10" CornerRadius="30" Margin="0,5,0,5" WidthRequest="390">
                                                              <HorizontalStackLayout>
 
-                                                                      <Label Text="Top Teams" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
-                                                                      <Label Text="See all" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" TextDecorations="Underline" Margin="100, 20, 0, 0"></Label>
+                                                                        <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="20" Margin="2, 0, 5, 0"></Frame>
+
+                                                                      <Label Text="The Dream Team" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="10, 15, 0, 10"></Label>
+                                                                      <Label Text="{Binding TeamCounter1}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.6" Margin="10, 15, 0, 10" HorizontalTextAlignment="End"></Label>
 
                                                              </HorizontalStackLayout>
 
-                                                          <Frame BackgroundColor="White" BorderColor="Transparent" Padding="8" CornerRadius="30" Margin="0,5,0,5">
+                                                         </Frame>
+         
+
+                                                <Frame BackgroundColor="White" BorderColor="Transparent" Padding="10" CornerRadius="30" Margin="0,5,0,5" WidthRequest="390">
                                                              <HorizontalStackLayout>
 
-                                                                        <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="20"></Frame>
+                                                                        <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#FE5A22" BorderColor="Transparent" CornerRadius="20" Margin="2, 0, 5, 0"></Frame>
 
-                                                                      <Label Text="The Dream Team" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
-                                                                      <Label Text="12k" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.6" Margin="20" HorizontalTextAlignment="End"></Label>
+                                                                      <Label Text="Baby Creatives" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="10, 15, 0, 10"></Label>
+                                                                      <Label Text="{Binding TeamCounter2}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.6" Margin="10, 15, 0, 10" HorizontalTextAlignment="End"></Label>
+
+                                                             </HorizontalStackLayout>
+
+                                                         </Frame>
+         
+
+                                                <Frame BackgroundColor="White" BorderColor="Transparent" Padding="10" CornerRadius="30" Margin="0,5,0,5" WidthRequest="390">
+                                                             <HorizontalStackLayout>
+
+                                                                        <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#FF4C54" BorderColor="Transparent" CornerRadius="20" Margin="2, 0, 5, 0"></Frame>
+
+                                                                      <Label Text="Colour Connoisseurs" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="10, 15, 0, 10"></Label>
+                                                                      <Label Text="{Binding TeamCounter3}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.6" Margin="10, 15, 0, 10" HorizontalTextAlignment="End"></Label>
+
+                                                             </HorizontalStackLayout>
+
+                                                         </Frame>
+         
+                
+
+                                                <Frame BackgroundColor="White" BorderColor="Transparent" Padding="10" CornerRadius="30" Margin="0,5,0,5" WidthRequest="390">
+                                                             <HorizontalStackLayout>
+
+                                                                        <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#FAC306" BorderColor="Transparent" CornerRadius="20" Margin="2, 0, 5, 0"></Frame>
+
+                                                                      <Label Text="Sketch Worx" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="10, 15, 0, 10"></Label>
+                                                                      <Label Text="{Binding TeamCounter4}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.6" Margin="10, 15, 0, 10" HorizontalTextAlignment="End"></Label>
 
                                                              </HorizontalStackLayout>
 
                                                          </Frame>
 
-                                                         
-                                                          <Frame BackgroundColor="White" BorderColor="Transparent" Padding="8" CornerRadius="30" Margin="0,5,0,5">
+                                                      <Frame BackgroundColor="White" BorderColor="Transparent" Padding="10" CornerRadius="30" Margin="0,5,0,5" WidthRequest="390">
                                                              <HorizontalStackLayout>
 
-                                                                        <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="20"></Frame>
+                                                                        <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#FAC306" BorderColor="Transparent" CornerRadius="20" Margin="2, 0, 5, 0"></Frame>
 
-                                                                      <Label Text="The Dream Team" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
-                                                                      <Label Text="12k" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.6" Margin="20" HorizontalTextAlignment="End"></Label>
+                                                                      <Label Text="Stay Sketchy" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="10, 15, 0, 10"></Label>
+                                                                      <Label Text="{Binding TeamCounter5}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.6" Margin="10, 15, 0, 10" HorizontalTextAlignment="End"></Label>
 
                                                              </HorizontalStackLayout>
 
                                                          </Frame>
+         
+                                           </StackLayout>
 
-                                                                          <Frame BackgroundColor="White" BorderColor="Transparent" Padding="8" CornerRadius="30" Margin="0,5,0,5">
-                                                             <HorizontalStackLayout>
-
-                                                                        <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="20"></Frame>
-
-                                                                      <Label Text="The Dream Team" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
-                                                                      <Label Text="12k" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.6" Margin="20" HorizontalTextAlignment="End"></Label>
-
-                                                             </HorizontalStackLayout>
-
-                                                         </Frame>
-
-                                                      
+                                        </ScrollView>
 
 
-
-                                                     </VerticalStackLayout>
-
-                                                 </ScrollView>
-
-                                             </Frame>
+                                                     
 
                                        </VerticalStackLayout>
 
                                    </Frame>
 
-                                
+                                      </VerticalStackLayout>
 
-                         
+                          </Frame>
 
                              </Grid>
 

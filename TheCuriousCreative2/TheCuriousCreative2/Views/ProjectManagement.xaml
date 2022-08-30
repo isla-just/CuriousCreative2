@@ -54,7 +54,7 @@
                          </Frame>
 
                     
-                    <ScrollView>
+                    <ScrollView Orientation="Vertical">
 
                         <VerticalStackLayout HeightRequest="350">
 
