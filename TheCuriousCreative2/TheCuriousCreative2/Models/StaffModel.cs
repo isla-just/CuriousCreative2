@@ -7,8 +7,8 @@ namespace TheCuriousCreative2.Models
     {
         [PrimaryKey, AutoIncrement]
         public int StaffID { get; set; }
-        //[MaxLength(250)]
-        //public string StaffImage { get; set; }
+        [MaxLength(250)]
+        public string StaffImage { get; set; }
         [MaxLength(250)]
         public string StaffPassword { get; set; }
         [MaxLength(250)]

@@ -15,7 +15,7 @@ namespace TheCuriousCreative2.ViewModels
 
     public partial class AddUpdateStaffViewModel : ObservableObject
     {
-        //test
+
         public ObservableCollection<StaffModel> Staffs { get; set; } = new ObservableCollection<StaffModel>();
 
         [ObservableProperty]
@@ -24,22 +24,28 @@ namespace TheCuriousCreative2.ViewModels
         private readonly IStaffService _staffService;
         public AddUpdateStaffViewModel(IStaffService staffService)
         {
+            listOfProjects = new List<ProjectModel>();
+            GetListOfProjects();
             _staffService = staffService;
         }
 
+        [ObservableProperty]
+        List<ProjectModel> listOfProjects;
+
+        [ObservableProperty]
+        ProjectModel selectedProject;
 
         [ObservableProperty]
         private string _staffName;
-
-        //[ObservableProperty]
-        //private string _image;
-
 
         [ObservableProperty]
         private string _staffPassword;
 
         [ObservableProperty]
         private string _role;
+
+        [ObservableProperty]
+        private string _staffImage;
 
         [ObservableProperty]
         private string _nickName;
@@ -78,6 +84,12 @@ namespace TheCuriousCreative2.ViewModels
                     Staffs.Add(staff);
                 }
             }
+        }
+
+        //Get the current projects availible for staff to be assigned to
+        public async void GetListOfProjects()
+        {
+            ListOfProjects = await App.ProjectService.GetProjectList();
         }
 
 
@@ -159,11 +171,17 @@ namespace TheCuriousCreative2.ViewModels
         [ObservableProperty]
         StaffModel activeStaff = new StaffModel();
 
+        [ObservableProperty]
+        ProjectModel activeTeam = new ProjectModel();
+
         //use this to set visibility - this is a toggle
         [ObservableProperty]
         bool isEditing = false;
 
+        [ObservableProperty]
+        bool isTeams = false;
 
+        //Update Staff
         [RelayCommand]
         public async void UpdateStaff()
         {
@@ -189,6 +207,7 @@ namespace TheCuriousCreative2.ViewModels
 
         }
 
+        //Add staff
         [RelayCommand]
         public async void AddStaff()
         {
@@ -202,11 +221,12 @@ namespace TheCuriousCreative2.ViewModels
                 response = await _staffService.AddStaff(new Models.StaffModel
                 {
                     StaffName = StaffDetail.StaffName,
+                    StaffImage = StaffDetail.StaffImage == "The Reader" ? "user_one.png" : StaffDetail.StaffImage == "The Lover" ? "user_two.png" : StaffDetail.StaffImage == "The Giver" ? "user_three.png" : StaffDetail.StaffImage == "The Planter" ? "user_four.png" : StaffDetail.StaffImage == "The Skater" ? "user_five.png" : StaffDetail.StaffImage == "The Drawer" ? "user_six.png" : StaffDetail.StaffImage == "The Learner" ? "user_seven.png" : "user_seven.png",
                     StaffPassword = StaffDetail.StaffPassword,
                     Role = StaffDetail.Role,
                     Nickname = StaffDetail.Nickname,
                     DesignTeam = StaffDetail.DesignTeam,
-                    Salary = StaffDetail.Role == "Admin" ? (15000) : StaffDetail.Role == "Lead Designer" ? (StaffDetail.MaxHours * 600) : (StaffDetail.MaxHours * 400),
+                    Salary = StaffDetail.Role == "Admin" ? (17000) : StaffDetail.Role == "Lead Designer" ? (StaffDetail.HoursWorked * 600) : (StaffDetail.HoursWorked * 400),
                     HoursWorked = StaffDetail.HoursWorked,
                     MaxHours = StaffDetail.MaxHours,
                     Birthday = StaffDetail.Birthday,
@@ -214,7 +234,7 @@ namespace TheCuriousCreative2.ViewModels
 
                 });
             }
-
+            Debug.WriteLine(StaffDetail.StaffImage);
             if (response > 0)
             {
                 await Shell.Current.DisplayAlert("Staff Info Saved", "Record Saved", "OK");
@@ -227,6 +247,7 @@ namespace TheCuriousCreative2.ViewModels
 
         }
 
+        //Edit staff
         [RelayCommand]
         public async void DisplayAction(StaffModel staffModel)
         {
@@ -237,6 +258,7 @@ namespace TheCuriousCreative2.ViewModels
                 ActiveStaff = staffModel;
                 Debug.WriteLine(ActiveStaff);
                 IsEditing = true;
+                IsTeams = false;
 
             }
             else if (response == "Delete")
@@ -248,6 +270,23 @@ namespace TheCuriousCreative2.ViewModels
                 }
             }
         }
+
+        //See Teams
+        [RelayCommand]
+        public async void BackToTeams()
+        {
+            IsTeams = true;
+            IsEditing = false;
+        }
+
+        //Back To Add new employee
+        [RelayCommand]
+        public async void BackToAdd()
+        {
+            IsEditing = false;
+            IsTeams = false;
+        }
+
     }
 }
 

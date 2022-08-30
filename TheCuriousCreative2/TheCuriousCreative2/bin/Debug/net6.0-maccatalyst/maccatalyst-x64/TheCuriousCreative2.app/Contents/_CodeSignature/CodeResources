@@ -268,6 +268,10 @@
 		<data>
 		4HLlm2YN3ftTzApI56MblN23+60=
 		</data>
+		<key>Resources/spotlight.png</key>
+		<data>
+		zRKnNvGVOJTlXU03vl6KefhvzQE=
+		</data>
 		<key>Resources/teal.png</key>
 		<data>
 		6SHPzWKz0FVMpnZYktlVOBBLDhE=
@@ -275,6 +279,34 @@
 		<key>Resources/up.png</key>
 		<data>
 		VWfkovPZJceREmvX3WgIUcHzdME=
+		</data>
+		<key>Resources/user_five.png</key>
+		<data>
+		k70+I6t/YqShzKFVYdNua86peYs=
+		</data>
+		<key>Resources/user_four.png</key>
+		<data>
+		m7uJXyOSN8q16DYJhtgTnDfxzJo=
+		</data>
+		<key>Resources/user_one.png</key>
+		<data>
+		lY6KdOieMzmxYYdikHaPcQXIRCQ=
+		</data>
+		<key>Resources/user_seven.png</key>
+		<data>
+		4yOw88zdf/MjuxZP6FNiC8/au/s=
+		</data>
+		<key>Resources/user_six.png</key>
+		<data>
+		YMnDVnaY/2dRA+96vRJXhwU7iEA=
+		</data>
+		<key>Resources/user_three.png</key>
+		<data>
+		CrKW7UbAkQUc0IBc4z516kugOPk=
+		</data>
+		<key>Resources/user_two.png</key>
+		<data>
+		Oh8r8gquXBMDmNSx8RleGsvEgUU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -1694,14 +1726,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			b4kuTbfn2Q+wQ4Aae1QeA2DyadpxwrEgRVUo2NA8zQA=
+			VOLpohM2Ju4Hz5VMKlqLOmPzyJNhr4zVHBqpZ/yyguo=
 			</data>
 		</dict>
 		<key>MonoBundle/TheCuriousCreative2.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			v8dFM8I6hVEka5lsjapVZkcrsmRkn5pfr/wSQE0sVrY=
+			RExObZ0X2k+408A/ARGOuO2DNK9hdcVAvFW6esNdf5I=
 			</data>
 		</dict>
 		<key>MonoBundle/WindowsBase.dll</key>
@@ -2250,6 +2282,13 @@
 			SNDMw7BXs5sbOLLGUZdlaSfgAiMttG57++PSP6L0pJM=
 			</data>
 		</dict>
+		<key>Resources/spotlight.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pskGJyDMjBN/K/e+VWmOmVTCrkNPDHuWzmdAjTI/obc=
+			</data>
+		</dict>
 		<key>Resources/teal.png</key>
 		<dict>
 			<key>hash2</key>
@@ -2262,6 +2301,55 @@
 			<key>hash2</key>
 			<data>
 			/OdXq74Ir5eguhb0DHb/tJz1jnCdt+EfvguhQbiLYv0=
+			</data>
+		</dict>
+		<key>Resources/user_five.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			VtpFh7HGK1u8Axg1+5NsMsPVEgVW993kZTW4ddgRAA0=
+			</data>
+		</dict>
+		<key>Resources/user_four.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2IkOFX+eXhbNOAqUVvhapgFfFtAGNIRJRqCYU2iYXrs=
+			</data>
+		</dict>
+		<key>Resources/user_one.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			StHSSPzK4NQatTtv1iRLS9CpXfxFHNHzNsqjQpd6PGA=
+			</data>
+		</dict>
+		<key>Resources/user_seven.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ncbzZh0BKvprcdXjebdIhmZqDBmOR7N/wMCOf5gigxQ=
+			</data>
+		</dict>
+		<key>Resources/user_six.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xhvIuYKaoWfd0hSs54ZbwMmK0awl8qvzhMZ+r4LNoaU=
+			</data>
+		</dict>
+		<key>Resources/user_three.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			kkMAvuP3fGdBAMjnDkNNGvQ5BFXS8Ii+9EXn6Hw9uQE=
+			</data>
+		</dict>
+		<key>Resources/user_two.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ezSU78wKy2OElZuAVHsLe3cAPcX2Fb+8GjXKQa2DyD0=
 			</data>
 		</dict>
 	</dict>

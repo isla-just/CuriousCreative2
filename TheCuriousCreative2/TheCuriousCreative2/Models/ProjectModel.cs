@@ -9,8 +9,8 @@ namespace TheCuriousCreative2.Models
         
         [PrimaryKey, AutoIncrement]
         public int ProjectID { get; set; }
-        //[MaxLength(250)]
-        //public string ProjectImage { get; set; }
+        [MaxLength(250)]
+        public string ProjectImage { get; set; }
         [MaxLength(250)]
         public string ProjectName { get; set; }
         [MaxLength(250)]

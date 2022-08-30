@@ -4,12 +4,23 @@ namespace TheCuriousCreative2;
 
 public partial class Login : ContentPage
 {
-	public Login(LoginViewModel viewModel)
+    private LoginViewModel _viewModel;
+    public Login(LoginViewModel viewModel)
 	{
 		InitializeComponent();
+        _viewModel = viewModel;
         this.BindingContext = viewModel;
-	}
+    }
 
+
+
+
+    protected override void OnAppearing()
+    {
+        //run getsubjects when page loads
+        base.OnAppearing();
+        _viewModel.GoToDashboardCommand.Execute(null);
+    }
 
 
 

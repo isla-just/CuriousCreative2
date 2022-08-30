@@ -34,7 +34,14 @@
                              <Grid ColumnDefinitions="4*, 4*, 4*" ColumnSpacing="20">
                                <Frame Grid.Column="0" BackgroundColor="#FEEED8" Margin="0, 15, 0, 0" BorderColor="Transparent" CornerRadius="32" HorizontalOptions="Start" WidthRequest="260" HeightRequest="80" Padding="20">
                                    <HorizontalStackLayout>
-                                          <Button Text="role" Command="{Binding GetStaffRoleFilterCommand}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" BackgroundColor="Transparent"></Button>
+                                    
+                                          <Button Text="role" Command="{Binding GetStaffRoleFilterCommand}"  FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" BackgroundColor="Transparent"/>
+                                          <Image Source="spotlight.png"
+                                                 Margin="0, 10, 0, 0"
+                                                 HeightRequest="50"
+                                                 WidthRequest="50"/>
+
+                                 
                                     
                                    </HorizontalStackLayout>
                                 </Frame>
@@ -53,17 +60,14 @@
                              </Grid>
                          </Frame>
 
-                        
-                         <Frame Grid.Row="0" BackgroundColor="#FFFEF2" BorderColor="Transparent" Margin="0, 0, 0, 0">
 
-                                         <ScrollView>
 
-                        <VerticalStackLayout HeightRequest="350">
-
+                   
   
                           <CollectionView ItemsSource="{Binding Staffs}"
                                           BackgroundColor="Transparent"
                                           Margin="0, 40, 0, 0"
+                                          HeightRequest="650"
                                           >
                                     <CollectionView.ItemTemplate >
 
@@ -72,17 +76,14 @@
 
                                     <VerticalStackLayout Margin="10">
 
-                                          <Frame Margin="0, 0, 0, 0" BackgroundColor="#FFF6E5"  BorderColor="Transparent" CornerRadius="25"  Padding="5">
+                                          <Frame Margin="0, 0, 0, 0" BackgroundColor="#FFF6E5"  BorderColor="Transparent" CornerRadius="25"  Padding="5" >
 
                                            <Grid ColumnDefinitions="10*, 2*">
-                                                <HorizontalStackLayout>
-
-                                                  
-                                                  <HorizontalStackLayout WidthRequest="650">
+                                               <HorizontalStackLayout >
                                                    <Frame BackgroundColor="#FFF6E5" Margin="0, 10, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="5">
                                                          <Grid ColumnDefinitions="10*, 2*">
                                                              <HorizontalStackLayout HeightRequest="170">
-                                                                      <Frame HeightRequest="100" WidthRequest="100" BackgroundColor="#FF4C54" BorderColor="Transparent" CornerRadius="20" Margin="10, -40, 0, 0"></Frame>
+                                                                      <Image Source="{Binding StaffImage}" HeightRequest="100" WidthRequest="100" Margin="10, -40, 0, 0"></Image>
                                                                  <VerticalStackLayout WidthRequest="650">
                                                                      <Label Text="{Binding StaffName}" FontFamily="PoppinsSemiBold" FontSize="20" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20, 30, 0, 0"></Label>
                                                                       <Label Text="{Binding Role}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="20, 10, 20, 20"></Label>
@@ -106,9 +107,6 @@
                                                          </Grid>
                                                      </Frame>
                                                  </HorizontalStackLayout>
-                                                    
-                                                
-                                                    </HorizontalStackLayout>
                                              
                                             </Grid>
 
@@ -127,19 +125,74 @@
 
                                 </CollectionView>
 
-                    </VerticalStackLayout>
-                   </ScrollView>
-
-                     
-                   
-                               </Frame>
+             
+                        
+                      
                     </VerticalStackLayout>
 
                     <VerticalStackLayout Grid.Column="1"  Padding="0">
                    <HorizontalStackLayout>
-                             <Button BackgroundColor="#FAF9F0" TextColor="#FF4C54" CornerRadius="25" Padding="23" Text="see design teams"  BorderColor="#FF4C54" BorderWidth="2" FontFamily="PoppinsSemiBold" FontSize="15" Margin="0, 0, 0, 0" WidthRequest="200"/>
-                          <Button IsEnabled="{Binding IsEditing}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="new employee"  Margin="30, 0, 0, 0" WidthRequest="200"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
-               </HorizontalStackLayout> 
+                             <Button Command="{Binding BackToTeamsCommand}" BackgroundColor="#FAF9F0" TextColor="#FF4C54" CornerRadius="25" Padding="23" Text="see design teams"  BorderColor="#FF4C54" BorderWidth="2" FontFamily="PoppinsSemiBold" FontSize="15" Margin="0, 0, 0, 0" WidthRequest="200"/>
+                          <Button Command="{Binding BackToAddCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="new employee"  Margin="30, 0, 0, 0" WidthRequest="200"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+               </HorizontalStackLayout>
+
+                              <!--see teams-->
+                    
+                     <AbsoluteLayout ZIndex="10" IsVisible="{Binding IsTeams}">
+                        <Border BackgroundColor="#FEEED8" Stroke="#FEEED8" WidthRequest="552" HeightRequest="987" Margin="-50, 35, 0, 0">
+
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="78, 0, 0, 0"/>
+                    </Border.StrokeShape>
+
+                    <VerticalStackLayout Padding="40">
+                        <Label Text="Team details" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
+
+                                
+
+                        <!--<Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40"> <Image Source="illustration_house.jpg" Aspect="AspectFill"></Image></Frame>-->
+                        <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="140, -40, 0, 0" CornerRadius="25" Padding="23"><Image Source="edit.png" Aspect="AspectFit"></Image></Frame>
+                              
+                                  <Label Text="Team Name" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+
+                                <CollectionView ItemsSource="{Binding ListOfProjects}"
+                                          BackgroundColor="Transparent"
+                                          Margin="0, 40, 0, 0"
+                                          HeightRequest="650"
+                                          >
+                                    <CollectionView.ItemTemplate >
+
+                                        <DataTemplate x:DataType="models:ProjectModel">
+                                          
+                                         <Label 
+                                            x:Name="project"
+                                            TextColor="Black"
+                                            Text="{Binding ProjectName}"/>
+                                          </DataTemplate>
+                                        </CollectionView.ItemTemplate>
+                                    </CollectionView>
+                                  <!--<Label Text="{Binding DesignTeam}"  FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Label>-->
+                                          
+
+                        
+
+
+
+                           <!--<Button Command="{Binding UpdateStaffCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="save project details"  Margin="0, 20, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>-->
+                                
+                            <HorizontalStackLayout>
+
+                              <Frame BackgroundColor="White" BorderColor="Transparent" Padding="8" CornerRadius="20" Margin="250,100,0,5" HeightRequest="55" WidthRequest="300">
+                                                             <HorizontalStackLayout>
+                                                                        <Frame  WidthRequest="45" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="15"></Frame>
+                                                                      <Label Text="{Binding DesignTeam}" FontFamily="PoppinsMedium" FontSize="15" TextColor="#102D4C" Margin="15, 10, 0, 0"></Label>
+                                                             </HorizontalStackLayout>
+                                                         </Frame>
+                                    </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </Border>
+
+          </AbsoluteLayout>
             <!--edit staff-->
                      <AbsoluteLayout ZIndex="10" IsVisible="{Binding IsEditing}">
 <Border BackgroundColor="#FEEED8" Stroke="#FEEED8" WidthRequest="552" HeightRequest="987" Margin="-50, 35, 0, 0">
@@ -150,7 +203,24 @@
 
                     <VerticalStackLayout Padding="40">
                         <Label Text="Edit staff details" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
-                        <Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40"> <Image Source="illustration_house.jpg" Aspect="AspectFill"></Image></Frame>
+
+                                
+                                      <Picker 
+                                    Title="Choose an Image"
+                                    SelectedItem="{Binding StaffDetail.StaffImage}">
+                                          <Picker.ItemsSource>
+                                         <x:Array Type="{x:Type x:String}">
+                                             <x:String>The Reader</x:String>
+                                            <x:String>The Lover</x:String>
+                                            <x:String>The Giver</x:String>
+                                            <x:String>The Planter</x:String>
+                                            <x:String>The Skater</x:String>
+                                            <x:String>The Drawer</x:String>
+                                            <x:String>The Learner</x:String>
+                                        </x:Array>
+                                          </Picker.ItemsSource>
+                                </Picker>
+                        <!--<Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40"> <Image Source="illustration_house.jpg" Aspect="AspectFill"></Image></Frame>-->
                         <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="140, -40, 0, 0" CornerRadius="25" Padding="23"><Image Source="edit.png" Aspect="AspectFit"></Image></Frame>
                               
                                   <Label Text="Staff Name" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
@@ -203,7 +273,7 @@
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                                    <Entry Text="{Binding ActiveStaff.Salary}" Placeholder="R 30 000.00" PlaceholderColor="Gray" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                    <Entry Text="{Binding ActiveStaff.Salary}" IsReadOnly="True" Placeholder="R 30 000.00" PlaceholderColor="Gray" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                                                 </Border>
 
 
@@ -246,7 +316,13 @@
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                                    <Entry Text="{Binding ActiveStaff.CurrentProject}" Placeholder="Bunny Friend's" PlaceholderColor="Gray" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                     <Picker 
+                                    x:Name="picker"
+                                    TextColor="Black"
+                                    ItemsSource="{Binding ListOfProjects}"
+                                    ItemDisplayBinding="{Binding ProjectName}"
+                                    SelectedItem="{Binding SelectedProject}"/>
+                                                    <!--<Entry Text="{Binding ActiveStaff.CurrentProject}" Placeholder="Bunny Friend's" PlaceholderColor="Gray" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>-->
                                                 </Border>
 
                                 
@@ -279,7 +355,7 @@
 
 
 
-                      <!--for the add form-->
+                      <!--add staff-->
           <AbsoluteLayout ZIndex="1" IsVisible="true">
                         <Border BackgroundColor="#FEEED8" Stroke="#FEEED8" WidthRequest="552" HeightRequest="987" Margin="-50, 35, 0, 0">
 
@@ -289,7 +365,28 @@
 
                     <VerticalStackLayout Padding="40">
                         <Label Text="Add a staff member" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
-                        <Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40"> <Image Source="flower_town.jpg" Aspect="AspectFill"></Image></Frame>
+
+                       
+
+                                      <Picker 
+                                    Title="Choose an Image"
+                                    SelectedItem="{Binding StaffDetail.StaffImage}">
+                                          <Picker.ItemsSource>
+                                         <x:Array Type="{x:Type x:String}">
+                                             <x:String>The Reader</x:String>
+                                            <x:String>The Lover</x:String>
+                                            <x:String>The Giver</x:String>
+                                            <x:String>The Planter</x:String>
+                                            <x:String>The Skater</x:String>
+                                            <x:String>The Drawer</x:String>
+                                            <x:String>The Learner</x:String>
+                                        </x:Array>
+                                          </Picker.ItemsSource>
+                                </Picker>
+
+                               <!-- <Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40"> <Image Source="flower_town.jpg" Aspect="AspectFill"></Image></Frame>-->
+
+
                         <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="140, -40, 0, 0" CornerRadius="25" Padding="23"><Image Source="edit.png" Aspect="AspectFit"></Image></Frame>
                                
 
@@ -346,7 +443,7 @@
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                                    <Entry Text="{Binding StaffDetail.Salary}" Placeholder="R 30 000.00" PlaceholderColor="Gray" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                    <Entry Text="{Binding StaffDetail.Salary}" IsReadOnly="True" Placeholder="R 30 000.00" PlaceholderColor="Gray" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                                                 </Border>
 
 
@@ -389,7 +486,13 @@
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                                    <Entry Text="{Binding StaffDetail.CurrentProject}" Placeholder="Bunny Friend's" PlaceholderColor="Gray" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                    <Picker 
+                                    x:Name="picker2S"
+                                    TextColor="Black"
+                                    ItemsSource="{Binding ListOfProjects}"
+                                    ItemDisplayBinding="{Binding ProjectName}"
+                                    SelectedItem="{Binding SelectedProject}"/>
+                                                    <!--<Entry Text="{Binding StaffDetail.CurrentProject}" Placeholder="Bunny Friend's" PlaceholderColor="Gray" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>-->
                                                 </Border>
 
                                 <Label Text="Password" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 0, 0, 0"></Label>
@@ -402,7 +505,7 @@
                                                     <Entry Text="{Binding StaffDetail.StaffPassword}" Placeholder="Bunny Friend's" PlaceholderColor="Gray" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                                                 </Border>
 
-                           <Button Command="{Binding AddStaffCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="save project details"  Margin="0, 20, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                           <Button Command="{Binding AddStaffCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="save staff details"  Margin="0, 20, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
                                 
                             <HorizontalStackLayout>
 
@@ -418,6 +521,8 @@
 
 
 </AbsoluteLayout>
+
+          
                     </VerticalStackLayout>
 
                 </Grid>

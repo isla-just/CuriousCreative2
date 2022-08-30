@@ -2185,3 +2185,11 @@
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/android/src/crc6481e5b28a6b4dd87a/NativeCustomScrolLayout.java
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/android/src/crc6481e5b28a6b4dd87a/NativeSnapLayout.java
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/android/src/crc6486af4e8104107bae/LayoutViewGroupExt.java
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/resizetizer/r/drawable/user_five.png
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/resizetizer/r/drawable/user_four.png
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/resizetizer/r/drawable/user_one.png
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/resizetizer/r/drawable/user_seven.png
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/resizetizer/r/drawable/user_six.png
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/resizetizer/r/drawable/user_three.png
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/resizetizer/r/drawable/user_two.png
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/resizetizer/r/drawable/spotlight.png

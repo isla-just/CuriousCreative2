@@ -7947,22 +7947,46 @@ namespace TheCuriousCreative2
 			public const int splash_screen = 2131165365;
 			
 			// aapt resource value: 0x7F0700B6
-			public const int teal = 2131165366;
+			public const int spotlight = 2131165366;
 			
 			// aapt resource value: 0x7F0700B7
-			public const int test_custom_background = 2131165367;
+			public const int teal = 2131165367;
 			
 			// aapt resource value: 0x7F0700B8
-			public const int test_level_drawable = 2131165368;
+			public const int test_custom_background = 2131165368;
 			
 			// aapt resource value: 0x7F0700B9
-			public const int tooltip_frame_dark = 2131165369;
+			public const int test_level_drawable = 2131165369;
 			
 			// aapt resource value: 0x7F0700BA
-			public const int tooltip_frame_light = 2131165370;
+			public const int tooltip_frame_dark = 2131165370;
 			
 			// aapt resource value: 0x7F0700BB
-			public const int up = 2131165371;
+			public const int tooltip_frame_light = 2131165371;
+			
+			// aapt resource value: 0x7F0700BC
+			public const int up = 2131165372;
+			
+			// aapt resource value: 0x7F0700BD
+			public const int user_five = 2131165373;
+			
+			// aapt resource value: 0x7F0700BE
+			public const int user_four = 2131165374;
+			
+			// aapt resource value: 0x7F0700BF
+			public const int user_one = 2131165375;
+			
+			// aapt resource value: 0x7F0700C0
+			public const int user_seven = 2131165376;
+			
+			// aapt resource value: 0x7F0700C1
+			public const int user_six = 2131165377;
+			
+			// aapt resource value: 0x7F0700C2
+			public const int user_three = 2131165378;
+			
+			// aapt resource value: 0x7F0700C3
+			public const int user_two = 2131165379;
 			
 			static Drawable()
 			{

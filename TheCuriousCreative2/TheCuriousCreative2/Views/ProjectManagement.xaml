@@ -75,7 +75,7 @@
                                            <Grid ColumnDefinitions="10*, 2*">
                                                 <HorizontalStackLayout>
 
-                                                  <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="20" Margin="4"></Frame>
+                                                  <Image HeightRequest="55" WidthRequest="55" Source="{Binding ProjectImage}" Margin="4"></Image>
 
                                                   <HorizontalStackLayout WidthRequest="650">
                                                      <Label Text="{Binding ProjectName}" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
@@ -148,9 +148,61 @@
 
                     <!--removed for now because side form handles add and edit-->
                      <HorizontalStackLayout>
-                             <Button BackgroundColor="#FAF9F0" TextColor="#FF4C54" CornerRadius="25" Padding="23" Text="see design teams"  BorderColor="#FF4C54" BorderWidth="2" FontFamily="PoppinsSemiBold" FontSize="15" Margin="0, 0, 0, 0" WidthRequest="200"/>
-                          <Button IsEnabled="{Binding IsEditing}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="new project"  Margin="30, 0, 0, 0" WidthRequest="200"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
-               </HorizontalStackLayout>  
+                              <Button Command="{Binding BackToTeamsCommand}" BackgroundColor="#FAF9F0" TextColor="#FF4C54" CornerRadius="25" Padding="23" Text="see design teams"  BorderColor="#FF4C54" BorderWidth="2" FontFamily="PoppinsSemiBold" FontSize="15" Margin="0, 0, 0, 0" WidthRequest="200"/>
+                          <Button Command="{Binding BackToAddCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="new project"  Margin="30, 0, 0, 0" WidthRequest="200"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+               </HorizontalStackLayout>
+
+                    
+                              <!--see teams-->
+                    
+                     <AbsoluteLayout ZIndex="10" IsVisible="{Binding IsTeams}">
+                        <Border BackgroundColor="#FEEED8" Stroke="#FEEED8" WidthRequest="552" HeightRequest="987" Margin="-50, 35, 0, 0">
+
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="78, 0, 0, 0"/>
+                    </Border.StrokeShape>
+
+                    <VerticalStackLayout Padding="40">
+                        <Label Text="Team details" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
+
+                                
+
+                        <!--<Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40"> <Image Source="illustration_house.jpg" Aspect="AspectFill"></Image></Frame>-->
+                        <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="140, -40, 0, 0" CornerRadius="25" Padding="23"><Image Source="edit.png" Aspect="AspectFit"></Image></Frame>
+                              
+                                  <Label Text="Team Name" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+
+                                <CollectionView ItemsSource="{Binding ProjectName}"
+                                          BackgroundColor="Transparent"
+                                          Margin="0, 40, 0, 0"
+                                          HeightRequest="650"
+                                          >
+                                    <CollectionView.ItemTemplate >
+
+                                        <DataTemplate x:DataType="models:ProjectModel">
+                                          
+                                         <Label 
+                                            x:Name="project"
+                                            TextColor="Black"
+                                            Text="{Binding ProjectName}"/>
+                                          </DataTemplate>
+                                        </CollectionView.ItemTemplate>
+                                    </CollectionView>
+                          
+                            <HorizontalStackLayout>
+
+                              <Frame BackgroundColor="White" BorderColor="Transparent" Padding="8" CornerRadius="20" Margin="250,100,0,5" HeightRequest="55" WidthRequest="300">
+                                                             <HorizontalStackLayout>
+                                                                        <Frame  WidthRequest="45" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="15"></Frame>
+                                                                      <Label Text="{Binding DesignTeam}" FontFamily="PoppinsMedium" FontSize="15" TextColor="#102D4C" Margin="15, 10, 0, 0"></Label>
+                                                             </HorizontalStackLayout>
+                                                         </Frame>
+                                    </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </Border>
+
+
+ </AbsoluteLayout>
                        <!--edit project-->
                      <AbsoluteLayout ZIndex="10" IsVisible="{Binding IsEditing}">
                        
@@ -162,7 +214,27 @@
 
                     <VerticalStackLayout Padding="40">
                         <Label Text="Edit project details" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
-                        <Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40"> <Image Source="illustration_bunny_friend.jpg" Aspect="AspectFill"></Image></Frame>
+
+                    
+                                <Picker
+                                    Title="Choose an Image"
+                                    SelectedItem="{Binding ProjectDetail.ProjectImage}">
+                                    <Picker.ItemsSource>
+                                        <x:Array Type="{x:Type x:String}">
+                                            <x:String>Bunny Friends</x:String>
+                                            <x:String>Bunnies</x:String>
+                                            <x:String>Mouse House</x:String>
+                                            <x:String>Kitty Kitty</x:String>
+                                            <x:String>Miranda's House</x:String>
+                                            <x:String>The House</x:String>
+                                            <x:String>Flower Town</x:String>
+                                            <x:String>Yeti</x:String>
+                                            <x:String>Build A Home</x:String>
+                                        </x:Array>
+                                    </Picker.ItemsSource>
+                                </Picker>
+
+                        <!--<Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40"> <Image Source="illustration_bunny_friend.jpg" Aspect="AspectFill"></Image></Frame>-->
                         <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="140, -40, 0, 0" CornerRadius="25" Padding="23"><Image Source="edit.png" Aspect="AspectFit"></Image></Frame>
 
                                   <Entry Text="{Binding ActiveProject.ProjectID}" IsVisible="false" Placeholder="20 May 2022" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
@@ -259,7 +331,25 @@
                         <Label Text="Add project details" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
 
                         <HorizontalStackLayout Margin="0, 20, 0, 0">
-                        <Frame HeightRequest="150" Margin="50, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40" BorderColor="Transparent">
+
+                                    <Picker
+                                    Title="Choose an Image"
+                                    SelectedItem="{Binding ProjectDetail.ProjectImage}">
+                                    <Picker.ItemsSource>
+                                        <x:Array Type="{x:Type x:String}">
+                                            <x:String>Bunny Friends</x:String>
+                                            <x:String>Bunnies</x:String>
+                                            <x:String>Mouse House</x:String>
+                                            <x:String>Kitty Kitty</x:String>
+                                            <x:String>Miranda's House</x:String>
+                                            <x:String>The House</x:String>
+                                            <x:String>Flower Town</x:String>
+                                            <x:String>Yeti</x:String>
+                                            <x:String>Build A Home</x:String>
+                                        </x:Array>
+                                    </Picker.ItemsSource>
+                                </Picker>
+                        <!--<Frame HeightRequest="150" Margin="50, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40" BorderColor="Transparent">
                                     <Image Source="illustration_bunny.jpg" Aspect="AspectFill"/>
                          </Frame>
                         <Frame HeightRequest="150" Margin="10, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40" BorderColor="Transparent">
@@ -267,7 +357,7 @@
                                     </Frame>
                                 <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="10, 10, 0, 0" CornerRadius="25" Padding="23">
                                     <Image Source="add.png" Aspect="AspectFit"/>
-                                </Frame>
+                                </Frame>-->
                                 
                                     </HorizontalStackLayout>
                                                     <Label Text="Project name" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 30, 0, 0"></Label>
@@ -337,7 +427,7 @@
 
           </AbsoluteLayout>
 
-                   
+                  
                     </VerticalStackLayout>
                     
 

@@ -664,3 +664,11 @@
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/Syncfusion.Licensing.dll
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/Syncfusion.Maui.Charts.dll
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/Syncfusion.Maui.Core.dll
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/user_five.png
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/user_four.png
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/user_one.png
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/user_seven.png
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/user_six.png
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/user_three.png
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/user_two.png
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/spotlight.png
