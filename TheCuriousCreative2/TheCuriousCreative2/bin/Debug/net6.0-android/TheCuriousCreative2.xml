@@ -16,6 +16,9 @@
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.Priority">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel._priority"/>
         </member>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.MaxHours">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel._maxHours"/>
+        </member>
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.ActiveClient">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.activeClient"/>
         </member>
@@ -255,6 +258,12 @@
         </member>
         <member name="P:TheCuriousCreative2.ViewModels.DashboardViewModel.TeamCounter9">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.DashboardViewModel.teamCounter9"/>
+        </member>
+        <member name="F:TheCuriousCreative2.ViewModels.DashboardViewModel.getFundsListCommand">
+            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.DashboardViewModel.GetFundsListCommand"/>.</summary>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.DashboardViewModel.GetFundsListCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.DashboardViewModel.GetFundsList"/>.</summary>
         </member>
         <member name="F:TheCuriousCreative2.ViewModels.DashboardViewModel.getCountersCommand">
             <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.DashboardViewModel.GetCountersCommand"/>.</summary>

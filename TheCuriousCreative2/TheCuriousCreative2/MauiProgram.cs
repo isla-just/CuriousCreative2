@@ -57,7 +57,7 @@ public static class MauiProgram
         builder.Services.AddSingleton<LoginViewModel>();
         builder.Services.AddSingleton<DashboardViewModel>();
 
-        builder.Services.AddSingleton<Charts>();
+
 
         return builder.Build();
     }

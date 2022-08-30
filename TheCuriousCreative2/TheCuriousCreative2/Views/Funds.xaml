@@ -154,6 +154,8 @@
 
                                        <HorizontalStackLayout>
 
+                                <!--empy entried for form update-->
+
                                            <Button Command="{Binding AddFundsCommand}" BackgroundColor="#FF4C54" WidthRequest="190" TextColor="White" CornerRadius="23" Padding="20" Text="Close off month"  Margin="30, 40, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
 
                                        </HorizontalStackLayout>

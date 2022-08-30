@@ -17,6 +17,8 @@ namespace TheCuriousCreative2.Models
         public string ClientNotes { get; set; }
         [MaxLength(250)]
         public bool Priority { get; set; } = false;
+        [MaxLength(50)]
+        public int MaxHours { get; set; } = 0;
 
         //change to handle image upload
         //[MaxLength(250)]

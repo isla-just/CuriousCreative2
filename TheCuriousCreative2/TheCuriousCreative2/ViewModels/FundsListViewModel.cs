@@ -184,10 +184,10 @@ namespace TheCuriousCreative2.ViewModels
 
 
             //updating all active projects to inactive
-            //foreach(var proj in ActiveProjects)
-            //{
-            //    response = await _projectService.UpdateProject(proj);
-            //}
+            foreach (var proj in ActiveProjects)
+            {
+                response = await _projectService.UpdateProject(proj);
+            }
 
 
 

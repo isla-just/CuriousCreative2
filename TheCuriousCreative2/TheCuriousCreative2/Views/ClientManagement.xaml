@@ -152,9 +152,12 @@
                                                     </Border.StrokeShape>
                                                     <Editor Text="{Binding ActiveClient.ClientNotes}" Placeholder="Any notes on this client?" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Editor>
                                                 </Border>
-                                    <HorizontalStackLayout>
+
+                                 <HorizontalStackLayout>
                                                       <Label Text="Priority" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
                                                      <CheckBox IsChecked="{Binding ActiveClient.Priority}" Color="#FF4C54"/>
+
+                                       <Entry Text="{Binding ActiveClient.MaxHours}" IsVisible="false" Placeholder="Client notes"  FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
 
                                 </HorizontalStackLayout>
 
@@ -207,15 +210,10 @@
                                                        <Entry Text="{Binding ClientDetail.ClientNotes}" Placeholder="Client notes"  FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                                                 </Border>
 
-                                                <Label Text="Max Hours" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+                                             
 
-                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
-
-                                                      <Border.StrokeShape>
-                                                        <RoundRectangle CornerRadius="20"/>
-                                                    </Border.StrokeShape>
-                                                       <Entry Text="{Binding ClientDetail.ClientNotes}" Placeholder="Client notes"  FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
-                                                </Border>
+                                                       <Entry Text="{Binding ClientDetail.MaxHours}" IsVisible="false" Placeholder="Client notes"  FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                      
 
 
                                  <HorizontalStackLayout>

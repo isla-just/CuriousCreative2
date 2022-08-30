@@ -29,4 +29,9 @@ public partial class Dashboard : ContentPage
     {
         await Shell.Current.GoToAsync("Funds");
     }
+
+    void OnScrollViewScrolled(object sender, ScrolledEventArgs e)
+    {
+        Console.WriteLine($"ScrollX: {e.ScrollX}, ScrollY: {e.ScrollY}");
+    }
 }

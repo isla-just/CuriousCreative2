@@ -24,7 +24,31 @@ namespace TheCuriousCreative2.ViewModels
 
             GetAdmin();
             GetCounters();
+            GetFundsList();
+
         }
+
+
+        //adding clients to the list
+        [RelayCommand]
+        public async void GetFundsList()
+        {
+            FundData.Clear();
+            var fundList = await _fundsService.GetFundsList();
+            if (fundList?.Count > 0)
+            {
+                foreach (var fund in fundList)
+                {
+
+                    FundData.Add(new FundChartModel { Amount = fund.FundsTotal, Month = fund.Date.TrimEnd() });
+
+                }
+            }
+        }
+
+
+        public ObservableCollection<FundChartModel> FundData { get; set; } = new ObservableCollection<FundChartModel>();
+        //public List<FundChartModel> FundData { get; set; }
 
         //fig this at a later stage
         [ObservableProperty]

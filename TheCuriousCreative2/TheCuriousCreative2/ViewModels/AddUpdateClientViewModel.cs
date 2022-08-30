@@ -24,6 +24,15 @@ namespace TheCuriousCreative2.ViewModels
         public AddUpdateClientViewModel(IClientService clientService)
         {
             _clientService = clientService;
+
+            if (Priority == true)
+            {
+                MaxHours = 30;
+            }
+            else
+            {
+                MaxHours = 15;
+            }
         }
 
         [ObservableProperty]
@@ -34,6 +43,9 @@ namespace TheCuriousCreative2.ViewModels
 
         [ObservableProperty]
         private bool _priority;
+
+        [ObservableProperty]
+        private int _maxHours = 15;
 
         //adding clients to the list
         [RelayCommand]
@@ -74,7 +86,7 @@ namespace TheCuriousCreative2.ViewModels
 
             if (response > 0)
             {
-                await Shell.Current.DisplayAlert("Client Info Saved", "Record Saved", "OK");
+                await Shell.Current.DisplayAlert("Client Info Saved", MaxHours.ToString(), "OK");
                 GetClientList();
             }
             else
@@ -87,6 +99,16 @@ namespace TheCuriousCreative2.ViewModels
         [RelayCommand]
         public async void AddClient()
         {
+
+            if (ClientDetail.Priority == true)
+            {
+                MaxHours = 30;
+            }
+            else
+            {
+                MaxHours = 15;
+            }
+
             int response = -1;
             if (ClientDetail.ClientID > 0)
             {
@@ -99,12 +121,13 @@ namespace TheCuriousCreative2.ViewModels
                     ClientName = ClientDetail.ClientName,
                     ClientNotes = ClientDetail.ClientNotes,
                     Priority = ClientDetail.Priority,
+                    MaxHours = ClientDetail.MaxHours,
                 });
             }
 
             if (response > 0)
             {
-                await Shell.Current.DisplayAlert("Client Info Saved", "Record Saved", "OK");
+                await Shell.Current.DisplayAlert("Client Info Saved", MaxHours.ToString(), "OK");
                 GetClientList();
             }
             else
