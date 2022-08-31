@@ -288,25 +288,32 @@
                                                     <Entry Text="{Binding ActiveProject.DepositPaid}" Placeholder="In full" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                                                 </Border>
 
-                            <Label Text="Price per month" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+                                 <Label Text="Price per month" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
 
-                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
-
-                                                      <Border.StrokeShape>
-                                                        <RoundRectangle CornerRadius="20"/>
-                                                    </Border.StrokeShape>
-                                                    <Entry Text="{Binding ActiveProject.PricePerMonth}" Placeholder="R 10 000.00" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
-                                                </Border>
-
-                                  <Label Text="Design team" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
-
-                                  <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
+                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="-260, 10, 0, 10" Padding="10" WidthRequest="220">
 
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                                    <Entry Text="{Binding ActiveProject.DesignTeam}" Placeholder="The Dream Team" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                    <Entry Text="{Binding ActiveProject.PricePerMonth}" Placeholder="R 200.00" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                                                 </Border>
+
+                        
+
+                             <Label Text="Design Team" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="260, -100, 0, 0"></Label>
+                                    <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="260, 10, 0, 10" Padding="10" WidthRequest="220">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Entry Text="{Binding ActiveProject.DesignTeam}" Placeholder="In full" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+
+                          
+                                  <HorizontalStackLayout>
+                                                      <Label Text="Active" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+                                                     <CheckBox IsChecked="{Binding ActiveProject.Status}" Color="#FF4C54"/>
+                                </HorizontalStackLayout>
 
                           <Button Command="{Binding UpdateProjectCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="save project details"  Margin="0, 20, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
                                       
@@ -400,25 +407,32 @@
                                                     <Entry Text="{Binding ProjectDetail.DepositPaid}" Placeholder="In full" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                                                 </Border>
 
-                            <Label Text="Price per month" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+                               <Label Text="Price per month" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
 
-                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
-
-                                                      <Border.StrokeShape>
-                                                        <RoundRectangle CornerRadius="20"/>
-                                                    </Border.StrokeShape>
-                                                    <Entry Text="{Binding ProjectDetail.PricePerMonth}" Placeholder="R 10 000.00" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
-                                                </Border>
-
-                                  <Label Text="Design team" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
-
-                                  <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
+                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="-260, 10, 0, 10" Padding="10" WidthRequest="220">
 
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                                    <Entry Text="{Binding ProjectDetail.DesignTeam}" Placeholder="R 10 000.00" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                    <Entry Text="{Binding ProjectDetail.PricePerMonth}" Placeholder="R 200.00" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                                                 </Border>
+
+                        
+
+                             <Label Text="Design Team" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="260, -100, 0, 0"></Label>
+                                    <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="260, 10, 0, 10" Padding="10" WidthRequest="220">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Entry Text="{Binding ProjectDetail.DesignTeam}" Placeholder="In full" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+
+                          
+                                  <HorizontalStackLayout>
+                                                      <Label Text="Active" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+                                                     <CheckBox IsChecked="{Binding ActiveProject.Status}" Color="#FF4C54"/>
+                                </HorizontalStackLayout>
                           <Button Command="{Binding AddProjectCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="add new client"  Margin="0, 20, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
                                       
 

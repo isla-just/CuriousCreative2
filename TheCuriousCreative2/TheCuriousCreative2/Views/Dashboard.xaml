@@ -185,11 +185,11 @@
 
 </chart:SfCartesianChart>
 
-                             <chart:SfCircularChart>
+                             <!--<chart:SfCircularChart>
 
                                 <chart:PieSeries ItemsSource="{Binding ProjectData}" XBindingPath="Project" YBindingPath="Amount" EnableTooltip="True" StartAngle="180" EndAngle="360" />
                                  
-                            </chart:SfCircularChart>
+                            </chart:SfCircularChart>-->
 
                                     </Grid>
                                 <AbsoluteLayout Margin="85, 50, 0, 0" HeightRequest="260">
@@ -304,7 +304,7 @@
                                              
 
 
-                                        <ScrollView  HeightRequest="240" Scrolled="OnScrollViewScrolled">
+                                        <ScrollView  HeightRequest="250" Scrolled="OnScrollViewScrolled">
 
                                                <VerticalStackLayout>
 
@@ -360,7 +360,7 @@
 
                                                          </Frame>
 
-                                                      <Frame BackgroundColor="White" BorderColor="Transparent" Padding="10" CornerRadius="30" Margin="0,5,0,5" WidthRequest="390">
+                                                      <Frame BackgroundColor="White" BorderColor="Transparent" Padding="10" CornerRadius="30" Margin="0,5,0,25" WidthRequest="390">
                                                              <HorizontalStackLayout>
 
                                                                         <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="20" Margin="2, 0, 5, 0"></Frame>
@@ -404,95 +404,3 @@
 
 </ContentPage>
 
-
- <!--<Frame BackgroundColor="#FEE7CD" BorderColor="Transparent" HeightRequest="360" WidthRequest="460" CornerRadius="52" Margin="0, 90, 0, 0" Padding="30">
-
-                                            <VerticalStackLayout>
-
-                                        <HorizontalStackLayout Margin="20">
-                                              <Label Text="Top Teams" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" ></Label>
-                                             <Label Text=" Count of people" FontFamily="PoppinsLight" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="5, 3, 0, 0"></Label>
-                                        </HorizontalStackLayout>
-                                             
-
-
-                                        <ScrollView BackgroundColor="Red" HeightRequest="260" Scrolled="OnScrollViewScrolled">
-
-                                               <VerticalStackLayout>
-
-                                                <Frame BackgroundColor="White" BorderColor="Transparent" Padding="10" CornerRadius="30" Margin="0,5,0,5" WidthRequest="390">
-                                                             <HorizontalStackLayout>
-
-                                                                        <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="20" Margin="2, 0, 5, 0"></Frame>
-
-                                                                      <Label Text="The Dream Team" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="10, 15, 0, 10"></Label>
-                                                                      <Label Text="{Binding TeamCounter1}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.6" Margin="10, 15, 0, 10" HorizontalTextAlignment="End"></Label>
-
-                                                             </HorizontalStackLayout>
-
-                                                         </Frame>
-         
-
-                                                <Frame BackgroundColor="White" BorderColor="Transparent" Padding="10" CornerRadius="30" Margin="0,5,0,5" WidthRequest="390">
-                                                             <HorizontalStackLayout>
-
-                                                                        <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#FE5A22" BorderColor="Transparent" CornerRadius="20" Margin="2, 0, 5, 0"></Frame>
-
-                                                                      <Label Text="Baby Creatives" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="10, 15, 0, 10"></Label>
-                                                                      <Label Text="{Binding TeamCounter2}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.6" Margin="10, 15, 0, 10" HorizontalTextAlignment="End"></Label>
-
-                                                             </HorizontalStackLayout>
-
-                                                         </Frame>
-         
-
-                                                <Frame BackgroundColor="White" BorderColor="Transparent" Padding="10" CornerRadius="30" Margin="0,5,0,5" WidthRequest="390">
-                                                             <HorizontalStackLayout>
-
-                                                                        <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#FF4C54" BorderColor="Transparent" CornerRadius="20" Margin="2, 0, 5, 0"></Frame>
-
-                                                                      <Label Text="Colour Connoisseurs" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="10, 15, 0, 10"></Label>
-                                                                      <Label Text="{Binding TeamCounter3}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.6" Margin="10, 15, 0, 10" HorizontalTextAlignment="End"></Label>
-
-                                                             </HorizontalStackLayout>
-
-                                                         </Frame>
-         
-                
-
-                                                <Frame BackgroundColor="White" BorderColor="Transparent" Padding="10" CornerRadius="30" Margin="0,5,0,5" WidthRequest="390">
-                                                             <HorizontalStackLayout>
-
-                                                                        <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#FAC306" BorderColor="Transparent" CornerRadius="20" Margin="2, 0, 5, 0"></Frame>
-
-                                                                      <Label Text="Sketch Worx" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="10, 15, 0, 10"></Label>
-                                                                      <Label Text="{Binding TeamCounter4}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.6" Margin="10, 15, 0, 10" HorizontalTextAlignment="End"></Label>
-
-                                                             </HorizontalStackLayout>
-
-                                                         </Frame>
-
-                                                      <Frame BackgroundColor="White" BorderColor="Transparent" Padding="10" CornerRadius="30" Margin="0,5,0,5" WidthRequest="390">
-                                                             <HorizontalStackLayout>
-
-                                                                        <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#FAC306" BorderColor="Transparent" CornerRadius="20" Margin="2, 0, 5, 0"></Frame>
-
-                                                                      <Label Text="Stay Sketchy" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="10, 15, 0, 10"></Label>
-                                                                      <Label Text="{Binding TeamCounter5}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.6" Margin="10, 15, 0, 10" HorizontalTextAlignment="End"></Label>
-
-                                                             </HorizontalStackLayout>
-
-                                                         </Frame>
-         
-                                           </VerticalStackLayout>
-
-                                        </ScrollView>
-
-
-                                                     
-
-                                     
-
-                                   </Frame>
-
-                                      </VerticalStackLayout>-->
