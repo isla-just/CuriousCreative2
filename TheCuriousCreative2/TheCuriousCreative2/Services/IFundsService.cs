@@ -13,6 +13,7 @@ namespace TheCuriousCreative2.Services
         Task<int> AddFunds(FundsModel fundsModel);
         Task<int> DeleteFunds(FundsModel fundsModel);
         Task<int> UpdateFunds(FundsModel fundsModel);
+    
     }
 }
 

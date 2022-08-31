@@ -141,11 +141,11 @@
                    
                                 
     <chart:SfCartesianChart.XAxes>
-        <chart:NumericalAxis  />
+        <chart:NumericalAxis PlotOffsetStart="30" PlotOffsetEnd="30" />
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis />
+        <chart:NumericalAxis PlotOffsetStart="30" />
     </chart:SfCartesianChart.YAxes>
 
                 

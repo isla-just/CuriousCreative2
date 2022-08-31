@@ -16,13 +16,13 @@ namespace TheCuriousCreative2.Models
         [MaxLength(250)]
         public string Client { get; set; }
         [MaxLength(250)]
-        public string Status { get; set; }
+        public bool Status { get; set; } = true;
         [MaxLength(250)]
         public string DesignTeam { get; set; }
         [MaxLength(10)]
         public int Deposit { get; set; }
         [MaxLength(250)]
-        public string DepositPaid { get; set; }
+        public bool DepositPaid { get; set; } = false;
         [MaxLength(10)]
         public int PricePerMonth { get; set; }
     }

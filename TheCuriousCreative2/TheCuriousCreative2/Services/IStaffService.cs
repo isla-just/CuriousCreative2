@@ -10,6 +10,7 @@ namespace TheCuriousCreative2.Services
         Task<int> DeleteStaff(StaffModel staffModel);
         Task<int> UpdateStaff(StaffModel staffModel);
         Task<bool> AdminStaffLoginAuth(string userName, string password);
+        Task<int> ZeroHours(int staffId);
     }
 }
 
