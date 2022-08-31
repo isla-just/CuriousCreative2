@@ -52,7 +52,7 @@ namespace TheCuriousCreative2.Services
             return await _dbConnection.UpdateAsync(projectModel);
         }
 
-      
+
     }
 }
 

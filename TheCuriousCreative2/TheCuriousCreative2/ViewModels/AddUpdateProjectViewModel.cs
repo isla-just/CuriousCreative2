@@ -195,14 +195,13 @@ namespace TheCuriousCreative2.ViewModels
                 response = await _projectService.AddProject(new Models.ProjectModel
                 {
                     ProjectName = ProjectDetail.ProjectName,
-                    ProjectImage = ProjectDetail.ProjectImage == "Bunny Friends" ? "illustration_bunny_friend.jpg" : ProjectDetail.ProjectImage == "Bunnies" ? "illustration_bunny.jpg" : ProjectDetail.ProjectImage == "Mouse House" ? "mouse_house.jpg" : ProjectDetail.ProjectImage == "Kitty Kitty" ? "kitty_kitty.jpg" : ProjectDetail.ProjectImage == "Miranda's House" ? "mirandas_house.jpg" : ProjectDetail.ProjectImage == "The House" ? "illustration_house.jpg" : ProjectDetail.ProjectImage == "Flower Town" ? "flower_town.jpg" : ProjectDetail.ProjectImage == "Yeti" ? "illustration_yeti.jpg"  : ProjectDetail.ProjectImage == "Build A Home" ? "illustration_house_white.jpg" : "kitty_kitty.jpg",
+                    ProjectImage = ProjectDetail.ProjectImage == "Bunny Friends" ? "illustration_bunny_friend.jpg" : ProjectDetail.ProjectImage == "Bunnies" ? "illustration_bunny.jpg" : ProjectDetail.ProjectImage == "Mouse House" ? "mouse_house.jpg" : ProjectDetail.ProjectImage == "Kitty Kitty" ? "kitty_kitty.jpg" : ProjectDetail.ProjectImage == "Miranda's House" ? "mirandas_house.jpg" : ProjectDetail.ProjectImage == "The House" ? "illustration_house.jpg" : ProjectDetail.ProjectImage == "Flower Town" ? "flower_town.jpg" : ProjectDetail.ProjectImage == "Yeti" ? "illustration_yeti.jpg" : ProjectDetail.ProjectImage == "Build A Home" ? "illustration_house_white.jpg" : "kitty_kitty.jpg",
                     Client = ProjectDetail.Client,
                     Status = ProjectDetail.Status,
                     DesignTeam = ProjectDetail.DesignTeam,
                     Deposit = ProjectDetail.Deposit,
                     DepositPaid = ProjectDetail.DepositPaid,
                     PricePerMonth = ProjectDetail.PricePerMonth,
-                    Priority = ProjectDetail.Priority
                 });
             }
 

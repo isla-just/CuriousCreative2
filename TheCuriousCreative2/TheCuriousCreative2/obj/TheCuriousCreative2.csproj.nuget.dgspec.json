@@ -1,21 +1,21 @@
 {
   "format": 1,
   "restore": {
-    "/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/TheCuriousCreative2.csproj": {}
+    "/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/TheCuriousCreative2.csproj": {}
   },
   "projects": {
-    "/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/TheCuriousCreative2.csproj": {
+    "/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/TheCuriousCreative2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/TheCuriousCreative2.csproj",
+        "projectUniqueName": "/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/TheCuriousCreative2.csproj",
         "projectName": "TheCuriousCreative2",
-        "projectPath": "/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/TheCuriousCreative2.csproj",
-        "packagesPath": "/Users/jeandredevilliers/.nuget/packages/",
-        "outputPath": "/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/",
+        "projectPath": "/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/TheCuriousCreative2.csproj",
+        "packagesPath": "/Users/mac/.nuget/packages/",
+        "outputPath": "/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
-          "/Users/jeandredevilliers/.nuget/NuGet/NuGet.Config"
+          "/Users/mac/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0-android",
@@ -56,12 +56,12 @@
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
-              "version": "[6.0.312, )",
+              "version": "[6.0.486, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Extensions": {
               "target": "Package",
-              "version": "[6.0.312, )",
+              "version": "[6.0.486, )",
               "autoReferenced": true
             },
             "Microsoft.Toolkit.Mvvm": {
@@ -86,7 +86,7 @@
             },
             "Syncfusion.Maui.Charts": {
               "target": "Package",
-              "version": "[20.2.45, )"
+              "version": "[20.2.46, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -146,12 +146,12 @@
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
-              "version": "[6.0.312, )",
+              "version": "[6.0.486, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Extensions": {
               "target": "Package",
-              "version": "[6.0.312, )",
+              "version": "[6.0.486, )",
               "autoReferenced": true
             },
             "Microsoft.Toolkit.Mvvm": {
@@ -176,7 +176,7 @@
             },
             "Syncfusion.Maui.Charts": {
               "target": "Package",
-              "version": "[20.2.45, )"
+              "version": "[20.2.46, )"
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",
@@ -227,12 +227,12 @@
             },
             "Microsoft.Maui.Dependencies": {
               "target": "Package",
-              "version": "[6.0.312, )",
+              "version": "[6.0.486, )",
               "autoReferenced": true
             },
             "Microsoft.Maui.Extensions": {
               "target": "Package",
-              "version": "[6.0.312, )",
+              "version": "[6.0.486, )",
               "autoReferenced": true
             },
             "Microsoft.Toolkit.Mvvm": {
@@ -257,7 +257,7 @@
             },
             "Syncfusion.Maui.Charts": {
               "target": "Package",
-              "version": "[20.2.45, )"
+              "version": "[20.2.46, )"
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",

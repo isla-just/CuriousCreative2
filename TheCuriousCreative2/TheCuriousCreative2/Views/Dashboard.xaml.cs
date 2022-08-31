@@ -7,7 +7,6 @@ public partial class Dashboard : ContentPage
     private DashboardViewModel _viewMode;
     public Dashboard(DashboardViewModel viewModel)
 	{
-
 		InitializeComponent();
 
         _viewMode = viewModel;
@@ -21,8 +20,18 @@ public partial class Dashboard : ContentPage
         _viewMode.GetCountersCommand.Execute(null);
     }
 
-    public async void ProjectsNavigation(object sender, EventArgs e)
+    private async void Navigation_Clicked(object sender, EventArgs e)
     {
-       await Shell.Current.GoToAsync("/Projects");
+        await Shell.Current.GoToAsync("ProjectManagement");
+    }
+
+    private async void FundsNav_Clicked(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync("Funds");
+    }
+
+    void OnScrollViewScrolled(object sender, ScrolledEventArgs e)
+    {
+        Console.WriteLine($"ScrollX: {e.ScrollX}, ScrollY: {e.ScrollY}");
     }
 }

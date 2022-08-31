@@ -105,7 +105,7 @@
                                 </CollectionView>-->
 
 
-                                      <Button BackgroundColor="#1EBBBA" TextColor="White" CornerRadius="30" Padding="25" Text="10 days left to close"  Margin="450, -70, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15" BorderColor="#FEEED8" BorderWidth="8" WidthRequest="260"></Button>
+                                      <Button BackgroundColor="#1EBBBA" TextColor="White" CornerRadius="30" Padding="25" Text="{Binding DaysLeft}"  Margin="450, -70, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15" BorderColor="#FEEED8" BorderWidth="8" WidthRequest="260"></Button>
                                           <Label Text="This month's account" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C"></Label>
                                             <Label Text="25 July to 25 August" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 5, 0, 0"></Label>
 
@@ -154,7 +154,8 @@
 
                                        <HorizontalStackLayout>
 
-                                             <Button BorderColor="#FF4C54" BorderWidth="2" BackgroundColor="Transparent" WidthRequest="190" TextColor="#FF4C54" CornerRadius="25" Padding="20" Text="Print statement"  Margin="400, 40, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                                <!--empy entried for form update-->
+
                                            <Button Command="{Binding AddFundsCommand}" BackgroundColor="#FF4C54" WidthRequest="190" TextColor="White" CornerRadius="23" Padding="20" Text="Close off month"  Margin="30, 40, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
 
                                        </HorizontalStackLayout>
@@ -206,17 +207,13 @@
                                             <VerticalStackLayout WidthRequest="130" Margin="0, 15, 20, 0">
                                                <Label Text="Cost" FontFamily="PoppinsRegular" FontSize="14" TextColor="#102D4C" ></Label>
 
-                                                 
-                                                <Entry Text="{Binding FundsTotal}" IsVisible="false" Placeholder="Total" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
-                                                     <Entry IsVisible="false" Placeholder="Total" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
-                                                  
-
+                                  
                                                     <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
 
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                                    <Entry Text="{Binding Expenses}" Placeholder="Cost" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                    <Entry Text="{Binding PrintingExpenses}" Placeholder="Cost" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                                                 </Border>
                                              
                                             </VerticalStackLayout>
@@ -232,17 +229,27 @@
                                                
                                                     <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
 
+                                    <!--map printing dropdown-->
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                                    <Entry Placeholder="Project" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                          <Picker x:Name="picker"
+                                            Title="Project"
+                                            TitleColor="#102D4C"
+                                            TextColor="#102D4C"
+
+                                            ItemsSource="{Binding Projects}"
+                                            ItemDisplayBinding="{Binding ProjectName}"
+                           
+                                        />
+                                                    <!--<Entry Placeholder="Project" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>-->
                                                 </Border>
                                              
                                             </VerticalStackLayout>
      
                                     </HorizontalStackLayout>
 
-                                  <Button Command="{Binding Source={x:RelativeSource AncestorType={x:Type viewModel:FundsListViewModel}},Path=AddPrintingCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="23" Padding="23" Text="Send for printing"  Margin="0, 30, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                                  <Button Command="{Binding AddPrintingCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="23" Padding="23" Text="Send for printing"  Margin="0, 30, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
 
                              </VerticalStackLayout>
 

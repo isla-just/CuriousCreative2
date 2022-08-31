@@ -5,6 +5,7 @@ using TheCuriousCreative2.Services;
 using TheCuriousCreative2.Models;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using Microsoft.Toolkit.Mvvm.Input;
 
 namespace TheCuriousCreative2.ViewModels
 {
@@ -23,6 +24,15 @@ namespace TheCuriousCreative2.ViewModels
         public AddUpdateClientViewModel(IClientService clientService)
         {
             _clientService = clientService;
+
+            if (Priority == true)
+            {
+                MaxHours = 30;
+            }
+            else
+            {
+                MaxHours = 15;
+            }
         }
 
         [ObservableProperty]
@@ -33,6 +43,9 @@ namespace TheCuriousCreative2.ViewModels
 
         [ObservableProperty]
         private bool _priority;
+
+        [ObservableProperty]
+        private int _maxHours = 15;
 
         //adding clients to the list
         [RelayCommand]
@@ -57,6 +70,7 @@ namespace TheCuriousCreative2.ViewModels
         [ObservableProperty]
         bool isEditing = false;
 
+
         [RelayCommand]
         public async void UpdateClient()
         {
@@ -72,7 +86,7 @@ namespace TheCuriousCreative2.ViewModels
 
             if (response > 0)
             {
-                await Shell.Current.DisplayAlert("Client Info Saved", "Record Saved", "OK");
+                await Shell.Current.DisplayAlert("Client Info Saved", MaxHours.ToString(), "OK");
                 GetClientList();
             }
             else
@@ -85,6 +99,16 @@ namespace TheCuriousCreative2.ViewModels
         [RelayCommand]
         public async void AddClient()
         {
+
+            if (ClientDetail.Priority == true)
+            {
+                MaxHours = 30;
+            }
+            else
+            {
+                MaxHours = 15;
+            }
+
             int response = -1;
             if (ClientDetail.ClientID > 0)
             {
@@ -97,12 +121,13 @@ namespace TheCuriousCreative2.ViewModels
                     ClientName = ClientDetail.ClientName,
                     ClientNotes = ClientDetail.ClientNotes,
                     Priority = ClientDetail.Priority,
+                    MaxHours = ClientDetail.MaxHours,
                 });
             }
 
             if (response > 0)
             {
-                await Shell.Current.DisplayAlert("Client Info Saved", "Record Saved", "OK");
+                await Shell.Current.DisplayAlert("Client Info Saved", MaxHours.ToString(), "OK");
                 GetClientList();
             }
             else
@@ -138,6 +163,24 @@ namespace TheCuriousCreative2.ViewModels
         }
 
 
+
+        //search functionlity to search and filter according to project's name
+        [RelayCommand]
+        public async void GetPriorityFilter()
+        {
+            var clientList = await _clientService.GetClientList();
+            var priorityClient = clientList.Where(value => value.Priority == true);
+
+            Clients.Clear();
+            foreach (var clientId in priorityClient)
+            {
+                Clients.Add(clientId);
+            }
+
+        }
+
+
+
         [RelayCommand]
         public async void DisplayAction(ClientModel clientModel)
         {
@@ -159,6 +202,14 @@ namespace TheCuriousCreative2.ViewModels
                 }
             }
         }
+
+        [RelayCommand]
+        public async void ToggleAdd()
+        {
+            isEditing = false;
+        }
+
+
     }
 }
 

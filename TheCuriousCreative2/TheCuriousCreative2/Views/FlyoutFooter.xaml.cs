@@ -9,8 +9,8 @@ public partial class FlyoutFooter : ContentView
 
     private async void Back_Clicked(object sender, EventArgs e)
     {
-        Preferences.Set("StayLoggedOn", false);
-        await Shell.Current.GoToAsync("/Login");
+
+        await Shell.Current.GoToAsync("Login");
 
     }
 }

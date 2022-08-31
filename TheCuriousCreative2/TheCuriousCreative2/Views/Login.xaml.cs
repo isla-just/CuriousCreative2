@@ -6,8 +6,8 @@ public partial class Login : ContentPage
 {
     private LoginViewModel _viewModel;
     public Login(LoginViewModel viewModel)
-	{
-		InitializeComponent();
+    {
+        InitializeComponent();
         _viewModel = viewModel;
         this.BindingContext = viewModel;
     }

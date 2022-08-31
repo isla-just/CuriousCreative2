@@ -25,12 +25,12 @@ namespace TheCuriousCreative2.ViewModels
             bool isLoggedOn = Preferences.Get("StayLoggedOn", false);
             if (isLoggedOn)
             {
-                
+
                 await Shell.Current.GoToAsync("/Dashboard");
             }
             else
             {
-               
+
             }
         }
 
