@@ -16,6 +16,25 @@ namespace TheCuriousCreative2.ViewModels
         [ObservableProperty]
         string errorDisplay;
 
+        [ObservableProperty]
+        bool stayLoggedOn = false;
+
+        [RelayCommand]
+        public async void GoToDashboard()
+        {
+            bool isLoggedOn = Preferences.Get("StayLoggedOn", false);
+            if (isLoggedOn)
+            {
+
+                await Shell.Current.GoToAsync("/Dashboard");
+            }
+            else
+            {
+
+            }
+        }
+
+
         [RelayCommand]
         public async Task LoginVerification()
         {
@@ -26,9 +45,8 @@ namespace TheCuriousCreative2.ViewModels
             {
                 Debug.WriteLine("User Was Found");
                 ErrorDisplay = "should navigate";
+                Preferences.Set("StayLoggedOn", stayLoggedOn);
                 await Shell.Current.GoToAsync("/Dashboard");
-
-                Preferences.Set("StaffName", UserName);
             }
             else
             {
