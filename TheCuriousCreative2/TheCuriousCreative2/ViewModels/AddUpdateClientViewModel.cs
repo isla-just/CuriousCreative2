@@ -36,7 +36,7 @@ namespace TheCuriousCreative2.ViewModels
         }
 
         [ObservableProperty]
-        private string _clientImage;
+        private string _clientImage = "the_chaotic.png";
 
         [ObservableProperty]
         private string _clientName;
@@ -207,10 +207,11 @@ namespace TheCuriousCreative2.ViewModels
             }
         }
 
+        //Back To Add new project
         [RelayCommand]
-        public async void ToggleAdd()
+        public async void BackToAdd()
         {
-            isEditing = false;
+            IsEditing = false;
         }
 
 

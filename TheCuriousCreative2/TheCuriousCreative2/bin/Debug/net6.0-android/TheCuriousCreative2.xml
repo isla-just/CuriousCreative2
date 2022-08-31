@@ -67,11 +67,11 @@
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.DisplayActionCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.DisplayAction(TheCuriousCreative2.Models.ClientModel)"/>.</summary>
         </member>
-        <member name="F:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.toggleAddCommand">
-            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.ToggleAddCommand"/>.</summary>
+        <member name="F:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.backToAddCommand">
+            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.BackToAddCommand"/>.</summary>
         </member>
-        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.ToggleAddCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.ToggleAdd"/>.</summary>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.BackToAddCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.BackToAdd"/>.</summary>
         </member>
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.ProjectDetail">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel._projectDetail"/>

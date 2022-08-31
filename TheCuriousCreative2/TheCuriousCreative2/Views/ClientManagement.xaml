@@ -59,7 +59,7 @@
                         <!--//client list-->
 
 
-                    <ScrollView>
+                    <ScrollView HeightRequest="600">
 
                         <VerticalStackLayout>
 
@@ -107,6 +107,8 @@
 
                                 </CollectionView>
 
+                             <Label Text="Looks like you've reached the end..." FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Center" Margin="20"></Label>
+
                     </VerticalStackLayout>
                    </ScrollView>
                     
@@ -115,7 +117,7 @@
                     <VerticalStackLayout Grid.Column="1"  Padding="0">
 
                     <!--removed for now because side form handles add and edit-->
-                            <Button IsEnabled="{Binding IsEditing}" Command="{Binding ToggleAddCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="register new client"  Margin="230, 0, 0, 0" WidthRequest="250"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                            <Button Command="{Binding BackToAddCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="register new client"  Margin="230, 0, 0, 0" WidthRequest="250"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
                    
                        <!--edit client-->
                      <AbsoluteLayout ZIndex="10" IsVisible="{Binding IsEditing}">
@@ -205,7 +207,7 @@
                     <VerticalStackLayout Padding="40">
                          <Label Text="Add new client" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
 
-                                         <Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40"> <Image Source="{Binding Source={x:Reference picker}, Path=SelectedItem}" Aspect="AspectFill"></Image></Frame>
+                                         <Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40"> <Image BackgroundColor="#1EBBBA" Source="{Binding Source={x:Reference picker}, Path=SelectedItem}" Aspect="AspectFill"></Image></Frame>
 
                         <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="140, -40, 0, 0" CornerRadius="25" Padding="23">
 
@@ -225,6 +227,7 @@
                                             <x:String>the_energetic.png</x:String>
                                         </x:Array>
                                     </Picker.ItemsSource>
+                                        <Picker.SelectedIndex>1</Picker.SelectedIndex>
                                 </Picker>
 
                           </Frame>
