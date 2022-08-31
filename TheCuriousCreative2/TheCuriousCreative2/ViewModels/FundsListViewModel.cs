@@ -168,21 +168,6 @@ namespace TheCuriousCreative2.ViewModels
                 ClientIncome = ClientIncome,
                 Expenses = Expenses
             });
-       
-            ////to do - zero hours worked for new month
-            //  int search = await App.StaffService.ZeroHours(UserName);
-
-            //if (search)
-            //{
-            //    Debug.WriteLine("User Was Found");
-            //    ErrorDisplay = "should navigate";
-            //    Preferences.Set("StayLoggedOn", stayLoggedOn);
-            //    await Shell.Current.GoToAsync("/Dashboard");
-            //}
-            //else
-            //{
-            //    Debug.WriteLine("User Not Found");
-            //    ErrorDisplay = "Invalid username or password";
 
             if (response > 0)
             {
@@ -192,6 +177,8 @@ namespace TheCuriousCreative2.ViewModels
                 ClientIncome = 0;
                 Expenses = 0;
                 TotalExpenses = 0;
+
+                Preferences.Set("Expenses", Expenses);
             }
             else
             {
