@@ -288,6 +288,42 @@
 		<data>
 		6SHPzWKz0FVMpnZYktlVOBBLDhE=
 		</data>
+		<key>Resources/the_adventurer.png</key>
+		<data>
+		9T3o27vBwlQly8lcHh6ysMayGGo=
+		</data>
+		<key>Resources/the_chaotic.png</key>
+		<data>
+		uRlsjxzPbVYjuGyhI0tok+oOOcQ=
+		</data>
+		<key>Resources/the_creative.png</key>
+		<data>
+		gZLPkNBr0ElGrsYTIjHLJQIrjf8=
+		</data>
+		<key>Resources/the_energetic.png</key>
+		<data>
+		is/Vb6rF66lYe3oBQLjwRUSCLdU=
+		</data>
+		<key>Resources/the_learner.png</key>
+		<data>
+		sWfokLWKXexPgkDf3V/4VzDoxpU=
+		</data>
+		<key>Resources/the_vibey.png</key>
+		<data>
+		BI18MHMtnQMN7oOum8NR+6TFr8Q=
+		</data>
+		<key>Resources/the_wild_one.png</key>
+		<data>
+		xihtRbpXVswOdmDWNVo34mTZl3w=
+		</data>
+		<key>Resources/the_wize_owl.png</key>
+		<data>
+		sncxGTIRu2obm8iweLZzumptzs4=
+		</data>
+		<key>Resources/the_zen.png</key>
+		<data>
+		zZeHRJA1+lJj2al8L68hBL105pE=
+		</data>
 		<key>Resources/up.png</key>
 		<data>
 		VWfkovPZJceREmvX3WgIUcHzdME=
@@ -1710,14 +1746,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9ZSfEKKexqvogDUAwiP9pErRwwd79EItJ/nh2WnBaUU=
+			ch3TrK3CmSqxYacz1hOemiF4XjRnv1BBChSE+Erwb+s=
 			</data>
 		</dict>
 		<key>MonoBundle/TheCuriousCreative2.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JGD8btV1IUONtEyRRbGuzn2Z6zaWkQKZna6Nu74qLT8=
+			dTgnRBvpJSoC6gmO9FwVjHUyWiypKeQ0lr3kxmnfbqQ=
 			</data>
 		</dict>
 		<key>MonoBundle/WindowsBase.dll</key>
@@ -2299,6 +2335,69 @@
 			<key>hash2</key>
 			<data>
 			yXDmjS2APrIVhXk/X0aQ7OKsKZc2K+E/NTIg7ETEqI4=
+			</data>
+		</dict>
+		<key>Resources/the_adventurer.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Qsh2PlwjFlPV9cTK0QZwRT2YGFlGiTkc1cljvCHPLh8=
+			</data>
+		</dict>
+		<key>Resources/the_chaotic.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			b8OKUDP0rBn/HXLveGfVHqU35JfQ9jL0ANtVCwcV/vY=
+			</data>
+		</dict>
+		<key>Resources/the_creative.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/FwExFJ/As4zw43vzKkbvKBibHlqH0y/bXtrSubCbmI=
+			</data>
+		</dict>
+		<key>Resources/the_energetic.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LbogcR6vHuEk7vutBJlvN8iZEEq7oIl0NlNjs5XRO08=
+			</data>
+		</dict>
+		<key>Resources/the_learner.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Jem3/0clbpXFFn9mP7KJkrHb6hg8m9rL+3biebeS8iU=
+			</data>
+		</dict>
+		<key>Resources/the_vibey.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			s2gUfZkloG2M5+35d0zzUm2pXvR2L5I1pNjL76/yF80=
+			</data>
+		</dict>
+		<key>Resources/the_wild_one.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JowQuvuIceR3D1yZ+NO1eG+pLKRAutSsO/SAqaGgAPY=
+			</data>
+		</dict>
+		<key>Resources/the_wize_owl.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dfQMeLVwIHLKrT08zIJ1lHTN+/cA6TlpvqX7f0MCaY0=
+			</data>
+		</dict>
+		<key>Resources/the_zen.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WmxgpjmGukeTMkV2wPNpN5VRdEGlHP4Ft2maSPJRp6c=
 			</data>
 		</dict>
 		<key>Resources/up.png</key>

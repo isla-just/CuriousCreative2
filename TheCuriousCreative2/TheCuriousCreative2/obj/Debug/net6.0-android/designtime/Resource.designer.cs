@@ -7989,13 +7989,40 @@ namespace TheCuriousCreative2
 			public const int test_level_drawable = 2131165372;
 			
 			// aapt resource value: 0x7F0700BD
-			public const int tooltip_frame_dark = 2131165373;
+			public const int the_adventurer = 2131165373;
 			
 			// aapt resource value: 0x7F0700BE
-			public const int tooltip_frame_light = 2131165374;
+			public const int the_chaotic = 2131165374;
 			
 			// aapt resource value: 0x7F0700BF
-			public const int up = 2131165375;
+			public const int the_creative = 2131165375;
+			
+			// aapt resource value: 0x7F0700C0
+			public const int the_energetic = 2131165376;
+			
+			// aapt resource value: 0x7F0700C1
+			public const int the_learner = 2131165377;
+			
+			// aapt resource value: 0x7F0700C2
+			public const int the_vibey = 2131165378;
+			
+			// aapt resource value: 0x7F0700C3
+			public const int the_wild_one = 2131165379;
+			
+			// aapt resource value: 0x7F0700C4
+			public const int the_wize_owl = 2131165380;
+			
+			// aapt resource value: 0x7F0700C5
+			public const int the_zen = 2131165381;
+			
+			// aapt resource value: 0x7F0700C6
+			public const int tooltip_frame_dark = 2131165382;
+			
+			// aapt resource value: 0x7F0700C7
+			public const int tooltip_frame_light = 2131165383;
+			
+			// aapt resource value: 0x7F0700C8
+			public const int up = 2131165384;
 			
 			static Drawable()
 			{

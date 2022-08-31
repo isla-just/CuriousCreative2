@@ -156,7 +156,6 @@ namespace TheCuriousCreative2.ViewModels
         [ObservableProperty]
         bool isTeams = false;
 
-
         [RelayCommand]
         public async void UpdateProject()
         {

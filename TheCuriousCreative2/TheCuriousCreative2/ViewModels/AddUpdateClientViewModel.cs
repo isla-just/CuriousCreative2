@@ -36,6 +36,9 @@ namespace TheCuriousCreative2.ViewModels
         }
 
         [ObservableProperty]
+        private string _clientImage;
+
+        [ObservableProperty]
         private string _clientName;
 
         [ObservableProperty]
@@ -86,7 +89,7 @@ namespace TheCuriousCreative2.ViewModels
 
             if (response > 0)
             {
-                await Shell.Current.DisplayAlert("Client Info Saved", MaxHours.ToString(), "OK");
+                await Shell.Current.DisplayAlert("Client Info has been updated", "Successfully saved", "OK");
                 GetClientList();
             }
             else
@@ -122,12 +125,13 @@ namespace TheCuriousCreative2.ViewModels
                     ClientNotes = ClientDetail.ClientNotes,
                     Priority = ClientDetail.Priority,
                     MaxHours = ClientDetail.MaxHours,
+                    ClientImage = ClientDetail.ClientImage
                 });
             }
 
             if (response > 0)
             {
-                await Shell.Current.DisplayAlert("Client Info Saved", MaxHours.ToString(), "OK");
+                await Shell.Current.DisplayAlert("Client has been added", "Client info successfully saved", "OK");
                 GetClientList();
             }
             else

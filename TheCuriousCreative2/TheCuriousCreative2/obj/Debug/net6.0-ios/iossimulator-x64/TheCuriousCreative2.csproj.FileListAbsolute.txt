@@ -676,3 +676,12 @@
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/slider2.png
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/slider3.png
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/slider4.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/the_adventurer.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/the_chaotic.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/the_creative.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/the_energetic.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/the_learner.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/the_vibey.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/the_wild_one.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/the_wize_owl.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/the_zen.png

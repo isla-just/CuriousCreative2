@@ -2157,3 +2157,12 @@
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/lp/156/jl/files.cache
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/lp/157/jl/files.cache
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/lp/159/jl/files.cache
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/resizetizer/r/drawable/the_adventurer.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/resizetizer/r/drawable/the_chaotic.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/resizetizer/r/drawable/the_creative.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/resizetizer/r/drawable/the_energetic.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/resizetizer/r/drawable/the_learner.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/resizetizer/r/drawable/the_vibey.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/resizetizer/r/drawable/the_wild_one.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/resizetizer/r/drawable/the_wize_owl.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/resizetizer/r/drawable/the_zen.png

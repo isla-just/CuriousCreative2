@@ -11118,9 +11118,18 @@ public final class R {
     public static final int teal=0x7f0700ba;
     public static final int test_custom_background=0x7f0700bb;
     public static final int test_level_drawable=0x7f0700bc;
-    public static final int tooltip_frame_dark=0x7f0700bd;
-    public static final int tooltip_frame_light=0x7f0700be;
-    public static final int up=0x7f0700bf;
+    public static final int the_adventurer=0x7f0700bd;
+    public static final int the_chaotic=0x7f0700be;
+    public static final int the_creative=0x7f0700bf;
+    public static final int the_energetic=0x7f0700c0;
+    public static final int the_learner=0x7f0700c1;
+    public static final int the_vibey=0x7f0700c2;
+    public static final int the_wild_one=0x7f0700c3;
+    public static final int the_wize_owl=0x7f0700c4;
+    public static final int the_zen=0x7f0700c5;
+    public static final int tooltip_frame_dark=0x7f0700c6;
+    public static final int tooltip_frame_light=0x7f0700c7;
+    public static final int up=0x7f0700c8;
   }
   public static final class id {
     public static final int ALT=0x7f080000;

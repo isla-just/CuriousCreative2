@@ -7,6 +7,9 @@
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.ClientDetail">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel._clientDetail"/>
         </member>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.ClientImage">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel._clientImage"/>
+        </member>
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel.ClientName">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateClientViewModel._clientName"/>
         </member>
