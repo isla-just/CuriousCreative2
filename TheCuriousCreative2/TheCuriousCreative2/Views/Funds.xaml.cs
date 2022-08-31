@@ -1,9 +1,15 @@
-﻿namespace TheCuriousCreative2;
+﻿using TheCuriousCreative2.ViewModels;
+using TheCuriousCreative2.Controls;
+
+namespace TheCuriousCreative2;
 
 public partial class Funds : ContentPage
 {
-	public Funds()
-	{
-		InitializeComponent();
-	}
+    private FundsListViewModel _viewMode;
+    public Funds(FundsListViewModel viewModel)
+    {
+        InitializeComponent();
+        _viewMode = viewModel;
+        this.BindingContext = viewModel;
+    }
 }

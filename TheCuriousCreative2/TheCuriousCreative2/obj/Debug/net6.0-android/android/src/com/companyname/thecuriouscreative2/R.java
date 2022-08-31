@@ -11109,14 +11109,18 @@ public final class R {
     public static final int notify_panel_notification_icon_bg=0x7f0700b1;
     public static final int orange=0x7f0700b2;
     public static final int search=0x7f0700b3;
-    public static final int splash=0x7f0700b4;
-    public static final int splash_screen=0x7f0700b5;
-    public static final int teal=0x7f0700b6;
-    public static final int test_custom_background=0x7f0700b7;
-    public static final int test_level_drawable=0x7f0700b8;
-    public static final int tooltip_frame_dark=0x7f0700b9;
-    public static final int tooltip_frame_light=0x7f0700ba;
-    public static final int up=0x7f0700bb;
+    public static final int slider1=0x7f0700b4;
+    public static final int slider2=0x7f0700b5;
+    public static final int slider3=0x7f0700b6;
+    public static final int slider4=0x7f0700b7;
+    public static final int splash=0x7f0700b8;
+    public static final int splash_screen=0x7f0700b9;
+    public static final int teal=0x7f0700ba;
+    public static final int test_custom_background=0x7f0700bb;
+    public static final int test_level_drawable=0x7f0700bc;
+    public static final int tooltip_frame_dark=0x7f0700bd;
+    public static final int tooltip_frame_light=0x7f0700be;
+    public static final int up=0x7f0700bf;
   }
   public static final class id {
     public static final int ALT=0x7f080000;

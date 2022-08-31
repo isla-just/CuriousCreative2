@@ -48,6 +48,7 @@ namespace TheCuriousCreative2.Services
             await SetUpDb();
             return await _dbConnection.UpdateAsync(fundsModel);
         }
+
     }
 }
 

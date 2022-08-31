@@ -21,7 +21,8 @@
             <Grid ColumnDefinitions="0.2*,0.8*" BackgroundColor="#FF4C54">
                 <Image Source="{Binding FlyoutIcon}"
                        Margin="20"
-                       HeightRequest="45" />
+                       HeightRequest="45"
+                       />
                 <Label Grid.Column="1"
                         Margin="10"
                        CharacterSpacing="5"
@@ -34,7 +35,7 @@
     </Shell.ItemTemplate>
 
 
-            <!--<FlyoutItem   Title="LOGIN">
+            <FlyoutItem   Title="">
         <Tab>
              <ShellContent
                 Title="Login"
@@ -44,7 +45,7 @@
 
         </Tab>
 
-    </FlyoutItem>-->
+    </FlyoutItem>
 
 
         <!--<FlyoutItem Title="HOME">
@@ -59,7 +60,7 @@
 
     </FlyoutItem>-->
 
-    <FlyoutItem   Title="DASHBOARD">
+            <FlyoutItem   Title="DASHBOARD">
         <Tab>
              <ShellContent
                 Title="Dashboard"
@@ -70,7 +71,6 @@
         </Tab>
 
     </FlyoutItem>
-
 
 
     <FlyoutItem   Title="CLIENTS">
@@ -85,6 +85,8 @@
 
     </FlyoutItem>
 
+
+
         <FlyoutItem   Title="CREATIVES">
         <Tab>
              <ShellContent
@@ -97,17 +99,6 @@
 
     </FlyoutItem>
 
-            <FlyoutItem   Title="FUNDS">
-        <Tab>
-             <ShellContent
-                Title="Funds"
-                ContentTemplate="{DataTemplate local:Funds}"
-                Route="Funds"
-              />
-
-        </Tab>
-
-    </FlyoutItem>
 
 
             <FlyoutItem   Title="PROJECTS">
@@ -116,6 +107,18 @@
                 Title="Projects"
                 ContentTemplate="{DataTemplate local:ProjectManagement}"
                 Route="ProjectManagement"
+              />
+
+        </Tab>
+
+    </FlyoutItem>
+    
+            <FlyoutItem   Title="FUNDS">
+        <Tab>
+             <ShellContent
+                Title="Funds"
+                ContentTemplate="{DataTemplate local:Funds}"
+                Route="Funds"
               />
 
         </Tab>

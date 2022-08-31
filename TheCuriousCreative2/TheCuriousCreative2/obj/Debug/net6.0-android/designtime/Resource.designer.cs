@@ -7962,28 +7962,40 @@ namespace TheCuriousCreative2
 			public const int search = 2131165363;
 			
 			// aapt resource value: 0x7F0700B4
-			public const int splash = 2131165364;
+			public const int slider1 = 2131165364;
 			
 			// aapt resource value: 0x7F0700B5
-			public const int splash_screen = 2131165365;
+			public const int slider2 = 2131165365;
 			
 			// aapt resource value: 0x7F0700B6
-			public const int teal = 2131165366;
+			public const int slider3 = 2131165366;
 			
 			// aapt resource value: 0x7F0700B7
-			public const int test_custom_background = 2131165367;
+			public const int slider4 = 2131165367;
 			
 			// aapt resource value: 0x7F0700B8
-			public const int test_level_drawable = 2131165368;
+			public const int splash = 2131165368;
 			
 			// aapt resource value: 0x7F0700B9
-			public const int tooltip_frame_dark = 2131165369;
+			public const int splash_screen = 2131165369;
 			
 			// aapt resource value: 0x7F0700BA
-			public const int tooltip_frame_light = 2131165370;
+			public const int teal = 2131165370;
 			
 			// aapt resource value: 0x7F0700BB
-			public const int up = 2131165371;
+			public const int test_custom_background = 2131165371;
+			
+			// aapt resource value: 0x7F0700BC
+			public const int test_level_drawable = 2131165372;
+			
+			// aapt resource value: 0x7F0700BD
+			public const int tooltip_frame_dark = 2131165373;
+			
+			// aapt resource value: 0x7F0700BE
+			public const int tooltip_frame_light = 2131165374;
+			
+			// aapt resource value: 0x7F0700BF
+			public const int up = 2131165375;
 			
 			static Drawable()
 			{

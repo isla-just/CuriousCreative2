@@ -10,17 +10,18 @@ namespace TheCuriousCreative2.Models
 	public class FundsModel
 	{
         //check if that is right
-        [PrimaryKey]
-        public static DateTime Now { get; }
-        [MaxLength(250)]
-        public double FundsTotal { get; set; }
-        [MaxLength(250)]
-        public double Salaries { get; set; }
-        [MaxLength(250)]
-        public double ClientIncome { get; set; }
-        [MaxLength(250)]
-        public double Expenses { get; set; }
-
+        [PrimaryKey, AutoIncrement]
+        public int FundsId { get; set; }
+        [MaxLength(50)]
+        public String Date { get; set; }
+        [MaxLength(50)]
+        public int FundsTotal { get; set; }
+        [MaxLength(50)]
+        public int Salaries { get; set; }
+        [MaxLength(50)]
+        public int ClientIncome { get; set; }
+        [MaxLength(50)]
+        public int Expenses { get; set; }
     }
 }
 

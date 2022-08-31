@@ -2,6 +2,9 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              Shell.NavBarIsVisible="False"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModel="clr-namespace:TheCuriousCreative2.ViewModels"
+             xmlns:models="clr-namespace:TheCuriousCreative2.Models"
+             x:DataType="viewModel:AddUpdateProjectViewModel"
              x:Class="TheCuriousCreative2.ProjectManagement"
              Title="ProjectManagement">
 
@@ -23,189 +26,89 @@
                          <Frame BackgroundColor="#FEEED8" Margin="0, 40, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="8">
                              <HorizontalStackLayout>
                                          <Image Source="search.png" Aspect="AspectFit" Margin="20, 0, 0, 0"></Image>
-                                        <Entry BackgroundColor="#FEEED8" FontFamily="PoppinsRegular" FontSize="18" Placeholder="Looking for a project?" WidthRequest="545" PlaceholderColor="#102D4C" TextColor="#102D4C" Margin="20, 0, 0, 0"></Entry>
-                                      <Button BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="20" Text="search"  Margin="-20, 0, 0, 0" WidthRequest="210"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                                        <Entry Text="{Binding Search}" BackgroundColor="#FEEED8" FontFamily="PoppinsRegular" FontSize="18" Placeholder="Looking for a project?" WidthRequest="545" PlaceholderColor="Grey" TextColor="#102D4C" Margin="20, 0, 0, 0"></Entry>
+                                      <Button Command="{Binding GetProjectListSearchCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="20" Text="search"  Margin="-20, 0, 0, 0" WidthRequest="210"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
                              </HorizontalStackLayout>
                          </Frame>
                          <Frame BackgroundColor="Transparent"  Grid.Column="0" BorderColor="Transparent" Margin="0, 0, 0, 0" Padding="0">
                              <Grid ColumnDefinitions="4*, 4*, 4*" ColumnSpacing="20">
                                <Frame Grid.Column="0" BackgroundColor="#FEEED8" Margin="0, 15, 0, 0" BorderColor="Transparent" CornerRadius="32" HorizontalOptions="Start" WidthRequest="260" HeightRequest="80" Padding="20">
                                    <HorizontalStackLayout>
-                                          <Button Text="client" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" BackgroundColor="Transparent"></Button>
-                                     <Image Source="arrow_down.png" Aspect="AspectFit" Margin="0, 0, 0, 0"></Image>
+                                          <Button Text="client" Command="{Binding GetProjectClientFilterCommand}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" BackgroundColor="Transparent"></Button>
+                                     
                                    </HorizontalStackLayout>
                                 </Frame>
                                <Frame Grid.Column="1" BackgroundColor="#FEEED8" Margin="0, 15, 0, 0" BorderColor="Transparent" CornerRadius="32" HorizontalOptions="Start" WidthRequest="260" HeightRequest="80" Padding="20">
                                    <HorizontalStackLayout>
-                                          <Button Text="status" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" BackgroundColor="Transparent"></Button>
-                                            <Image Source="arrow_down.png" Aspect="AspectFit" Margin="0, 0, 0, 0"></Image>
+                                          <Button Text="project" Command="{Binding GetProjectNameFilterCommand}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" BackgroundColor="Transparent"></Button>
+                                           
                                    </HorizontalStackLayout>
                                </Frame>
                               <Frame Grid.Column="2" BackgroundColor="#FEEED8" Margin="0, 15, 0, 0" BorderColor="Transparent" CornerRadius="32" HorizontalOptions="Start" WidthRequest="260" HeightRequest="80" Padding="20">
                                   <HorizontalStackLayout>
-                                          <Button Text="design team" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" BackgroundColor="Transparent"></Button>
-                                     <Image Source="arrow_down.png" Aspect="AspectFit" Margin="0, 0, 0, 0"></Image>
+                                          <Button Text="design team" Command="{Binding GetProjectTeamFilterCommand}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" BackgroundColor="Transparent"></Button>
+                                    
                                    </HorizontalStackLayout>
                                 </Frame>
                              </Grid>
                          </Frame>
 
-                        
-                         <Frame Grid.Row="0" BackgroundColor="#FFFEF2" BorderColor="Transparent" Margin="0, 0, 0, 0">
+                    
+                    <ScrollView>
 
-                          <ScrollView HeightRequest="300" Margin="0, 30, 0, 0">
+                        <VerticalStackLayout HeightRequest="350">
 
-                             <VerticalStackLayout>
+  
+                          <CollectionView ItemsSource="{Binding Projects}"
+                                          BackgroundColor="Transparent"
+                                          Margin="0, 40, 0, 0"
+                                          >
+                                    <CollectionView.ItemTemplate >
 
-                                   <Frame BackgroundColor="#FFF6E5" Margin="0, 10, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="5">
-                                     <Grid ColumnDefinitions="10*, 2*">
-                                         <HorizontalStackLayout>
-                                                  <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#FF4C54" BorderColor="Transparent" CornerRadius="20" Margin="4"></Frame>
-                                             <HorizontalStackLayout WidthRequest="650">
-                                                 <Label Text="Project name" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
-                                                  <Label Text="Joined 20 July 2022" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="10, 20, 20, 20" HorizontalTextAlignment="End"></Label>
-                                             </HorizontalStackLayout>
-                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#FE5A22" BorderColor="Transparent" CornerRadius="12" Margin="0, 20, 10, 20"></Frame>
+                                        <DataTemplate x:DataType="models:ProjectModel">
+
+
+                                    <VerticalStackLayout Margin="10">
+
+                                          <Frame Margin="0, 0, 0, 0" BackgroundColor="#FFF6E5"  BorderColor="Transparent" CornerRadius="25"  Padding="5">
+
+                                           <Grid ColumnDefinitions="10*, 2*">
+                                                <HorizontalStackLayout>
+
+                                                  <Image HeightRequest="55" WidthRequest="55" Source="{Binding ProjectImage}" Margin="4"></Image>
+
+                                                  <HorizontalStackLayout WidthRequest="650">
+                                                     <Label Text="{Binding ProjectName}" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
+                                                      <Label Text="{Binding Status}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="10, 20, 20, 20" HorizontalTextAlignment="End"></Label>
+
+                                                 </HorizontalStackLayout>
+                                                    
+                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#FE5A22" BorderColor="Transparent" CornerRadius="12" Margin="10, 20, 10, 20"></Frame>
                                                   <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="12" Margin="5, 20, 10, 20"></Frame>
-                                         </HorizontalStackLayout>
-                                     </Grid>
-                                 </Frame>
 
-                                
-                                   <Frame BackgroundColor="#FFF6E5" Margin="0, 10, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="5">
-                                     <Grid ColumnDefinitions="10*, 2*">
-                                         <HorizontalStackLayout>
-                                                  <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#FE5A22" BorderColor="Transparent" CornerRadius="20" Margin="4"></Frame>
-                                             <HorizontalStackLayout WidthRequest="650">
-                                                 <Label Text="Project name" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
-                                                  <Label Text="Joined 20 July 2022" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="10, 20, 20, 20" HorizontalTextAlignment="End"></Label>
-                                             </HorizontalStackLayout>
-                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#FE5A22" BorderColor="Transparent" CornerRadius="12" Margin="0, 20, 10, 20"></Frame>
-                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="12" Margin="5, 20, 10, 20"></Frame>
-                                         </HorizontalStackLayout>
-                                     </Grid>
-                                 </Frame>
+                                                    </HorizontalStackLayout>
+                                             
+                                            </Grid>
 
-                                 <Frame BackgroundColor="#FFF6E5" Margin="0, 10, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="5">
-                                     <Grid ColumnDefinitions="10*, 2*">
-                                         <HorizontalStackLayout>
-                                                  <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#4E54AD" BorderColor="Transparent" CornerRadius="20" Margin="4"></Frame>
-                                             <HorizontalStackLayout WidthRequest="650">
-                                                 <Label Text="Project name" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
-                                                  <Label Text="Joined 20 July 2022" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="10, 20, 20, 20" HorizontalTextAlignment="End"></Label>
-                                             </HorizontalStackLayout>
-                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#FE5A22" BorderColor="Transparent" CornerRadius="12" Margin="0, 20, 10, 20"></Frame>
-                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="12" Margin="5, 20, 10, 20"></Frame>
-                                         </HorizontalStackLayout>
-                                     </Grid>
-                                 </Frame>
-
-                                  <Frame BackgroundColor="#FFF6E5" Margin="0, 10, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="5">
-                                     <Grid ColumnDefinitions="10*, 2*">
-                                         <HorizontalStackLayout>
-                                                  <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#FFA191" BorderColor="Transparent" CornerRadius="20" Margin="4"></Frame>
-                                             <HorizontalStackLayout WidthRequest="650">
-                                                 <Label Text="Project name" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
-                                                  <Label Text="Joined 20 July 2022" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="10, 20, 20, 20" HorizontalTextAlignment="End"></Label>
-                                             </HorizontalStackLayout>
-                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#FE5A22" BorderColor="Transparent" CornerRadius="12" Margin="0, 20, 10, 20"></Frame>
-                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="12" Margin="5, 20, 10, 20"></Frame>
-                                         </HorizontalStackLayout>
-                                     </Grid>
-                                 </Frame>
-
-                                  <Frame BackgroundColor="#FFF6E5" Margin="0, 10, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="5">
-                                     <Grid ColumnDefinitions="10*, 2*">
-                                         <HorizontalStackLayout>
-                                                  <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#FAC306" BorderColor="Transparent" CornerRadius="20" Margin="4"></Frame>
-                                             <HorizontalStackLayout WidthRequest="650">
-                                                 <Label Text="Project name" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
-                                                  <Label Text="Joined 20 July 2022" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="10, 20, 20, 20" HorizontalTextAlignment="End"></Label>
-                                             </HorizontalStackLayout>
-                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#FE5A22" BorderColor="Transparent" CornerRadius="12" Margin="0, 20, 10, 20"></Frame>
-                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="12" Margin="5, 20, 10, 20"></Frame>
-                                         </HorizontalStackLayout>
-                                     </Grid>
-                                 </Frame>
-
-                                  <Frame BackgroundColor="#FFF6E5" Margin="0, 10, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="5">
-                                     <Grid ColumnDefinitions="10*, 2*">
-                                         <HorizontalStackLayout>
-                                                  <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#FF4C54" BorderColor="Transparent" CornerRadius="20" Margin="4"></Frame>
-                                             <HorizontalStackLayout WidthRequest="650">
-                                                 <Label Text="Project name" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
-                                                  <Label Text="Joined 20 July 2022" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="10, 20, 20, 20" HorizontalTextAlignment="End"></Label>
-                                             </HorizontalStackLayout>
-                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#FE5A22" BorderColor="Transparent" CornerRadius="12" Margin="0, 20, 10, 20"></Frame>
-                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="12" Margin="5, 20, 10, 20"></Frame>
-                                         </HorizontalStackLayout>
-                                     </Grid>
-                                 </Frame>
-
-                                
-                                   <Frame BackgroundColor="#FFF6E5" Margin="0, 10, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="5">
-                                     <Grid ColumnDefinitions="10*, 2*">
-                                         <HorizontalStackLayout>
-                                                  <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#FE5A22" BorderColor="Transparent" CornerRadius="20" Margin="4"></Frame>
-                                             <HorizontalStackLayout WidthRequest="650">
-                                                 <Label Text="Project name" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
-                                                  <Label Text="Joined 20 July 2022" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="10, 20, 20, 20" HorizontalTextAlignment="End"></Label>
-                                             </HorizontalStackLayout>
-                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#FE5A22" BorderColor="Transparent" CornerRadius="12" Margin="0, 20, 10, 20"></Frame>
-                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="12" Margin="5, 20, 10, 20"></Frame>
-                                         </HorizontalStackLayout>
-                                     </Grid>
-                                 </Frame>
-
-                                 <Frame BackgroundColor="#FFF6E5" Margin="0, 10, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="5">
-                                     <Grid ColumnDefinitions="10*, 2*">
-                                         <HorizontalStackLayout>
-                                                  <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#4E54AD" BorderColor="Transparent" CornerRadius="20" Margin="4"></Frame>
-                                             <HorizontalStackLayout WidthRequest="650">
-                                                 <Label Text="Project name" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
-                                                  <Label Text="Joined 20 July 2022" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="10, 20, 20, 20" HorizontalTextAlignment="End"></Label>
-                                             </HorizontalStackLayout>
-                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#FE5A22" BorderColor="Transparent" CornerRadius="12" Margin="0, 20, 10, 20"></Frame>
-                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="12" Margin="5, 20, 10, 20"></Frame>
-                                         </HorizontalStackLayout>
-                                     </Grid>
-                                 </Frame>
-
-                                  <Frame BackgroundColor="#FFF6E5" Margin="0, 10, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="5">
-                                     <Grid ColumnDefinitions="10*, 2*">
-                                         <HorizontalStackLayout>
-                                                  <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#FFA191" BorderColor="Transparent" CornerRadius="20" Margin="4"></Frame>
-                                             <HorizontalStackLayout WidthRequest="650">
-                                                 <Label Text="Project name" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
-                                                  <Label Text="Joined 20 July 2022" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="10, 20, 20, 20" HorizontalTextAlignment="End"></Label>
-                                             </HorizontalStackLayout>
-                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#FE5A22" BorderColor="Transparent" CornerRadius="12" Margin="0, 20, 10, 20"></Frame>
-                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="12" Margin="5, 20, 10, 20"></Frame>
-                                         </HorizontalStackLayout>
-                                     </Grid>
-                                 </Frame>
-
-                                  <Frame BackgroundColor="#FFF6E5" Margin="0, 10, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="5">
-                                     <Grid ColumnDefinitions="10*, 2*">
-                                         <HorizontalStackLayout>
-                                                  <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#FAC306" BorderColor="Transparent" CornerRadius="20" Margin="4"></Frame>
-                                             <HorizontalStackLayout WidthRequest="650">
-                                                 <Label Text="Project name" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
-                                                  <Label Text="Joined 20 July 2022" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="10, 20, 20, 20" HorizontalTextAlignment="End"></Label>
-                                             </HorizontalStackLayout>
-                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#FE5A22" BorderColor="Transparent" CornerRadius="12" Margin="0, 20, 10, 20"></Frame>
-                                                  <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="12" Margin="5, 20, 10, 20"></Frame>
-                                         </HorizontalStackLayout>
-                                     </Grid>
-                                 </Frame>
+                                                <Frame.GestureRecognizers>
+                                                    <TapGestureRecognizer Command="{Binding Source={x:RelativeSource AncestorType={x:Type viewModel:AddUpdateProjectViewModel}},Path=DisplayActionCommand}"
+                                                                          CommandParameter="{Binding .}" />
+                                                </Frame.GestureRecognizers>
+                                            </Frame>
 
 
+                                    </VerticalStackLayout>
+                                          
 
-                             </VerticalStackLayout>
-                            </ScrollView>
+                                        </DataTemplate>
+                                    </CollectionView.ItemTemplate>
 
-                   
-                               </Frame>
+                                </CollectionView>
+
+                    </VerticalStackLayout>
+                   </ScrollView>
+
+                
 
                         <Label Text="Priority Projects" Grid.Column="0" FontFamily="PoppinsMedium" Padding="0" FontSize="22" TextColor="#102D4C" Margin="0, 30, 0, 15"/>
 
@@ -241,13 +144,68 @@
 
                     </VerticalStackLayout>
 
-                    <VerticalStackLayout Grid.Column="1"  Padding="0">
-                    <HorizontalStackLayout>
-                             <Button BackgroundColor="#FAF9F0" TextColor="#FF4C54" CornerRadius="25" Padding="23" Text="see design teams"  BorderColor="#FF4C54" BorderWidth="2" FontFamily="PoppinsSemiBold" FontSize="15" Margin="0, 0, 0, 0" WidthRequest="200"/>
-                          <Button BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="new project"  Margin="30, 0, 0, 0" WidthRequest="200"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
-               </HorizontalStackLayout>  
-          <AbsoluteLayout ZIndex="1">
+                        <VerticalStackLayout Grid.Column="1"  Padding="0">
 
+                    <!--removed for now because side form handles add and edit-->
+                     <HorizontalStackLayout>
+                              <Button Command="{Binding BackToTeamsCommand}" BackgroundColor="#FAF9F0" TextColor="#FF4C54" CornerRadius="25" Padding="23" Text="see design teams"  BorderColor="#FF4C54" BorderWidth="2" FontFamily="PoppinsSemiBold" FontSize="15" Margin="0, 0, 0, 0" WidthRequest="200"/>
+                          <Button Command="{Binding BackToAddCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="new project"  Margin="30, 0, 0, 0" WidthRequest="200"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+               </HorizontalStackLayout>
+
+                    
+                              <!--see teams-->
+                    
+                     <AbsoluteLayout ZIndex="10" IsVisible="{Binding IsTeams}">
+                        <Border BackgroundColor="#FEEED8" Stroke="#FEEED8" WidthRequest="552" HeightRequest="987" Margin="-50, 35, 0, 0">
+
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="78, 0, 0, 0"/>
+                    </Border.StrokeShape>
+
+                    <VerticalStackLayout Padding="40">
+                        <Label Text="Team details" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
+
+                                
+
+                        <!--<Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40"> <Image Source="illustration_house.jpg" Aspect="AspectFill"></Image></Frame>-->
+                        <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="140, -40, 0, 0" CornerRadius="25" Padding="23"><Image Source="edit.png" Aspect="AspectFit"></Image></Frame>
+                              
+                                  <Label Text="Team Name" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+
+                                <CollectionView ItemsSource="{Binding ProjectName}"
+                                          BackgroundColor="Transparent"
+                                          Margin="0, 40, 0, 0"
+                                          HeightRequest="650"
+                                          >
+                                    <CollectionView.ItemTemplate >
+
+                                        <DataTemplate x:DataType="models:ProjectModel">
+                                          
+                                         <Label 
+                                            x:Name="project"
+                                            TextColor="Black"
+                                            Text="{Binding ProjectName}"/>
+                                          </DataTemplate>
+                                        </CollectionView.ItemTemplate>
+                                    </CollectionView>
+                          
+                            <HorizontalStackLayout>
+
+                              <Frame BackgroundColor="White" BorderColor="Transparent" Padding="8" CornerRadius="20" Margin="250,100,0,5" HeightRequest="55" WidthRequest="300">
+                                                             <HorizontalStackLayout>
+                                                                        <Frame  WidthRequest="45" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="15"></Frame>
+                                                                      <Label Text="{Binding DesignTeam}" FontFamily="PoppinsMedium" FontSize="15" TextColor="#102D4C" Margin="15, 10, 0, 0"></Label>
+                                                             </HorizontalStackLayout>
+                                                         </Frame>
+                                    </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </Border>
+
+
+ </AbsoluteLayout>
+                       <!--edit project-->
+                     <AbsoluteLayout ZIndex="10" IsVisible="{Binding IsEditing}">
+                       
                 <Border BackgroundColor="#FEEED8" Stroke="#FEEED8" WidthRequest="552" HeightRequest="987" Margin="-50, 35, 0, 0">
 
                     <Border.StrokeShape>
@@ -255,18 +213,31 @@
                     </Border.StrokeShape>
 
                     <VerticalStackLayout Padding="40">
-                         <Label Text="Edit project details" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
-                        <HorizontalStackLayout>
-                        <Frame HeightRequest="150" Margin="50, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40" BorderColor="Transparent">
-                                    <Image Source="illustration_bunny.jpg" Aspect="AspectFill"/>
-                         </Frame>
-                        <Frame HeightRequest="150" Margin="10, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40" BorderColor="Transparent">
-                                    <Image Source="illustration_bunny_friend.jpg" Aspect="AspectFill"/>
-                                    </Frame>
-                                <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="10, 10, 0, 0" CornerRadius="25" Padding="23">
-                                    <Image Source="add.png" Aspect="AspectFit"/>
-                                </Frame>
-                                    </HorizontalStackLayout>
+                        <Label Text="Edit project details" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
+
+                    
+                                <Picker
+                                    Title="Choose an Image"
+                                    SelectedItem="{Binding ProjectDetail.ProjectImage}">
+                                    <Picker.ItemsSource>
+                                        <x:Array Type="{x:Type x:String}">
+                                            <x:String>Bunny Friends</x:String>
+                                            <x:String>Bunnies</x:String>
+                                            <x:String>Mouse House</x:String>
+                                            <x:String>Kitty Kitty</x:String>
+                                            <x:String>Miranda's House</x:String>
+                                            <x:String>The House</x:String>
+                                            <x:String>Flower Town</x:String>
+                                            <x:String>Yeti</x:String>
+                                            <x:String>Build A Home</x:String>
+                                        </x:Array>
+                                    </Picker.ItemsSource>
+                                </Picker>
+
+                        <!--<Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40"> <Image Source="illustration_bunny_friend.jpg" Aspect="AspectFill"></Image></Frame>-->
+                        <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="140, -40, 0, 0" CornerRadius="25" Padding="23"><Image Source="edit.png" Aspect="AspectFit"></Image></Frame>
+
+                                  <Entry Text="{Binding ActiveProject.ProjectID}" IsVisible="false" Placeholder="20 May 2022" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                             <Label Text="Project name" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 30, 0, 0"></Label>
 
                              <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
@@ -274,7 +245,7 @@
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                                    <Entry Placeholder="Bunny Friends" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                    <Entry Text="{Binding ActiveProject.ProjectName}" Placeholder="Bunny Friends" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                                                 </Border>
 
                               <Label Text="Client" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
@@ -284,7 +255,16 @@
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                                    <Entry Placeholder="Penny's Creations" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                    <Picker Title="Select a Client">
+                                          <Picker.Items>
+                                            <x:String>Penny's Creations</x:String>
+                                            <x:String>Bargain Books</x:String>
+                                            <x:String>Easy Reads</x:String>
+                                            <x:String>Penguin Classics</x:String>
+                                           
+                                          </Picker.Items>
+                                        </Picker>
+                                   <!--<Entry Text="{Binding ActiveProject.Client}" Placeholder="Penny's Creations" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>-->
                                                 </Border>
 
                                    <Label Text="Deposit" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
@@ -294,7 +274,7 @@
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                                    <Entry Placeholder="R 200.00" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                    <Entry Text="{Binding ActiveProject.Deposit}" Placeholder="R 200.00" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                                                 </Border>
 
                         
@@ -305,7 +285,7 @@
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                                    <Entry Placeholder="In full" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                    <Entry Text="{Binding ActiveProject.DepositPaid}" Placeholder="In full" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                                                 </Border>
 
                             <Label Text="Price per month" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
@@ -315,23 +295,143 @@
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                                    <Entry Placeholder="R 10 000.00" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                    <Entry Text="{Binding ActiveProject.PricePerMonth}" Placeholder="R 10 000.00" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                                                 </Border>
-                          <Button BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="save details"  Margin="0, 20, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
-                            <HorizontalStackLayout>
 
-                              <Frame BackgroundColor="White" BorderColor="Transparent" Padding="8" CornerRadius="20" Margin="250,30,0,5" HeightRequest="55" WidthRequest="300">
-                                                             <HorizontalStackLayout>
-                                                                        <Frame  WidthRequest="45" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="15"></Frame>
-                                                                      <Label Text="The Dream Team" FontFamily="PoppinsMedium" FontSize="15" TextColor="#102D4C" Margin="15, 10, 0, 0"></Label>
-                                                             </HorizontalStackLayout>
-                                                         </Frame>
-                                    </HorizontalStackLayout>
+                                  <Label Text="Design team" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+
+                                  <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Entry Text="{Binding ActiveProject.DesignTeam}" Placeholder="The Dream Team" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+
+                          <Button Command="{Binding UpdateProjectCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="save project details"  Margin="0, 20, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                                      
+
                     </VerticalStackLayout>
                 </Border>
 
           </AbsoluteLayout>
+
+                    <!--for the add form-->
+          <AbsoluteLayout ZIndex="1" IsVisible="true">
+
+                <Border BackgroundColor="#FEEED8" Stroke="#FEEED8" WidthRequest="552" HeightRequest="987" Margin="-50, 35, 0, 0">
+
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="78, 0, 0, 0"/>
+                    </Border.StrokeShape>
+
+                            
+
+                    <VerticalStackLayout Padding="40">
+                        <Label Text="Add project details" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
+
+                        <HorizontalStackLayout Margin="0, 20, 0, 0">
+
+                                    <Picker
+                                    Title="Choose an Image"
+                                    SelectedItem="{Binding ProjectDetail.ProjectImage}">
+                                    <Picker.ItemsSource>
+                                        <x:Array Type="{x:Type x:String}">
+                                            <x:String>Bunny Friends</x:String>
+                                            <x:String>Bunnies</x:String>
+                                            <x:String>Mouse House</x:String>
+                                            <x:String>Kitty Kitty</x:String>
+                                            <x:String>Miranda's House</x:String>
+                                            <x:String>The House</x:String>
+                                            <x:String>Flower Town</x:String>
+                                            <x:String>Yeti</x:String>
+                                            <x:String>Build A Home</x:String>
+                                        </x:Array>
+                                    </Picker.ItemsSource>
+                                </Picker>
+                        <!--<Frame HeightRequest="150" Margin="50, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40" BorderColor="Transparent">
+                                    <Image Source="illustration_bunny.jpg" Aspect="AspectFill"/>
+                         </Frame>
+                        <Frame HeightRequest="150" Margin="10, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40" BorderColor="Transparent">
+                                    <Image Source="illustration_bunny_friend.jpg" Aspect="AspectFill"/>
+                                    </Frame>
+                                <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="10, 10, 0, 0" CornerRadius="25" Padding="23">
+                                    <Image Source="add.png" Aspect="AspectFit"/>
+                                </Frame>-->
+                                
+                                    </HorizontalStackLayout>
+                                                    <Label Text="Project name" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 30, 0, 0"></Label>
+                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Entry Text="{Binding ProjectDetail.ProjectName}" Placeholder="Bunny Friends" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+
+                              <Label Text="Client" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+
+                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Entry Text="{Binding ProjectDetail.Client}" Placeholder="Penny's Creations" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+
+                                   <Label Text="Deposit" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+
+                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="-260, 10, 0, 10" Padding="10" WidthRequest="220">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Entry Text="{Binding ProjectDetail.Deposit}" Placeholder="R 200.00" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+
+                        
+
+                             <Label Text="Deposit Paid" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="260, -100, 0, 0"></Label>
+                                    <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="260, 10, 0, 10" Padding="10" WidthRequest="220">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Entry Text="{Binding ProjectDetail.DepositPaid}" Placeholder="In full" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+
+                            <Label Text="Price per month" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+
+                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Entry Text="{Binding ProjectDetail.PricePerMonth}" Placeholder="R 10 000.00" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+
+                                  <Label Text="Design team" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+
+                                  <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Entry Text="{Binding ProjectDetail.DesignTeam}" Placeholder="R 10 000.00" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+                          <Button Command="{Binding AddProjectCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="add new client"  Margin="0, 20, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                                      
+
                     </VerticalStackLayout>
+                </Border>
+
+          </AbsoluteLayout>
+
+                  
+                    </VerticalStackLayout>
+                    
+
+                 
 
                 </Grid>
 
@@ -339,3 +439,4 @@
         </Border>
     </FlexLayout>
 </ContentPage>
+ 
