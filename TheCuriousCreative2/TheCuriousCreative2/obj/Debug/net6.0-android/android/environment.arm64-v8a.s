@@ -1241,6 +1241,18 @@ app_system_properties:
 .L.env.buf.300:
 	.zero	70
 	.size	.L.env.buf.300, 70
+	.type	.L.env.buf.301, @object
+.L.env.buf.301:
+	.zero	70
+	.size	.L.env.buf.301, 70
+	.type	.L.env.buf.302, @object
+.L.env.buf.302:
+	.zero	70
+	.size	.L.env.buf.302, 70
+	.type	.L.env.buf.303, @object
+.L.env.buf.303:
+	.zero	70
+	.size	.L.env.buf.303, 70
 	// Bundled assemblies data
 
 	.type	bundled_assemblies, @object
@@ -3958,7 +3970,34 @@ bundled_assemblies:
 	.zero	4
 	.xword	.L.env.buf.300	// name
 
-	.size	bundled_assemblies, 12040
+	.word	0xffffffff	// apk_fd
+	.word	0x0	// data_offset
+	.word	0x0	// data_size
+	.zero	4
+	.xword	0x0	// data
+	.word	0x0	// name_length
+	.zero	4
+	.xword	.L.env.buf.301	// name
+
+	.word	0xffffffff	// apk_fd
+	.word	0x0	// data_offset
+	.word	0x0	// data_size
+	.zero	4
+	.xword	0x0	// data
+	.word	0x0	// name_length
+	.zero	4
+	.xword	.L.env.buf.302	// name
+
+	.word	0xffffffff	// apk_fd
+	.word	0x0	// data_offset
+	.word	0x0	// data_size
+	.zero	4
+	.xword	0x0	// data
+	.word	0x0	// name_length
+	.zero	4
+	.xword	.L.env.buf.303	// name
+
+	.size	bundled_assemblies, 12160
 	// Assembly store individual assembly data
 	.type	assembly_store_bundled_assemblies, @object
 	.global	assembly_store_bundled_assemblies
@@ -4195,7 +4234,7 @@ dso_cache:
 	.size	dso_cache, 1152
 
 	//
-	// Generated from instance of: Xamarin.Android.Tasks.ApplicationConfig, Xamarin.Android.Build.Tasks, Version=12.3.99.48, Culture=neutral, PublicKeyToken=84e04ff9cfb79065
+	// Generated from instance of: Xamarin.Android.Tasks.ApplicationConfig, Xamarin.Android.Build.Tasks, Version=12.3.99.0, Culture=neutral, PublicKeyToken=84e04ff9cfb79065
 	//
 	.type	application_config, @object
 	.global	application_config
@@ -4218,7 +4257,7 @@ application_config:
 	.word	0x3	// package_naming_policy
 	.word	0xc	// environment_variable_count
 	.word	0x0	// system_property_count
-	.word	0x12d	// number_of_assemblies_in_apk
+	.word	0x130	// number_of_assemblies_in_apk
 	.word	0x46	// bundled_assembly_name_width
 	.word	0x2	// number_of_assembly_store_files
 	.word	0x24	// number_of_dso_cache_entries
@@ -4271,7 +4310,7 @@ application_config:
 
 	.type	.L.autostr.8, @object
 .L.autostr.8:
-	.asciz	"819a61f1-d147-4dfa-9d49-2fd2010f8a4b"
+	.asciz	"c00b9d9e-ae09-4cf3-849f-c0de17de8637"
 	.size	.L.autostr.8, 37
 
 	.type	.L.autostr.9, @object
@@ -4480,4 +4519,4 @@ application_config:
 	.size	.L.autostr.49, 36
 
 
-	.ident	"Xamarin.Android remotes/origin/release/6.0.4xx @ 2c639362ff709d9f9c090d8bb363b2d6b67945ce"
+	.ident	"Xamarin.Android remotes/origin/release/6.0.3xx @ 4c460a89cb070ee8dfd731842f36bc3dc68dc75c"

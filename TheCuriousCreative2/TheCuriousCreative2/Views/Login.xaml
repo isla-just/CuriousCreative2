@@ -32,7 +32,7 @@
                 BorderColor="#06378D"
                 BackgroundColor="Transparent"
                 Margin="0, 30, 0, 0">
-            <Entry Text="{Binding Password}" Placeholder="Password" PlaceholderColor="Gray" TextColor="#06378D" BackgroundColor="#FAF9F0"/>
+            <Entry Text="{Binding Password}" IsPassword="True" Placeholder="Password" PlaceholderColor="Gray" TextColor="#06378D" BackgroundColor="#FAF9F0"/>
             </Frame>
 
             <HorizontalStackLayout>

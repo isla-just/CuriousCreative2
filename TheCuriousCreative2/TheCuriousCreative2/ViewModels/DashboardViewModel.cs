@@ -45,7 +45,7 @@ namespace TheCuriousCreative2.ViewModels
                 foreach (var fund in fundList)
                 {
 
-                    FundData.Add(new FundChartModel { Amount = fund.FundsTotal, Month = fund.Date.TrimEnd() });
+                    FundData.Add(new FundChartModel { Amount = fund.FundsTotal, Month = fund.Date.TrimEnd()});
 
                 }
 

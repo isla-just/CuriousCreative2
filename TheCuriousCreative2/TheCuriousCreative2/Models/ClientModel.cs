@@ -19,10 +19,8 @@ namespace TheCuriousCreative2.Models
         public bool Priority { get; set; } = false;
         [MaxLength(50)]
         public int MaxHours { get; set; } = 0;
-
-        //change to handle image upload
-        //[MaxLength(250)]
-        //public string ClientImage { get; set; }
+        [MaxLength(250)]
+        public string ClientImage { get; set; }
     }
 
 }

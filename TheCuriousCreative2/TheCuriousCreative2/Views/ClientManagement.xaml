@@ -59,7 +59,7 @@
                         <!--//client list-->
 
 
-                    <ScrollView>
+                    <ScrollView HeightRequest="600">
 
                         <VerticalStackLayout>
 
@@ -77,7 +77,7 @@
                                            <Grid ColumnDefinitions="10*, 2*">
                                                 <HorizontalStackLayout>
 
-                                                  <Frame HeightRequest="55" WidthRequest="55" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="20" Margin="4"></Frame>
+                                                  <Frame  IsClippedToBounds="True" HeightRequest="55" WidthRequest="55" BackgroundColor="#1EBBBA" BorderColor="#1EBBBA" CornerRadius="20" Margin="4"><Image Source="{Binding ClientImage}" Aspect="AspectFill" HeightRequest="55" WidthRequest="55" ></Image></Frame>
 
                                                   <HorizontalStackLayout WidthRequest="650">
                                                      <Label Text="{Binding ClientName}" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
@@ -107,6 +107,8 @@
 
                                 </CollectionView>
 
+                             <Label Text="Looks like you've reached the end..." FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Center" Margin="20"></Label>
+
                     </VerticalStackLayout>
                    </ScrollView>
                     
@@ -115,7 +117,7 @@
                     <VerticalStackLayout Grid.Column="1"  Padding="0">
 
                     <!--removed for now because side form handles add and edit-->
-                            <Button IsEnabled="{Binding IsEditing}" Command="{Binding ToggleAddCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="register new client"  Margin="230, 0, 0, 0" WidthRequest="250"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                            <Button Command="{Binding BackToAddCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="register new client"  Margin="230, 0, 0, 0" WidthRequest="250"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
                    
                        <!--edit client-->
                      <AbsoluteLayout ZIndex="10" IsVisible="{Binding IsEditing}">
@@ -129,8 +131,32 @@
                     <VerticalStackLayout Padding="40">
                          <Label Text="Edit client details" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
 
-                        <Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40"> <Image Source="illustration_yeti.jpg" Aspect="AspectFill"></Image></Frame>
-                        <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="140, -40, 0, 0" CornerRadius="25" Padding="23"><Image Source="edit.png" Aspect="AspectFit"></Image></Frame>
+                        <Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40"> <Image Source="{Binding ActiveClient.ClientImage}" Aspect="AspectFill"></Image></Frame>
+
+
+                        <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="140, -40, 0, 0" CornerRadius="25" Padding="23">
+
+                                  <Picker HeightRequest="50" WidthRequest="50"
+                                    Title="select character" FontSize="50"
+                                    SelectedItem="{Binding ActiveClient.ClientImage}" TextColor="Transparent">
+                                    <Picker.ItemsSource>
+                                        <x:Array Type="{x:Type x:String}">
+                                            <x:String>the_vibey.png</x:String>
+                                            <x:String>the_creative.png</x:String>
+                                            <x:String>the_wize_owl.png</x:String>
+                                            <x:String>the_zen.png</x:String>
+                                            <x:String>the_adventurer.png</x:String>
+                                            <x:String>the_chaotic.png</x:String>
+                                            <x:String>the_wild_one.png</x:String>
+                                            <x:String>the_learner.png</x:String>
+                                            <x:String>the_energetic.png</x:String>
+                                        </x:Array>
+                                    </Picker.ItemsSource>
+                                </Picker>
+
+                          </Frame>
+
+                                 <Image Source="add.png" Aspect="AspectFill" HeightRequest="20" WidthRequest="20" Margin="140, -42, 0, 0"></Image>
 
                                   <Entry Text="{Binding ActiveClient.ClientID}" IsVisible="false" Placeholder="20 May 2022" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                             <Label Text="Client name" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 30, 0, 0"></Label>
@@ -181,8 +207,33 @@
                     <VerticalStackLayout Padding="40">
                          <Label Text="Add new client" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
 
-                        <Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40"> <Image Source="illustration_yeti.jpg" Aspect="AspectFill"></Image></Frame>
-                        <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="140, -40, 0, 0" CornerRadius="25" Padding="23"><Image Source="add.png" Aspect="AspectFit"></Image></Frame>
+                                         <Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40">
+                                <Image BackgroundColor="#1EBBBA" Source="{Binding Source={x:Reference picker}, Path=SelectedItem}" Aspect="AspectFill"></Image></Frame>
+
+                        <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="140, -40, 0, 0" CornerRadius="25" Padding="23">
+
+                                  <Picker HeightRequest="50" WidthRequest="50" x:Name="picker"
+                                    Title="select character" FontSize="50"
+                                    SelectedItem="{Binding ClientDetail.ClientImage}" TextColor="Transparent">
+                                      <Picker.ItemsSource>
+                                        <x:Array Type="{x:Type x:String}">
+                                            <x:String>the_vibey.png</x:String>
+                                            <x:String>the_creative.png</x:String>
+                                            <x:String>the_wize_owl.png</x:String>
+                                            <x:String>the_zen.png</x:String>
+                                            <x:String>the_adventurer.png</x:String>
+                                            <x:String>the_chaotic.png</x:String>
+                                            <x:String>the_wild_one.png</x:String>
+                                            <x:String>the_learner.png</x:String>
+                                            <x:String>the_energetic.png</x:String>
+                                        </x:Array>
+                                    </Picker.ItemsSource>
+                                        <Picker.SelectedIndex>1</Picker.SelectedIndex>
+                                </Picker>
+
+                          </Frame>
+
+                                 <Image Source="add.png" Aspect="AspectFill" HeightRequest="20" WidthRequest="20" Margin="140, -42, 0, 0"></Image>
 
                             <Label Text="Client name" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 30, 0, 0"></Label>
 

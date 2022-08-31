@@ -46,9 +46,6 @@ microsoft.maui.platform.LocalizedDigitsKeyListener;crc6452ffdc5b34af3a0f.Localiz
 Microsoft.Maui.Platform.MauiAccessibilityDelegateCompat, Microsoft.Maui;crc6452ffdc5b34af3a0f.MauiAccessibilityDelegateCompat
 Microsoft.Maui.Platform.MauiAccessibilityDelegateCompat;crc6452ffdc5b34af3a0f.MauiAccessibilityDelegateCompat
 microsoft.maui.platform.MauiAccessibilityDelegateCompat;crc6452ffdc5b34af3a0f.MauiAccessibilityDelegateCompat
-Microsoft.Maui.Platform.MauiAppCompatEditText, Microsoft.Maui;crc6452ffdc5b34af3a0f.MauiAppCompatEditText
-Microsoft.Maui.Platform.MauiAppCompatEditText;crc6452ffdc5b34af3a0f.MauiAppCompatEditText
-microsoft.maui.platform.MauiAppCompatEditText;crc6452ffdc5b34af3a0f.MauiAppCompatEditText
 Microsoft.Maui.Platform.MauiBoxView, Microsoft.Maui;crc6452ffdc5b34af3a0f.MauiBoxView
 Microsoft.Maui.Platform.MauiBoxView;crc6452ffdc5b34af3a0f.MauiBoxView
 microsoft.maui.platform.MauiBoxView;crc6452ffdc5b34af3a0f.MauiBoxView
@@ -625,9 +622,9 @@ microsoft.maui.controls.platform.DragAndDropGestureHandler_CustomLocalStateData;
 Microsoft.Maui.Controls.Platform.FormattedStringExtensions+FontSpan, Microsoft.Maui.Controls;crc64338477404e88479c.FormattedStringExtensions_FontSpan
 Microsoft.Maui.Controls.Platform.FormattedStringExtensions.FontSpan;crc64338477404e88479c.FormattedStringExtensions_FontSpan
 microsoft.maui.controls.platform.FormattedStringExtensions_FontSpan;crc64338477404e88479c.FormattedStringExtensions_FontSpan
-Microsoft.Maui.Controls.Platform.FormattedStringExtensions+LetterSpacingSpan, Microsoft.Maui.Controls;crc64338477404e88479c.FormattedStringExtensions_LetterSpacingSpan
-Microsoft.Maui.Controls.Platform.FormattedStringExtensions.LetterSpacingSpan;crc64338477404e88479c.FormattedStringExtensions_LetterSpacingSpan
-microsoft.maui.controls.platform.FormattedStringExtensions_LetterSpacingSpan;crc64338477404e88479c.FormattedStringExtensions_LetterSpacingSpan
+Microsoft.Maui.Controls.Platform.FormattedStringExtensions+TextDecorationSpan, Microsoft.Maui.Controls;crc64338477404e88479c.FormattedStringExtensions_TextDecorationSpan
+Microsoft.Maui.Controls.Platform.FormattedStringExtensions.TextDecorationSpan;crc64338477404e88479c.FormattedStringExtensions_TextDecorationSpan
+microsoft.maui.controls.platform.FormattedStringExtensions_TextDecorationSpan;crc64338477404e88479c.FormattedStringExtensions_TextDecorationSpan
 Microsoft.Maui.Controls.Platform.FormattedStringExtensions+LineHeightSpan, Microsoft.Maui.Controls;crc64338477404e88479c.FormattedStringExtensions_LineHeightSpan
 Microsoft.Maui.Controls.Platform.FormattedStringExtensions.LineHeightSpan;crc64338477404e88479c.FormattedStringExtensions_LineHeightSpan
 microsoft.maui.controls.platform.FormattedStringExtensions_LineHeightSpan;crc64338477404e88479c.FormattedStringExtensions_LineHeightSpan
@@ -2749,9 +2746,6 @@ com.google.android.material.expandable.ExpandableTransformationWidget;com.google
 Google.Android.Material.Expandable.IExpandableWidget, Xamarin.Google.Android.Material;com.google.android.material.expandable.ExpandableWidget
 Google.Android.Material.Expandable.IExpandableWidget;com.google.android.material.expandable.ExpandableWidget
 com.google.android.material.expandable.ExpandableWidget;com.google.android.material.expandable.ExpandableWidget
-Google.Android.Material.Color.DynamicColors+IOnAppliedCallback, Xamarin.Google.Android.Material;com.google.android.material.color.DynamicColors$OnAppliedCallback
-Google.Android.Material.Color.DynamicColors.IOnAppliedCallback;com.google.android.material.color.DynamicColors$OnAppliedCallback
-com.google.android.material.color.DynamicColors$OnAppliedCallback;com.google.android.material.color.DynamicColors$OnAppliedCallback
 Google.Android.Material.Color.DynamicColors+IPrecondition, Xamarin.Google.Android.Material;com.google.android.material.color.DynamicColors$Precondition
 Google.Android.Material.Color.DynamicColors.IPrecondition;com.google.android.material.color.DynamicColors$Precondition
 com.google.android.material.color.DynamicColors$Precondition;com.google.android.material.color.DynamicColors$Precondition
@@ -2764,15 +2758,6 @@ com.google.android.material.chip.ChipGroup$OnCheckedChangeListener;com.google.an
 Google.Android.Material.Chip.ChipGroup+IOnCheckedChangeListenerImplementor, Xamarin.Google.Android.Material;mono.com.google.android.material.chip.ChipGroup_OnCheckedChangeListenerImplementor
 Google.Android.Material.Chip.ChipGroup.IOnCheckedChangeListenerImplementor;mono.com.google.android.material.chip.ChipGroup_OnCheckedChangeListenerImplementor
 mono.com.google.android.material.chip.ChipGroup_OnCheckedChangeListenerImplementor;mono.com.google.android.material.chip.ChipGroup_OnCheckedChangeListenerImplementor
-Google.Android.Material.Chip.ChipGroup+IOnCheckedStateChangeListener, Xamarin.Google.Android.Material;com.google.android.material.chip.ChipGroup$OnCheckedStateChangeListener
-Google.Android.Material.Chip.ChipGroup.IOnCheckedStateChangeListener;com.google.android.material.chip.ChipGroup$OnCheckedStateChangeListener
-com.google.android.material.chip.ChipGroup$OnCheckedStateChangeListener;com.google.android.material.chip.ChipGroup$OnCheckedStateChangeListener
-Google.Android.Material.Chip.ChipGroup+IOnCheckedStateChangeListenerImplementor, Xamarin.Google.Android.Material;mono.com.google.android.material.chip.ChipGroup_OnCheckedStateChangeListenerImplementor
-Google.Android.Material.Chip.ChipGroup.IOnCheckedStateChangeListenerImplementor;mono.com.google.android.material.chip.ChipGroup_OnCheckedStateChangeListenerImplementor
-mono.com.google.android.material.chip.ChipGroup_OnCheckedStateChangeListenerImplementor;mono.com.google.android.material.chip.ChipGroup_OnCheckedStateChangeListenerImplementor
-Google.Android.Material.Card.MaterialCardView+ICheckedIconGravity, Xamarin.Google.Android.Material;com.google.android.material.card.MaterialCardView$CheckedIconGravity
-Google.Android.Material.Card.MaterialCardView.ICheckedIconGravity;com.google.android.material.card.MaterialCardView$CheckedIconGravity
-com.google.android.material.card.MaterialCardView$CheckedIconGravity;com.google.android.material.card.MaterialCardView$CheckedIconGravity
 Google.Android.Material.Card.MaterialCardView+IOnCheckedChangeListener, Xamarin.Google.Android.Material;com.google.android.material.card.MaterialCardView$OnCheckedChangeListener
 Google.Android.Material.Card.MaterialCardView.IOnCheckedChangeListener;com.google.android.material.card.MaterialCardView$OnCheckedChangeListener
 com.google.android.material.card.MaterialCardView$OnCheckedChangeListener;com.google.android.material.card.MaterialCardView$OnCheckedChangeListener
@@ -2797,9 +2782,6 @@ mono.com.google.android.material.button.MaterialButtonToggleGroup_OnButtonChecke
 Google.Android.Material.BottomSheet.BottomSheetBehavior+ISaveFlags, Xamarin.Google.Android.Material;com.google.android.material.bottomsheet.BottomSheetBehavior$SaveFlags
 Google.Android.Material.BottomSheet.BottomSheetBehavior.ISaveFlags;com.google.android.material.bottomsheet.BottomSheetBehavior$SaveFlags
 com.google.android.material.bottomsheet.BottomSheetBehavior$SaveFlags;com.google.android.material.bottomsheet.BottomSheetBehavior$SaveFlags
-Google.Android.Material.BottomSheet.BottomSheetBehavior+IStableState, Xamarin.Google.Android.Material;com.google.android.material.bottomsheet.BottomSheetBehavior$StableState
-Google.Android.Material.BottomSheet.BottomSheetBehavior.IStableState;com.google.android.material.bottomsheet.BottomSheetBehavior$StableState
-com.google.android.material.bottomsheet.BottomSheetBehavior$StableState;com.google.android.material.bottomsheet.BottomSheetBehavior$StableState
 Google.Android.Material.BottomSheet.BottomSheetBehavior+IState, Xamarin.Google.Android.Material;com.google.android.material.bottomsheet.BottomSheetBehavior$State
 Google.Android.Material.BottomSheet.BottomSheetBehavior.IState;com.google.android.material.bottomsheet.BottomSheetBehavior$State
 com.google.android.material.bottomsheet.BottomSheetBehavior$State;com.google.android.material.bottomsheet.BottomSheetBehavior$State
@@ -2920,24 +2902,9 @@ com.google.android.material.snackbar.BaseTransientBottomBar$Duration;com.google.
 Google.Android.Material.Snackbar.IContentViewCallback, Xamarin.Google.Android.Material;com.google.android.material.snackbar.ContentViewCallback
 Google.Android.Material.Snackbar.IContentViewCallback;com.google.android.material.snackbar.ContentViewCallback
 com.google.android.material.snackbar.ContentViewCallback;com.google.android.material.snackbar.ContentViewCallback
-Google.Android.Material.Internal.CheckableGroup+IOnCheckedStateChangeListener, Xamarin.Google.Android.Material;com.google.android.material.internal.CheckableGroup$OnCheckedStateChangeListener
-Google.Android.Material.Internal.CheckableGroup.IOnCheckedStateChangeListener;com.google.android.material.internal.CheckableGroup$OnCheckedStateChangeListener
-com.google.android.material.internal.CheckableGroup$OnCheckedStateChangeListener;com.google.android.material.internal.CheckableGroup$OnCheckedStateChangeListener
-Google.Android.Material.Internal.CheckableGroup+IOnCheckedStateChangeListenerImplementor, Xamarin.Google.Android.Material;mono.com.google.android.material.internal.CheckableGroup_OnCheckedStateChangeListenerImplementor
-Google.Android.Material.Internal.CheckableGroup.IOnCheckedStateChangeListenerImplementor;mono.com.google.android.material.internal.CheckableGroup_OnCheckedStateChangeListenerImplementor
-mono.com.google.android.material.internal.CheckableGroup_OnCheckedStateChangeListenerImplementor;mono.com.google.android.material.internal.CheckableGroup_OnCheckedStateChangeListenerImplementor
 Google.Android.Material.Internal.IExperimental, Xamarin.Google.Android.Material;com.google.android.material.internal.Experimental
 Google.Android.Material.Internal.IExperimental;com.google.android.material.internal.Experimental
 com.google.android.material.internal.Experimental;com.google.android.material.internal.Experimental
-Google.Android.Material.Internal.IMaterialCheckableOnCheckedChangeListener, Xamarin.Google.Android.Material;com.google.android.material.internal.MaterialCheckable$OnCheckedChangeListener
-Google.Android.Material.Internal.IMaterialCheckableOnCheckedChangeListener;com.google.android.material.internal.MaterialCheckable$OnCheckedChangeListener
-com.google.android.material.internal.MaterialCheckable$OnCheckedChangeListener;com.google.android.material.internal.MaterialCheckable$OnCheckedChangeListener
-Google.Android.Material.Internal.IMaterialCheckableOnCheckedChangeListenerImplementor, Xamarin.Google.Android.Material;mono.com.google.android.material.internal.MaterialCheckable_OnCheckedChangeListenerImplementor
-Google.Android.Material.Internal.IMaterialCheckableOnCheckedChangeListenerImplementor;mono.com.google.android.material.internal.MaterialCheckable_OnCheckedChangeListenerImplementor
-mono.com.google.android.material.internal.MaterialCheckable_OnCheckedChangeListenerImplementor;mono.com.google.android.material.internal.MaterialCheckable_OnCheckedChangeListenerImplementor
-Google.Android.Material.Internal.IMaterialCheckable, Xamarin.Google.Android.Material;com.google.android.material.internal.MaterialCheckable
-Google.Android.Material.Internal.IMaterialCheckable;com.google.android.material.internal.MaterialCheckable
-com.google.android.material.internal.MaterialCheckable;com.google.android.material.internal.MaterialCheckable
 Google.Android.Material.Internal.IViewOverlayImpl, Xamarin.Google.Android.Material;com.google.android.material.internal.ViewOverlayImpl
 Google.Android.Material.Internal.IViewOverlayImpl;com.google.android.material.internal.ViewOverlayImpl
 com.google.android.material.internal.ViewOverlayImpl;com.google.android.material.internal.ViewOverlayImpl
