@@ -86,7 +86,7 @@
             },
             "Syncfusion.Maui.Charts": {
               "target": "Package",
-              "version": "[20.2.45, )"
+              "version": "[20.2.46, )"
             },
             "sqlite-net-pcl": {
               "target": "Package",
@@ -176,7 +176,7 @@
             },
             "Syncfusion.Maui.Charts": {
               "target": "Package",
-              "version": "[20.2.45, )"
+              "version": "[20.2.46, )"
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",
@@ -257,7 +257,7 @@
             },
             "Syncfusion.Maui.Charts": {
               "target": "Package",
-              "version": "[20.2.45, )"
+              "version": "[20.2.46, )"
             },
             "System.Runtime.InteropServices.NFloat.Internal": {
               "target": "Package",

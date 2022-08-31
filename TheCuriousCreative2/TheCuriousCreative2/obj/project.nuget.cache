@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6zSht+DqkY00oBKp9adZAiTaCBNn5aba0n7LnwKCHDbsNMNDh4TnDf1bk5Pt0v1vrPlQoP/h+bjvSuT+JJmdvA==",
+  "dgSpecHash": "qp8flZcRCoXCtuKa+mKkfiDSQ/5LbY1qqeJkNad2NtNNevXTRzx0Jehk0jeidEayK0GBbHFesj9CQMKxijgeYA==",
   "success": true,
   "projectFilePath": "/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/TheCuriousCreative2.csproj",
   "expectedPackageFiles": [
@@ -26,9 +26,9 @@
     "/Users/mac/.nuget/packages/sqlitepclraw.provider.dynamic_cdecl/2.1.0/sqlitepclraw.provider.dynamic_cdecl.2.1.0.nupkg.sha512",
     "/Users/mac/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.0/sqlitepclraw.provider.e_sqlite3.2.1.0.nupkg.sha512",
     "/Users/mac/.nuget/packages/sqlitepclraw.provider.sqlite3/2.1.0/sqlitepclraw.provider.sqlite3.2.1.0.nupkg.sha512",
-    "/Users/mac/.nuget/packages/syncfusion.licensing/20.2.0.45/syncfusion.licensing.20.2.0.45.nupkg.sha512",
-    "/Users/mac/.nuget/packages/syncfusion.maui.charts/20.2.45/syncfusion.maui.charts.20.2.45.nupkg.sha512",
-    "/Users/mac/.nuget/packages/syncfusion.maui.core/20.2.45/syncfusion.maui.core.20.2.45.nupkg.sha512",
+    "/Users/mac/.nuget/packages/syncfusion.licensing/20.2.0.46/syncfusion.licensing.20.2.0.46.nupkg.sha512",
+    "/Users/mac/.nuget/packages/syncfusion.maui.charts/20.2.46/syncfusion.maui.charts.20.2.46.nupkg.sha512",
+    "/Users/mac/.nuget/packages/syncfusion.maui.core/20.2.46/syncfusion.maui.core.20.2.46.nupkg.sha512",
     "/Users/mac/.nuget/packages/system.buffers/4.4.0/system.buffers.4.4.0.nupkg.sha512",
     "/Users/mac/.nuget/packages/system.diagnostics.diagnosticsource/6.0.0/system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "/Users/mac/.nuget/packages/system.memory/4.5.3/system.memory.4.5.3.nupkg.sha512",

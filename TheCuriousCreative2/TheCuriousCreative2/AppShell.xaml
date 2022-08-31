@@ -59,7 +59,17 @@
 
     </FlyoutItem>-->
 
+            <FlyoutItem   Title="DASHBOARD">
+        <Tab>
+             <ShellContent
+                Title="Dashboard"
+                ContentTemplate="{DataTemplate local:Dashboard}"
+                Route="Dashboard"
+              />
 
+        </Tab>
+
+    </FlyoutItem>
 
 
     <FlyoutItem   Title="CLIENTS">
@@ -74,17 +84,7 @@
 
     </FlyoutItem>
 
-        <FlyoutItem   Title="DASHBOARD">
-        <Tab>
-             <ShellContent
-                Title="Dashboard"
-                ContentTemplate="{DataTemplate local:Dashboard}"
-                Route="Dashboard"
-              />
 
-        </Tab>
-
-    </FlyoutItem>
 
         <FlyoutItem   Title="CREATIVES">
         <Tab>
@@ -98,17 +98,6 @@
 
     </FlyoutItem>
 
-            <FlyoutItem   Title="FUNDS">
-        <Tab>
-             <ShellContent
-                Title="Funds"
-                ContentTemplate="{DataTemplate local:Funds}"
-                Route="Funds"
-              />
-
-        </Tab>
-
-    </FlyoutItem>
 
 
             <FlyoutItem   Title="PROJECTS">
@@ -117,6 +106,18 @@
                 Title="Projects"
                 ContentTemplate="{DataTemplate local:ProjectManagement}"
                 Route="ProjectManagement"
+              />
+
+        </Tab>
+
+    </FlyoutItem>
+    
+            <FlyoutItem   Title="FUNDS">
+        <Tab>
+             <ShellContent
+                Title="Funds"
+                ContentTemplate="{DataTemplate local:Funds}"
+                Route="Funds"
               />
 
         </Tab>

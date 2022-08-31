@@ -672,3 +672,7 @@
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/Syncfusion.Licensing.dll
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/Syncfusion.Maui.Charts.dll
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-ios/iossimulator-x64/Syncfusion.Maui.Core.dll
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/slider1.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/slider2.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/slider3.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-ios/iossimulator-x64/resizetizer/r/Resources/slider4.png

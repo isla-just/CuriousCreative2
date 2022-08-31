@@ -27,8 +27,6 @@ namespace TheCuriousCreative2.Models
         public int MaxHours { get; set; }
         [MaxLength(250)]
         public string Birthday { get; set; }
-        [MaxLength(250)]
-        public string CurrentProject { get; set; }
     }
 }
 

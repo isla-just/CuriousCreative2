@@ -259,6 +259,18 @@
         <member name="P:TheCuriousCreative2.ViewModels.DashboardViewModel.TeamCounter9">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.DashboardViewModel.teamCounter9"/>
         </member>
+        <member name="P:TheCuriousCreative2.ViewModels.DashboardViewModel.Feat1">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.DashboardViewModel.feat1"/>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.DashboardViewModel.Feat2">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.DashboardViewModel.feat2"/>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.DashboardViewModel.Feat3">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.DashboardViewModel.feat3"/>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.DashboardViewModel.Feat4">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.DashboardViewModel.feat4"/>
+        </member>
         <member name="F:TheCuriousCreative2.ViewModels.DashboardViewModel.getFundsListCommand">
             <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.DashboardViewModel.GetFundsListCommand"/>.</summary>
         </member>
@@ -270,6 +282,12 @@
         </member>
         <member name="P:TheCuriousCreative2.ViewModels.DashboardViewModel.GetCountersCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.DashboardViewModel.GetCounters"/>.</summary>
+        </member>
+        <member name="F:TheCuriousCreative2.ViewModels.DashboardViewModel.getProjectsCommand">
+            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.DashboardViewModel.GetProjectsCommand"/>.</summary>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.DashboardViewModel.GetProjectsCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.DashboardViewModel.GetProjects"/>.</summary>
         </member>
         <member name="F:TheCuriousCreative2.ViewModels.DashboardViewModel.getAdminCommand">
             <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.DashboardViewModel.GetAdminCommand"/>.</summary>
@@ -288,6 +306,30 @@
         </member>
         <member name="P:TheCuriousCreative2.ViewModels.DashboardViewModel.NavigateNextCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.DashboardViewModel.NavigateNext"/>.</summary>
+        </member>
+        <member name="F:TheCuriousCreative2.ViewModels.DashboardViewModel.featured1Command">
+            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.DashboardViewModel.Featured1Command"/>.</summary>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.DashboardViewModel.Featured1Command">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.DashboardViewModel.Featured1"/>.</summary>
+        </member>
+        <member name="F:TheCuriousCreative2.ViewModels.DashboardViewModel.featured2Command">
+            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.DashboardViewModel.Featured2Command"/>.</summary>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.DashboardViewModel.Featured2Command">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.DashboardViewModel.Featured2"/>.</summary>
+        </member>
+        <member name="F:TheCuriousCreative2.ViewModels.DashboardViewModel.featured3Command">
+            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.DashboardViewModel.Featured3Command"/>.</summary>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.DashboardViewModel.Featured3Command">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.DashboardViewModel.Featured3"/>.</summary>
+        </member>
+        <member name="F:TheCuriousCreative2.ViewModels.DashboardViewModel.featured4Command">
+            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.DashboardViewModel.Featured4Command"/>.</summary>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.DashboardViewModel.Featured4Command">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.DashboardViewModel.Featured4"/>.</summary>
         </member>
         <member name="P:TheCuriousCreative2.ViewModels.FundsListViewModel.FundsDetail">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.FundsListViewModel._fundsDetail"/>

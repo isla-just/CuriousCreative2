@@ -250,7 +250,7 @@
 		</data>
 		<key>Resources/monthly.png</key>
 		<data>
-		PVQMCVICYTCqPBnMSWCNg/bvj8M=
+		xoZk6pl04ezt+s7QIGzueDcW+cI=
 		</data>
 		<key>Resources/mouse_house.jpg</key>
 		<data>
@@ -263,6 +263,22 @@
 		<key>Resources/search.png</key>
 		<data>
 		YZpcpp798LGjugT6jUvcBl6/6eE=
+		</data>
+		<key>Resources/slider1.png</key>
+		<data>
+		u69VCtWEWpe5egMaSBJncPaL/WM=
+		</data>
+		<key>Resources/slider2.png</key>
+		<data>
+		2flTvFaJuWi6ke/W8695PrVqEIg=
+		</data>
+		<key>Resources/slider3.png</key>
+		<data>
+		tXc86YnzIgXwD3YvEXe1cypyVz0=
+		</data>
+		<key>Resources/slider4.png</key>
+		<data>
+		KZTmslorpfV0+Qiv4OdYyjRghZw=
 		</data>
 		<key>Resources/splash_screen.jpg</key>
 		<data>
@@ -567,21 +583,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			k8ifnmIl56eRjxbC5bPi8XLMXMfzvRC+s3hDumLv+vw=
+			BLwa1MvRKU4vEV2oeYx0isK8xM5kFuMA9vu6d7SDn2M=
 			</data>
 		</dict>
 		<key>MonoBundle/Syncfusion.Maui.Charts.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7QRxp5DnDG0FKEWe/JDUj0goF5m5m/eLxTR5g5TwLKo=
+			KrZ0ja1xqKfEDIvaZ4vQNaxBkjRQK/V5fi2P/r0qfz8=
 			</data>
 		</dict>
 		<key>MonoBundle/Syncfusion.Maui.Core.dll</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			k3RDGFCJcnKBRIy/LqHCZkeuRlTFUcXRK6do4xwhtjI=
+			qMzKH/DbSz7owCfnqelIjIRcg2psORQFcCDKDWqpmOY=
 			</data>
 		</dict>
 		<key>MonoBundle/System.AppContext.dll</key>
@@ -1694,14 +1710,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Bl1U4rMq/Dn+ATUgK5v2f0oNvrMbgwYRx2+2U3J35HI=
+			zuU+xj8CcdrrHjcpOuU+hrghoPWAnAgqcUs/4h//law=
 			</data>
 		</dict>
 		<key>MonoBundle/TheCuriousCreative2.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rRWGtDKRfZbnVUpVMKAVVYsMuIq9XCwFHUgkUGHfUx8=
+			z+gicx4FUUYNyjwd+fMSkLsIqcmDKjDtX4k/SKu6avI=
 			</data>
 		</dict>
 		<key>MonoBundle/WindowsBase.dll</key>
@@ -2219,7 +2235,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kHG4PKy4mnD35YcUmMet7I36FjRWElbajB9SJn3m7aQ=
+			3cIryGomxqFMXiZFHsLrkRNCVaLkphMHuuHE8UWXDhs=
 			</data>
 		</dict>
 		<key>Resources/mouse_house.jpg</key>
@@ -2241,6 +2257,34 @@
 			<key>hash2</key>
 			<data>
 			m3gLipnZKNiLkznTHzqL8P4mL684IxkGziSki+2cyVI=
+			</data>
+		</dict>
+		<key>Resources/slider1.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			py+7gqB/trNo2+TZh03/PaVe51YwXOtPEdB2g5Az4sM=
+			</data>
+		</dict>
+		<key>Resources/slider2.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			C/Otkk/yJxMxXiSeJib9uLSFaAN6zRP2oPKCGTemBpg=
+			</data>
+		</dict>
+		<key>Resources/slider3.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			s7a55kb/hAIkckuYIYNfwralyg39f+bnzJzibfdnC4U=
+			</data>
+		</dict>
+		<key>Resources/slider4.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qUSdnpUxIi5Bb+VaACoEOaTpTy0vVwiZhzlDhHxo3s8=
 			</data>
 		</dict>
 		<key>Resources/splash_screen.jpg</key>

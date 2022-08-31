@@ -2184,3 +2184,7 @@
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/android/src/crc6481e5b28a6b4dd87a/NativeCustomScrolLayout.java
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/android/src/crc6481e5b28a6b4dd87a/NativeSnapLayout.java
 /Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/android/src/crc6486af4e8104107bae/LayoutViewGroupExt.java
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/resizetizer/r/drawable/slider1.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/resizetizer/r/drawable/slider2.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/resizetizer/r/drawable/slider3.png
+/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-android/resizetizer/r/drawable/slider4.png

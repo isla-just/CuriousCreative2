@@ -5,6 +5,7 @@ using TheCuriousCreative2.Services;
 using TheCuriousCreative2.Models;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+
 namespace TheCuriousCreative2.ViewModels
 {
 	public partial class DashboardViewModel : ObservableObject
@@ -13,9 +14,9 @@ namespace TheCuriousCreative2.ViewModels
         private readonly IStaffService _staffService;
         private readonly IClientService _clientService;
         private readonly IFundsService _fundsService;
-   
 
-    public DashboardViewModel(IFundsService fundsService, IProjectService projectService, IClientService clientService, IStaffService staffService)
+
+        public DashboardViewModel(IFundsService fundsService, IProjectService projectService, IClientService clientService, IStaffService staffService)
     {
         _fundsService = fundsService;
         _projectService = projectService;
@@ -25,8 +26,12 @@ namespace TheCuriousCreative2.ViewModels
             GetAdmin();
             GetCounters();
             GetFundsList();
+            GetTeamsList();
+            GetProjects();
 
         }
+
+
 
 
         //adding clients to the list
@@ -43,12 +48,15 @@ namespace TheCuriousCreative2.ViewModels
                     FundData.Add(new FundChartModel { Amount = fund.FundsTotal, Month = fund.Date.TrimEnd() });
 
                 }
+
             }
         }
 
 
         public ObservableCollection<FundChartModel> FundData { get; set; } = new ObservableCollection<FundChartModel>();
         //public List<FundChartModel> FundData { get; set; }
+
+                public ObservableCollection<ProjectChart> ProjectData { get; set; } = new ObservableCollection<ProjectChart>();
 
         //fig this at a later stage
         [ObservableProperty]
@@ -72,6 +80,20 @@ namespace TheCuriousCreative2.ViewModels
             var clientList = await _clientService.GetClientList();
 
             ClientCounter = clientList.Count();
+
+        }
+
+        [RelayCommand]
+        public async void GetProjects()
+        {
+            var projectList = await _projectService.GetProjectList();
+
+
+            foreach (var project in projectList)
+            {
+                ProjectData.Add(new ProjectChart { Amount = project.PricePerMonth, Project = project.ProjectName });
+
+            }
 
         }
 
@@ -122,7 +144,6 @@ namespace TheCuriousCreative2.ViewModels
         [ObservableProperty]
         int teamCounter5 = 0;
 
-
         //Cre8
         [ObservableProperty]
         int teamCounter6 = 0;
@@ -151,11 +172,11 @@ namespace TheCuriousCreative2.ViewModels
 
                 if (team.DesignTeam == "The Dream Team")
                 {
-                    TeamCounter1++;
+                    TeamCounter1 = TeamCounter1 + 1;
                 }
                 else if (team.DesignTeam == "Baby Creatives")
                 {
-                    TeamCounter2++;
+                    TeamCounter2 = TeamCounter2 + 1;
                 }
                 else if (team.DesignTeam == "Colour Connoisseurs")
                 {
@@ -178,23 +199,71 @@ namespace TheCuriousCreative2.ViewModels
                 {
                     TeamCounter7++;
                 }
-                else if (team.Role == "Admin")
-                {
-                    TeamCounter9++;
-                }
+                //else if (team.Role == "Admin")
+                //{
+                //    TeamCounter9++;
+                //}
                 else
                 {
                     TeamCounter8++;
                 }
 
-            }
+             
 
+            }
 
         }
 
         [RelayCommand]
         public async void NavigateNext() {
             await Shell.Current.GoToAsync("/Projects");
+        }
+
+        [ObservableProperty]
+        bool feat1 = true;
+
+        [ObservableProperty]
+        bool feat2 = false;
+
+        [ObservableProperty]
+        bool feat3 = false;
+
+        [ObservableProperty]
+        bool feat4 = false;
+
+
+        //simple slider
+        [RelayCommand]
+        public async void Featured1()
+        {
+            Feat1 = false;
+            Feat2 = true;
+
+
+        }
+        [RelayCommand]
+        public async void Featured2()
+        {
+            Feat2 = false;
+            Feat3 = true;
+
+ 
+        }
+        [RelayCommand]
+        public async void Featured3()
+        {
+            Feat3 = false;
+            Feat4 = true;
+
+
+        }
+        [RelayCommand]
+        public async void Featured4()
+        {
+            Feat4 = false;
+            Feat1 = true;
+
+
         }
 
     }
