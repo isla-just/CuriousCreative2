@@ -19,20 +19,20 @@ namespace TheCuriousCreative2.ViewModels
         [ObservableProperty]
         bool stayLoggedOn = false;
 
-        [RelayCommand]
-        public async void GoToDashboard()
-        {
-            bool isLoggedOn = Preferences.Get("StayLoggedOn", false);
-            if (isLoggedOn)
-            {
+        //[RelayCommand]
+        //public async void GoToDashboard()
+        ////{
+        ////    bool isLoggedOn = Preferences.Get("StayLoggedOn", false);
+        ////    if (isLoggedOn)
+        ////    {
 
-                await Shell.Current.GoToAsync("/Dashboard");
-            }
-            else
-            {
+        ////        await Shell.Current.GoToAsync("/Dashboard");
+        ////    }
+        ////    else
+        ////    {
 
-            }
-        }
+        ////    }
+        //}
 
 
         [RelayCommand]
@@ -41,19 +41,21 @@ namespace TheCuriousCreative2.ViewModels
 
             bool search = await App.StaffService.AdminStaffLoginAuth(UserName, password);
 
-            if (search)
-            {
-                Debug.WriteLine("User Was Found");
-                ErrorDisplay = "should navigate";
-                Preferences.Set("StayLoggedOn", stayLoggedOn);
-                await Shell.Current.GoToAsync("/Dashboard");
-            }
-            else
-            {
-                Debug.WriteLine("User Not Found");
-                ErrorDisplay = "Invalid username or password";
-            }
+        if (search)
+        {
+            Debug.WriteLine("User Was Found");
+            ErrorDisplay = "should navigate";
+            Preferences.Set("StayLoggedOn", stayLoggedOn);
+
+            Preferences.Set("StaffName", UserName);
+            await Shell.Current.GoToAsync("/Dashboard");
         }
+        else
+        {
+            Debug.WriteLine("User Not Found");
+            ErrorDisplay = "Invalid username or password";
+        }
+    }
 
     }
 }

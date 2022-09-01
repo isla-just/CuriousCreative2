@@ -98,7 +98,7 @@ namespace TheCuriousCreative2.ViewModels
         public async void GetStaffListSearch()
         {
             var subjectList = await _staffService.GetStaffList();
-            var filteredItems = subjectList.Where(value => value.StaffName.ToLowerInvariant().Contains(Search)).ToList();
+            var filteredItems = subjectList.Where(value => value.StaffName.Contains(Search)).ToList();
             var filteredID = subjectList.Where(value => value.StaffID.ToString().Contains(Search)).ToList();
 
             Staffs.Clear();
@@ -121,7 +121,7 @@ namespace TheCuriousCreative2.ViewModels
         public async void GetStaffRoleFilter()
         {
             var staffList = await _staffService.GetStaffList();
-            var staffRole = staffList.Where(value => value.Role.ToLowerInvariant().Contains(Search)).ToList();
+            var staffRole = staffList.Where(value => value.Role.Contains(Search)).ToList();
 
 
             Staffs.Clear();
@@ -137,7 +137,7 @@ namespace TheCuriousCreative2.ViewModels
         public async void GetStaffTeamFilter()
         {
             var staffList = await _staffService.GetStaffList();
-            var staffTeam = staffList.Where(value => value.DesignTeam.ToLowerInvariant().Contains(Search)).ToList();
+            var staffTeam = staffList.Where(value => value.DesignTeam.Contains(Search)).ToList();
 
 
             Staffs.Clear();
@@ -154,7 +154,7 @@ namespace TheCuriousCreative2.ViewModels
         public async void GetStaffProjectFilter()
         {
             var staffList = await _staffService.GetStaffList();
-            var staffProject = staffList.Where(value => value.CurrentProject.ToLowerInvariant().Contains(Search)).ToList();
+            var staffProject = staffList.Where(value => value.CurrentProject.Contains(Search)).ToList();
 
 
             Staffs.Clear();
@@ -197,7 +197,7 @@ namespace TheCuriousCreative2.ViewModels
 
             if (response > 0)
             {
-                await Shell.Current.DisplayAlert("Staff Info Saved", "Record Saved", "OK");
+                await Shell.Current.DisplayAlert("Creative Info has been updated", "Successfully saved", "OK");
                 GetStaffList();
             }
             else
@@ -214,7 +214,7 @@ namespace TheCuriousCreative2.ViewModels
             int response = -1;
             if (StaffDetail.StaffID > 0)
             {
-                Debug.WriteLine("this Staff already exists");
+                Debug.WriteLine("this creative already exists");
             }
             else
             {
@@ -238,7 +238,7 @@ namespace TheCuriousCreative2.ViewModels
             Debug.WriteLine(StaffDetail.StaffImage);
             if (response > 0)
             {
-                await Shell.Current.DisplayAlert("Staff Info Saved", "Record Saved", "OK");
+                await Shell.Current.DisplayAlert("Creative has been added", "Creative info successfully saved", "OK");
                 GetStaffList();
             }
             else

@@ -45,8 +45,8 @@
                                      <VerticalStackLayout Padding="30" Margin="-940, 0, 0, 0">
                                               
                                         <HorizontalStackLayout>
-                                            <Label Text="Welcome " FontFamily="PoppinsMedium" FontSize="30" TextColor="White"></Label>
-                                            <Label Text="{Binding CurrentAdmin.StaffName}" FontFamily="PoppinsMedium" FontSize="30" TextColor="White"></Label>
+                                            <Label Text="Welcome " FontFamily="PoppinsMedium" FontSize="25" TextColor="White"></Label>
+                                            <Label Text="{Binding CurrentAdmin.Nickname}" FontFamily="PoppinsMedium" FontSize="25" TextColor="White"></Label>
                                         </HorizontalStackLayout>
                                   
                                   <Label Text="Let's organise this space" FontFamily="PoppinsRegular" FontSize="20" TextColor="White" Margin="0, 5, 0, 0"></Label>
@@ -141,11 +141,11 @@
                    
                                 
     <chart:SfCartesianChart.XAxes>
-        <chart:NumericalAxis  />
+        <chart:NumericalAxis PlotOffsetStart="30" PlotOffsetEnd="30" />
     </chart:SfCartesianChart.XAxes>
 
     <chart:SfCartesianChart.YAxes>
-        <chart:NumericalAxis />
+        <chart:NumericalAxis PlotOffsetStart="30" />
     </chart:SfCartesianChart.YAxes>
 
                 

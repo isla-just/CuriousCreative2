@@ -24,22 +24,28 @@
                     <VerticalStackLayout Grid.Column="0" BackgroundColor="Transparent" Padding="0">
                           <Label Text="Creative Management" Grid.Column="0" FontFamily="PoppinsMedium" Padding="0" FontSize="25" TextColor="#102D4C" Margin="20, 30, 0, 15"/>
                          <Frame BackgroundColor="#FEEED8" Margin="0, 40, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="8">
+
                              <HorizontalStackLayout>
                                          <Image Source="search.png" Aspect="AspectFit" Margin="20, 0, 0, 0"></Image>
-                                        <Entry Text="{Binding Search}" BackgroundColor="#FEEED8" FontFamily="PoppinsRegular" FontSize="18" Placeholder="Looking for an creative?" WidthRequest="545" PlaceholderColor="#102D4C" TextColor="#102D4C" Margin="20, 0, 0, 0"></Entry>
-                                       <Button Command="{Binding GetStaffListSearchCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="20" Text="search"  Margin="-20, 0, 0, 0" WidthRequest="210"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                                        <Entry Text="{Binding Search}" BackgroundColor="#FEEED8" FontFamily="PoppinsRegular" FontSize="18" Placeholder="Looking for someone?" WidthRequest="545" TextColor="#102D4C" Margin="20, 0, 0, 0"></Entry>
+                                  <Button Command="{Binding GetStaffListSearchCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="20" Text="search"  Margin="0, 0, 0, 0" WidthRequest="210"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+               
+                                  
+                    
                              </HorizontalStackLayout>
+
+    
                          </Frame>
                          <Frame BackgroundColor="Transparent"  Grid.Column="0" BorderColor="Transparent" Margin="0, 0, 0, 0" Padding="0">
                              <Grid ColumnDefinitions="4*, 4*, 4*" ColumnSpacing="20">
                                <Frame Grid.Column="0" BackgroundColor="#FEEED8" Margin="0, 15, 0, 0" BorderColor="Transparent" CornerRadius="32" HorizontalOptions="Start" WidthRequest="260" HeightRequest="80" Padding="20">
                                    <HorizontalStackLayout>
-                                    
-                                          <Button Text="role" Command="{Binding GetStaffRoleFilterCommand}"  FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" BackgroundColor="Transparent"/>
-                                          <Image Source="spotlight.png"
+                                     <Image Source="role.png"
                                                  Margin="0, 10, 0, 0"
                                                  HeightRequest="50"
                                                  WidthRequest="50"/>
+                                          <Button Text="role" Command="{Binding GetStaffRoleFilterCommand}"  FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" BackgroundColor="Transparent"/>
+                                         
 
                                  
                                     
@@ -47,26 +53,30 @@
                                 </Frame>
                                <Frame Grid.Column="1" BackgroundColor="#FEEED8" Margin="0, 15, 0, 0" BorderColor="Transparent" CornerRadius="32" HorizontalOptions="Start" WidthRequest="260" HeightRequest="80" Padding="20">
                                    <HorizontalStackLayout>
+                                    <Image Source="design.png"
+                                                 Margin="0, 10, 0, 0"
+                                                 HeightRequest="50"
+                                                 WidthRequest="50"/>
                                           <Button Text="design team" Command="{Binding GetStaffTeamFilterCommand}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" BackgroundColor="Transparent"></Button>
                                            
                                    </HorizontalStackLayout>
                                </Frame>
-                              <Frame Grid.Column="2" BackgroundColor="#FEEED8" Margin="0, 15, 0, 0" BorderColor="Transparent" CornerRadius="32" HorizontalOptions="Start" WidthRequest="260" HeightRequest="80" Padding="20">
-                                  <HorizontalStackLayout>
-                                          <Button Text="project" Command="{Binding GetStaffProjectFilterCommand}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" BackgroundColor="Transparent"></Button>
-                                    
-                                   </HorizontalStackLayout>
-                                </Frame>
+                             <Frame Grid.Column="2" BackgroundColor="Transparent" Margin="0, 15, 0, 0" BorderColor="Transparent" CornerRadius="32" HorizontalOptions="Start" WidthRequest="260" HeightRequest="80" Padding="20">
+                                   <HorizontalStackLayout>
+                              <Button Command="{Binding GetStaffListCommand}" BackgroundColor="Transparent" Text="clear filters" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Margin="100, 0, 0, 0"></Button>
+                                 </HorizontalStackLayout>
+                               </Frame>
+                            
                              </Grid>
                          </Frame>
 
 
-
+                     
                    
   
                           <CollectionView ItemsSource="{Binding Staffs}"
                                           BackgroundColor="Transparent"
-                                          Margin="0, 20, 0, 0"
+                                          Margin="0, 30, 0, 0"
                                           HeightRequest="750"
                                           >
                                     <CollectionView.ItemTemplate >
@@ -575,7 +585,7 @@
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
                                                    <Picker 
-                                                        SelectedItem="{Binding ActiveStaff.DesignTeam}" TextColor="Black">
+                                                        SelectedItem="{Binding StaffDetail.DesignTeam}" TextColor="Black">
                                                            <Picker.ItemsSource>
                                                             <x:Array Type="{x:Type x:String}">
                                                                 <x:String>The Dream Team</x:String>
