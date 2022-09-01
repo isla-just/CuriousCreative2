@@ -25,5 +25,9 @@ namespace TheCuriousCreative2.Models
         public string DepositPaid { get; set; }
         [MaxLength(10)]
         public int PricePerMonth { get; set; }
+        [MaxLength(10)]
+        public int MaxEmployeeHours { get; set; }
+        [MaxLength(10)]
+        public int MaxClientHours { get; set; }
     }
 }

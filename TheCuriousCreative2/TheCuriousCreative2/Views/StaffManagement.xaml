@@ -66,8 +66,8 @@
   
                           <CollectionView ItemsSource="{Binding Staffs}"
                                           BackgroundColor="Transparent"
-                                          Margin="0, 40, 0, 0"
-                                          HeightRequest="650"
+                                          Margin="0, 20, 0, 0"
+                                          HeightRequest="750"
                                           >
                                     <CollectionView.ItemTemplate >
 
@@ -82,11 +82,12 @@
                                                <HorizontalStackLayout >
                                                    <Frame BackgroundColor="#FFF6E5" Margin="0, 10, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="5">
                                                          <Grid ColumnDefinitions="10*, 2*">
-                                                             <HorizontalStackLayout HeightRequest="170">
-                                                                      <Image Source="{Binding StaffImage}" HeightRequest="100" WidthRequest="100" Margin="10, -40, 0, 0"></Image>
+                                                             <HorizontalStackLayout HeightRequest="150">
+                                                                      <Frame HeightRequest="120" Margin="20, 0, 0, 0" IsClippedToBounds="True" BorderColor="Transparent" WidthRequest="120" Padding="0" CornerRadius="10">
+                                                                <Image Source="{Binding StaffImage}" Aspect="AspectFill"></Image></Frame>
                                                                  <VerticalStackLayout WidthRequest="650">
-                                                                     <Label Text="{Binding StaffName}" FontFamily="PoppinsSemiBold" FontSize="20" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20, 30, 0, 0"></Label>
-                                                                      <Label Text="{Binding Role}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="20, 10, 20, 20"></Label>
+                                                                     <Label Text="{Binding StaffName}" FontFamily="PoppinsSemiBold" FontSize="20" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="50, 40, 0, 0"></Label>
+                                                                      <Label Text="{Binding Role}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="50, 10, 20, 20"></Label>
                                                                  </VerticalStackLayout>
                                                                 <HorizontalStackLayout>
                                                                 <VerticalStackLayout>
@@ -99,8 +100,16 @@
                                                                 </VerticalStackLayout>
                                                                     </HorizontalStackLayout>
                                                                 <VerticalStackLayout>
-                                                                      <Frame HeightRequest="24" WidthRequest="26" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="12" Margin="-350, 120, 10, 20"></Frame>
-                                                                      <Label Text="{Binding DesignTeam}" FontFamily="PoppinsMedium" FontSize="15" TextColor="#102D4C" Opacity="0.7" Margin="-130, -42, 20, 20"></Label>
+                                                                  <Frame BackgroundColor="White" BorderColor="Transparent" Padding="8" CornerRadius="20" Margin="-260,110,0,15" HeightRequest="40" WidthRequest="270">
+                                                                    <HorizontalStackLayout>
+                                                                            <Frame  WidthRequest="25" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="10"></Frame>
+                                                                            <HorizontalStackLayout>
+                                                                            <Label Text="{Binding DesignTeam}" FontFamily="PoppinsItalic" FontSize="15" TextColor="#102D4C" Margin="40, 0, 0, 0"></Label>
+                                                                              
+                                                                            </HorizontalStackLayout>
+                                                                    </HorizontalStackLayout>
+                                                                  </Frame>
+                                                       
                                                                     </VerticalStackLayout>
                                                              </HorizontalStackLayout>
 
@@ -565,7 +574,7 @@
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                              <Picker 
+                                                   <Picker 
                                                         SelectedItem="{Binding ActiveStaff.DesignTeam}" TextColor="Black">
                                                            <Picker.ItemsSource>
                                                             <x:Array Type="{x:Type x:String}">
@@ -580,7 +589,6 @@
                                                             </x:Array>
                                                         </Picker.ItemsSource>
                                                     </Picker>
-                                                   
                                                 </Border>
 
                                  <Label Text="Current Project" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="260, -100, 0, 0"></Label>
@@ -606,7 +614,7 @@
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                                    <Entry Text="{Binding StaffDetail.StaffPassword}" Placeholder="Bunny Friend's" PlaceholderColor="Gray" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                    <Entry Text="{Binding StaffDetail.StaffPassword}" IsPassword="True" PlaceholderColor="Gray" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                                                 </Border>
 
                            <Button Command="{Binding AddStaffCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="save staff details"  Margin="0, 20, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>

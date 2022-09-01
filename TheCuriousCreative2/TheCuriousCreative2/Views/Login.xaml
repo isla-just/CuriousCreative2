@@ -39,8 +39,8 @@
                     <Button Text="forgot password" TextColor="#06378D" BackgroundColor="#FAF9F0" FontAttributes="None" HorizontalOptions="End" FontSize="15"  Margin="0, 40, 0, 0" Padding="20"/>
                      <Label Text="{Binding ErrorDisplay}" TextColor="#FF6C6E"/>
 
-                     <Label Text="Stay Logged In" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="0, 10, 0, 0"/>
-                     <Switch IsToggled="{Binding StayLoggedOn}" Margin="10, 7, 0, 0" OnColor="#FEEED8" ThumbColor="#FE5A22"/>
+                     <Label Text="stay logged on" FontFamily="PoppinsRegular" FontSize="16" TextColor="#06378D" Margin="400, 15, 0, 0" Padding="20"></Label>
+                     <Switch IsToggled="{Binding StayLoggedOn}" Margin="20, 50, 0, 0" OnColor="#FEEED8" ThumbColor="#FE5A22"/>
                 
             </HorizontalStackLayout>
             <Button Command="{Binding LoginVerificationCommand}" BackgroundColor="#FF6C6E" TextColor="White" CornerRadius="20" Padding="20" Text="log me in" FontFamily="PoppinsLight" FontSize="15"  Margin="0, 20, 0, 0"/>

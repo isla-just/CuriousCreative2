@@ -106,6 +106,12 @@
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.PricePerMonth">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel._pricePerMonth"/>
         </member>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.MaxEmployeeHours">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel._maxEmployeeHours"/>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.MaxClientHours">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel._maxClientHours"/>
+        </member>
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.Priority">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel._priority"/>
         </member>

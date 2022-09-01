@@ -63,6 +63,12 @@ namespace TheCuriousCreative2.ViewModels
         private int _pricePerMonth;
 
         [ObservableProperty]
+        private int _maxEmployeeHours;
+
+        [ObservableProperty]
+        private int _maxClientHours;
+
+        [ObservableProperty]
         private bool _priority;
 
         [ObservableProperty]
@@ -217,6 +223,8 @@ namespace TheCuriousCreative2.ViewModels
                     Deposit = ProjectDetail.Deposit,
                     DepositPaid = ProjectDetail.DepositPaid,
                     PricePerMonth = ProjectDetail.PricePerMonth,
+                    MaxClientHours = ProjectDetail.MaxClientHours,
+                    MaxEmployeeHours = ProjectDetail.MaxEmployeeHours
                 });
             }
 
