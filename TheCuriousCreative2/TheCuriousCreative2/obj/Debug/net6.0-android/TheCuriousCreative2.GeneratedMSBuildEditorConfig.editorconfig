@@ -21,53 +21,17 @@ build_metadata.AdditionalFiles.ManifestResourceName = TheCuriousCreative2.AppShe
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/ClientManagement.xaml]
+[/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/Controls/BasePopupPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = TheCuriousCreative2.ClientManagement.xaml
-build_metadata.AdditionalFiles.TargetPath = ClientManagement.xaml
-build_metadata.AdditionalFiles.RelativePath = ClientManagement.xaml
-
-[/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/Dashboard.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = TheCuriousCreative2.Dashboard.xaml
-build_metadata.AdditionalFiles.TargetPath = Dashboard.xaml
-build_metadata.AdditionalFiles.RelativePath = Dashboard.xaml
-
-[/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/FlyoutFooter.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = TheCuriousCreative2.FlyoutFooter.xaml
-build_metadata.AdditionalFiles.TargetPath = FlyoutFooter.xaml
-build_metadata.AdditionalFiles.RelativePath = FlyoutFooter.xaml
-
-[/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/FlyoutHeader.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = TheCuriousCreative2.FlyoutHeader.xaml
-build_metadata.AdditionalFiles.TargetPath = FlyoutHeader.xaml
-build_metadata.AdditionalFiles.RelativePath = FlyoutHeader.xaml
-
-[/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/Funds.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = TheCuriousCreative2.Funds.xaml
-build_metadata.AdditionalFiles.TargetPath = Funds.xaml
-build_metadata.AdditionalFiles.RelativePath = Funds.xaml
-
-[/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/Login.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = TheCuriousCreative2.Login.xaml
-build_metadata.AdditionalFiles.TargetPath = Login.xaml
-build_metadata.AdditionalFiles.RelativePath = Login.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TheCuriousCreative2.Controls.BasePopupPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Controls/BasePopupPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Controls/BasePopupPage.xaml
 
 [/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = TheCuriousCreative2.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
-
-[/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/ProjectManagement.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = TheCuriousCreative2.ProjectManagement.xaml
-build_metadata.AdditionalFiles.TargetPath = ProjectManagement.xaml
-build_metadata.AdditionalFiles.RelativePath = ProjectManagement.xaml
 
 [/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
@@ -81,8 +45,50 @@ build_metadata.AdditionalFiles.ManifestResourceName = TheCuriousCreative2.Resour
 build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
 build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
 
-[/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/StaffManagement.xaml]
+[/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/Views/ClientManagement.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = TheCuriousCreative2.StaffManagement.xaml
-build_metadata.AdditionalFiles.TargetPath = StaffManagement.xaml
-build_metadata.AdditionalFiles.RelativePath = StaffManagement.xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TheCuriousCreative2.Views.ClientManagement.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/ClientManagement.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/ClientManagement.xaml
+
+[/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/Views/Dashboard.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TheCuriousCreative2.Views.Dashboard.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Dashboard.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Dashboard.xaml
+
+[/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/Views/FlyoutFooter.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TheCuriousCreative2.Views.FlyoutFooter.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/FlyoutFooter.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/FlyoutFooter.xaml
+
+[/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/Views/FlyoutHeader.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TheCuriousCreative2.Views.FlyoutHeader.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/FlyoutHeader.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/FlyoutHeader.xaml
+
+[/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/Views/Funds.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TheCuriousCreative2.Views.Funds.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Funds.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Funds.xaml
+
+[/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/Views/Login.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TheCuriousCreative2.Views.Login.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/Login.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/Login.xaml
+
+[/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/Views/ProjectManagement.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TheCuriousCreative2.Views.ProjectManagement.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/ProjectManagement.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/ProjectManagement.xaml
+
+[/Users/mac/Documents/GitHub/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/Views/StaffManagement.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = TheCuriousCreative2.Views.StaffManagement.xaml
+build_metadata.AdditionalFiles.TargetPath = Views/StaffManagement.xaml
+build_metadata.AdditionalFiles.RelativePath = Views/StaffManagement.xaml

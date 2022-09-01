@@ -140,9 +140,45 @@
 		<data>
 		fctZmU8r7hpO8fbAeboOmbQJh4s=
 		</data>
+		<key>Resources/add.png</key>
+		<data>
+		+ld6Tfbfer7fIKVSL94C/kw9qvs=
+		</data>
 		<key>Resources/appicon.icns</key>
 		<data>
 		B0nUlBVkboGZ8FcwikSsyhugFO0=
+		</data>
+		<key>Resources/arrow_down.png</key>
+		<data>
+		Oncd6+ZJgU3iO9cwmLGDXslHcCI=
+		</data>
+		<key>Resources/change.png</key>
+		<data>
+		zzWCtczzftPLdwVhOMtnHlbwgNg=
+		</data>
+		<key>Resources/client.png</key>
+		<data>
+		iLn7L8omOFjV1bBritd1VHPMASI=
+		</data>
+		<key>Resources/company_card.png</key>
+		<data>
+		hLNajnvH2zeizo+ojMi9XwkKJ7o=
+		</data>
+		<key>Resources/curve1.png</key>
+		<data>
+		EpZk3QT2iqmIVo73uRUG3vaQ/Lw=
+		</data>
+		<key>Resources/curve2.png</key>
+		<data>
+		/W0CEjEqUHQFi2bUuEuAhMNqN5k=
+		</data>
+		<key>Resources/curve3.png</key>
+		<data>
+		aG51+2pEJl6Iwfmv/3kvRGDGHgE=
+		</data>
+		<key>Resources/design.png</key>
+		<data>
+		Hdgvs7PV+VRS7hlt/+V/igU+Fag=
 		</data>
 		<key>Resources/dotnet_bot.png</key>
 		<data>
@@ -156,9 +192,33 @@
 		<data>
 		hBT8Pm526xxzLtDpjk4f/WNZxKA=
 		</data>
+		<key>Resources/down.png</key>
+		<data>
+		HuDEEnx0L6Nme/r7UtYIxflbhI0=
+		</data>
+		<key>Resources/dropdown.png</key>
+		<data>
+		vO3EsrfVFJm4hb48vUos/eO2StE=
+		</data>
+		<key>Resources/edit.png</key>
+		<data>
+		mqZdjr81nW9b4IQXha6ZoESbsPI=
+		</data>
+		<key>Resources/featured.png</key>
+		<data>
+		u69VCtWEWpe5egMaSBJncPaL/WM=
+		</data>
 		<key>Resources/flower_town.jpg</key>
 		<data>
 		/Oj7xknRy4IqdL5PDGy92+M1EMU=
+		</data>
+		<key>Resources/graph_balance.png</key>
+		<data>
+		KcDZ1QYW0mXTlvaeVKJt3FtoFOY=
+		</data>
+		<key>Resources/graph_placeholder.png</key>
+		<data>
+		JaMZ30tYPrmkFN/32toD9IRieg0=
 		</data>
 		<key>Resources/illustration_bunny.jpg</key>
 		<data>
@@ -175,6 +235,10 @@
 		<key>Resources/illustration_house_white.jpg</key>
 		<data>
 		t9EzLJoHqEMCpm/1YrEjF4a/J9I=
+		</data>
+		<key>Resources/illustration_login.jpg</key>
+		<data>
+		Y6qA0dPhfNP4j3da6KzYbJ8O4NM=
 		</data>
 		<key>Resources/illustration_yeti.jpg</key>
 		<data>
@@ -196,17 +260,146 @@
 		<data>
 		237Wy452zXrhEmoHVqVMfjNF7MM=
 		</data>
+		<key>Resources/monthly.png</key>
+		<data>
+		xoZk6pl04ezt+s7QIGzueDcW+cI=
+		</data>
 		<key>Resources/mouse_house.jpg</key>
 		<data>
 		tE48pVyKObV2qfswApNZ1SF+QCo=
+		</data>
+		<key>Resources/orange.png</key>
+		<data>
+		m3gkKeObrMIl5ZoUomeitz9vSmA=
+		</data>
+		<key>Resources/role.png</key>
+		<data>
+		DpFO86cOxdxoLZf4rgKlliNBSWo=
+		</data>
+		<key>Resources/search.png</key>
+		<data>
+		YZpcpp798LGjugT6jUvcBl6/6eE=
+		</data>
+		<key>Resources/slider1.png</key>
+		<data>
+		u69VCtWEWpe5egMaSBJncPaL/WM=
+		</data>
+		<key>Resources/slider2.png</key>
+		<data>
+		2flTvFaJuWi6ke/W8695PrVqEIg=
+		</data>
+		<key>Resources/slider3.png</key>
+		<data>
+		tXc86YnzIgXwD3YvEXe1cypyVz0=
+		</data>
+		<key>Resources/slider4.png</key>
+		<data>
+		KZTmslorpfV0+Qiv4OdYyjRghZw=
 		</data>
 		<key>Resources/splash_screen.jpg</key>
 		<data>
 		4HLlm2YN3ftTzApI56MblN23+60=
 		</data>
+		<key>Resources/teal.png</key>
+		<data>
+		6SHPzWKz0FVMpnZYktlVOBBLDhE=
+		</data>
+		<key>Resources/the_adventurer.png</key>
+		<data>
+		9T3o27vBwlQly8lcHh6ysMayGGo=
+		</data>
+		<key>Resources/the_chaotic.png</key>
+		<data>
+		uRlsjxzPbVYjuGyhI0tok+oOOcQ=
+		</data>
+		<key>Resources/the_creative.png</key>
+		<data>
+		gZLPkNBr0ElGrsYTIjHLJQIrjf8=
+		</data>
+		<key>Resources/the_energetic.png</key>
+		<data>
+		is/Vb6rF66lYe3oBQLjwRUSCLdU=
+		</data>
+		<key>Resources/the_learner.png</key>
+		<data>
+		sWfokLWKXexPgkDf3V/4VzDoxpU=
+		</data>
+		<key>Resources/the_vibey.png</key>
+		<data>
+		BI18MHMtnQMN7oOum8NR+6TFr8Q=
+		</data>
+		<key>Resources/the_wild_one.png</key>
+		<data>
+		xihtRbpXVswOdmDWNVo34mTZl3w=
+		</data>
+		<key>Resources/the_wize_owl.png</key>
+		<data>
+		sncxGTIRu2obm8iweLZzumptzs4=
+		</data>
+		<key>Resources/the_zen.png</key>
+		<data>
+		zZeHRJA1+lJj2al8L68hBL105pE=
+		</data>
+		<key>Resources/up.png</key>
+		<data>
+		VWfkovPZJceREmvX3WgIUcHzdME=
+		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/libHarfBuzzSharp.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			nrK2muzqfqUSjjxzzIPKIOX0TxM=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"9eb2b69aecea7ea5128e3c73cc83ca20e5f44f13"</string>
+		</dict>
+		<key>Frameworks/libSkiaSharp.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			8YtFtZqyJw+21taAuRA4vagKMMg=
+			</data>
+			<key>requirement</key>
+			<string>cdhash H"f18b45b59ab2270fb6d6d680b91038bda80a30c8"</string>
+		</dict>
+		<key>MonoBundle/CommunityToolkit.Mvvm.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ekk1Ai4t2xZ1GMf9KJS/uHKy/lXbCXhl6mzgbZT0juc=
+			</data>
+		</dict>
+		<key>MonoBundle/HarfBuzzSharp.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			nToRzrtlogMuXOuf1R+lZjR7SgkUXsO4b5FGEXsE2jQ=
+			</data>
+		</dict>
+		<key>MonoBundle/LiveChartsCore.SkiaSharpView.Maui.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BB15sodEPqRYaYirHIrROqfoo6U2VlbQNlRLEAhzV3c=
+			</data>
+		</dict>
+		<key>MonoBundle/LiveChartsCore.SkiaSharpView.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			xyndf9AaZdz8SD8IWYFBz21D+P1fxg2fybUvQrX8aSM=
+			</data>
+		</dict>
+		<key>MonoBundle/LiveChartsCore.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/czjAI5uS34/op3XdI+dGmrqRGKBZFjY7SFZ4xMxXYQ=
+			</data>
+		</dict>
 		<key>MonoBundle/Microsoft.CSharp.dll</key>
 		<dict>
 			<key>hash2</key>
@@ -319,6 +512,13 @@
 			BiYr44eJ+uJzBK68W+Z6ARga1R7vewlYe6TwzoyGzvc=
 			</data>
 		</dict>
+		<key>MonoBundle/Microsoft.Toolkit.Mvvm.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OS8hY9BSbYZuo+qm3qisxQ9M1vEmVcyL+lFBocfMKu8=
+			</data>
+		</dict>
 		<key>MonoBundle/Microsoft.VisualBasic.Core.dll</key>
 		<dict>
 			<key>hash2</key>
@@ -345,6 +545,118 @@
 			<key>hash2</key>
 			<data>
 			MPisM9eRBxwqtgO33KGLwPeCSEKDpp51Md6KSz0yi84=
+			</data>
+		</dict>
+		<key>MonoBundle/SQLite-net.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			M8TfsIWenKa7auytZMRaEAt64Wv83l/jyYoQTlg9lgo=
+			</data>
+		</dict>
+		<key>MonoBundle/SQLitePCLRaw.batteries_v2.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iQ1yD5Yb9fdqGIH40MgKfJXXUJOfM8V9vi6bpErjCuc=
+			</data>
+		</dict>
+		<key>MonoBundle/SQLitePCLRaw.core.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CkGOMyOjp2Z4yRLDmy+6x61Pxxvz64cPwDNzM8pk58U=
+			</data>
+		</dict>
+		<key>MonoBundle/SQLitePCLRaw.nativelibrary.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k6kuHu1PdUyKSs86EqhbgqnTWUwFcJhnu6p9u0PbP/k=
+			</data>
+		</dict>
+		<key>MonoBundle/SQLitePCLRaw.provider.dynamic_cdecl.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ennuI93o9tOUDTR6aR+xxo4ZAbz7GM7EiBUPrQXjBPM=
+			</data>
+		</dict>
+		<key>MonoBundle/SQLitePCLRaw.provider.e_sqlite3.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RZ2Su7mjDaa/a9/+2PYM/InnUSxnZXMI7R1kOQM+p/Y=
+			</data>
+		</dict>
+		<key>MonoBundle/SQLitePCLRaw.provider.sqlite3.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RlqVI3T9FjqZf8p6y3HE2d/10di0uVgMO1UascVFouk=
+			</data>
+		</dict>
+		<key>MonoBundle/SkiaSharp.HarfBuzz.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KFB0ZMvs0i+3yvSDcl/Xjiin1AxlGlYren11Z+jQrOA=
+			</data>
+		</dict>
+		<key>MonoBundle/SkiaSharp.Views.Maui.Controls.Compatibility.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			4T9qV06XHZkw4NPPIQM0LReQ1uUE0nvRg/ponJvKrM8=
+			</data>
+		</dict>
+		<key>MonoBundle/SkiaSharp.Views.Maui.Controls.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uSyelDobKKvQUDdU0nUjP6sqQccshRJUpaWwYlNSOdw=
+			</data>
+		</dict>
+		<key>MonoBundle/SkiaSharp.Views.Maui.Core.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			QyhPYTSAmx6jJVnXqaUyk6dmG8ArXkY2Wgd+Cf6/JkE=
+			</data>
+		</dict>
+		<key>MonoBundle/SkiaSharp.Views.iOS.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dCU/677agEm91/ydUgKU02dNDzYMYnvkjJmJHC/JI9s=
+			</data>
+		</dict>
+		<key>MonoBundle/SkiaSharp.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			p1S9z0r5Nv6KN4ZZinZcHo9gsFMlBRoJx6c3I8UrHiA=
+			</data>
+		</dict>
+		<key>MonoBundle/Syncfusion.Licensing.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BLwa1MvRKU4vEV2oeYx0isK8xM5kFuMA9vu6d7SDn2M=
+			</data>
+		</dict>
+		<key>MonoBundle/Syncfusion.Maui.Charts.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KrZ0ja1xqKfEDIvaZ4vQNaxBkjRQK/V5fi2P/r0qfz8=
+			</data>
+		</dict>
+		<key>MonoBundle/Syncfusion.Maui.Core.dll</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qMzKH/DbSz7owCfnqelIjIRcg2psORQFcCDKDWqpmOY=
 			</data>
 		</dict>
 		<key>MonoBundle/System.AppContext.dll</key>
@@ -1457,14 +1769,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			vO7pOqp8sRQ+fZKyN/cW75eb1+2AbR12A0BWCyToIPE=
+			VYqhkdnihRuC25ma7JHjWcizFVKrgA3ub6OFd/CYfyg=
 			</data>
 		</dict>
 		<key>MonoBundle/TheCuriousCreative2.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZkDudig+1iAiW9QlFdZjTkfBcdh2Y/mPfeNYSvfHWgw=
+			R7J6QtvxTOOPIvfDwAWF1zknO4ca6rkNxRuCRYGIp6Q=
 			</data>
 		</dict>
 		<key>MonoBundle/WindowsBase.dll</key>
@@ -1507,6 +1819,13 @@
 			<key>hash2</key>
 			<data>
 			p0WhR9YUC1LYnvts4408QZGDSWHsHyRul6IOIUyxVWs=
+			</data>
+		</dict>
+		<key>MonoBundle/libe_sqlite3.dylib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			k/GVywj/CvqJUHFaY8TUrRaiouN0PPDMrDXTtWh42XM=
 			</data>
 		</dict>
 		<key>MonoBundle/libmonosgen-2.0.dylib</key>
@@ -1782,11 +2101,74 @@
 			cRxiQ83FQx+cyWbk3hi/uUA2W62BrP/R55SNvj8lQ4Y=
 			</data>
 		</dict>
+		<key>Resources/add.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			lkz4vnbjXOwc0XBSIos+Zgp/vJfTeXCpKX4iXYYRKvY=
+			</data>
+		</dict>
 		<key>Resources/appicon.icns</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			cEwNXIL769KJpaHVuJiXICeGu3HWO8NLTa494hioWnE=
+			</data>
+		</dict>
+		<key>Resources/arrow_down.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OwCRa5nPnSSW796TS12IGfo4VJFAQRwiz9Vx9nCEWyQ=
+			</data>
+		</dict>
+		<key>Resources/change.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BVdBpi/IpRXEraI3ADuKDNaLwolx1wYSWyTdeb1rGFc=
+			</data>
+		</dict>
+		<key>Resources/client.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iCotdKJzjoPJ+RGteEPGVOhlI5rC+OR9avHKxkWWwic=
+			</data>
+		</dict>
+		<key>Resources/company_card.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			7mpfsbpW3XdQhBP15ifbfc+PR8HmIcyMA6nJu9U5/qs=
+			</data>
+		</dict>
+		<key>Resources/curve1.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			HCIiJTWdSCUwEp6KxTuHlI6E1UJB0wkwPz/rbg9buhE=
+			</data>
+		</dict>
+		<key>Resources/curve2.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			CGL0wRwpu5yA6jr3+VQaiU4/imZf6061K+22afNLFm8=
+			</data>
+		</dict>
+		<key>Resources/curve3.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			0dKjSuW5goIM7t1/GlK1JGstuQz6Fk8JkP400rHsSFw=
+			</data>
+		</dict>
+		<key>Resources/design.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Me+bHUfsXQ3oq4yTthAfztpFs/PKtMgLWsto8t0TkWA=
 			</data>
 		</dict>
 		<key>Resources/dotnet_bot.png</key>
@@ -1810,11 +2192,53 @@
 			4WOv67zjLV01qoTabAjKPANzApzvLyEhnLTF3xlhluk=
 			</data>
 		</dict>
+		<key>Resources/down.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			l/RTxJp/dvK5WlPfLq1tmdG1axyMxeuEYJOAALwZ3i8=
+			</data>
+		</dict>
+		<key>Resources/dropdown.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			OQU6AfU5rFYxitF/4iDYCZWChCFytv79SzqKJAF3G1w=
+			</data>
+		</dict>
+		<key>Resources/edit.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			uuxCFZq2hllrjhHxx1y+kHqJvJpW6wTuN7R56eByh4I=
+			</data>
+		</dict>
+		<key>Resources/featured.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			py+7gqB/trNo2+TZh03/PaVe51YwXOtPEdB2g5Az4sM=
+			</data>
+		</dict>
 		<key>Resources/flower_town.jpg</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			m1nyrhJq3zWrrpXGVqIoTQkN0mRxNsgbtF4EGE6ZnMk=
+			</data>
+		</dict>
+		<key>Resources/graph_balance.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YrHxhDWRq6fJDrYYVjtuv98uI06W5z8PHb7UHMScUeY=
+			</data>
+		</dict>
+		<key>Resources/graph_placeholder.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			EbPm8P03f1/w2izumIVlgS1RwLJVUq214I528IMtB+M=
 			</data>
 		</dict>
 		<key>Resources/illustration_bunny.jpg</key>
@@ -1843,6 +2267,13 @@
 			<key>hash2</key>
 			<data>
 			sTJnal+ur1f98pff6qcACnjHiSOzSrS7K7ZvAcEtlOM=
+			</data>
+		</dict>
+		<key>Resources/illustration_login.jpg</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			UeofDsupqI9dnecr7zFVY5+MMkE77e+T7KlWyj4bXpg=
 			</data>
 		</dict>
 		<key>Resources/illustration_yeti.jpg</key>
@@ -1880,6 +2311,13 @@
 			iVmmJahGd19ZI/9BcEARUzvrs9u1p1xeU2x2PhZL9lo=
 			</data>
 		</dict>
+		<key>Resources/monthly.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			3cIryGomxqFMXiZFHsLrkRNCVaLkphMHuuHE8UWXDhs=
+			</data>
+		</dict>
 		<key>Resources/mouse_house.jpg</key>
 		<dict>
 			<key>hash2</key>
@@ -1887,11 +2325,137 @@
 			MIlUrv39rSV7p5GPwebjdd1UGuNnegx7ruUOvZwpZtk=
 			</data>
 		</dict>
+		<key>Resources/orange.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			2a8FmrvKCTEUu7UaIWfTN96BGn3tjeIX4bt/XcCrz+A=
+			</data>
+		</dict>
+		<key>Resources/role.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			N3fZC8NvS+ptfONx/kgVRnIbAHOtO8e2RE1DeB1hDaI=
+			</data>
+		</dict>
+		<key>Resources/search.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			m3gLipnZKNiLkznTHzqL8P4mL684IxkGziSki+2cyVI=
+			</data>
+		</dict>
+		<key>Resources/slider1.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			py+7gqB/trNo2+TZh03/PaVe51YwXOtPEdB2g5Az4sM=
+			</data>
+		</dict>
+		<key>Resources/slider2.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			C/Otkk/yJxMxXiSeJib9uLSFaAN6zRP2oPKCGTemBpg=
+			</data>
+		</dict>
+		<key>Resources/slider3.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			s7a55kb/hAIkckuYIYNfwralyg39f+bnzJzibfdnC4U=
+			</data>
+		</dict>
+		<key>Resources/slider4.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			qUSdnpUxIi5Bb+VaACoEOaTpTy0vVwiZhzlDhHxo3s8=
+			</data>
+		</dict>
 		<key>Resources/splash_screen.jpg</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			SNDMw7BXs5sbOLLGUZdlaSfgAiMttG57++PSP6L0pJM=
+			</data>
+		</dict>
+		<key>Resources/teal.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			yXDmjS2APrIVhXk/X0aQ7OKsKZc2K+E/NTIg7ETEqI4=
+			</data>
+		</dict>
+		<key>Resources/the_adventurer.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Qsh2PlwjFlPV9cTK0QZwRT2YGFlGiTkc1cljvCHPLh8=
+			</data>
+		</dict>
+		<key>Resources/the_chaotic.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			b8OKUDP0rBn/HXLveGfVHqU35JfQ9jL0ANtVCwcV/vY=
+			</data>
+		</dict>
+		<key>Resources/the_creative.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/FwExFJ/As4zw43vzKkbvKBibHlqH0y/bXtrSubCbmI=
+			</data>
+		</dict>
+		<key>Resources/the_energetic.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LbogcR6vHuEk7vutBJlvN8iZEEq7oIl0NlNjs5XRO08=
+			</data>
+		</dict>
+		<key>Resources/the_learner.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Jem3/0clbpXFFn9mP7KJkrHb6hg8m9rL+3biebeS8iU=
+			</data>
+		</dict>
+		<key>Resources/the_vibey.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			s2gUfZkloG2M5+35d0zzUm2pXvR2L5I1pNjL76/yF80=
+			</data>
+		</dict>
+		<key>Resources/the_wild_one.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			JowQuvuIceR3D1yZ+NO1eG+pLKRAutSsO/SAqaGgAPY=
+			</data>
+		</dict>
+		<key>Resources/the_wize_owl.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			dfQMeLVwIHLKrT08zIJ1lHTN+/cA6TlpvqX7f0MCaY0=
+			</data>
+		</dict>
+		<key>Resources/the_zen.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			WmxgpjmGukeTMkV2wPNpN5VRdEGlHP4Ft2maSPJRp6c=
+			</data>
+		</dict>
+		<key>Resources/up.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			/OdXq74Ir5eguhb0DHb/tJz1jnCdt+EfvguhQbiLYv0=
 			</data>
 		</dict>
 	</dict>

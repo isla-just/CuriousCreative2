@@ -46,29 +46,74 @@
 	</ItemGroup>
 
 	<ItemGroup>
-	  <MauiXaml Update="Login.xaml">
-	    <SubType></SubType>
-	  </MauiXaml>
-	  <MauiXaml Update="Dashboard.xaml">
-	    <SubType></SubType>
-	  </MauiXaml>
-	  <MauiXaml Update="ClientManagement.xaml">
-	    <SubType></SubType>
-	  </MauiXaml>
-	  <MauiXaml Update="Funds.xaml">
-	    <SubType></SubType>
-	  </MauiXaml>
-	  <MauiXaml Update="ProjectManagement.xaml">
-	    <SubType></SubType>
-	  </MauiXaml>
-	  <MauiXaml Update="StaffManagement.xaml">
-	    <SubType></SubType>
-	  </MauiXaml>
-	  <MauiXaml Update="FlyoutHeader.xaml">
-	    <SubType></SubType>
-	  </MauiXaml>
 	  <MauiXaml Condition=" '$(EnableDefaultXamlItems)' == 'true' " Update="FlyoutHeader %28copy%29.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
+	  <MauiXaml Condition=" '$(EnableDefaultXamlItems)' == 'true' " Update="Views\ClientManagement.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Condition=" '$(EnableDefaultXamlItems)' == 'true' " Update="Views\Dashboard.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Condition=" '$(EnableDefaultXamlItems)' == 'true' " Update="Views\FlyoutFooter.xaml">
+	    <SubType>Designer</SubType>
+	  </MauiXaml>
+	  <MauiXaml Condition=" '$(EnableDefaultXamlItems)' == 'true' " Update="Views\FlyoutHeader.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Condition=" '$(EnableDefaultXamlItems)' == 'true' " Update="Views\Funds.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Condition=" '$(EnableDefaultXamlItems)' == 'true' " Update="Views\Login.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Condition=" '$(EnableDefaultXamlItems)' == 'true' " Update="Views\StaffManagement.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Controls\BasePopupPage.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Views\ProjectManagement.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="Platforms\View\" />
+	  <None Remove="ViewModels\" />
+	  <None Remove="Models\" />
+	  <None Remove="Services\" />
+	  <None Remove="sqlite-net-pcl" />
+	  <None Remove="SQLitePCLRaw.bundle_green" />
+	  <None Remove="SQLitePCLRaw.core" />
+	  <None Remove="SQLitePCLRaw.provider.dynamic_cdecl" />
+	  <None Remove="SQLitePCLRaw.provider.sqlite3" />
+	  <None Remove="CommunityToolkit.Mvvm" />
+	  <None Remove="Microsoft.Toolkit.Mvvm" />
+	  <None Remove="Controls\" />
+	  <None Remove="Microcharts" />
+	  <None Remove="SkiaSharp" />
+	  <None Remove="SkiaSharp.Views.Maui.Controls.Compatibility" />
+	  <None Remove="LiveChartsCore.SkiaSharpView.Maui" />
+	  <None Remove="LiveChartsCore" />
+	  <None Remove="LiveChartsCore.SkiaSharpView" />
+	  <None Remove="Syncfusion.Maui.Charts" />
+	  <None Remove="sqlite-net-sqlcipher" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Platforms\View\" />
+	  <Folder Include="ViewModels\" />
+	  <Folder Include="Models\" />
+	  <Folder Include="Services\" />
+	  <Folder Include="Controls\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.0" />
+	  <PackageReference Include="SQLitePCLRaw.core" Version="2.1.0" />
+	  <PackageReference Include="SQLitePCLRaw.provider.dynamic_cdecl" Version="2.1.0" />
+	  <PackageReference Include="SQLitePCLRaw.provider.sqlite3" Version="2.1.0" />
+	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+	  <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.1.2" />
+	  <PackageReference Include="Syncfusion.Maui.Charts" Version="20.2.46" />
+	  <PackageReference Include="sqlite-net-sqlcipher" Version="1.8.116" />
 	</ItemGroup>
 </Project>

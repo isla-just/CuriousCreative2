@@ -1,0 +1,291 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             Shell.NavBarIsVisible="False"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModel="clr-namespace:TheCuriousCreative2.ViewModels"
+             xmlns:models="clr-namespace:TheCuriousCreative2.Models"
+             x:DataType="viewModel:AddUpdateClientViewModel"
+             x:Class="TheCuriousCreative2.ClientManagement"
+             Title="ClientManagement">
+
+      <FlexLayout>
+
+         <Border BackgroundColor="#FFFEF2" Stroke="#FF4C54" StrokeThickness="40" Margin="0, 0, -20, 0" Padding="50, 20, 70, 30">
+
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="78, 0, 78, 0"/>
+            </Border.StrokeShape>
+
+                <Grid ColumnDefinitions="8*,4*" ColumnSpacing="120" Padding="0">
+                    <VerticalStackLayout Grid.Column="0" Padding="20, 0, 0, 0">
+                          <Label Text="Client management" Grid.Column="0" FontFamily="PoppinsMedium" Padding="0" FontSize="25" TextColor="#102D4C" Margin="0, 30, 0, 15"/>
+
+                        <Frame BackgroundColor="#FFA291" Margin="0, 20, 0, 0" BorderColor="Transparent" CornerRadius="32" HeightRequest="147" Padding="40">
+
+                              <HorizontalStackLayout>
+                                <VerticalStackLayout>
+
+                                  <Label Text="Let’s take a look at our clients" FontFamily="PoppinsMedium" FontSize="25" TextColor="White"></Label>
+                                  <Label Text="We create magical illustrations for each of them " FontFamily="PoppinsRegular" FontSize="18" TextColor="White" Margin="0, 5, 0, 0"></Label>
+
+                                </VerticalStackLayout>
+
+                                <Image Source="illustration_house_white.jpg" Aspect="AspectFit" HeightRequest="240" Margin="-280, -70, 0, 0"></Image>
+
+                            </HorizontalStackLayout>
+
+                        </Frame>
+
+                         <Frame BackgroundColor="#FEEED8" Margin="0, 40, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="8">
+
+                             <HorizontalStackLayout>
+                                         <Image Source="search.png" Aspect="AspectFit" Margin="20, 0, 0, 0"></Image>
+                                        <Entry Text="{Binding Search}" BackgroundColor="#FEEED8" FontFamily="PoppinsRegular" FontSize="18" Placeholder="Looking for someone?" WidthRequest="545" TextColor="#102D4C" Margin="20, 0, 0, 0"></Entry>
+                                  <Button Command="{Binding GetClientListSearchCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="20" Text="search"  Margin="-20, 0, 0, 0" WidthRequest="210"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+
+                             </HorizontalStackLayout>
+
+    
+                         </Frame>
+
+                        <HorizontalStackLayout Spacing="10" Margin="0, 30, 0, 0">
+
+                            <Button Command="{Binding GetPriorityFilterCommand}" BackgroundColor="#1EBBBA" TextColor="White" CornerRadius="20" Padding="2" Text="show priority clients"  Margin="0, 0, 0, 0" WidthRequest="210"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+
+                         <Button Command="{Binding GetClientListCommand}" BackgroundColor="Transparent" Text="clear filters" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Margin="470, 0, 0, 0"></Button>
+                                
+                        </HorizontalStackLayout>
+
+                        <!--//client list-->
+
+
+                    <ScrollView HeightRequest="600">
+
+                        <VerticalStackLayout>
+
+  
+                          <CollectionView ItemsSource="{Binding Clients}" BackgroundColor="Transparent" Margin="0, 40, 0, 0">
+                                    <CollectionView.ItemTemplate >
+
+                                        <DataTemplate x:DataType="models:ClientModel">
+
+
+                                    <VerticalStackLayout Margin="10">
+
+                                          <Frame Margin="0, 0, 0, 0" BackgroundColor="#FFF6E5"  BorderColor="Transparent" CornerRadius="25"  Padding="5">
+
+                                           <Grid ColumnDefinitions="10*, 2*">
+                                                <HorizontalStackLayout>
+
+                                                  <Frame  IsClippedToBounds="True" HeightRequest="55" WidthRequest="55" BackgroundColor="#1EBBBA" BorderColor="#1EBBBA" CornerRadius="20" Margin="4"><Image Source="{Binding ClientImage}" Aspect="AspectFill" HeightRequest="55" WidthRequest="55" ></Image></Frame>
+
+                                                  <HorizontalStackLayout WidthRequest="650">
+                                                     <Label Text="{Binding ClientName}" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
+                                                      <Label Text="{Binding ClientNotes}" FontFamily="PoppinsRegular" FontSize="18" TextColor="#102D4C" Opacity="0.7" Margin="10, 20, 20, 20" HorizontalTextAlignment="End"></Label>
+
+                                                 </HorizontalStackLayout>
+                                                    
+                                                  
+                                                  <Frame IsVisible="{Binding Priority}" HeightRequest="24" WidthRequest="26" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="12" Margin="35, 20, 0, 20"></Frame>
+
+                                                    </HorizontalStackLayout>
+                                             
+                                            </Grid>
+
+                                                <Frame.GestureRecognizers>
+                                                    <TapGestureRecognizer Command="{Binding Source={x:RelativeSource AncestorType={x:Type viewModel:AddUpdateClientViewModel}},Path=DisplayActionCommand}"
+                                                                          CommandParameter="{Binding .}" />
+                                                </Frame.GestureRecognizers>
+                                            </Frame>
+
+
+                                    </VerticalStackLayout>
+                                          
+
+                                        </DataTemplate>
+                                    </CollectionView.ItemTemplate>
+
+                                </CollectionView>
+
+                             <Label Text="Looks like you've reached the end..." FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Center" Margin="20"></Label>
+
+                    </VerticalStackLayout>
+                   </ScrollView>
+                    
+                    </VerticalStackLayout>
+
+                    <VerticalStackLayout Grid.Column="1"  Padding="0">
+
+                    <!--removed for now because side form handles add and edit-->
+                            <Button Command="{Binding BackToAddCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="register new client"  Margin="230, 0, 0, 0" WidthRequest="250"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                   
+                       <!--edit client-->
+                     <AbsoluteLayout ZIndex="10" IsVisible="{Binding IsEditing}">
+                       
+                <Border BackgroundColor="#FEEED8" Stroke="#FEEED8" WidthRequest="552" HeightRequest="987" Margin="-50, 35, 0, 0">
+
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="78, 0, 0, 0"/>
+                    </Border.StrokeShape>
+
+                    <VerticalStackLayout Padding="40">
+                         <Label Text="Edit client details" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
+
+                        <Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40"><Image BackgroundColor="#1EBBBA" Source="{Binding Source={x:Reference picker2}, Path=SelectedItem}" Aspect="AspectFill"></Image></Frame>
+
+
+                        <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="140, -40, 0, 0" CornerRadius="25" Padding="23">
+
+                                  <Picker HeightRequest="50" WidthRequest="50" x:Name="picker2"
+                                    Title="select character" FontSize="50"
+                                    SelectedItem="{Binding ActiveClient.ClientImage}" TextColor="Transparent">
+                                    <Picker.ItemsSource>
+                                        <x:Array Type="{x:Type x:String}">
+                                            <x:String>the_vibey.png</x:String>
+                                            <x:String>the_creative.png</x:String>
+                                            <x:String>the_wize_owl.png</x:String>
+                                            <x:String>the_zen.png</x:String>
+                                            <x:String>the_adventurer.png</x:String>
+                                            <x:String>the_chaotic.png</x:String>
+                                            <x:String>the_wild_one.png</x:String>
+                                            <x:String>the_learner.png</x:String>
+                                            <x:String>the_energetic.png</x:String>
+                                        </x:Array>
+                                    </Picker.ItemsSource>
+                                </Picker>
+
+                          </Frame>
+
+                                 <Image Source="add.png" Aspect="AspectFill" HeightRequest="20" WidthRequest="20" Margin="140, -42, 0, 0"></Image>
+
+                                  <Entry Text="{Binding ActiveClient.ClientID}" IsVisible="false" Placeholder="20 May 2022" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                            <Label Text="Client name" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 30, 0, 0"></Label>
+
+                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Entry Text="{Binding ActiveClient.ClientName}" Placeholder="Client name" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+
+                                   <Label Text="Client notes" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+
+                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Editor Text="{Binding ActiveClient.ClientNotes}" Placeholder="Any notes on this client?" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Editor>
+                                                </Border>
+
+                                 <HorizontalStackLayout>
+                                                      <Label Text="Priority" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+                                                     <CheckBox IsChecked="{Binding ActiveClient.Priority}" Color="#FF4C54"/>
+
+                                       <Entry Text="{Binding ActiveClient.MaxHours}" IsVisible="false" Placeholder="Client notes"  FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+
+                                </HorizontalStackLayout>
+
+                          <Button Command="{Binding UpdateClientCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="save client details"  Margin="0, 20, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                                      
+
+                    </VerticalStackLayout>
+                </Border>
+
+          </AbsoluteLayout>
+
+                    <!--for the add form-->
+          <AbsoluteLayout ZIndex="1" IsVisible="true">
+
+                <Border BackgroundColor="#FEEED8" Stroke="#FEEED8" WidthRequest="552" HeightRequest="987" Margin="-50, 35, 0, 0">
+
+                    <Border.StrokeShape>
+                        <RoundRectangle CornerRadius="78, 0, 0, 0"/>
+                    </Border.StrokeShape>
+
+                    <VerticalStackLayout Padding="40">
+                         <Label Text="Add new client" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
+
+                                         <Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40"> <Image BackgroundColor="#1EBBBA" Source="{Binding Source={x:Reference picker}, Path=SelectedItem}" Aspect="AspectFill"></Image></Frame>
+
+                        <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="140, -40, 0, 0" CornerRadius="25" Padding="23">
+
+                                  <Picker HeightRequest="50" WidthRequest="50" x:Name="picker"
+                                    Title="select character" FontSize="50"
+                                    SelectedItem="{Binding ClientDetail.ClientImage}" TextColor="Transparent">
+                                      <Picker.ItemsSource>
+                                        <x:Array Type="{x:Type x:String}">
+                                            <x:String>the_vibey.png</x:String>
+                                            <x:String>the_creative.png</x:String>
+                                            <x:String>the_wize_owl.png</x:String>
+                                            <x:String>the_zen.png</x:String>
+                                            <x:String>the_adventurer.png</x:String>
+                                            <x:String>the_chaotic.png</x:String>
+                                            <x:String>the_wild_one.png</x:String>
+                                            <x:String>the_learner.png</x:String>
+                                            <x:String>the_energetic.png</x:String>
+                                        </x:Array>
+                                    </Picker.ItemsSource>
+                                        <Picker.SelectedIndex>1</Picker.SelectedIndex>
+                                </Picker>
+
+                          </Frame>
+
+                                 <Image Source="add.png" Aspect="AspectFill" HeightRequest="20" WidthRequest="20" Margin="140, -42, 0, 0"></Image>
+
+                            <Label Text="Client name" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 30, 0, 0"></Label>
+
+                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                             
+                                                    <Entry Text="{Binding ClientDetail.ClientName}" Placeholder="Client name"  FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+
+      
+                                
+                         
+                                                    <!--<Entry Text="{Binding ClientDetail.Priority}" Placeholder="Is this client a priority?" PlaceholderColor="#102D4C" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>-->
+                                    
+                                   <Label Text="Client notes" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+
+                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                       <Entry Text="{Binding ClientDetail.ClientNotes}" Placeholder="Client notes"  FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+
+                                             
+
+                                                       <Entry Text="{Binding ClientDetail.MaxHours}" IsVisible="false" Placeholder="Client notes"  FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                      
+
+
+                                 <HorizontalStackLayout>
+                                                      <Label Text="Priority" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+                                                     <CheckBox IsChecked="{Binding ClientDetail.Priority}" Color="#FF4C54"/>
+
+                                </HorizontalStackLayout>
+
+                          <Button Command="{Binding AddClientCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="add new client"  Margin="0, 20, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                                      
+
+                    </VerticalStackLayout>
+                </Border>
+
+          </AbsoluteLayout>
+
+                   
+                    </VerticalStackLayout>
+
+                </Grid>
+
+
+        </Border>
+    </FlexLayout>
+</ContentPage>
