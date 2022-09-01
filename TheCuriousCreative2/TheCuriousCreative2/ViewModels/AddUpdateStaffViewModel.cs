@@ -221,7 +221,8 @@ namespace TheCuriousCreative2.ViewModels
                 response = await _staffService.AddStaff(new Models.StaffModel
                 {
                     StaffName = StaffDetail.StaffName,
-                    StaffImage = StaffDetail.StaffImage == "The Reader" ? "user_one.png" : StaffDetail.StaffImage == "The Lover" ? "user_two.png" : StaffDetail.StaffImage == "The Giver" ? "user_three.png" : StaffDetail.StaffImage == "The Planter" ? "user_four.png" : StaffDetail.StaffImage == "The Skater" ? "user_five.png" : StaffDetail.StaffImage == "The Drawer" ? "user_six.png" : StaffDetail.StaffImage == "The Learner" ? "user_seven.png" : "user_seven.png",
+                    StaffImage = StaffDetail.StaffImage,
+                    //StaffImage = StaffDetail.StaffImage == "The Reader" ? "user_one.png" : StaffDetail.StaffImage == "The Lover" ? "user_two.png" : StaffDetail.StaffImage == "The Giver" ? "user_three.png" : StaffDetail.StaffImage == "The Planter" ? "user_four.png" : StaffDetail.StaffImage == "The Skater" ? "user_five.png" : StaffDetail.StaffImage == "The Drawer" ? "user_six.png" : StaffDetail.StaffImage == "The Learner" ? "user_seven.png" : "user_seven.png",
                     StaffPassword = StaffDetail.StaffPassword,
                     Role = StaffDetail.Role,
                     Nickname = StaffDetail.Nickname,

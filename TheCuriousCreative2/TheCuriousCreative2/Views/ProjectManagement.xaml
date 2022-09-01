@@ -26,7 +26,7 @@
                          <Frame BackgroundColor="#FEEED8" Margin="0, 40, 0, 0" BorderColor="Transparent" CornerRadius="25"  Padding="8">
                              <HorizontalStackLayout>
                                          <Image Source="search.png" Aspect="AspectFit" Margin="20, 0, 0, 0"></Image>
-                                        <Entry Text="{Binding Search}" BackgroundColor="#FEEED8" FontFamily="PoppinsRegular" FontSize="18" Placeholder="Looking for a project?" WidthRequest="545" PlaceholderColor="Grey" TextColor="#102D4C" Margin="20, 0, 0, 0"></Entry>
+                                        <Entry Text="{Binding Search}" BackgroundColor="#FEEED8" FontFamily="PoppinsRegular" FontSize="18" Placeholder="Looking for a project?" WidthRequest="545" PlaceholderColor="Gray" TextColor="#102D4C" Margin="20, 0, 0, 0"></Entry>
                                       <Button Command="{Binding GetProjectListSearchCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="20" Text="search"  Margin="-20, 0, 0, 0" WidthRequest="210"  FontFamily="PoppinsSemiBold" FontSize="15"></Button>
                              </HorizontalStackLayout>
                          </Frame>
@@ -56,13 +56,14 @@
                     
                     <ScrollView>
 
-                        <VerticalStackLayout HeightRequest="350">
+                        <VerticalStackLayout HeightRequest="370">
+
+                          <ScrollView HeightRequest="600">
+
+                        <VerticalStackLayout>
 
   
-                          <CollectionView ItemsSource="{Binding Projects}"
-                                          BackgroundColor="Transparent"
-                                          Margin="0, 40, 0, 0"
-                                          >
+                          <CollectionView ItemsSource="{Binding Projects}" BackgroundColor="Transparent" Margin="0, 20, 0, 0">
                                     <CollectionView.ItemTemplate >
 
                                         <DataTemplate x:DataType="models:ProjectModel">
@@ -70,12 +71,15 @@
 
                                     <VerticalStackLayout Margin="10">
 
-                                          <Frame Margin="0, 0, 0, 0" BackgroundColor="#FFF6E5"  BorderColor="Transparent" CornerRadius="25"  Padding="5">
+
+                                          <Frame Margin="0, 0, 0, 0" BackgroundColor="#FFF6E5" BorderColor="Transparent" CornerRadius="25"  Padding="5">
 
                                            <Grid ColumnDefinitions="10*, 2*">
                                                 <HorizontalStackLayout>
+                                                <Frame HeightRequest="55" Margin="0, 0, 0, 0" IsClippedToBounds="True" BorderColor="Transparent" WidthRequest="55" Padding="0" CornerRadius="10">
+                                                        <Image Source="{Binding ProjectImage}" Aspect="AspectFill"></Image></Frame>
 
-                                                  <Image HeightRequest="55" WidthRequest="55" Source="{Binding ProjectImage}" Margin="4"></Image>
+                                                
 
                                                   <HorizontalStackLayout WidthRequest="650">
                                                      <Label Text="{Binding ProjectName}" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
@@ -104,15 +108,15 @@
                                     </CollectionView.ItemTemplate>
 
                                 </CollectionView>
-
-                    </VerticalStackLayout>
+                                </VerticalStackLayout>
                    </ScrollView>
-
+                            
+ </VerticalStackLayout>
+                        </ScrollView>
                 
 
-                        <Label Text="Priority Projects" Grid.Column="0" FontFamily="PoppinsMedium" Padding="0" FontSize="22" TextColor="#102D4C" Margin="0, 30, 0, 15"/>
-
-                      <HorizontalStackLayout>
+                        <Label Text="Active Projects" Grid.Column="0" FontFamily="PoppinsMedium" Padding="0" FontSize="22" TextColor="#102D4C" Margin="0, 30, 0, 15"/>
+                         <HorizontalStackLayout>
                         <VerticalStackLayout>
                         <Frame HeightRequest="230" Margin="0, 10, 0, 0" IsClippedToBounds="True" WidthRequest="230" Padding="0" CornerRadius="40" BorderColor="Transparent">
                                     <Image Source="mirandas_house.jpg" Aspect="AspectFill"/>
@@ -143,6 +147,7 @@
                         </HorizontalStackLayout>
 
                     </VerticalStackLayout>
+                        
 
                         <VerticalStackLayout Grid.Column="1"  Padding="0">
 
@@ -162,42 +167,91 @@
                         <RoundRectangle CornerRadius="78, 0, 0, 0"/>
                     </Border.StrokeShape>
 
-                    <VerticalStackLayout Padding="40">
+                         <VerticalStackLayout Padding="40">
                         <Label Text="Team details" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
 
-                                
+                            <Frame BackgroundColor="White" BorderColor="Transparent" Padding="8" CornerRadius="20" Margin="0,10,0,15" HeightRequest="75" WidthRequest="500">
+                                <HorizontalStackLayout>
+                                        <Frame  WidthRequest="60" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="20"></Frame>
+                                        <HorizontalStackLayout>
+                                        <Label Text="The Dream Team" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="15, 16, 0, 0"></Label>
+                                            <Label Text="12K" FontFamily="PoppinsLight" FontSize="15" TextColor="#102D4C" Margin="25, 18, 0, 0"></Label>
+                                        </HorizontalStackLayout>
+                                </HorizontalStackLayout>
+                              </Frame>
 
-                        <!--<Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40"> <Image Source="illustration_house.jpg" Aspect="AspectFill"></Image></Frame>-->
-                        <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="140, -40, 0, 0" CornerRadius="25" Padding="23"><Image Source="edit.png" Aspect="AspectFit"></Image></Frame>
-                              
-                                  <Label Text="Team Name" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+                                 <Frame BackgroundColor="White" BorderColor="Transparent" Padding="8" CornerRadius="20" Margin="0,10,0,15" HeightRequest="75" WidthRequest="500">
+                                <HorizontalStackLayout>
+                                        <Frame  WidthRequest="60" BackgroundColor="#FE5A22" BorderColor="Transparent" CornerRadius="20"></Frame>
+                                        <HorizontalStackLayout>
+                                        <Label Text="Baby Creatives" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="15, 16, 0, 0"></Label>
+                                            <Label Text="13K" FontFamily="PoppinsLight" FontSize="15" TextColor="#102D4C" Margin="25, 18, 0, 0"></Label>
+                                        </HorizontalStackLayout>
+                                </HorizontalStackLayout>
+                              </Frame>
 
-                                <CollectionView ItemsSource="{Binding ProjectName}"
-                                          BackgroundColor="Transparent"
-                                          Margin="0, 40, 0, 0"
-                                          HeightRequest="650"
-                                          >
-                                    <CollectionView.ItemTemplate >
+                               <Frame BackgroundColor="White" BorderColor="Transparent" Padding="8" CornerRadius="20" Margin="0,10,0,15" HeightRequest="75" WidthRequest="500">
+                                <HorizontalStackLayout>
+                                        <Frame  WidthRequest="60" BackgroundColor="#FF4C54" BorderColor="Transparent" CornerRadius="20"></Frame>
+                                        <HorizontalStackLayout>
+                                        <Label Text="Colour Connoisseurs" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="15, 16, 0, 0"></Label>
+                                            <Label Text="11.5K" FontFamily="PoppinsLight" FontSize="15" TextColor="#102D4C" Margin="25, 18, 0, 0"></Label>
+                                        </HorizontalStackLayout>
+                                </HorizontalStackLayout>
+                              </Frame>
 
-                                        <DataTemplate x:DataType="models:ProjectModel">
-                                          
-                                         <Label 
-                                            x:Name="project"
-                                            TextColor="Black"
-                                            Text="{Binding ProjectName}"/>
-                                          </DataTemplate>
-                                        </CollectionView.ItemTemplate>
-                                    </CollectionView>
-                          
-                            <HorizontalStackLayout>
+                               <Frame BackgroundColor="White" BorderColor="Transparent" Padding="8" CornerRadius="20" Margin="0,10,0,15" HeightRequest="75" WidthRequest="500">
+                                <HorizontalStackLayout>
+                                        <Frame  WidthRequest="60" BackgroundColor="#FAC306" BorderColor="Transparent" CornerRadius="20"></Frame>
+                                        <HorizontalStackLayout>
+                                        <Label Text="Sketch Worx" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="15, 16, 0, 0"></Label>
+                                            <Label Text="17K" FontFamily="PoppinsLight" FontSize="15" TextColor="#102D4C" Margin="25, 18, 0, 0"></Label>
+                                        </HorizontalStackLayout>
+                                </HorizontalStackLayout>
+                              </Frame>
 
-                              <Frame BackgroundColor="White" BorderColor="Transparent" Padding="8" CornerRadius="20" Margin="250,100,0,5" HeightRequest="55" WidthRequest="300">
-                                                             <HorizontalStackLayout>
-                                                                        <Frame  WidthRequest="45" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="15"></Frame>
-                                                                      <Label Text="{Binding DesignTeam}" FontFamily="PoppinsMedium" FontSize="15" TextColor="#102D4C" Margin="15, 10, 0, 0"></Label>
-                                                             </HorizontalStackLayout>
-                                                         </Frame>
-                                    </HorizontalStackLayout>
+                                   <Frame BackgroundColor="White" BorderColor="Transparent" Padding="8" CornerRadius="20" Margin="0,10,0,15" HeightRequest="75" WidthRequest="500">
+                                <HorizontalStackLayout>
+                                        <Frame  WidthRequest="60" BackgroundColor="#1EBBBA" BorderColor="Transparent" CornerRadius="20"></Frame>
+                                        <HorizontalStackLayout>
+                                        <Label Text="Stay Sketchy" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="15, 16, 0, 0"></Label>
+                                            <Label Text="12K" FontFamily="PoppinsLight" FontSize="15" TextColor="#102D4C" Margin="25, 18, 0, 0"></Label>
+                                        </HorizontalStackLayout>
+                                </HorizontalStackLayout>
+                              </Frame>
+
+                                 <Frame BackgroundColor="White" BorderColor="Transparent" Padding="8" CornerRadius="20" Margin="0,10,0,15" HeightRequest="75" WidthRequest="500">
+                                <HorizontalStackLayout>
+                                        <Frame  WidthRequest="60" BackgroundColor="#FFA191" BorderColor="Transparent" CornerRadius="20"></Frame>
+                                        <HorizontalStackLayout>
+                                        <Label Text="Wonderfulls" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="15, 16, 0, 0"></Label>
+                                            <Label Text="11K" FontFamily="PoppinsLight" FontSize="15" TextColor="#102D4C" Margin="25, 18, 0, 0"></Label>
+                                        </HorizontalStackLayout>
+                                </HorizontalStackLayout>
+                              </Frame>
+                            
+                                 <Frame BackgroundColor="White" BorderColor="Transparent" Padding="8" CornerRadius="20" Margin="0,10,0,15" HeightRequest="75" WidthRequest="500">
+                                <HorizontalStackLayout>
+                                        <Frame  WidthRequest="60" BackgroundColor="#FF4C54" BorderColor="Transparent" CornerRadius="20"></Frame>
+                                        <HorizontalStackLayout>
+                                        <Label Text="Cre8" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="15, 16, 0, 0"></Label>
+                                            <Label Text="9K" FontFamily="PoppinsLight" FontSize="15" TextColor="#102D4C" Margin="25, 18, 0, 0"></Label>
+                                        </HorizontalStackLayout>
+                                </HorizontalStackLayout>
+                              </Frame>
+                            
+                                    <Frame BackgroundColor="White" BorderColor="Transparent" Padding="8" CornerRadius="20" Margin="0,10,0,15" HeightRequest="75" WidthRequest="500">
+                                <HorizontalStackLayout>
+                                        <Frame  WidthRequest="60" BackgroundColor="#4E54AD" BorderColor="Transparent" CornerRadius="20"></Frame>
+                                        <HorizontalStackLayout>
+                                        <Label Text="Magic Makers" FontFamily="PoppinsMedium" FontSize="18" TextColor="#102D4C" Margin="15, 16, 0, 0"></Label>
+                                            <Label Text="10K" FontFamily="PoppinsLight" FontSize="15" TextColor="#102D4C" Margin="25, 18, 0, 0"></Label>
+                                        </HorizontalStackLayout>
+                                </HorizontalStackLayout>
+                              </Frame>
+                            
+
+                            
                     </VerticalStackLayout>
                 </Border>
 
@@ -211,35 +265,41 @@
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="78, 0, 0, 0"/>
                     </Border.StrokeShape>
+                                 <VerticalStackLayout Padding="40">
+                         <Label Text="Edit project details" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
 
-                    <VerticalStackLayout Padding="40">
+                        <Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40">
+                                <Image Source="{Binding ActiveProject.ProjectImage}" Aspect="AspectFill"></Image></Frame>
 
 
-                        <Label Text="Edit project details" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
+                        <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="140, -40, 0, 0" CornerRadius="25" Padding="23">
 
-                    
-                                <Picker
-                                    Title="Choose an Image"
-                                    SelectedItem="{Binding ProjectDetail.ProjectImage}">
+                                  <Picker HeightRequest="50" WidthRequest="50"
+                                    x:Name="picker1" FontSize="50"
+                                    SelectedItem="{Binding ActiveProject.ProjectImage}" TextColor="Transparent">
                                     <Picker.ItemsSource>
                                         <x:Array Type="{x:Type x:String}">
-                                            <x:String>Bunny Friends</x:String>
-                                            <x:String>Bunnies</x:String>
-                                            <x:String>Mouse House</x:String>
-                                            <x:String>Kitty Kitty</x:String>
-                                            <x:String>Miranda's House</x:String>
-                                            <x:String>The House</x:String>
-                                            <x:String>Flower Town</x:String>
-                                            <x:String>Yeti</x:String>
-                                            <x:String>Build A Home</x:String>
+                                            <x:String>illustration_bunny_friend.jpg</x:String>
+                                            <x:String>illustration_bunny.jpg</x:String>
+                                            <x:String>mouse_house.jpg</x:String>
+                                            <x:String>kitty_kitty.jpg</x:String>
+                                            <x:String>mirandas_house.jpg</x:String>
+                                            <x:String>illustration_house.jpg</x:String>
+                                            <x:String>flower_town.jpg</x:String>
+                                            <x:String>illustration_yeti.jpg</x:String>
+                                            <x:String>illustration_house_white.jpg</x:String>
                                         </x:Array>
                                     </Picker.ItemsSource>
                                 </Picker>
 
-                        <!--<Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40"> <Image Source="illustration_bunny_friend.jpg" Aspect="AspectFill"></Image></Frame>-->
-                        <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="140, -40, 0, 0" CornerRadius="25" Padding="23"><Image Source="edit.png" Aspect="AspectFit"></Image></Frame>
+                          </Frame>
 
-                                  <Entry Text="{Binding ActiveProject.ProjectID}" IsVisible="false" Placeholder="20 May 2022" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                 <Image Source="add.png" Aspect="AspectFill" HeightRequest="20" WidthRequest="20" Margin="140, -42, 0, 0"></Image>
+
+
+ 
+         
+                                  <Entry Text="{Binding ActiveProject.ProjectID}" IsVisible="false" Placeholder="20 May 2022" PlaceholderColor="Gray" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                             <Label Text="Project name" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 30, 0, 0"></Label>
 
                              <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
@@ -247,7 +307,7 @@
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                                    <Entry Text="{Binding ActiveProject.ProjectName}" Placeholder="Bunny Friends" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                    <Entry Text="{Binding ActiveProject.ProjectName}" Placeholder="Bunny Friends" PlaceholderColor="Gray" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                                                 </Border>
 
                               <Label Text="Client" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
@@ -257,16 +317,15 @@
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                    <Picker Title="Select a Client">
-                                          <Picker.Items>
-                                            <x:String>Penny's Creations</x:String>
-                                            <x:String>Bargain Books</x:String>
-                                            <x:String>Easy Reads</x:String>
-                                            <x:String>Penguin Classics</x:String>
-                                           
-                                          </Picker.Items>
-                                        </Picker>
-                                   <!--<Entry Text="{Binding ActiveProject.Client}" Placeholder="Penny's Creations" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>-->
+
+                                        <Picker 
+                                                 x:Name="picker2"
+                                    TextColor="Black"
+                                    ItemsSource="{Binding ListOfClients}"
+                                    ItemDisplayBinding="{Binding ClientName}"
+                                    SelectedItem="{Binding SelectedClient}"/>
+
+                             
                                                 </Border>
 
                                    <Label Text="Deposit" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
@@ -276,48 +335,92 @@
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                                    <Entry Text="{Binding ActiveProject.Deposit}" Placeholder="R 200.00" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                    <Entry Text="{Binding ActiveProject.Deposit}" Placeholder="R 200.00" PlaceholderColor="Gray" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                                                 </Border>
 
                         
 
-                             <Label Text="Price per month" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="260, -100, 0, 0"></Label>
+                             <Label Text="Deposit Paid" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="260, -100, 0, 0"></Label>
                                     <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="260, 10, 0, 10" Padding="10" WidthRequest="220">
 
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                                    <Entry Text="{Binding ProjectDetail.PricePerMonth}" Placeholder="In full" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                    <Picker 
+                                    SelectedItem="{Binding ProjectDetail.DepositPaid}" TextColor="Black">
+                                      <Picker.ItemsSource>
+                                        <x:Array Type="{x:Type x:String}">
+                                            <x:String>Part Time</x:String>
+                                            <x:String>Full Time</x:String>
+                                            <x:String>Installments</x:String>
+                                        </x:Array>
+                                    </Picker.ItemsSource>
+                                        <Picker.SelectedIndex>1</Picker.SelectedIndex>
+                                </Picker>
                                                 </Border>
-                        
 
-                                           <Label Text="Design team" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 20, 0, 0"></Label>
-                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
+                                 <Label Text="Price per month" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+
+                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="-260, 10, 0, 10" Padding="10" WidthRequest="220">
 
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                                    <Entry Text="{Binding ProjectDetail.DesignTeam}" Placeholder="Bunny Friends" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                    <Entry Text="{Binding ActiveProject.PricePerMonth}" Placeholder="R 200.00" PlaceholderColor="Gray" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                                                 </Border>
 
+                        
 
-                                <HorizontalStackLayout>
-                                      <HorizontalStackLayout>
+                             <Label Text="Design Team" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="260, -100, 0, 0"></Label>
+                                    <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="260, 10, 0, 10" Padding="10" WidthRequest="220">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                     <Picker 
+                                                        SelectedItem="{Binding ActiveProject.DesignTeam}" TextColor="Black">
+                                                           <Picker.ItemsSource>
+                                                            <x:Array Type="{x:Type x:String}">
+                                                                <x:String>The Dream Team</x:String>
+                                                                <x:String>Baby Creatives</x:String>
+                                                                <x:String>Colour Connoisseurs</x:String>
+                                                                <x:String>Sketch Worx</x:String>
+                                                                <x:String>Stay Sketchy</x:String>
+                                                                <x:String>Wonderfulls</x:String>
+                                                                <x:String>Cre8</x:String>
+                                                                <x:String>Magic Makers</x:String>
+                                                            </x:Array>
+                                                        </Picker.ItemsSource>
+                                                    </Picker>
+                                                   
+                                                </Border>
+                                    <Label Text="Employee Hours" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+
+                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="-260, 10, 0, 10" Padding="10" WidthRequest="220">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Entry Text="{Binding ProjectDetail.MaxEmployeeHours}" Placeholder="R 200.00" PlaceholderColor="Gray" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+
+                        
+
+                             <Label Text="Client Hours" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="260, -100, 0, 0"></Label>
+                                     <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="260, 10, 0, 10" Padding="10" WidthRequest="220">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Entry Text="{Binding ProjectDetail.MaxClientHours}" Placeholder="R 200.00" PlaceholderColor="Gray" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+                          
+                                  <HorizontalStackLayout>
                                                       <Label Text="Active" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
                                                      <CheckBox IsChecked="{Binding ActiveProject.Status}" Color="#FF4C54"/>
                                 </HorizontalStackLayout>
 
-                                    
-                                  <HorizontalStackLayout>
-                                                      <Label Text="Deposit paid" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
-                                                     <CheckBox IsChecked="{Binding ActiveProject.DepositPaid}" Color="#FF4C54"/>
-                                </HorizontalStackLayout>
-
-                                </HorizontalStackLayout>
-                                
-
-                                                  
-                          <Button Command="{Binding UpdateProjectCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="save project details"  Margin="0, 20, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                          <Button Command="{Binding UpdateProjectCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="save project details"  Margin="0, 10, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
                                       
 
                     </VerticalStackLayout>
@@ -333,49 +436,45 @@
                     <Border.StrokeShape>
                         <RoundRectangle CornerRadius="78, 0, 0, 0"/>
                     </Border.StrokeShape>
+                <VerticalStackLayout Padding="40">
+                         <Label Text="Add new project" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
 
-                            
+                                         <Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40">
+                                <Image BackgroundColor="#1EBBBA" Source="{Binding Source={x:Reference picker}, Path=SelectedItem}" Aspect="AspectFill"></Image></Frame>
 
-                    <VerticalStackLayout Padding="40">
-                        <Label Text="Add project details" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
+                        <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="140, -40, 0, 0" CornerRadius="25" Padding="23">
 
-                        <HorizontalStackLayout Margin="0, 20, 0, 0">
-
-                                    <Picker
-                                    Title="Choose an Image"
-                                    SelectedItem="{Binding ProjectDetail.ProjectImage}">
-                                    <Picker.ItemsSource>
+                                  <Picker HeightRequest="50" WidthRequest="50" x:Name="picker"
+                                    Title="picker5" FontSize="50"
+                                    SelectedItem="{Binding ProjectDetail.ProjectImage}" TextColor="Transparent">
+                                      <Picker.ItemsSource>
                                         <x:Array Type="{x:Type x:String}">
-                                            <x:String>Bunny Friends</x:String>
-                                            <x:String>Bunnies</x:String>
-                                            <x:String>Mouse House</x:String>
-                                            <x:String>Kitty Kitty</x:String>
-                                            <x:String>Miranda's House</x:String>
-                                            <x:String>The House</x:String>
-                                            <x:String>Flower Town</x:String>
-                                            <x:String>Yeti</x:String>
-                                            <x:String>Build A Home</x:String>
+                                            <x:String>illustration_bunny_friend.jpg</x:String>
+                                            <x:String>illustration_bunny.jpg</x:String>
+                                            <x:String>mouse_house.jpg</x:String>
+                                            <x:String>kitty_kitty.jpg</x:String>
+                                            <x:String>mirandas_house.jpg</x:String>
+                                            <x:String>illustration_house.jpg</x:String>
+                                            <x:String>flower_town.jpg</x:String>
+                                            <x:String>illustration_yeti.jpg</x:String>
+                                            <x:String>illustration_house_white.jpg</x:String>
                                         </x:Array>
                                     </Picker.ItemsSource>
+                                        <Picker.SelectedIndex>1</Picker.SelectedIndex>
                                 </Picker>
-                        <!--<Frame HeightRequest="150" Margin="50, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40" BorderColor="Transparent">
-                                    <Image Source="illustration_bunny.jpg" Aspect="AspectFill"/>
-                         </Frame>
-                        <Frame HeightRequest="150" Margin="10, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40" BorderColor="Transparent">
-                                    <Image Source="illustration_bunny_friend.jpg" Aspect="AspectFill"/>
-                                    </Frame>
-                                <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="10, 10, 0, 0" CornerRadius="25" Padding="23">
-                                    <Image Source="add.png" Aspect="AspectFit"/>
-                                </Frame>-->
-                                
-                                    </HorizontalStackLayout>
+
+                          </Frame>
+
+                                 <Image Source="add.png" Aspect="AspectFill" HeightRequest="20" WidthRequest="20" Margin="140, -42, 0, 0"></Image>
+
+                                  
                                                     <Label Text="Project name" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 30, 0, 0"></Label>
                              <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
 
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                                    <Entry Text="{Binding ProjectDetail.ProjectName}" Placeholder="Bunny Friends" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                    <Entry Text="{Binding ProjectDetail.ProjectName}" Placeholder="Bunny Friends" PlaceholderColor="Gray" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                                                 </Border>
 
                               <Label Text="Client" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
@@ -385,8 +484,12 @@
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                                    <Entry Text="{Binding ProjectDetail.Client}" Placeholder="Penny's Creations" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
-                                                </Border>
+                                  <Picker 
+                                                 x:Name="picker6"
+                                    TextColor="Black"
+                                    ItemsSource="{Binding ListOfClients}"
+                                    ItemDisplayBinding="{Binding ClientName}"
+                                    SelectedItem="{Binding SelectedClient}"/></Border>
 
                                    <Label Text="Deposit" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
 
@@ -395,45 +498,93 @@
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                                    <Entry Text="{Binding ProjectDetail.Deposit}" Placeholder="R 200.00" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                    <Entry Text="{Binding ProjectDetail.Deposit}" Placeholder="R 200.00" PlaceholderColor="Gray" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                                                 </Border>
 
                         
 
-                             <Label Text="Price per month" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="260, -100, 0, 0"></Label>
+                             <Label Text="Deposit Paid" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="260, -100, 0, 0"></Label>
                                     <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="260, 10, 0, 10" Padding="10" WidthRequest="220">
 
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                                    <Entry Text="{Binding ProjectDetail.PricePerMonth}" Placeholder="In full" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                      <Picker 
+                                    SelectedItem="{Binding ProjectDetail.DepositPaid}" TextColor="Black">
+                                      <Picker.ItemsSource>
+                                        <x:Array Type="{x:Type x:String}">
+                                            <x:String>Part Time</x:String>
+                                            <x:String>Full Time</x:String>
+                                            <x:String>Installments</x:String>
+                                        </x:Array>
+                                    </Picker.ItemsSource>
+                                        <Picker.SelectedIndex>1</Picker.SelectedIndex>
+                                </Picker>
+                                                   
                                                 </Border>
 
+                               <Label Text="Price per month" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
 
-                                   <Label Text="Design team" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 20, 0, 0"></Label>
-                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="0, 10, 0, 10" Padding="10">
+                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="-260, 10, 0, 10" Padding="10" WidthRequest="220">
 
                                                       <Border.StrokeShape>
                                                         <RoundRectangle CornerRadius="20"/>
                                                     </Border.StrokeShape>
-                                                    <Entry Text="{Binding ProjectDetail.DesignTeam}" Placeholder="Bunny Friends" PlaceholderColor="Grey" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                    <Entry Text="{Binding ProjectDetail.PricePerMonth}" Placeholder="R 200.00" PlaceholderColor="Gray" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
                                                 </Border>
 
                         
-                                <HorizontalStackLayout>
-                                       <HorizontalStackLayout>
+
+                             <Label Text="Design Team" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="260, -100, 0, 0"></Label>
+                                    <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="260, 10, 0, 10" Padding="10" WidthRequest="220">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                        <Picker 
+                                                        SelectedItem="{Binding ProjectDetail.DesignTeam}" TextColor="Black">
+                                                           <Picker.ItemsSource>
+                                                            <x:Array Type="{x:Type x:String}">
+                                                                <x:String>The Dream Team</x:String>
+                                                                <x:String>Baby Creatives</x:String>
+                                                                <x:String>Colour Connoisseurs</x:String>
+                                                                <x:String>Sketch Worx</x:String>
+                                                                <x:String>Stay Sketchy</x:String>
+                                                                <x:String>Wonderfulls</x:String>
+                                                                <x:String>Cre8</x:String>
+                                                                <x:String>Magic Makers</x:String>
+                                                            </x:Array>
+                                                        </Picker.ItemsSource>
+                                                    </Picker>
+                                                    </Border>
+
+                                 <Label Text="Employee Hours" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
+
+                             <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="-260, 10, 0, 10" Padding="10" WidthRequest="220">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Entry Text="{Binding ProjectDetail.MaxEmployeeHours}" Placeholder="R 200.00" PlaceholderColor="Gray" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+
+                        
+
+                             <Label Text="Client Hours" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="260, -100, 0, 0"></Label>
+                                     <Border BackgroundColor="Transparent" Stroke="#102D4C" StrokeThickness="1" Margin="260, 10, 0, 10" Padding="10" WidthRequest="220">
+
+                                                      <Border.StrokeShape>
+                                                        <RoundRectangle CornerRadius="20"/>
+                                                    </Border.StrokeShape>
+                                                    <Entry Text="{Binding ProjectDetail.MaxClientHours}" Placeholder="R 200.00" PlaceholderColor="Gray" FontSize="18" FontFamily="PoppinsRegular" TextColor="#102D4C"></Entry>
+                                                </Border>
+
+                          
+                                  <HorizontalStackLayout>
                                                       <Label Text="Active" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
                                                      <CheckBox IsChecked="{Binding ActiveProject.Status}" Color="#FF4C54"/>
                                 </HorizontalStackLayout>
-                                       <HorizontalStackLayout>
-                                                      <Label Text="Deposit paid" FontFamily="PoppinsRegular" FontSize="16" TextColor="#102D4C" Margin="0, 10, 0, 0"></Label>
-                                                     <CheckBox IsChecked="{Binding ActiveProject.DepositPaid}" Color="#FF4C54"/>
-                                </HorizontalStackLayout>
-
-                                </HorizontalStackLayout>
-                          
-                               
-                          <Button Command="{Binding AddProjectCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="add new client"  Margin="0, 20, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
+                          <Button Command="{Binding AddProjectCommand}" BackgroundColor="#FF4C54" TextColor="White" CornerRadius="25" Padding="23" Text="add new project"  Margin="0, 10, 0, 0" FontFamily="PoppinsSemiBold" FontSize="15"></Button>
                                       
 
                     </VerticalStackLayout>

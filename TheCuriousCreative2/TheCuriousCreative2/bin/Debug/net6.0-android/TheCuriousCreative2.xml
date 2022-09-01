@@ -76,6 +76,12 @@
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.ProjectDetail">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel._projectDetail"/>
         </member>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.ListOfClients">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.listOfClients"/>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.SelectedClient">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.selectedClient"/>
+        </member>
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.ProjectName">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel._projectName"/>
         </member>
@@ -99,6 +105,12 @@
         </member>
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.PricePerMonth">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel._pricePerMonth"/>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.MaxEmployeeHours">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel._maxEmployeeHours"/>
+        </member>
+        <member name="P:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.MaxClientHours">
+            <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel._maxClientHours"/>
         </member>
         <member name="P:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel.Priority">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.AddUpdateProjectViewModel._priority"/>

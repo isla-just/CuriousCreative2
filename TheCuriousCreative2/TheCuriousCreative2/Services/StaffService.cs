@@ -17,7 +17,11 @@ namespace TheCuriousCreative2.Services
             if (_dbConnection == null)
             {
                 string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Staff.db3");
-                _dbConnection = new SQLiteAsyncConnection(dbPath);
+                var options = new SQLiteConnectionString(dbPath, true, "password", postKeyAction: c =>
+                {
+                    c.Execute("PRAGMA cipher_compatability = 3");
+                });
+                _dbConnection = new SQLiteAsyncConnection(options);
                 await _dbConnection.CreateTableAsync<StaffModel>();
             }
         }
@@ -74,33 +78,6 @@ namespace TheCuriousCreative2.Services
             {
                 Debug.WriteLine(ex.Message);
                 return false;
-            }
-        }
-
-        //zero hours after month done
-        public async Task<int> ZeroHours(int staffId)
-        {
-            try
-            {
-                await SetUpDb();
-                var staffList = await _dbConnection.Table<StaffModel>().ToListAsync();
-                var successFind = staffList.Where(y => y.StaffID == staffId).FirstOrDefault();
-
-                if (successFind != null)
-                {
-                    Debug.WriteLine("Staff member Found");
-                    return await _dbConnection.UpdateAsync(successFind);
-                }
-                else
-                {
-                    Debug.WriteLine("Staff member not found");
-                    return 0;
-                }
-            }
-            catch (Exception ex)
-            {
-                Debug.WriteLine(ex.Message);
-                return 0;
             }
         }
 

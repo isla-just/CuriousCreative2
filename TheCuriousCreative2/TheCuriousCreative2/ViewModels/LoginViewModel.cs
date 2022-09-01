@@ -22,16 +22,16 @@ namespace TheCuriousCreative2.ViewModels
         [RelayCommand]
         public async void GoToDashboard()
         {
-            //bool isLoggedOn = Preferences.Get("StayLoggedOn", false);
-            //if (isLoggedOn)
-            //{
+            bool isLoggedOn = Preferences.Get("StayLoggedOn", false);
+            if (isLoggedOn)
+            {
 
-            //    await Shell.Current.GoToAsync("/Dashboard");
-            //}
-            //else
-            //{
+                await Shell.Current.GoToAsync("/Dashboard");
+            }
+            else
+            {
 
-            //}
+            }
         }
 
 
@@ -46,8 +46,6 @@ namespace TheCuriousCreative2.ViewModels
                 Debug.WriteLine("User Was Found");
                 ErrorDisplay = "should navigate";
                 Preferences.Set("StayLoggedOn", stayLoggedOn);
-
-                Preferences.Set("StaffName", UserName);
                 await Shell.Current.GoToAsync("/Dashboard");
             }
             else

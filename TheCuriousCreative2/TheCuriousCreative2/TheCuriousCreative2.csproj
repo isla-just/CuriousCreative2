@@ -97,6 +97,7 @@
 	  <None Remove="LiveChartsCore" />
 	  <None Remove="LiveChartsCore.SkiaSharpView" />
 	  <None Remove="Syncfusion.Maui.Charts" />
+	  <None Remove="sqlite-net-sqlcipher" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Platforms\View\" />
@@ -106,7 +107,6 @@
 	  <Folder Include="Controls\" />
 	</ItemGroup>
 	<ItemGroup>
-	  <PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
 	  <PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.0" />
 	  <PackageReference Include="SQLitePCLRaw.core" Version="2.1.0" />
 	  <PackageReference Include="SQLitePCLRaw.provider.dynamic_cdecl" Version="2.1.0" />
@@ -114,5 +114,6 @@
 	  <PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
 	  <PackageReference Include="Microsoft.Toolkit.Mvvm" Version="7.1.2" />
 	  <PackageReference Include="Syncfusion.Maui.Charts" Version="20.2.46" />
+	  <PackageReference Include="sqlite-net-sqlcipher" Version="1.8.116" />
 	</ItemGroup>
 </Project>

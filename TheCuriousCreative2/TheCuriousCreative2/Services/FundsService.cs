@@ -18,7 +18,11 @@ namespace TheCuriousCreative2.Services
             if (_dbConnection == null)
             {
                 string dbPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Funds.db3");
-                _dbConnection = new SQLiteAsyncConnection(dbPath);
+                var options = new SQLiteConnectionString(dbPath, true, "password", postKeyAction: c =>
+                {
+                    c.Execute("PRAGMA cipher_compatability = 3");
+                });
+                _dbConnection = new SQLiteAsyncConnection(options);
                 await _dbConnection.CreateTableAsync<FundsModel>();
             }
         }
