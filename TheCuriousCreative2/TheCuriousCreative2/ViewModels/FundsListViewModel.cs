@@ -113,13 +113,13 @@ namespace TheCuriousCreative2.ViewModels
                 if (project.Status == true)
                 {
                     //if deposit is paid 
-                    if (project.DepositPaid == true)
-                    {
-                        ClientIncome = ClientIncome + project.Deposit;
-                    }
+                    //if (project.DepositPaid == true)
+                    //{
+                    //    ClientIncome = ClientIncome + project.Deposit;
+                    //}
 
                     Debug.WriteLine(ClientIncome + project.PricePerMonth);
-                    ClientIncome = ClientIncome + project.PricePerMonth;
+                    ClientIncome = ClientIncome + project.PricePerMonth + project.Deposit;
                 }
             
             }
