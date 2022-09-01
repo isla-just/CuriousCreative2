@@ -463,12 +463,6 @@
         <member name="P:TheCuriousCreative2.ViewModels.LoginViewModel.StayLoggedOn">
             <inheritdoc cref="F:TheCuriousCreative2.ViewModels.LoginViewModel.stayLoggedOn"/>
         </member>
-        <member name="F:TheCuriousCreative2.ViewModels.LoginViewModel.goToDashboardCommand">
-            <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.LoginViewModel.GoToDashboardCommand"/>.</summary>
-        </member>
-        <member name="P:TheCuriousCreative2.ViewModels.LoginViewModel.GoToDashboardCommand">
-            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:TheCuriousCreative2.ViewModels.LoginViewModel.GoToDashboard"/>.</summary>
-        </member>
         <member name="F:TheCuriousCreative2.ViewModels.LoginViewModel.loginVerificationCommand">
             <summary>The backing field for <see cref="P:TheCuriousCreative2.ViewModels.LoginViewModel.LoginVerificationCommand"/>.</summary>
         </member>

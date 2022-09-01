@@ -149,7 +149,7 @@ namespace TheCuriousCreative2.ViewModels
         public async void GetClientListSearch()
         {
             var clientList = await _clientService.GetClientList();
-            var filteredItems = clientList.Where(value => value.ClientName.ToLowerInvariant().Contains(Search)).ToList();
+            var filteredItems = clientList.Where(value => value.ClientName.Contains(Search)).ToList();
             var filteredID = clientList.Where(value => value.ClientID.ToString().Contains(Search)).ToList();
 
             Clients.Clear();

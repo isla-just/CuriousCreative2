@@ -19,7 +19,7 @@ public partial class Login : ContentPage
     {
         //run getsubjects when page loads
         base.OnAppearing();
-        _viewModel.GoToDashboardCommand.Execute(null);
+        _viewModel.LoginVerificationCommand.Execute(null);
     }
 
 

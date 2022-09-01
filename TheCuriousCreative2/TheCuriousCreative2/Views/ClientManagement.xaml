@@ -131,12 +131,12 @@
                     <VerticalStackLayout Padding="40">
                          <Label Text="Edit client details" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
 
-                        <Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40"> <Image Source="{Binding ActiveClient.ClientImage}" Aspect="AspectFill"></Image></Frame>
+                        <Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40"><Image BackgroundColor="#1EBBBA" Source="{Binding Source={x:Reference picker2}, Path=SelectedItem}" Aspect="AspectFill"></Image></Frame>
 
 
                         <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="140, -40, 0, 0" CornerRadius="25" Padding="23">
 
-                                  <Picker HeightRequest="50" WidthRequest="50"
+                                  <Picker HeightRequest="50" WidthRequest="50" x:Name="picker2"
                                     Title="select character" FontSize="50"
                                     SelectedItem="{Binding ActiveClient.ClientImage}" TextColor="Transparent">
                                     <Picker.ItemsSource>
@@ -207,8 +207,7 @@
                     <VerticalStackLayout Padding="40">
                          <Label Text="Add new client" FontFamily="PoppinsMedium" FontSize="22" TextColor="#102D4C" HorizontalTextAlignment="Start" Margin="20"></Label>
 
-                                         <Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40">
-                                <Image BackgroundColor="#1EBBBA" Source="{Binding Source={x:Reference picker}, Path=SelectedItem}" Aspect="AspectFill"></Image></Frame>
+                                         <Frame HeightRequest="150" Margin="0, 20, 0, 0" IsClippedToBounds="True" WidthRequest="150" Padding="0" CornerRadius="40"> <Image BackgroundColor="#1EBBBA" Source="{Binding Source={x:Reference picker}, Path=SelectedItem}" Aspect="AspectFill"></Image></Frame>
 
                         <Frame BackgroundColor="#FF4C54" WidthRequest="65" HeightRequest="65" Margin="140, -40, 0, 0" CornerRadius="25" Padding="23">
 

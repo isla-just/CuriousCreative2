@@ -152,6 +152,14 @@
 		<data>
 		Oncd6+ZJgU3iO9cwmLGDXslHcCI=
 		</data>
+		<key>Resources/change.png</key>
+		<data>
+		zzWCtczzftPLdwVhOMtnHlbwgNg=
+		</data>
+		<key>Resources/client.png</key>
+		<data>
+		iLn7L8omOFjV1bBritd1VHPMASI=
+		</data>
 		<key>Resources/company_card.png</key>
 		<data>
 		hLNajnvH2zeizo+ojMi9XwkKJ7o=
@@ -167,6 +175,10 @@
 		<key>Resources/curve3.png</key>
 		<data>
 		aG51+2pEJl6Iwfmv/3kvRGDGHgE=
+		</data>
+		<key>Resources/design.png</key>
+		<data>
+		Hdgvs7PV+VRS7hlt/+V/igU+Fag=
 		</data>
 		<key>Resources/dotnet_bot.png</key>
 		<data>
@@ -259,6 +271,10 @@
 		<key>Resources/orange.png</key>
 		<data>
 		m3gkKeObrMIl5ZoUomeitz9vSmA=
+		</data>
+		<key>Resources/role.png</key>
+		<data>
+		DpFO86cOxdxoLZf4rgKlliNBSWo=
 		</data>
 		<key>Resources/search.png</key>
 		<data>
@@ -1753,14 +1769,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hmGC2NJL4oPiq3ORJsDyKAfqqoLQmSoTboKDVfcp/W8=
+			tOLQrZPz9r8tsn2yaq9/nIvko+ooZYe4wRWCLWXq4gk=
 			</data>
 		</dict>
 		<key>MonoBundle/TheCuriousCreative2.pdb</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6y3PxeZnv0vKUMSJr/6uoP4y6hXYOh8qAsOBaunUoFw=
+			Se6JTltI4e8QW4AO7TXfxZ9MGK1PGOuk/CCQvrhHn2M=
 			</data>
 		</dict>
 		<key>MonoBundle/WindowsBase.dll</key>
@@ -2106,6 +2122,20 @@
 			OwCRa5nPnSSW796TS12IGfo4VJFAQRwiz9Vx9nCEWyQ=
 			</data>
 		</dict>
+		<key>Resources/change.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BVdBpi/IpRXEraI3ADuKDNaLwolx1wYSWyTdeb1rGFc=
+			</data>
+		</dict>
+		<key>Resources/client.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			iCotdKJzjoPJ+RGteEPGVOhlI5rC+OR9avHKxkWWwic=
+			</data>
+		</dict>
 		<key>Resources/company_card.png</key>
 		<dict>
 			<key>hash2</key>
@@ -2132,6 +2162,13 @@
 			<key>hash2</key>
 			<data>
 			0dKjSuW5goIM7t1/GlK1JGstuQz6Fk8JkP400rHsSFw=
+			</data>
+		</dict>
+		<key>Resources/design.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			Me+bHUfsXQ3oq4yTthAfztpFs/PKtMgLWsto8t0TkWA=
 			</data>
 		</dict>
 		<key>Resources/dotnet_bot.png</key>
@@ -2293,6 +2330,13 @@
 			<key>hash2</key>
 			<data>
 			2a8FmrvKCTEUu7UaIWfTN96BGn3tjeIX4bt/XcCrz+A=
+			</data>
+		</dict>
+		<key>Resources/role.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			N3fZC8NvS+ptfONx/kgVRnIbAHOtO8e2RE1DeB1hDaI=
 			</data>
 		</dict>
 		<key>Resources/search.png</key>

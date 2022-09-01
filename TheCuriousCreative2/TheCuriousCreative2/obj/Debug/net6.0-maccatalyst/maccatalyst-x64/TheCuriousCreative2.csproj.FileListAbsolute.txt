@@ -675,3 +675,7 @@
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/the_wize_owl.png
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/the_zen.png
 /Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/bin/Debug/net6.0-maccatalyst/maccatalyst-x64/SQLitePCLRaw.nativelibrary.dll
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/change.png
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/design.png
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/role.png
+/Users/jeandredevilliers/Desktop/CuriousCreative2/TheCuriousCreative2/TheCuriousCreative2/obj/Debug/net6.0-maccatalyst/maccatalyst-x64/resizetizer/r/Resources/client.png

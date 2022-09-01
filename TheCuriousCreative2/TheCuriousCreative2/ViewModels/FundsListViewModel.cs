@@ -24,9 +24,8 @@ namespace TheCuriousCreative2.ViewModels
             _projectService = projectService;
             _staffService = staffService;
 
-            TotalExpenses = Salaries + Expenses;
 
-            //GetFundsList();
+            GetFundsList();
             StoreFunds();
             CheckDays();
             GetProj();
@@ -76,6 +75,11 @@ namespace TheCuriousCreative2.ViewModels
             DaysLeft = lastDayOfMonth - nowFormatted;
 
         }
+        public ObservableCollection<FundChartModel> IncomeData { get; set; } = new ObservableCollection<FundChartModel>();
+        public ObservableCollection<FundChartModel> SalaryData { get; set; } = new ObservableCollection<FundChartModel>();
+        public ObservableCollection<FundChartModel> AdditionalData { get; set; } = new ObservableCollection<FundChartModel>();
+        public ObservableCollection<FundChartModel> TotalData { get; set; } = new ObservableCollection<FundChartModel>();
+
 
         //adding clients to the list
         [RelayCommand]
@@ -88,7 +92,10 @@ namespace TheCuriousCreative2.ViewModels
                 foreach (var fund in fundList)
                 {
                     Funds.Add(fund);
-
+                    IncomeData.Add(new FundChartModel { Amount = fund.ClientIncome, Month = fund.Date.TrimEnd() });
+                    SalaryData.Add(new FundChartModel { Amount = fund.Salaries, Month = fund.Date.TrimEnd() });
+                    AdditionalData.Add(new FundChartModel { Amount = fund.Expenses, Month = fund.Date.TrimEnd() });
+                    TotalData.Add(new FundChartModel { Amount = fund.FundsTotal, Month = fund.Date.TrimEnd() });
                 }
             }
         }
@@ -103,10 +110,10 @@ namespace TheCuriousCreative2.ViewModels
             {
 
                 //if active then add to funds
-                if (project.Status == "active")
+                if (project.Status == true)
                 {
                     //if deposit is paid 
-                    if (project.DepositPaid == "true")
+                    if (project.DepositPaid == true)
                     {
                         ClientIncome = ClientIncome + project.Deposit;
                     }
@@ -124,20 +131,15 @@ namespace TheCuriousCreative2.ViewModels
 
                 //multiphy your hourly rate by the amount of hours worked:
 
-                if(staff.Role == "Admin")
-                {
-                    Salaries = Salaries +17000;
-                }
-                else
-                {
-                    Debug.WriteLine(Salaries + staff.Salary * staff.HoursWorked);
-                    Salaries = Salaries + staff.Salary * staff.HoursWorked;
-                }
+                 //jeandre already did the math on her side
+                    Salaries = Salaries + staff.Salary;
 
             }
 
             //getting from preferences and setting the variable to stored value
             Expenses = Preferences.Get("Expenses", Expenses);
+
+            TotalExpenses = Salaries + Expenses;
 
             FundsTotal = FundsTotal + ClientIncome - Salaries - Expenses;
 
@@ -146,6 +148,8 @@ namespace TheCuriousCreative2.ViewModels
         //test
         public ObservableCollection<ProjectModel> ActiveProjects { get; set; } = new ObservableCollection<ProjectModel>();
 
+
+        //close off month
         [RelayCommand]
         public async void AddFunds()
         {
@@ -165,10 +169,6 @@ namespace TheCuriousCreative2.ViewModels
                 Expenses = Expenses
             });
 
-            //to dp - update active projects to inactive
-            //to do - zero hours worked
-
-
             if (response > 0)
             {
                 await Shell.Current.DisplayAlert("Account closed", "Record Saved", "OK");
@@ -176,6 +176,9 @@ namespace TheCuriousCreative2.ViewModels
                 Salaries = 0;
                 ClientIncome = 0;
                 Expenses = 0;
+                TotalExpenses = 0;
+
+                Preferences.Set("Expenses", Expenses);
             }
             else
             {
@@ -183,15 +186,8 @@ namespace TheCuriousCreative2.ViewModels
             }
 
 
-            //updating all active projects to inactive
-            foreach (var proj in ActiveProjects)
-            {
-                response = await _projectService.UpdateProject(proj);
-            }
-
-
-
         }
+
 
         [ObservableProperty]
         public int printingExpenses = 0;
@@ -214,7 +210,7 @@ namespace TheCuriousCreative2.ViewModels
                     Projects.Add(proj);
 
                     //appending active projects to an object
-                    if (proj.Status == "active")
+                    if (proj.Status == true)
                     {
                         ActiveProjects.Add(proj);
                     }
