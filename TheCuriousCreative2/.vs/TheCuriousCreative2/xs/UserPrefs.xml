@@ -1,40 +1,35 @@
-﻿<Properties StartupConfiguration="{ABEDEA07-5F9B-4E41-B4CB-F4C80867AC6C}|Default" NuGet.AddPackagesDialog.IncludePrerelease="True">
+﻿<Properties NuGet.AddPackagesDialog.IncludePrerelease="True" StartupConfiguration="{ABEDEA07-5F9B-4E41-B4CB-F4C80867AC6C}|Default">
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.TheCuriousCreative2 PreferredExecutionTarget="MyAppleMacCatalystID" />
-  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TheCuriousCreative2/ViewModels/AddUpdateProjectViewModel.cs">
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TheCuriousCreative2/Platforms/Windows/Package.appxmanifest">
     <Files>
-      <File FileName="TheCuriousCreative2/Views/ProjectManagement.xaml" Line="48" Column="42" />
-      <File FileName="TheCuriousCreative2/ViewModels/AddUpdateProjectViewModel.cs" Line="161" Column="10" />
-      <File FileName="TheCuriousCreative2/Views/StaffManagement.xaml" Line="26" Column="23" />
-      <File FileName="TheCuriousCreative2/ViewModels/AddUpdateStaffViewModel.cs" Line="140" Column="70" />
+      <File FileName="TheCuriousCreative2/Platforms/Windows/app.manifest" Line="1" Column="1" />
+      <File FileName="TheCuriousCreative2/Platforms/Windows/App.xaml.cs" Line="1" Column="1" />
+      <File FileName="TheCuriousCreative2/Platforms/Windows/Package.appxmanifest" Line="40" Column="46" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TheCuriousCreative2" expanded="True">
             <Node name="TheCuriousCreative2" expanded="True">
-              <Node name="Models" expanded="True" />
+              <Node name="Controls" expanded="True" />
               <Node name="Platforms" expanded="True">
-                <Node name="MacCatalyst" expanded="True" />
+                <Node name="Windows" expanded="True">
+                  <Node name="App.xaml" expanded="True" />
+                  <Node name="Package.appxmanifest" selected="True" />
+                </Node>
               </Node>
-              <Node name="Resources" expanded="True">
-                <Node name="Images" expanded="True" />
-              </Node>
-              <Node name="Services" expanded="True" />
-              <Node name="ViewModels" expanded="True">
-                <Node name="AddUpdateProjectViewModel.cs" selected="True" />
-              </Node>
-              <Node name="Views" expanded="True" />
+              <Node name="ViewModels" expanded="True" />
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.TheCuriousCreative2 PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
 </Properties>

@@ -112,11 +112,11 @@ namespace TheCuriousCreative2.ViewModels
                 //if active then add to funds
                 if (project.Status == true)
                 {
-                    //if deposit is paid 
-                    if (project.DepositPaid == true)
-                    {
-                        ClientIncome = ClientIncome + project.Deposit;
-                    }
+                    ////if deposit is paid 
+                    //if (project.DepositPaid == true)
+                    //{
+                    //    ClientIncome = ClientIncome + project.Deposit;
+                    //}
 
                     Debug.WriteLine(ClientIncome + project.PricePerMonth);
                     ClientIncome = ClientIncome + project.PricePerMonth;
