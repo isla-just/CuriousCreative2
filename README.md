@@ -24,7 +24,7 @@
       <a href="https://github.com/isla-just/CuriousCreative2"><strong>Explore the docs »</strong></a>
       <br />
       <br />
-      <a href="ReadMeImg/IslaJust_200080_DV300_T1_demo.mp4">View Demo</a>
+      <a href="https://github.com/isla-just/CuriousCreative2/tree/isla-branch/ReadMeImg/demoVideo_theCuriousCreative.mp4">View Demo</a>
        ·
        <a href="https://github.com/isla-just/CuriousCreative2/issues">Report Bug</a>
        ·
@@ -261,14 +261,14 @@ We started adding finishing touches to our frontends. After struggling very long
 
 To see a run through of the application, click below:
 
-[View Demonstration]()
+[View Demonstration](https://drive.google.com/file/d/1FgSXFWEgAsKdrikJ-8_GwH0WoMeNM5Qt/view?usp=sharing)
 
 <!-- PROMO VIDEO -->
 ## Promotional Video
 
 To see the promotional video, click below:
 
-[View Promotional Video]()
+[View Promotional Video](https://youtu.be/dV3Wn_E1BHw)
 
 <!-- ROADMAP -->
 ## Roadmap
